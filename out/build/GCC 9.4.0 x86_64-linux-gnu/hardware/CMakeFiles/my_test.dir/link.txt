@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/my_test.dir/serial_text.cpp.o  -o my_test  -lpthread 

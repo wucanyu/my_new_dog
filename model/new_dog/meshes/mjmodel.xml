@@ -1,0 +1,241 @@
+<mujoco model="new_dog">
+    <!-- blanceinertia = "true"  -->
+    <compiler angle="radian" meshdir="../meshes/" autolimits = "true"  />
+    <!-- 决定了椭圆摩擦锥的摩擦与法线约束阻抗的比率 -->
+    <option 
+      gravity = "0 0 -9.81"
+      cone="elliptic" 
+      impratio="100"  
+    />
+
+  <default>
+    <default class="new_dog">
+      <geom friction="0.4" margin="0.001" condim="1"/>
+      <joint axis="0 1 0" damping="0.1" armature="0.01" frictionloss="0.2"/>
+      <motor ctrlrange="-23.7 23.7"/>
+      <default class="abduction">
+        <joint axis="1 0 0" range="-1.0472 1.0472"/>
+      </default>
+      <default class="hip">
+        <default class="front_hip"> <joint range="-1.5708 3.4907"/> </default>
+        <default class="back_hip" > <joint range="-0.5236 4.5379"/> </default>
+      </default>
+      <default class="knee">
+        <joint range="-2.7227 -0.83776"/>
+        <motor ctrlrange="-45.43 45.43"/>
+      </default>
+      <default class="visual">
+        <geom type="mesh" contype="0" conaffinity="0" group="2"/>
+      </default>
+      <!--  几何体尺寸     相对于父刚体的位置       接触优先级    接触条件维度  滑动摩擦，扭转摩擦，滚动摩擦-->
+      <default class="collision">
+        <geom group="3"/>
+        <default class="foot">
+          <geom size="0.03" pos="0 0 -0.22" priority="1" condim="6" friction="0.4 0.02 0.01"/>
+        </default>
+      </default>
+    </default>
+  </default>
+
+
+    <asset>
+        <material name="metal" rgba=".9 .95 .95 1" />
+        <material name="black" rgba="0 0 0 1" />
+        <material name="white" rgba="1 1 1 1" />
+        <material name="gray" rgba="0.671705 0.692426 0.774270 1" />
+
+        <mesh name="base_link"  file="base_link.STL" />
+        <mesh name="leg1_link1" file="leg1_link1.STL" />
+        <mesh name="leg1_link2" file="leg1_link2.STL" />
+        <mesh name="leg1_link3" file="leg1_link3.STL" />
+        <mesh name="leg1_link4" file="leg1_link4.STL" />
+        <mesh name="leg2_link1" file="leg2_link1.STL" />
+        <mesh name="leg2_link2" file="leg2_link2.STL" />
+        <mesh name="leg2_link3" file="leg2_link3.STL" />
+        <mesh name="leg2_link4" file="leg2_link4.STL" />
+        <mesh name="leg3_link1" file="leg3_link1.STL" />
+        <mesh name="leg3_link2" file="leg3_link2.STL" />
+        <mesh name="leg3_link3" file="leg3_link3.STL" />
+        <mesh name="leg3_link4" file="leg3_link4.STL" />
+        <mesh name="leg4_link1" file="leg4_link1.STL" />
+        <mesh name="leg4_link2" file="leg4_link2.STL" />
+        <mesh name="leg4_link3" file="leg4_link3.STL" />
+        <mesh name="leg4_link4" file="leg4_link4.STL" />
+    </asset>
+
+    <worldbody>
+      <body name="base_link" pos="0 0 0.5" childclass="new_dog">
+        <inertial pos="0 0 0" quat="-0.000543471 0.713435 -0.00173769 0.700719" 
+        mass="6.921" diaginertia="0.107027 0.0980771 0.0244531" />
+        <freejoint />
+        <site name="imu" pos="0 0 0" />
+        <geom mesh="base_link" material="black" class="visual" />
+        <body name="leg1_link1" pos="0.15 -0.07 0.0">
+          <inertial pos="0 0 0"  quat="0.538559 0.538559 0.458208 0.458208" mass="1.0316" diaginertia="0.00244868 0.0024 0.000551317" />
+          <geom  mesh="leg1_link1" material="metal" class="visual" />
+          <joint name="leg1_1_joint" class="abduction"/>
+          <body name="leg1_link2" pos="0.061332 0 0">
+              <inertial pos="-0.0001 -0.0637 -0.0259" 
+              quat="0.989215 0.146472 0 0" mass="0.75" 
+              diaginertia="0.0031 0.00301194 0.000488057" />
+              <joint name="leg1_2_joint" class="front_hip"/>
+              <geom mesh="leg1_link2" material="metal" class="visual" />
+              <geom type="cylinder" size="0.02 0.1" pos="0 0 -0.05" class="collision" />
+              <body name="leg1_link3" pos="0 -0.096681 -0.23497">
+                  <inertial pos="-0.000325676 0 -0.11121" 
+                  quat="0.707107 -0.000299959 -0.000299959 0.707107" mass="0.3048" 
+                  diaginertia="0.00294545 0.00294545 7.90565e-10" />
+                  <joint name="leg1_3_joint" class="knee" />
+                  <geom mesh="leg1_link3" material="gray" class="visual" />
+                  <geom type="box" size="0.05 0.01 0.1" pos="0 0 -0.1" class="collision" />
+                  <geom pos="-0.00019719 0 -0.22142" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.79216 0.81961 0.93333 1" mesh="leg1_link4" />
+                  <geom pos="-0.00019719 0 -0.22142" type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="leg1_link4" />
+                  <geom name="FR" class="foot" />
+                  <body name="FR_foot" pos="0 0 -0.213" />
+              </body>
+          </body>
+        </body>
+        <body name="leg2_link1" pos="0.15 0.07 0.0">
+            <inertial pos="0 0 0" quat="0.458208 0.458208 0.538559 0.538559" mass="1.0316" diaginertia="0.00244868 0.0024 0.000551317" />
+            <geom  mesh="leg2_link1" material="metal" class="visual" />
+            <joint name="leg2_1_joint" class="abduction"/>
+            <body name="leg2_link2" pos="0.061332 0 0">
+                <inertial pos="0.0002 0.0618 -0.0253" quat="0.987425 -0.158091 0 0" mass="0.75" diaginertia="0.003 0.00293004 0.000569958" />
+                <joint name="leg2_2_joint" class="front_hip"/>
+                <geom mesh="leg2_link2" material="metal" class="visual" />
+                <geom type="cylinder" size="0.02 0.1" pos="0 0 -0.05" class="collision" />
+                <body name="leg2_link3" pos="0 0.096681 -0.23546">
+                    <inertial pos="-0.000325676 0.0001 -0.11121" quat="0.707107 -0.000299959 -0.000299959 0.707107" mass="0.3048" diaginertia="0.00294545 0.00294545 7.90565e-10" />
+                    <joint name="leg2_3_joint" class="knee" />
+                    <geom mesh="leg2_link3" material="gray" class="visual" />
+                    <geom type="box" size="0.05 0.01 0.1" pos="0 0 -0.1" class="collision" />
+                    <geom pos="-0.00019719 0 -0.22142" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.79216 0.81961 0.93333 1" mesh="leg2_link4" />
+                    <geom pos="-0.00019719 0 -0.22142" type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="leg2_link4" />
+                    <geom name="FL" class="foot" />
+                    <body name="FL_foot" pos="0 0 -0.213" />
+                </body>
+            </body>
+        </body>
+        <body name="leg3_link1" pos="-0.15 -0.07 0.0">
+            <inertial pos="0 0 0" quat="0.458208 0.458208 0.538559 0.538559" mass="1.0316" diaginertia="0.00244868 0.0024 0.000551317" />
+            <joint name="leg3_1_joint"  class="abduction"/>
+            <geom  mesh="leg3_link1" material="metal" class="visual" />
+            <body name="leg3_link2" pos="-0.061332 0 0">
+                <inertial pos="-0.0001 -0.0636 -0.026" quat="0.989215 0.146472 0 0" mass="0.75" diaginertia="0.0031 0.00301194 0.000488057" />
+                <joint name="leg3_2_joint"  class="back_hip"/>
+                <geom mesh="leg3_link2" material="metal" class="visual" />
+                <geom type="cylinder" size="0.02 0.1" pos="0 0 -0.05" class="collision" />
+                <body name="leg3_link3" pos="0 -0.096681 -0.23497">
+                    <inertial pos="-0.000327736 0.0003 -0.11131" quat="0.707107 -0.000291647 -0.000291647 0.707107" mass="0.3048" diaginertia="0.00294545 0.00294545 7.47358e-10" />
+                    <joint name="leg3_3_joint" class="knee"/>
+                    <geom mesh="leg3_link3" material="gray" class="visual" />
+                    <geom type="box" size="0.05 0.01 0.1" pos="0 0 -0.1" class="collision" />
+                    <geom pos="0.00019719 0 -0.22142" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.79216 0.81961 0.93333 1" mesh="leg3_link4" />
+                    <geom pos="0.00019719 0 -0.22142" type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="leg3_link4" />
+                    <geom name="BR" class="foot" />
+                    <body name="BR_foot" pos="0 0 -0.213" />
+                </body>
+            </body>
+        </body>
+        <body name="leg4_link1" pos="-0.15 0.07 0.0">
+            <inertial pos="0 0 0" quat="0.538559 0.538559 0.458208 0.458208" mass="1.0316" diaginertia="0.00244868 0.0024 0.000551317" />
+            <geom  mesh="leg4_link1" material="metal" class="visual" />
+            <joint name="leg4_1_joint"   class="abduction"/>
+            <body name="leg4_link2" pos="-0.061332 -5.5649e-05 -0.00034723">
+                <inertial pos="0.0001 0.064 -0.026" quat="0.989215 -0.146472 0 0" mass="0.75" diaginertia="0.0031 0.00301194 0.000488057" />
+                <joint name="leg4_2_joint" class="back_hip"/>
+                <geom mesh="leg4_link2" material="metal" class="visual" />
+                <geom type="cylinder" size="0.02 0.1" pos="0 0 -0.05" class="collision" />
+                <body name="leg4_link3" pos="0 0.096681 -0.23497">
+                    <inertial pos="-0.000327736 0.0003 -0.11131" quat="0.707107 -0.000291647 -0.000291647 0.707107" mass="0.3048" diaginertia="0.00294545 0.00294545 7.47358e-10" />
+                    <joint name="leg4_3_joint" class="knee" />
+                    <geom mesh="leg4_link3" material="gray" class="visual" />
+                    <geom type="box" size="0.05 0.01 0.1" pos="0 0 -0.1" class="collision" />
+                    <geom pos="0.00019719 0 -0.22142" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.79216 0.81961 0.93333 1" mesh="leg4_link4" />
+                    <geom pos="0.00019719 0 -0.22142" type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="leg4_link4" />
+                    <geom name="BL" class="foot" />
+                    <body name="BL_foot" pos="0 0 -0.213" />
+                </body>
+            </body>
+        </body>
+      </body>
+    </worldbody>
+
+    <actuator>
+        <motor name="leg1_1"  joint="leg1_1_joint" />
+        <motor name="leg1_2"  joint="leg1_2_joint" />
+        <motor name="leg1_3"  joint="leg1_3_joint" />
+        <motor name="leg2_1"  joint="leg2_1_joint" />
+        <motor name="leg2_2"  joint="leg2_2_joint" />
+        <motor name="leg2_3"  joint="leg2_3_joint" />
+        <motor name="leg3_1"  joint="leg3_1_joint" />
+        <motor name="leg3_2"  joint="leg3_2_joint" />
+        <motor name="leg3_3"  joint="leg3_3_joint" />
+        <motor name="leg4_1"  joint="leg4_1_joint" />
+        <motor name="leg4_2"  joint="leg4_2_joint" />
+        <motor name="leg4_3"  joint="leg4_3_joint" />
+    </actuator>
+
+  <sensor>
+    <jointpos name="leg1_1_p"  joint="leg1_1_joint" />
+    <jointpos name="leg1_2_p"  joint="leg1_2_joint" />
+    <jointpos name="leg1_3_p"  joint="leg1_3_joint" />
+    <jointpos name="leg2_1_p"  joint="leg2_1_joint" />
+    <jointpos name="leg2_2_p"  joint="leg2_2_joint" />
+    <jointpos name="leg2_3_p"  joint="leg2_3_joint" />
+    <jointpos name="leg3_1_p"  joint="leg3_1_joint" />
+    <jointpos name="leg3_2_p"  joint="leg3_2_joint" />
+    <jointpos name="leg3_3_p"  joint="leg3_3_joint" />
+    <jointpos name="leg4_1_p"  joint="leg4_1_joint" />
+    <jointpos name="leg4_2_p"  joint="leg4_2_joint" />
+    <jointpos name="leg4_3_p"  joint="leg4_3_joint" />
+
+    <jointvel name="leg1_1_v"  joint="leg1_1_joint" />
+    <jointvel name="leg1_2_v"  joint="leg1_2_joint" />
+    <jointvel name="leg1_3_v"  joint="leg1_3_joint" />
+    <jointvel name="leg2_1_v"  joint="leg2_1_joint" />
+    <jointvel name="leg2_2_v"  joint="leg2_2_joint" />
+    <jointvel name="leg2_3_v"  joint="leg2_3_joint" />
+    <jointvel name="leg3_1_v"  joint="leg3_1_joint" />
+    <jointvel name="leg3_2_v"  joint="leg3_2_joint" />
+    <jointvel name="leg3_3_v"  joint="leg3_3_joint" />
+    <jointvel name="leg4_1_v"  joint="leg4_1_joint" />
+    <jointvel name="leg4_2_v"  joint="leg4_2_joint" />
+    <jointvel name="leg4_3_v"  joint="leg4_3_joint" />
+
+    <jointvel name="leg1_1_t"  joint="leg1_1_joint" noise="0.01" />
+    <jointvel name="leg1_2_t"  joint="leg1_2_joint" noise="0.01" />
+    <jointvel name="leg1_3_t"  joint="leg1_3_joint" noise="0.01" />
+    <jointvel name="leg2_1_t"  joint="leg2_1_joint" noise="0.01" />
+    <jointvel name="leg2_2_t"  joint="leg2_2_joint" noise="0.01" />
+    <jointvel name="leg2_3_t"  joint="leg2_3_joint" noise="0.01" />
+    <jointvel name="leg3_1_t"  joint="leg3_1_joint" noise="0.01" />
+    <jointvel name="leg3_2_t"  joint="leg3_2_joint" noise="0.01" />
+    <jointvel name="leg3_3_t"  joint="leg3_3_joint" noise="0.01" />
+    <jointvel name="leg4_1_t"  joint="leg4_1_joint" noise="0.01" />
+    <jointvel name="leg4_2_t"  joint="leg4_2_joint" noise="0.01" />
+    <jointvel name="leg4_3_t"  joint="leg4_3_joint" noise="0.01" />
+
+    <framequat      name="imu_quat" objtype="site" objname="imu" />
+    <gyro           name="imu_gyro" site="imu" />
+    <accelerometer  name="imu_acc"  site="imu" />
+    
+    <framepos    name="frame_pos" objtype="site" objname="imu" />
+    <framelinvel name="frame_vel" objtype="site" objname="imu" />
+  </sensor>    
+
+  <keyframe>
+    <key name="home" 
+      qpos="0 0 0.05 
+            1 0 0 0 
+            0 2.7 -2.53 
+            0 2.7 -2.53 
+            0 2.7 -2.53 
+            0 2.7 -2.53 "
+      ctrl="0 2.7 -2.53  
+            0 2.7 -2.53  
+            0 2.7 -2.53  
+            0 2.7 -2.53 " />
+  </keyframe>
+
+</mujoco>

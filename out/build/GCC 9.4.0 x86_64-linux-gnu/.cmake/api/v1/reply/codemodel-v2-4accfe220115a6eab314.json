@@ -1,0 +1,254 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "sim_interface",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "sim_interface",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "third-party",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "third-party"
+				},
+				{
+					"build" : "my_lib",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "my_lib",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "my_lib_sim",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "my_lib_sim",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "my_wbc",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "my_wbc",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "user",
+					"childIndexes" : 
+					[
+						7,
+						8,
+						9
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "user"
+				},
+				{
+					"build" : "user/hardware",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 0,
+					"source" : "user/hardware",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "user/sim",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 0,
+					"source" : "user/sim",
+					"targetIndexes" : 
+					[
+						1,
+						3
+					]
+				},
+				{
+					"build" : "user/pin_text",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 0,
+					"source" : "user/pin_text",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					],
+					"name" : "my_dog",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 7,
+					"id" : "DOG::@f267a97ee4f47a789caf",
+					"jsonFile" : "target-DOG-Debug-4317e5358a4d4fef33a1.json",
+					"name" : "DOG",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "DOG_SIM::@8b90196172f1369cacce",
+					"jsonFile" : "target-DOG_SIM-Debug-f9373024bb943935d9bd.json",
+					"name" : "DOG_SIM",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "DOG_TEXT::@c242febbedc5cb9fc236",
+					"jsonFile" : "target-DOG_TEXT-Debug-cbb8357850cee8eff95b.json",
+					"name" : "DOG_TEXT",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "DOG_WBC::@8b90196172f1369cacce",
+					"jsonFile" : "target-DOG_WBC-Debug-0baa5d47a398ffc2f8d7.json",
+					"name" : "DOG_WBC",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "my_lib::@ab1e3d45447ab9a7bb2e",
+					"jsonFile" : "target-my_lib-Debug-b4ec0dc4cc86fe64229a.json",
+					"name" : "my_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "my_lib_sim::@35b0a73904788778ff85",
+					"jsonFile" : "target-my_lib_sim-Debug-72bccc0353f30b129066.json",
+					"name" : "my_lib_sim",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "my_sim::@9b8ebd6b3e0ff7185c51",
+					"jsonFile" : "target-my_sim-Debug-7749d33434cdcf89d40f.json",
+					"name" : "my_sim",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "my_wbc::@173e15070a293118060b",
+					"jsonFile" : "target-my_wbc-Debug-edc4a360d2df28f0412a.json",
+					"name" : "my_wbc",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu",
+		"source" : "/home/wu/my_dog_8"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}

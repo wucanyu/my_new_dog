@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="new_dog">
+  <link
+      name="base_link">
+      <inertial>
+        <origin xyz="0.0231 0 -0.0049"  rpy="0 0 0" />
+        <mass value="6.0" />
+        <inertia ixx="0.0076" ixy="0" ixz="0.0000" iyy="0.0133" iyz="0" izz="0.0185" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://new_dog/meshes/base_link.STL" />
+        </geometry>
+        <material name="a"><color rgba="0.75294 0.75294 0.75294 1" /></material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://new_dog/meshes/base_link.STL" />
+        </geometry>
+      </collision>
+  </link>
+  <!--  ————————————————————————腿1分割线——————————————————————————————  -->
+      <!--腿1 连杆1-->
+  <link name="leg1_link1">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <mass value="1.0316" />
+        <inertia
+          ixx="0.0006"
+          ixy="0.0003"
+          ixz="0"
+          iyy="0.0024"
+          iyz="0"
+          izz="0.0024" />
+      </inertial>
+      <visual>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg1_link1.STL" />
+        </geometry>
+        <material name="a"><color rgba="0.75294 0.75294 0.75294 1" /></material>
+      </visual>
+      <collision>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <!-- <box size="0.1 0.1 0.05"/> -->
+          <mesh
+            filename="package://new_dog/meshes/leg1_link1.STL" />
+        </geometry>
+      </collision>
+  </link>
+      <!--腿1 关节1-->
+  <joint
+      name="leg1_joint1"
+      type="revolute">
+      <origin
+        xyz="0.15 -0.069866 0.00048158"
+        rpy="0 0 0" />
+      <parent
+        link="base_link" />
+      <child
+        link="leg1_link1" />
+      <axis
+        xyz="1 0 0" />
+      <limit
+        lower="-3.1415"
+        upper="3.1415"
+        effort="19.94"
+        velocity="24.18" />
+  </joint>
+      <!--腿1 连杆2-->
+  <link
+      name="leg1_link2">
+      <inertial>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <mass
+          value="0.75" />
+        <inertia
+          ixx="0.0031"
+          ixy="0"
+          ixz="0"
+          iyy="0.0028"
+          iyz="0.0007"
+          izz="0.0007" />
+      </inertial>
+      <visual>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg1_link2.STL" />
+        </geometry>
+        <material name="a"><color rgba="0.75294 0.75294 0.75294 1" /></material>
+      </visual>
+      <collision>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg1_link2.STL" />
+        </geometry>
+      </collision>
+  </link>
+      <!--腿1 关节2-->
+  <joint
+      name="leg1_joint2"
+      type="revolute">
+      <origin
+        xyz="0.061332 -0.0002687 -0.00048158"
+        rpy="0 0 0" />
+      <parent
+        link="leg1_link1" />
+      <child
+        link="leg1_link2" />
+      <axis
+        xyz="0 1 0" />
+      <limit
+        lower="-3.1415"
+        upper="3.1415"
+        effort="19.94"
+        velocity="24.18" />
+  </joint>
+      <!--腿1 连杆3-->
+  <link
+      name="leg1_link3">
+      <inertial>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <mass
+          value="0.1931" />
+        <inertia ixx="0.00005" ixy="0.0" ixz="0.0" iyy="0.00002" iyz="0.0" izz="0.00005" />
+      </inertial>
+      <visual>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg1_link3.STL" />
+        </geometry>
+        <material name="a"><color rgba="0.75294 0.75294 0.75294 1" /></material>
+      </visual>
+      <collision>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg1_link3.STL" />
+        </geometry>
+      </collision>
+  </link>
+      <!--腿1 关节3-->
+  <joint
+      name="leg1_joint3"
+      type="revolute">
+      <origin
+        xyz="0 -0.096681 -0.23497"
+        rpy="0 0 0" />
+      <parent
+        link="leg1_link2" />
+      <child
+        link="leg1_link3" />
+      <axis
+        xyz="0 1 0" />
+      <limit
+        lower="-3.1415"
+        upper="3.1415"
+        effort="19.94"
+        velocity="24.18" />
+  </joint>
+      <!--腿1 连杆4-->
+  <link
+      name="leg1_link4">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <mass value="0.1117" />
+        <inertia
+          ixx="0.00001"
+          ixy="0"
+          ixz="0"
+          iyy="0.00001"
+          iyz="0"
+          izz="0.00001" />
+      </inertial>
+      <visual>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg1_link4.STL" />
+        </geometry>
+        <material name="a"><color rgba="0.75294 0.75294 0.75294 1" /></material>
+      </visual>
+      <collision>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg1_link4.STL" />
+        </geometry>
+      </collision>
+  </link>
+      <!--腿1 关节4-->
+  <joint
+      name="leg1_joint4"
+      type="fixed">
+      <origin
+        xyz="-0.00019719 0 -0.22142"
+        rpy="0 0 0" />
+      <parent
+        link="leg1_link3" />
+      <child
+        link="leg1_link4" />
+      <axis
+        xyz="0 0 1" />
+  </joint>
+  <!--  ————————————————————————腿2分割线——————————————————————————————  -->
+      <!--腿2 连杆1-->
+  <link
+      name="leg2_link1">
+      <inertial>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <mass
+          value="1.0316" />
+        <inertia
+          ixx="0.0006"
+          ixy="-0.0003"
+          ixz="0"
+          iyy="0.0024"
+          iyz="0"
+          izz="0.0024" />
+      </inertial>
+      <visual>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg2_link1.STL" />
+        </geometry>
+        <material name="a"><color rgba="0.75294 0.75294 0.75294 1" /></material>
+      </visual>
+      <collision>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg2_link1.STL" />
+        </geometry>
+      </collision>
+  </link>
+      <!--腿2 关节1-->
+  <joint
+      name="leg2_joint1"
+      type="revolute">
+      <origin
+        xyz="0.15 0.070134 0.00048158"
+        rpy="0 0 0" />
+      <parent
+        link="base_link" />
+      <child
+        link="leg2_link1" />
+      <axis
+        xyz="1 0 0" />
+      <limit
+        lower="-3.1415"
+        upper="3.1415"
+        effort="19.94"
+        velocity="24.18" />
+  </joint>
+      <!--腿2 连杆2-->
+  <link
+      name="leg2_link2">
+      <inertial>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <mass
+          value="0.75" />
+        <inertia
+          ixx="0.003"
+          ixy="0"
+          ixz="0"
+          iyy="0.0027"
+          iyz="-0.0007"
+          izz="0.0008" />
+      </inertial>
+      <visual>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg2_link2.STL" />
+        </geometry>
+        <material name="a"><color rgba="0.75294 0.75294 0.75294 1" /></material>
+      </visual>
+      <collision>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg2_link2.STL" />
+        </geometry>
+      </collision>
+  </link>
+      <!--腿2 关节2-->
+  <joint
+      name="leg2_joint2"
+      type="revolute">
+      <origin
+        xyz="0.061332 0 0"
+        rpy="0 0 0" />
+      <parent
+        link="leg2_link1" />
+      <child
+        link="leg2_link2" />
+      <axis
+        xyz="0 1 0" />
+      <limit
+        lower="-3.1415"
+        upper="3.1415"
+        effort="19.94"
+        velocity="24.18" />
+  </joint>
+      <!--腿2 连杆3-->
+  <link
+      name="leg2_link3">
+      <inertial>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <mass
+          value="0.1931" />
+        <inertia ixx="0.00005" ixy="0.0" ixz="0.0" iyy="0.00002" iyz="0.0" izz="0.00005" />
+      </inertial>
+      <visual>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg2_link3.STL" />
+        </geometry>
+        <material name="a"><color rgba="0.75294 0.75294 0.75294 1" /></material>
+      </visual>
+      <collision>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg2_link3.STL" />
+        </geometry>
+      </collision>
+  </link>
+      <!--腿2 关节3-->
+  <joint
+      name="leg2_joint3"
+      type="revolute">
+      <origin
+        xyz="0 0.096681 -0.23546"
+        rpy="0 0 0" />
+      <parent
+        link="leg2_link2" />
+      <child
+        link="leg2_link3" />
+      <axis
+        xyz="0 1 0" />
+      <limit
+        lower="-3.1415"
+        upper="3.1415"
+        effort="19.94"
+        velocity="24.18" />
+  </joint>
+      <!--腿2 连杆4-->
+  <link
+      name="leg2_link4">
+      <inertial>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <mass
+          value="0.1117" />
+        <inertia
+          ixx="0.00001"
+          ixy="0"
+          ixz="0"
+          iyy="0.00001"
+          iyz="0"
+          izz="0.00001" />
+      </inertial>
+      <visual>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg2_link4.STL" />
+        </geometry>
+        <material name="a"><color rgba="0.75294 0.75294 0.75294 1" /></material>
+      </visual>
+      <collision>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg2_link4.STL" />
+        </geometry>
+      </collision>
+  </link>
+      <!--腿2 关节4-->
+  <joint
+      name="leg2_joint4"
+      type="fixed">
+      <origin
+        xyz="-0.00019719 0 -0.22142"
+        rpy="0 0 0" />
+      <parent
+        link="leg2_link3" />
+      <child
+        link="leg2_link4" />
+      <axis
+        xyz="0 0 1" />
+  </joint>
+  <!--  ————————————————————————腿3分割线——————————————————————————————  -->
+      <!--腿3 连杆1-->
+  <link
+      name="leg3_link1">
+      <inertial>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <mass
+          value="1.0316" />
+        <inertia
+          ixx="0.0006"
+          ixy="-0.0003"
+          ixz="0"
+          iyy="0.0024"
+          iyz="0"
+          izz="0.0024" />
+      </inertial>
+      <visual>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg3_link1.STL" />
+        </geometry>
+        <material name="a"><color rgba="0.75294 0.75294 0.75294 1" /></material>
+      </visual>
+      <collision>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg3_link1.STL" />
+        </geometry>
+      </collision>
+  </link>
+      <!--腿3 关节1-->
+  <joint
+      name="leg3_joint1"
+      type="revolute">
+      <origin
+        xyz="-0.15 -0.06981 0.00034723"
+        rpy="0 0 0" />
+      <parent
+        link="base_link" />
+      <child
+        link="leg3_link1" />
+      <axis
+        xyz="1 0 0" />
+      <limit
+        lower="-3.1415"
+        upper="3.1415"
+        effort="19.94"
+        velocity="24.18" />
+  </joint>
+      <!--腿3 连杆2-->
+  <link
+      name="leg3_link2">
+      <inertial>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <mass
+          value="0.75" />
+        <inertia
+          ixx="0.0031"
+          ixy="0"
+          ixz="0"
+          iyy="0.0028"
+          iyz="0.0007"
+          izz="0.0007" />
+      </inertial>
+      <visual>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg3_link2.STL" />
+        </geometry>
+        <material name="a"><color rgba="0.75294 0.75294 0.75294 1" /></material>
+      </visual>
+      <collision>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg3_link2.STL" />
+        </geometry>
+      </collision>
+  </link>
+      <!--腿3 关节2-->
+  <joint
+      name="leg3_joint2"
+      type="revolute">
+      <origin
+        xyz="-0.061332 -0.00032435 -0.00034723"
+        rpy="0 0 0" />
+      <parent
+        link="leg3_link1" />
+      <child
+        link="leg3_link2" />
+      <axis
+        xyz="0 1 0" />
+      <limit
+        lower="-3.1415"
+        upper="3.1415"
+        effort="19.94"
+        velocity="24.18" />
+  </joint>
+      <!--腿3 连杆3-->
+  <link
+      name="leg3_link3">
+      <inertial>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <mass
+          value="0.1931" />
+        <inertia ixx="0.00005" ixy="0.0" ixz="0.0" iyy="0.00002" iyz="0.0" izz="0.00005" />
+      </inertial>
+      <visual>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg3_link3.STL" />
+        </geometry>
+        <material name="a"><color rgba="0.75294 0.75294 0.75294 1" /></material>
+      </visual>
+      <collision>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg3_link3.STL" />
+        </geometry>
+      </collision>
+  </link>
+      <!--腿3 关节3-->
+  <joint
+      name="leg3_joint3"
+      type="revolute">
+      <origin
+        xyz="0 -0.096681 -0.23497"
+        rpy="0 0 0" />
+      <parent
+        link="leg3_link2" />
+      <child
+        link="leg3_link3" />
+      <axis
+        xyz="0 1 0" />
+      <limit
+        lower="-3.1415"
+        upper="3.1415"
+        effort="19.94"
+        velocity="24.18" />
+  </joint>
+      <!--腿3 连杆4-->
+  <link
+      name="leg3_link4">
+      <inertial>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <mass
+          value="0.1117" />
+        <inertia
+          ixx="0.00001"
+          ixy="0"
+          ixz="0"
+          iyy="0.00001"
+          iyz="0"
+          izz="0.00001" />
+      </inertial>
+      <visual>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg3_link4.STL" />
+        </geometry>
+        <material name="a"><color rgba="0.75294 0.75294 0.75294 1" /></material>
+      </visual>
+      <collision>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg3_link4.STL" />
+        </geometry>
+      </collision>
+  </link>
+      <!--腿3 关节4-->
+  <joint
+      name="leg3_joint4"
+      type="fixed">
+      <origin
+        xyz="0.00019719 0 -0.22142"
+        rpy="0 0 0" />
+      <parent
+        link="leg3_link3" />
+      <child
+        link="leg3_link4" />
+      <axis
+        xyz="0 0 1" />
+  </joint>
+
+  <!--  ————————————————————————腿4分割线——————————————————————————————  -->
+      <!--腿4 连杆1-->
+  <link
+      name="leg4_link1">
+      <inertial>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <mass
+          value="1.0316" />
+        <inertia
+          ixx="0.0006"
+          ixy="0.0003"
+          ixz="0"
+          iyy="0.0024"
+          iyz="0"
+          izz="0.0024" />
+      </inertial>
+      <visual>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg4_link1.STL" />
+        </geometry>
+        <material name="a"><color rgba="0.75294 0.75294 0.75294 1" /></material>
+      </visual>
+      <collision>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg4_link1.STL" />
+        </geometry>
+      </collision>
+  </link>
+      <!--腿4 关节1-->
+  <joint
+      name="leg4_joint1"
+      type="revolute">
+      <origin
+        xyz="-0.15 0.07019 0.00034723"
+        rpy="0 0 0" />
+      <parent
+        link="base_link" />
+      <child
+        link="leg4_link1" />
+      <axis
+        xyz="1 0 0" />
+      <limit
+        lower="-3.1415"
+        upper="3.1415"
+        effort="19.94"
+        velocity="24.18" />
+  </joint>
+      <!--腿4 连杆2-->
+  <link
+      name="leg4_link2">
+      <inertial>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <mass
+          value="0.75" />
+        <inertia
+          ixx="0.0031"
+          ixy="0"
+          ixz="0"
+          iyy="0.0028"
+          iyz="-0.0007"
+          izz="0.0007" />
+      </inertial>
+      <visual>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg4_link2.STL" />
+        </geometry>
+        <material name="a"><color rgba="0.75294 0.75294 0.75294 1" /></material>
+      </visual>
+      <collision>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg4_link2.STL" />
+        </geometry>
+      </collision>
+  </link>
+      <!--腿4 关节2-->
+  <joint
+      name="leg4_joint2"
+      type="revolute">
+      <origin
+        xyz="-0.061332 -5.5649E-05 -0.00034723"
+        rpy="0 0 0" />
+      <parent
+        link="leg4_link1" />
+      <child
+        link="leg4_link2" />
+      <axis
+        xyz="0 1 0" />
+      <limit
+        lower="-3.1415"
+        upper="3.1415"
+        effort="19.94"
+        velocity="24.18" />
+  </joint>
+      <!--腿4 连杆3-->
+  <link
+      name="leg4_link3">
+      <inertial>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <mass
+          value="0.1931" />
+        <inertia ixx="0.00005" ixy="0.0" ixz="0.0" iyy="0.00002" iyz="0.0" izz="0.00005" />
+      </inertial>
+      <visual>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg4_link3.STL" />
+        </geometry>
+        <material name="a"><color rgba="0.75294 0.75294 0.75294 1" /></material>
+      </visual>
+      <collision>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg4_link3.STL" />
+        </geometry>
+      </collision>
+  </link>
+      <!--腿4 关节3-->
+  <joint
+      name="leg4_joint3"
+      type="revolute">
+      <origin
+        xyz="0 0.096681 -0.23497"
+        rpy="0 0 0" />
+      <parent
+        link="leg4_link2" />
+      <child
+        link="leg4_link3" />
+      <axis
+        xyz="0 1 0" />
+      <limit
+        lower="-3.1415"
+        upper="3.1415"
+        effort="19.94"
+        velocity="24.18" />
+  </joint>
+      <!--腿4 连杆4-->
+  <link
+      name="leg4_link4">
+      <inertial>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <mass
+          value="0.1117" />
+        <inertia
+          ixx="0.00001"
+          ixy="0"
+          ixz="0"
+          iyy="0.00001"
+          iyz="0"
+          izz="0.00001" />
+      </inertial>
+      <visual>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg4_link4.STL" />
+        </geometry>
+        <material name="a"><color rgba="0.75294 0.75294 0.75294 1" /></material>
+      </visual>
+      <collision>
+        <origin
+          xyz="0 0 0"
+          rpy="0 0 0" />
+        <geometry>
+          <mesh
+            filename="package://new_dog/meshes/leg4_link4.STL" />
+        </geometry>
+      </collision>
+  </link>
+      <!--腿4 关节4-->
+  <joint
+      name="leg4_joint4"
+      type="fixed">
+      <origin
+        xyz="0.00019719 0 -0.22142"
+        rpy="0 0 0" />
+      <parent
+        link="leg4_link3" />
+      <child
+        link="leg4_link4" />
+      <axis
+        xyz="0 0 1" />
+  </joint>
+
+
+</robot>

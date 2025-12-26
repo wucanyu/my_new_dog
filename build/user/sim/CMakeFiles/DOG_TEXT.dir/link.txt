@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/DOG_TEXT.dir/src/dog_sim.cpp.o -o DOG_TEXT   -L/usr/local/include/eigen3  -L/usr/local/include/osqp  -L/usr/local/include/OsqpEigen  -L/home/wu/my_dog_8/user/sim/../../third-party/glfw/lin_x64  -L/home/wu/my_dog_8/user/sim/../../third-party/mujoco/lin_x64 

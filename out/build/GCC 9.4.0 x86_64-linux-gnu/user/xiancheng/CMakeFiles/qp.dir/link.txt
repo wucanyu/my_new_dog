@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/qp.dir/main.cpp.o -o qp  -lqpOASES -lpthread 

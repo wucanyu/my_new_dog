@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmy_filter.a CMakeFiles/my_filter.dir/src/BasicEKF.cpp.o CMakeFiles/my_filter.dir/src/ConvexMpc.cpp.o CMakeFiles/my_filter.dir/src/RobotControl.cpp.o CMakeFiles/my_filter.dir/src/Utils.cpp.o CMakeFiles/my_filter.dir/src/my_usb.cpp.o CMakeFiles/my_filter.dir/src/pid.cpp.o
+/usr/bin/ranlib libmy_filter.a

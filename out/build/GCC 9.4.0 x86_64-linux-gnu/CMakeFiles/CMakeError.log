@@ -1,0 +1,431 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_658e5/fast && /usr/bin/make  -f CMakeFiles/cmTC_658e5.dir/build.make CMakeFiles/cmTC_658e5.dir/build
+make[1]: 进入目录“/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_658e5.dir/src.c.o
+/usr/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_658e5.dir/src.c.o -c "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_658e5
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_658e5.dir/link.txt --verbose=1
+/usr/bin/gcc CMakeFiles/cmTC_658e5.dir/src.c.o -o cmTC_658e5 
+/usr/bin/ld: CMakeFiles/cmTC_658e5.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_658e5.dir/build.make:99：cmTC_658e5] 错误 1
+make[1]: 离开目录“/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp”
+make: *** [Makefile:127：cmTC_658e5/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f4084/fast && /usr/bin/make  -f CMakeFiles/cmTC_f4084.dir/build.make CMakeFiles/cmTC_f4084.dir/build
+make[1]: 进入目录“/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_f4084.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_f4084.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.20/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f4084
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4084.dir/link.txt --verbose=1
+/usr/bin/gcc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_f4084.dir/CheckFunctionExists.c.o -o cmTC_f4084  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_f4084.dir/build.make:99：cmTC_f4084] 错误 1
+make[1]: 离开目录“/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp”
+make: *** [Makefile:127：cmTC_f4084/fast] 错误 2
+
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot open output file a.out: 没有那个文件或目录
+collect2: error: ld returned 1 exit status
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c63d8/fast && /usr/bin/make  -f CMakeFiles/cmTC_c63d8.dir/build.make CMakeFiles/cmTC_c63d8.dir/build
+make[1]: Entering directory '/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp'
+make[1]: CMakeFiles/cmTC_c63d8.dir/build.make: No such file or directory
+make[1]: *** No rule to make target 'CMakeFiles/cmTC_c63d8.dir/build.make'.  Stop.
+make[1]: Leaving directory '/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_c63d8/fast] Error 2
+
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cf956/fast && make: *** No rule to make target 'cmTC_cf956/fast'.  Stop.
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cfd6e/fast && make: *** 没有规则可制作目标“cmTC_cfd6e/fast”。 停止。
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_0b7f1/fast && /usr/bin/make  -f CMakeFiles/cmTC_0b7f1.dir/build.make CMakeFiles/cmTC_0b7f1.dir/build
+make[1]: 进入目录“/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp”
+make[1]: *** 没有规则可制作目标“testCCompiler.c”，由“CMakeFiles/cmTC_0b7f1.dir/testCCompiler.c.o” 需求。 停止。
+make[1]: 离开目录“/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp”
+make: *** [Makefile:127：cmTC_0b7f1/fast] 错误 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+cc1: fatal error: CMakeCCompilerId.c: 没有那个文件或目录
+compilation terminated.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot open output file a.out: 没有那个文件或目录
+collect2: error: ld returned 1 exit status
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot open output file a.out: 没有那个文件或目录
+collect2: error: ld returned 1 exit status
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot open output file a.out: 没有那个文件或目录
+collect2: error: ld returned 1 exit status
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+g++: error: CMakeCXXCompilerId.cpp: 没有那个文件或目录
+g++: fatal error: no input files
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+g++: error: unrecognized command line option ‘--c++’
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+g++: error: unrecognized command line option ‘--ec++’; did you mean ‘-Weffc++’?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+g++: warning: ‘-mcpu=’ is deprecated; use ‘-mtune=’ or ‘-march=’ instead
+g++: error: unrecognized command line option ‘--target=arm-arm-none-eabi’
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+Assembler messages:
+致命错误： can't create CMakeCXXCompilerId.o: 没有那个文件或目录
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+g++: error: unrecognized command line option ‘--c++’
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+g++: error: unrecognized command line option ‘--ec++’; did you mean ‘-Weffc++’?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+g++: warning: ‘-mcpu=’ is deprecated; use ‘-mtune=’ or ‘-march=’ instead
+g++: error: unrecognized command line option ‘--target=arm-arm-none-eabi’
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot open output file a.out: 没有那个文件或目录
+collect2: error: ld returned 1 exit status
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot open output file a.out: 没有那个文件或目录
+collect2: error: ld returned 1 exit status
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+Assembler messages:
+致命错误： can't create CMakeCXXCompilerId.o: 没有那个文件或目录
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+g++: error: unrecognized command line option ‘--c++’
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+cc1plus: fatal error: CMakeCXXCompilerId.cpp: 没有那个文件或目录
+compilation terminated.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+g++: error: unrecognized command line option ‘--ec++’; did you mean ‘-Weffc++’?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+g++: warning: ‘-mcpu=’ is deprecated; use ‘-mtune=’ or ‘-march=’ instead
+g++: error: unrecognized command line option ‘--target=arm-arm-none-eabi’
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+g++: fatal error: no input files
+compilation terminated.
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+g++: fatal error: no input files
+compilation terminated.
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+g++: error: unrecognized command line option ‘--c++’
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+g++: error: unrecognized command line option ‘--ec++’; did you mean ‘-Weffc++’?
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+g++: warning: ‘-mcpu=’ is deprecated; use ‘-mtune=’ or ‘-march=’ instead
+g++: error: unrecognized command line option ‘--target=arm-arm-none-eabi’
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+g++: fatal error: no input files
+compilation terminated.
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+g++: fatal error: no input files
+compilation terminated.
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5d211/fast && /usr/bin/make  -f CMakeFiles/cmTC_5d211.dir/build.make CMakeFiles/cmTC_5d211.dir/build
+make[1]: Entering directory '/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5d211.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/g++    -o CMakeFiles/cmTC_5d211.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.20/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_5d211
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d211.dir/link.txt --verbose=1
+/usr/bin/g++ CMakeFiles/cmTC_5d211.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_5d211 
+make[1]: Leaving directory '/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp'
+
+
+Cannot copy output executable
+  ''
+to destination specified by COPY_FILE:
+  '/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/3.20.6/CMakeDetermineCompilerABI_CXX.bin'
+Unable to find the executable at any of:
+  /home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp/cmTC_5d211
+  /home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp/Debug/cmTC_5d211
+  /home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp/Development/cmTC_5d211
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot open output file a.out: 没有那个文件或目录
+collect2: error: ld returned 1 exit status
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_72528/fast && make: *** No rule to make target 'cmTC_72528/fast'.  Stop.
+
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cfcc9/fast && /usr/bin/make  -f CMakeFiles/cmTC_cfcc9.dir/build.make CMakeFiles/cmTC_cfcc9.dir/build
+make[1]: Entering directory '/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp'
+make[1]: CMakeFiles/cmTC_cfcc9.dir/build.make: No such file or directory
+make[1]: *** No rule to make target 'CMakeFiles/cmTC_cfcc9.dir/build.make'.  Stop.
+make[1]: Leaving directory '/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_cfcc9/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c3ea7/fast && /usr/bin/make  -f CMakeFiles/cmTC_c3ea7.dir/build.make CMakeFiles/cmTC_c3ea7.dir/build
+make[1]: 进入目录“/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp”
+make[1]: CMakeFiles/cmTC_c3ea7.dir/build.make: 没有那个文件或目录
+make[1]: *** 没有规则可制作目标“CMakeFiles/cmTC_c3ea7.dir/build.make”。 停止。
+make[1]: 离开目录“/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp”
+make: *** [Makefile:127：cmTC_c3ea7/fast] 错误 2
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d3a2c/fast && make: *** 没有规则可制作目标“cmTC_d3a2c/fast”。 停止。
+
+
+
