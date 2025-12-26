@@ -1,6 +1,7 @@
 my_lib/CMakeFiles/my_lib.dir/src/RobotControl.cpp.o: \
- /home/wu/my_dog_8/my_lib/src/RobotControl.cpp /usr/include/stdc-predef.h \
- /home/wu/my_dog_8/my_lib/./include/RobotControl.h \
+ /home/wu/my_new_dog/my_lib/src/RobotControl.cpp \
+ /usr/include/stdc-predef.h \
+ /home/wu/my_new_dog/my_lib/./include/RobotControl.h \
  /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -486,20 +487,20 @@ my_lib/CMakeFiles/my_lib.dir/src/RobotControl.cpp.o: \
  /home/wu/osqp/include/types.h /home/wu/osqp/include/scaling.h \
  /home/wu/osqp/include/lin_alg.h /home/wu/osqp/include/constants.h \
  /usr/local/include/OsqpEigen/Debug.hpp \
- /home/wu/my_dog_8/my_lib/../third-party/eigen3/Eigen/Dense \
- /home/wu/my_dog_8/my_lib/../third-party/eigen3/Eigen/Core \
- /home/wu/my_dog_8/my_lib/../third-party/eigen3/Eigen/LU \
- /home/wu/my_dog_8/my_lib/../third-party/eigen3/Eigen/Cholesky \
- /home/wu/my_dog_8/my_lib/../third-party/eigen3/Eigen/QR \
- /home/wu/my_dog_8/my_lib/../third-party/eigen3/Eigen/SVD \
- /home/wu/my_dog_8/my_lib/../third-party/eigen3/Eigen/Geometry \
- /home/wu/my_dog_8/my_lib/../third-party/eigen3/Eigen/Eigenvalues \
- /home/wu/my_dog_8/my_lib/./include/base_struct.h \
- /home/wu/my_dog_8/my_lib/./include/CtrlStates.h \
- /home/wu/my_dog_8/my_lib/./include/mid_data.h \
- /home/wu/my_dog_8/my_lib/./include/pid.h \
- /home/wu/my_dog_8/my_lib/./include/Utils.h \
- /home/wu/my_dog_8/my_lib/./include/ConvexMpc.h \
- /home/wu/my_dog_8/my_lib/../third-party/eigen3/Eigen/Eigenvalues \
- /home/wu/my_dog_8/my_lib/./include/filter.h /usr/include/c++/9/deque \
+ /home/wu/my_new_dog/my_lib/../third-party/eigen3/Eigen/Dense \
+ /home/wu/my_new_dog/my_lib/../third-party/eigen3/Eigen/Core \
+ /home/wu/my_new_dog/my_lib/../third-party/eigen3/Eigen/LU \
+ /home/wu/my_new_dog/my_lib/../third-party/eigen3/Eigen/Cholesky \
+ /home/wu/my_new_dog/my_lib/../third-party/eigen3/Eigen/QR \
+ /home/wu/my_new_dog/my_lib/../third-party/eigen3/Eigen/SVD \
+ /home/wu/my_new_dog/my_lib/../third-party/eigen3/Eigen/Geometry \
+ /home/wu/my_new_dog/my_lib/../third-party/eigen3/Eigen/Eigenvalues \
+ /home/wu/my_new_dog/my_lib/./include/base_struct.h \
+ /home/wu/my_new_dog/my_lib/./include/CtrlStates.h \
+ /home/wu/my_new_dog/my_lib/./include/mid_data.h \
+ /home/wu/my_new_dog/my_lib/./include/pid.h \
+ /home/wu/my_new_dog/my_lib/./include/Utils.h \
+ /home/wu/my_new_dog/my_lib/./include/ConvexMpc.h \
+ /home/wu/my_new_dog/my_lib/../third-party/eigen3/Eigen/Eigenvalues \
+ /home/wu/my_new_dog/my_lib/./include/filter.h /usr/include/c++/9/deque \
  /usr/include/c++/9/bits/stl_deque.h /usr/include/c++/9/bits/deque.tcc

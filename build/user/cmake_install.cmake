@@ -1,4 +1,4 @@
-# Install script for directory: /home/wu/my_dog_8/user
+# Install script for directory: /home/wu/my_new_dog/user
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,9 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/wu/my_dog_8/build/user/hardware/cmake_install.cmake")
-  include("/home/wu/my_dog_8/build/user/sim/cmake_install.cmake")
-  include("/home/wu/my_dog_8/build/user/pin_text/cmake_install.cmake")
+  include("/home/wu/my_new_dog/build/user/hardware/cmake_install.cmake")
+  include("/home/wu/my_new_dog/build/user/sim/cmake_install.cmake")
 
 endif()
 

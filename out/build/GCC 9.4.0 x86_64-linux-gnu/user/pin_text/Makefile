@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wu/my_dog_8
+CMAKE_SOURCE_DIR = /home/wu/my_new_dog
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu"
+CMAKE_BINARY_DIR = "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles" "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/user/pin_text//CMakeFiles/progress.marks"
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/pin_text/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles" 0
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles" "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/user/pin_text//CMakeFiles/progress.marks"
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/pin_text/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/pin_text/clean
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/pin_text/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/pin_text/preinstall
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/pin_text/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/pin_text/preinstall
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/pin_text/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 user/pin_text/CMakeFiles/DOG_TEXT.dir/rule:
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/pin_text/CMakeFiles/DOG_TEXT.dir/rule
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/pin_text/CMakeFiles/DOG_TEXT.dir/rule
 .PHONY : user/pin_text/CMakeFiles/DOG_TEXT.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ DOG_TEXT: user/pin_text/CMakeFiles/DOG_TEXT.dir/rule
 
 # fast build rule for target.
 DOG_TEXT/fast:
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f user/pin_text/CMakeFiles/DOG_TEXT.dir/build.make user/pin_text/CMakeFiles/DOG_TEXT.dir/build
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f user/pin_text/CMakeFiles/DOG_TEXT.dir/build.make user/pin_text/CMakeFiles/DOG_TEXT.dir/build
 .PHONY : DOG_TEXT/fast
 
 src/pin.o: src/pin.cpp.o
@@ -135,7 +135,7 @@ src/pin.o: src/pin.cpp.o
 
 # target to build an object file
 src/pin.cpp.o:
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f user/pin_text/CMakeFiles/DOG_TEXT.dir/build.make user/pin_text/CMakeFiles/DOG_TEXT.dir/src/pin.cpp.o
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f user/pin_text/CMakeFiles/DOG_TEXT.dir/build.make user/pin_text/CMakeFiles/DOG_TEXT.dir/src/pin.cpp.o
 .PHONY : src/pin.cpp.o
 
 src/pin.i: src/pin.cpp.i
@@ -143,7 +143,7 @@ src/pin.i: src/pin.cpp.i
 
 # target to preprocess a source file
 src/pin.cpp.i:
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f user/pin_text/CMakeFiles/DOG_TEXT.dir/build.make user/pin_text/CMakeFiles/DOG_TEXT.dir/src/pin.cpp.i
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f user/pin_text/CMakeFiles/DOG_TEXT.dir/build.make user/pin_text/CMakeFiles/DOG_TEXT.dir/src/pin.cpp.i
 .PHONY : src/pin.cpp.i
 
 src/pin.s: src/pin.cpp.s
@@ -151,7 +151,7 @@ src/pin.s: src/pin.cpp.s
 
 # target to generate assembly for a file
 src/pin.cpp.s:
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f user/pin_text/CMakeFiles/DOG_TEXT.dir/build.make user/pin_text/CMakeFiles/DOG_TEXT.dir/src/pin.cpp.s
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f user/pin_text/CMakeFiles/DOG_TEXT.dir/build.make user/pin_text/CMakeFiles/DOG_TEXT.dir/src/pin.cpp.s
 .PHONY : src/pin.cpp.s
 
 # Help Target
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

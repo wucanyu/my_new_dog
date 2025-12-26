@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wu/my_dog_8
+CMAKE_SOURCE_DIR = /home/wu/my_new_dog
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wu/my_dog_8/build
+CMAKE_BINARY_DIR = /home/wu/my_new_dog/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/wu/my_dog_8/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/wu/my_dog_8/build/CMakeFiles /home/wu/my_dog_8/build/user//CMakeFiles/progress.marks
-	cd /home/wu/my_dog_8/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wu/my_dog_8/build/CMakeFiles 0
+	cd /home/wu/my_new_dog/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/wu/my_new_dog/build/CMakeFiles /home/wu/my_new_dog/build/user//CMakeFiles/progress.marks
+	cd /home/wu/my_new_dog/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wu/my_new_dog/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/wu/my_dog_8/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/clean
+	cd /home/wu/my_new_dog/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,17 +103,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/wu/my_dog_8/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/preinstall
+	cd /home/wu/my_new_dog/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/wu/my_dog_8/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/preinstall
+	cd /home/wu/my_new_dog/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/wu/my_dog_8/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/wu/my_new_dog/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -135,6 +135,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/wu/my_dog_8/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/wu/my_new_dog/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

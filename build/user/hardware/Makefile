@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wu/my_dog_8
+CMAKE_SOURCE_DIR = /home/wu/my_new_dog
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wu/my_dog_8/build
+CMAKE_BINARY_DIR = /home/wu/my_new_dog/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/wu/my_dog_8/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/wu/my_dog_8/build/CMakeFiles /home/wu/my_dog_8/build/user/hardware//CMakeFiles/progress.marks
-	cd /home/wu/my_dog_8/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/hardware/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wu/my_dog_8/build/CMakeFiles 0
+	cd /home/wu/my_new_dog/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/wu/my_new_dog/build/CMakeFiles /home/wu/my_new_dog/build/user/hardware//CMakeFiles/progress.marks
+	cd /home/wu/my_new_dog/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/hardware/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wu/my_new_dog/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/wu/my_dog_8/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/hardware/clean
+	cd /home/wu/my_new_dog/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/hardware/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/wu/my_dog_8/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/hardware/preinstall
+	cd /home/wu/my_new_dog/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/hardware/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/wu/my_dog_8/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/hardware/preinstall
+	cd /home/wu/my_new_dog/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/hardware/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/wu/my_dog_8/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/wu/my_new_dog/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 user/hardware/CMakeFiles/DOG.dir/rule:
-	cd /home/wu/my_dog_8/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/hardware/CMakeFiles/DOG.dir/rule
+	cd /home/wu/my_new_dog/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/hardware/CMakeFiles/DOG.dir/rule
 .PHONY : user/hardware/CMakeFiles/DOG.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ DOG: user/hardware/CMakeFiles/DOG.dir/rule
 
 # fast build rule for target.
 DOG/fast:
-	cd /home/wu/my_dog_8/build && $(MAKE) $(MAKESILENT) -f user/hardware/CMakeFiles/DOG.dir/build.make user/hardware/CMakeFiles/DOG.dir/build
+	cd /home/wu/my_new_dog/build && $(MAKE) $(MAKESILENT) -f user/hardware/CMakeFiles/DOG.dir/build.make user/hardware/CMakeFiles/DOG.dir/build
 .PHONY : DOG/fast
 
 src/dog_hardware.o: src/dog_hardware.cpp.o
@@ -135,7 +135,7 @@ src/dog_hardware.o: src/dog_hardware.cpp.o
 
 # target to build an object file
 src/dog_hardware.cpp.o:
-	cd /home/wu/my_dog_8/build && $(MAKE) $(MAKESILENT) -f user/hardware/CMakeFiles/DOG.dir/build.make user/hardware/CMakeFiles/DOG.dir/src/dog_hardware.cpp.o
+	cd /home/wu/my_new_dog/build && $(MAKE) $(MAKESILENT) -f user/hardware/CMakeFiles/DOG.dir/build.make user/hardware/CMakeFiles/DOG.dir/src/dog_hardware.cpp.o
 .PHONY : src/dog_hardware.cpp.o
 
 src/dog_hardware.i: src/dog_hardware.cpp.i
@@ -143,7 +143,7 @@ src/dog_hardware.i: src/dog_hardware.cpp.i
 
 # target to preprocess a source file
 src/dog_hardware.cpp.i:
-	cd /home/wu/my_dog_8/build && $(MAKE) $(MAKESILENT) -f user/hardware/CMakeFiles/DOG.dir/build.make user/hardware/CMakeFiles/DOG.dir/src/dog_hardware.cpp.i
+	cd /home/wu/my_new_dog/build && $(MAKE) $(MAKESILENT) -f user/hardware/CMakeFiles/DOG.dir/build.make user/hardware/CMakeFiles/DOG.dir/src/dog_hardware.cpp.i
 .PHONY : src/dog_hardware.cpp.i
 
 src/dog_hardware.s: src/dog_hardware.cpp.s
@@ -151,7 +151,7 @@ src/dog_hardware.s: src/dog_hardware.cpp.s
 
 # target to generate assembly for a file
 src/dog_hardware.cpp.s:
-	cd /home/wu/my_dog_8/build && $(MAKE) $(MAKESILENT) -f user/hardware/CMakeFiles/DOG.dir/build.make user/hardware/CMakeFiles/DOG.dir/src/dog_hardware.cpp.s
+	cd /home/wu/my_new_dog/build && $(MAKE) $(MAKESILENT) -f user/hardware/CMakeFiles/DOG.dir/build.make user/hardware/CMakeFiles/DOG.dir/src/dog_hardware.cpp.s
 .PHONY : src/dog_hardware.cpp.s
 
 # Help Target
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/wu/my_dog_8/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/wu/my_new_dog/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

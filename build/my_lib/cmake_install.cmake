@@ -1,4 +1,4 @@
-# Install script for directory: /home/wu/my_dog_8/my_lib
+# Install script for directory: /home/wu/my_new_dog/my_lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

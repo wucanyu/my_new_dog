@@ -18,7 +18,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../third-party/CMakeLists.txt"
   "../user/CMakeLists.txt"
   "../user/hardware/CMakeLists.txt"
-  "../user/pin_text/CMakeLists.txt"
   "../user/sim/CMakeLists.txt"
   "/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfigVersion.cmake"
@@ -72,7 +71,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "user/CMakeFiles/CMakeDirectoryInformation.cmake"
   "user/hardware/CMakeFiles/CMakeDirectoryInformation.cmake"
   "user/sim/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "user/pin_text/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -84,5 +82,4 @@ set(CMAKE_DEPEND_INFO_FILES
   "user/hardware/CMakeFiles/DOG.dir/DependInfo.cmake"
   "user/sim/CMakeFiles/DOG_WBC.dir/DependInfo.cmake"
   "user/sim/CMakeFiles/DOG_SIM.dir/DependInfo.cmake"
-  "user/pin_text/CMakeFiles/DOG_TEXT.dir/DependInfo.cmake"
   )

@@ -1,9 +1,9 @@
 sim_interface/CMakeFiles/my_sim.dir/src/GLFW_callbacks.cpp.o: \
- /home/wu/my_dog_8/sim_interface/src/GLFW_callbacks.cpp \
+ /home/wu/my_new_dog/sim_interface/src/GLFW_callbacks.cpp \
  /usr/include/stdc-predef.h \
- /home/wu/my_dog_8/sim_interface/../sim_interface/include/GLFW_callbacks.h \
- /home/wu/my_dog_8/sim_interface/../third-party/mujoco/mujoco/mujoco.h \
- /home/wu/my_dog_8/sim_interface/../third-party/mujoco/mujoco/mjexport.h \
+ /home/wu/my_new_dog/sim_interface/../sim_interface/include/GLFW_callbacks.h \
+ /home/wu/my_new_dog/sim_interface/../third-party/mujoco/mujoco/mujoco.h \
+ /home/wu/my_new_dog/sim_interface/../third-party/mujoco/mujoco/mjexport.h \
  /usr/include/c++/9/stdlib.h /usr/include/c++/9/cstdlib \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -84,19 +84,19 @@ sim_interface/CMakeFiles/my_sim.dir/src/GLFW_callbacks.cpp.o: \
  /usr/include/c++/9/tr1/poly_hermite.tcc \
  /usr/include/c++/9/tr1/poly_laguerre.tcc \
  /usr/include/c++/9/tr1/riemann_zeta.tcc \
- /home/wu/my_dog_8/sim_interface/../third-party/mujoco/mujoco/mjdata.h \
+ /home/wu/my_new_dog/sim_interface/../third-party/mujoco/mujoco/mjdata.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/wu/my_dog_8/sim_interface/../third-party/mujoco/mujoco/mjtnum.h \
- /home/wu/my_dog_8/sim_interface/../third-party/mujoco/mujoco/mjmodel.h \
- /home/wu/my_dog_8/sim_interface/../third-party/mujoco/mujoco/mjthread.h \
- /home/wu/my_dog_8/sim_interface/../third-party/mujoco/mujoco/mjmacro.h \
- /home/wu/my_dog_8/sim_interface/../third-party/mujoco/mujoco/mjplugin.h \
- /home/wu/my_dog_8/sim_interface/../third-party/mujoco/mujoco/mjvisualize.h \
- /home/wu/my_dog_8/sim_interface/../third-party/mujoco/mujoco/mjrender.h \
- /home/wu/my_dog_8/sim_interface/../third-party/mujoco/mujoco/mjui.h \
- /home/wu/my_dog_8/sim_interface/../third-party/glfw/GLFW/glfw3.h \
+ /home/wu/my_new_dog/sim_interface/../third-party/mujoco/mujoco/mjtnum.h \
+ /home/wu/my_new_dog/sim_interface/../third-party/mujoco/mujoco/mjmodel.h \
+ /home/wu/my_new_dog/sim_interface/../third-party/mujoco/mujoco/mjthread.h \
+ /home/wu/my_new_dog/sim_interface/../third-party/mujoco/mujoco/mjmacro.h \
+ /home/wu/my_new_dog/sim_interface/../third-party/mujoco/mujoco/mjplugin.h \
+ /home/wu/my_new_dog/sim_interface/../third-party/mujoco/mujoco/mjvisualize.h \
+ /home/wu/my_new_dog/sim_interface/../third-party/mujoco/mujoco/mjrender.h \
+ /home/wu/my_new_dog/sim_interface/../third-party/mujoco/mujoco/mjui.h \
+ /home/wu/my_new_dog/sim_interface/../third-party/glfw/GLFW/glfw3.h \
  /usr/include/GL/gl.h /usr/include/GL/glext.h \
  /usr/include/KHR/khrplatform.h /usr/include/c++/9/string \
  /usr/include/c++/9/bits/stringfwd.h /usr/include/c++/9/bits/memoryfwd.h \

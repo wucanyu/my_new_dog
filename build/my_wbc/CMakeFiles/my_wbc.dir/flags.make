@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/wu/my_dog_8/build -I/home/wu/my_dog_8 -I/home/wu/my_dog_8/my_wbc/../my_lib/include -I/home/wu/my_dog_8/my_wbc/../control/include -I/home/wu/my_dog_8/my_wbc/../sim_interface/include -I/home/wu/my_dog_8/my_wbc/../my_lib_sim/include -I/home/wu/my_dog_8/my_wbc/./include -I/home/wu/my_dog_8/my_wbc/../third-party/eigen3 -I/home/wu/my_dog_8/my_wbc/../third-party/qpOASES -I/home/wu/my_dog_8/my_wbc/../third-party/mujoco -I/home/wu/my_dog_8/my_wbc/../third-party/glfw -I/home/wu/my_dog_8/my_wbc/../third-party/urdfdom -I/home/wu/my_dog_8/my_wbc/../third-party/pinocchio
+CXX_INCLUDES = -I/home/wu/my_new_dog/build -I/home/wu/my_new_dog -I/home/wu/my_new_dog/my_wbc/../my_lib/include -I/home/wu/my_new_dog/my_wbc/../control/include -I/home/wu/my_new_dog/my_wbc/../sim_interface/include -I/home/wu/my_new_dog/my_wbc/../my_lib_sim/include -I/home/wu/my_new_dog/my_wbc/./include -I/home/wu/my_new_dog/my_wbc/../third-party/eigen3 -I/home/wu/my_new_dog/my_wbc/../third-party/qpOASES -I/home/wu/my_new_dog/my_wbc/../third-party/mujoco -I/home/wu/my_new_dog/my_wbc/../third-party/glfw -I/home/wu/my_new_dog/my_wbc/../third-party/urdfdom -I/home/wu/my_new_dog/my_wbc/../third-party/pinocchio
 
 CXX_FLAGS = -std=c++17
 

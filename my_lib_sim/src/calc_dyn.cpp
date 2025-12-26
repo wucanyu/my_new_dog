@@ -157,16 +157,16 @@ void Pin_KinDyn::computeJ_dJ()
     dJ_base = dJ_base * Mpj;
     Jcom = Jcom * Mpj;
 
-    // fe_fl_pos = data_biped.oMf[FL_joint].translation();
-    // fe_fl_rot = data_biped.oMf[FL_joint].rotation();
-    // fe_fr_pos = data_biped.oMf[FR_joint].translation();
-    // fe_fr_rot = data_biped.oMf[FR_joint].rotation();
-    // fe_bl_pos = data_biped.oMf[BL_joint].translation();
-    // fe_bl_rot = data_biped.oMf[BL_joint].rotation();
-    // fe_br_pos = data_biped.oMf[BR_joint].translation();
-    // fe_br_rot = data_biped.oMf[BR_joint].rotation();
-    // base_pos  = data_biped.oMf[base_joint].translation();
-    // base_rot  = data_biped.oMf[base_joint].rotation(); 
+    fe_fl_pos = data_biped.oMf[FL_joint].translation();
+    fe_fl_rot = data_biped.oMf[FL_joint].rotation();
+    fe_fr_pos = data_biped.oMf[FR_joint].translation();
+    fe_fr_rot = data_biped.oMf[FR_joint].rotation();
+    fe_bl_pos = data_biped.oMf[BL_joint].translation();
+    fe_bl_rot = data_biped.oMf[BL_joint].rotation();
+    fe_br_pos = data_biped.oMf[BR_joint].translation();
+    fe_br_rot = data_biped.oMf[BR_joint].rotation();
+    base_pos  = data_biped.oMf[base_joint].translation();
+    base_rot  = data_biped.oMf[base_joint].rotation(); 
 
     // 步骤1：更新运动学状态（建议传入dq_fixed，预留时变率计算）
     pinocchio::forwardKinematics(model_biped_fixed, data_biped_fixed, q_fixed); 

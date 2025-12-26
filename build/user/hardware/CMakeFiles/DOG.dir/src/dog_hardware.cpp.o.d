@@ -1,7 +1,7 @@
 user/hardware/CMakeFiles/DOG.dir/src/dog_hardware.cpp.o: \
- /home/wu/my_dog_8/user/hardware/src/dog_hardware.cpp \
+ /home/wu/my_new_dog/user/hardware/src/dog_hardware.cpp \
  /usr/include/stdc-predef.h \
- /home/wu/my_dog_8/user/hardware/../hardware/include/dog.h \
+ /home/wu/my_new_dog/user/hardware/../hardware/include/dog.h \
  /usr/include/boost/asio.hpp \
  /usr/include/boost/asio/associated_allocator.hpp \
  /usr/include/boost/asio/detail/config.hpp /usr/include/boost/config.hpp \
@@ -1149,7 +1149,7 @@ user/hardware/CMakeFiles/DOG.dir/src/dog_hardware.cpp.o: \
  /usr/include/c++/9/bits/regex_executor.h \
  /usr/include/c++/9/bits/regex_executor.tcc \
  /usr/include/c++/9/memory_resource /usr/include/c++/9/shared_mutex \
- /home/wu/my_dog_8/user/hardware/../../my_lib/include/pid.h \
+ /home/wu/my_new_dog/user/hardware/../../my_lib/include/pid.h \
  /usr/local/include/OsqpEigen/OsqpEigen.h \
  /usr/local/include/OsqpEigen/Constants.hpp \
  /usr/local/include/osqp/osqp.h /usr/local/include/osqp/types.h \
@@ -1423,19 +1423,19 @@ user/hardware/CMakeFiles/DOG.dir/src/dog_hardware.cpp.o: \
  /home/wu/osqp/include/types.h /home/wu/osqp/include/scaling.h \
  /home/wu/osqp/include/lin_alg.h /home/wu/osqp/include/constants.h \
  /usr/local/include/OsqpEigen/Debug.hpp \
- /home/wu/my_dog_8/user/hardware/../../my_lib/include/RobotControl.h \
+ /home/wu/my_new_dog/user/hardware/../../my_lib/include/RobotControl.h \
  /usr/local/include/eigen3/Eigen/Dense \
- /home/wu/my_dog_8/user/hardware/../../my_lib/include/base_struct.h \
- /home/wu/my_dog_8/user/hardware/../../my_lib/include/CtrlStates.h \
- /home/wu/my_dog_8/user/hardware/../../my_lib/include/mid_data.h \
- /home/wu/my_dog_8/user/hardware/../../my_lib/include/Utils.h \
- /home/wu/my_dog_8/user/hardware/../../my_lib/include/ConvexMpc.h \
+ /home/wu/my_new_dog/user/hardware/../../my_lib/include/base_struct.h \
+ /home/wu/my_new_dog/user/hardware/../../my_lib/include/CtrlStates.h \
+ /home/wu/my_new_dog/user/hardware/../../my_lib/include/mid_data.h \
+ /home/wu/my_new_dog/user/hardware/../../my_lib/include/Utils.h \
+ /home/wu/my_new_dog/user/hardware/../../my_lib/include/ConvexMpc.h \
  /usr/local/include/eigen3/Eigen/Eigenvalues \
- /home/wu/my_dog_8/user/hardware/../../my_lib/include/filter.h \
+ /home/wu/my_new_dog/user/hardware/../../my_lib/include/filter.h \
  /usr/include/c++/9/set /usr/include/c++/9/bits/stl_set.h \
  /usr/include/c++/9/bits/stl_multiset.h \
- /home/wu/my_dog_8/user/hardware/../../my_lib/include/base_struct.h \
- /home/wu/my_dog_8/user/hardware/../../my_lib/include/CtrlStates.h \
- /home/wu/my_dog_8/user/hardware/../../my_lib/include/BasicEKF.h \
- /home/wu/my_dog_8/user/hardware/../../my_lib/include/Utils.h \
- /home/wu/my_dog_8/user/hardware/../../my_lib/include/my_usb.h
+ /home/wu/my_new_dog/user/hardware/../../my_lib/include/base_struct.h \
+ /home/wu/my_new_dog/user/hardware/../../my_lib/include/CtrlStates.h \
+ /home/wu/my_new_dog/user/hardware/../../my_lib/include/BasicEKF.h \
+ /home/wu/my_new_dog/user/hardware/../../my_lib/include/Utils.h \
+ /home/wu/my_new_dog/user/hardware/../../my_lib/include/my_usb.h

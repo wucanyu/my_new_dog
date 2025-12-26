@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wu/my_dog_8
+CMAKE_SOURCE_DIR = /home/wu/my_new_dog
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu"
+CMAKE_BINARY_DIR = "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu"
 
 # Include any dependencies generated for this target.
 include my_lib_sim/CMakeFiles/my_lib_sim.dir/depend.make
@@ -72,16 +72,16 @@ include my_lib_sim/CMakeFiles/my_lib_sim.dir/flags.make
 my_lib_sim/CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.o: my_lib_sim/CMakeFiles/my_lib_sim.dir/flags.make
 my_lib_sim/CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.o: ../../../my_lib_sim/src/calc_dyn.cpp
 my_lib_sim/CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.o: my_lib_sim/CMakeFiles/my_lib_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object my_lib_sim/CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.o"
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/my_lib_sim" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT my_lib_sim/CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.o -MF CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.o.d -o CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.o -c /home/wu/my_dog_8/my_lib_sim/src/calc_dyn.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object my_lib_sim/CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.o"
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/my_lib_sim" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT my_lib_sim/CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.o -MF CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.o.d -o CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.o -c /home/wu/my_new_dog/my_lib_sim/src/calc_dyn.cpp
 
 my_lib_sim/CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.i"
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/my_lib_sim" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wu/my_dog_8/my_lib_sim/src/calc_dyn.cpp > CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.i
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/my_lib_sim" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wu/my_new_dog/my_lib_sim/src/calc_dyn.cpp > CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.i
 
 my_lib_sim/CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.s"
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/my_lib_sim" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wu/my_dog_8/my_lib_sim/src/calc_dyn.cpp -o CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.s
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/my_lib_sim" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wu/my_new_dog/my_lib_sim/src/calc_dyn.cpp -o CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.s
 
 # Object files for target my_lib_sim
 my_lib_sim_OBJECTS = \
@@ -93,19 +93,19 @@ my_lib_sim_EXTERNAL_OBJECTS =
 my_lib_sim/libmy_lib_sim.a: my_lib_sim/CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.o
 my_lib_sim/libmy_lib_sim.a: my_lib_sim/CMakeFiles/my_lib_sim.dir/build.make
 my_lib_sim/libmy_lib_sim.a: my_lib_sim/CMakeFiles/my_lib_sim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmy_lib_sim.a"
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/my_lib_sim" && $(CMAKE_COMMAND) -P CMakeFiles/my_lib_sim.dir/cmake_clean_target.cmake
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/my_lib_sim" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_lib_sim.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmy_lib_sim.a"
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/my_lib_sim" && $(CMAKE_COMMAND) -P CMakeFiles/my_lib_sim.dir/cmake_clean_target.cmake
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/my_lib_sim" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_lib_sim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 my_lib_sim/CMakeFiles/my_lib_sim.dir/build: my_lib_sim/libmy_lib_sim.a
 .PHONY : my_lib_sim/CMakeFiles/my_lib_sim.dir/build
 
 my_lib_sim/CMakeFiles/my_lib_sim.dir/clean:
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/my_lib_sim" && $(CMAKE_COMMAND) -P CMakeFiles/my_lib_sim.dir/cmake_clean.cmake
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/my_lib_sim" && $(CMAKE_COMMAND) -P CMakeFiles/my_lib_sim.dir/cmake_clean.cmake
 .PHONY : my_lib_sim/CMakeFiles/my_lib_sim.dir/clean
 
 my_lib_sim/CMakeFiles/my_lib_sim.dir/depend:
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wu/my_dog_8 /home/wu/my_dog_8/my_lib_sim "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu" "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/my_lib_sim" "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/my_lib_sim/CMakeFiles/my_lib_sim.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wu/my_new_dog /home/wu/my_new_dog/my_lib_sim "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/my_lib_sim" "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/my_lib_sim/CMakeFiles/my_lib_sim.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : my_lib_sim/CMakeFiles/my_lib_sim.dir/depend
 

@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/wu/my_dog_8/my_wbc/src/priority_tasks.cpp" "my_wbc/CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.o" "gcc" "my_wbc/CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.o.d"
-  "/home/wu/my_dog_8/my_wbc/src/wbc_priority.cpp" "my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o" "gcc" "my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o.d"
+  "/home/wu/my_new_dog/my_wbc/src/priority_tasks.cpp" "my_wbc/CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.o" "gcc" "my_wbc/CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.o.d"
+  "/home/wu/my_new_dog/my_wbc/src/wbc_priority.cpp" "my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o" "gcc" "my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o.d"
   )
 
 # Targets to which this target links.

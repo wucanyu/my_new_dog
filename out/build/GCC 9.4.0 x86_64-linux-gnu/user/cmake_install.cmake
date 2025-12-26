@@ -1,8 +1,8 @@
-# Install script for directory: /home/wu/my_dog_8/user
+# Install script for directory: /home/wu/my_new_dog/user
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/wu/my_dog_8/out/install/GCC 9.4.0 x86_64-linux-gnu")
+  set(CMAKE_INSTALL_PREFIX "/home/wu/my_new_dog/out/install/GCC 9.4.0 x86_64-linux-gnu")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,9 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/user/hardware/cmake_install.cmake")
-  include("/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/user/sim/cmake_install.cmake")
-  include("/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/user/pin_text/cmake_install.cmake")
+  include("/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/user/hardware/cmake_install.cmake")
+  include("/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/user/sim/cmake_install.cmake")
 
 endif()
 

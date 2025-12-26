@@ -1,4 +1,4 @@
-# Install script for directory: /home/wu/my_dog_8/third-party
+# Install script for directory: /home/wu/my_new_dog/third-party
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/wu/my_dog_8/my_lib_sim/src/calc_dyn.cpp" "my_lib_sim/CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.o" "gcc" "my_lib_sim/CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.o.d"
+  "/home/wu/my_new_dog/my_lib_sim/src/calc_dyn.cpp" "my_lib_sim/CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.o" "gcc" "my_lib_sim/CMakeFiles/my_lib_sim.dir/src/calc_dyn.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/wu/my_dog_8/build/sim_interface/CMakeFiles/my_sim.dir/DependInfo.cmake"
-  "/home/wu/my_dog_8/build/my_lib/CMakeFiles/my_lib.dir/DependInfo.cmake"
+  "/home/wu/my_new_dog/build/sim_interface/CMakeFiles/my_sim.dir/DependInfo.cmake"
+  "/home/wu/my_new_dog/build/my_lib/CMakeFiles/my_lib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

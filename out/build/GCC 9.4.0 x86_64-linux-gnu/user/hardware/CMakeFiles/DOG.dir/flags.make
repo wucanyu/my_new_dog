@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_SYSTEM_DYN_LINK
 
-CXX_INCLUDES = -I"/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu" -I/home/wu/my_dog_8 -I/usr/local/include/eigen3 -I/usr/local/include/osqp -I/usr/local/include/OsqpEigen -I/home/wu/my_dog_8/user/hardware/../../my_lib/include -I/home/wu/my_dog_8/user/hardware/../hardware/include
+CXX_INCLUDES = -I"/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" -I/home/wu/my_new_dog -I/usr/local/include/eigen3 -I/usr/local/include/osqp -I/usr/local/include/OsqpEigen -I/home/wu/my_new_dog/user/hardware/../../my_lib/include -I/home/wu/my_new_dog/user/hardware/../hardware/include
 
 CXX_FLAGS = -g -std=c++17
 

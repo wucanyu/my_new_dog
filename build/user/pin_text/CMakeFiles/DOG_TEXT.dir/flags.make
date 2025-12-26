@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_SYSTEM_DYN_LINK
 
-CXX_INCLUDES = -I/home/wu/my_dog_8/build -I/home/wu/my_dog_8 -I/home/wu/my_dog_8/user/pin_text/../../third-party/eigen3 -I/usr/local/include/osqp -I/usr/local/include/OsqpEigen -I/home/wu/my_dog_8/user/pin_text/../../my_lib/include -I/home/wu/my_dog_8/user/pin_text/../sim_interface/include -I/home/wu/my_dog_8/user/pin_text/../../third-party/mujoco -I/home/wu/my_dog_8/user/pin_text/../../third-party/glfw -I/home/wu/my_dog_8/user/pin_text/../../sim_interface/include -I/home/wu/my_dog_8/user/pin_text/../../third-party/urdfdom -I/home/wu/my_dog_8/user/pin_text/../../third-party/pinocchio
+CXX_INCLUDES = -I/home/wu/my_new_dog/build -I/home/wu/my_new_dog -I/home/wu/my_new_dog/user/pin_text/../../third-party/eigen3 -I/usr/local/include/osqp -I/usr/local/include/OsqpEigen -I/home/wu/my_new_dog/user/pin_text/../../my_lib/include -I/home/wu/my_new_dog/user/pin_text/../sim_interface/include -I/home/wu/my_new_dog/user/pin_text/../../third-party/mujoco -I/home/wu/my_new_dog/user/pin_text/../../third-party/glfw -I/home/wu/my_new_dog/user/pin_text/../../sim_interface/include -I/home/wu/my_new_dog/user/pin_text/../../third-party/urdfdom -I/home/wu/my_new_dog/user/pin_text/../../third-party/pinocchio
 
 CXX_FLAGS = -std=c++17
 

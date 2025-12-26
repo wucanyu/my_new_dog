@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wu/my_dog_8
+CMAKE_SOURCE_DIR = /home/wu/my_new_dog
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wu/my_dog_8/build
+CMAKE_BINARY_DIR = /home/wu/my_new_dog/build
 
 # Include any dependencies generated for this target.
 include my_lib/CMakeFiles/my_lib.dir/depend.make
@@ -72,86 +72,86 @@ include my_lib/CMakeFiles/my_lib.dir/flags.make
 my_lib/CMakeFiles/my_lib.dir/src/BasicEKF.cpp.o: my_lib/CMakeFiles/my_lib.dir/flags.make
 my_lib/CMakeFiles/my_lib.dir/src/BasicEKF.cpp.o: ../my_lib/src/BasicEKF.cpp
 my_lib/CMakeFiles/my_lib.dir/src/BasicEKF.cpp.o: my_lib/CMakeFiles/my_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wu/my_dog_8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object my_lib/CMakeFiles/my_lib.dir/src/BasicEKF.cpp.o"
-	cd /home/wu/my_dog_8/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT my_lib/CMakeFiles/my_lib.dir/src/BasicEKF.cpp.o -MF CMakeFiles/my_lib.dir/src/BasicEKF.cpp.o.d -o CMakeFiles/my_lib.dir/src/BasicEKF.cpp.o -c /home/wu/my_dog_8/my_lib/src/BasicEKF.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wu/my_new_dog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object my_lib/CMakeFiles/my_lib.dir/src/BasicEKF.cpp.o"
+	cd /home/wu/my_new_dog/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT my_lib/CMakeFiles/my_lib.dir/src/BasicEKF.cpp.o -MF CMakeFiles/my_lib.dir/src/BasicEKF.cpp.o.d -o CMakeFiles/my_lib.dir/src/BasicEKF.cpp.o -c /home/wu/my_new_dog/my_lib/src/BasicEKF.cpp
 
 my_lib/CMakeFiles/my_lib.dir/src/BasicEKF.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_lib.dir/src/BasicEKF.cpp.i"
-	cd /home/wu/my_dog_8/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wu/my_dog_8/my_lib/src/BasicEKF.cpp > CMakeFiles/my_lib.dir/src/BasicEKF.cpp.i
+	cd /home/wu/my_new_dog/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wu/my_new_dog/my_lib/src/BasicEKF.cpp > CMakeFiles/my_lib.dir/src/BasicEKF.cpp.i
 
 my_lib/CMakeFiles/my_lib.dir/src/BasicEKF.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_lib.dir/src/BasicEKF.cpp.s"
-	cd /home/wu/my_dog_8/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wu/my_dog_8/my_lib/src/BasicEKF.cpp -o CMakeFiles/my_lib.dir/src/BasicEKF.cpp.s
+	cd /home/wu/my_new_dog/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wu/my_new_dog/my_lib/src/BasicEKF.cpp -o CMakeFiles/my_lib.dir/src/BasicEKF.cpp.s
 
 my_lib/CMakeFiles/my_lib.dir/src/ConvexMpc.cpp.o: my_lib/CMakeFiles/my_lib.dir/flags.make
 my_lib/CMakeFiles/my_lib.dir/src/ConvexMpc.cpp.o: ../my_lib/src/ConvexMpc.cpp
 my_lib/CMakeFiles/my_lib.dir/src/ConvexMpc.cpp.o: my_lib/CMakeFiles/my_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wu/my_dog_8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object my_lib/CMakeFiles/my_lib.dir/src/ConvexMpc.cpp.o"
-	cd /home/wu/my_dog_8/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT my_lib/CMakeFiles/my_lib.dir/src/ConvexMpc.cpp.o -MF CMakeFiles/my_lib.dir/src/ConvexMpc.cpp.o.d -o CMakeFiles/my_lib.dir/src/ConvexMpc.cpp.o -c /home/wu/my_dog_8/my_lib/src/ConvexMpc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wu/my_new_dog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object my_lib/CMakeFiles/my_lib.dir/src/ConvexMpc.cpp.o"
+	cd /home/wu/my_new_dog/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT my_lib/CMakeFiles/my_lib.dir/src/ConvexMpc.cpp.o -MF CMakeFiles/my_lib.dir/src/ConvexMpc.cpp.o.d -o CMakeFiles/my_lib.dir/src/ConvexMpc.cpp.o -c /home/wu/my_new_dog/my_lib/src/ConvexMpc.cpp
 
 my_lib/CMakeFiles/my_lib.dir/src/ConvexMpc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_lib.dir/src/ConvexMpc.cpp.i"
-	cd /home/wu/my_dog_8/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wu/my_dog_8/my_lib/src/ConvexMpc.cpp > CMakeFiles/my_lib.dir/src/ConvexMpc.cpp.i
+	cd /home/wu/my_new_dog/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wu/my_new_dog/my_lib/src/ConvexMpc.cpp > CMakeFiles/my_lib.dir/src/ConvexMpc.cpp.i
 
 my_lib/CMakeFiles/my_lib.dir/src/ConvexMpc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_lib.dir/src/ConvexMpc.cpp.s"
-	cd /home/wu/my_dog_8/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wu/my_dog_8/my_lib/src/ConvexMpc.cpp -o CMakeFiles/my_lib.dir/src/ConvexMpc.cpp.s
+	cd /home/wu/my_new_dog/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wu/my_new_dog/my_lib/src/ConvexMpc.cpp -o CMakeFiles/my_lib.dir/src/ConvexMpc.cpp.s
 
 my_lib/CMakeFiles/my_lib.dir/src/RobotControl.cpp.o: my_lib/CMakeFiles/my_lib.dir/flags.make
 my_lib/CMakeFiles/my_lib.dir/src/RobotControl.cpp.o: ../my_lib/src/RobotControl.cpp
 my_lib/CMakeFiles/my_lib.dir/src/RobotControl.cpp.o: my_lib/CMakeFiles/my_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wu/my_dog_8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object my_lib/CMakeFiles/my_lib.dir/src/RobotControl.cpp.o"
-	cd /home/wu/my_dog_8/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT my_lib/CMakeFiles/my_lib.dir/src/RobotControl.cpp.o -MF CMakeFiles/my_lib.dir/src/RobotControl.cpp.o.d -o CMakeFiles/my_lib.dir/src/RobotControl.cpp.o -c /home/wu/my_dog_8/my_lib/src/RobotControl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wu/my_new_dog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object my_lib/CMakeFiles/my_lib.dir/src/RobotControl.cpp.o"
+	cd /home/wu/my_new_dog/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT my_lib/CMakeFiles/my_lib.dir/src/RobotControl.cpp.o -MF CMakeFiles/my_lib.dir/src/RobotControl.cpp.o.d -o CMakeFiles/my_lib.dir/src/RobotControl.cpp.o -c /home/wu/my_new_dog/my_lib/src/RobotControl.cpp
 
 my_lib/CMakeFiles/my_lib.dir/src/RobotControl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_lib.dir/src/RobotControl.cpp.i"
-	cd /home/wu/my_dog_8/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wu/my_dog_8/my_lib/src/RobotControl.cpp > CMakeFiles/my_lib.dir/src/RobotControl.cpp.i
+	cd /home/wu/my_new_dog/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wu/my_new_dog/my_lib/src/RobotControl.cpp > CMakeFiles/my_lib.dir/src/RobotControl.cpp.i
 
 my_lib/CMakeFiles/my_lib.dir/src/RobotControl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_lib.dir/src/RobotControl.cpp.s"
-	cd /home/wu/my_dog_8/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wu/my_dog_8/my_lib/src/RobotControl.cpp -o CMakeFiles/my_lib.dir/src/RobotControl.cpp.s
+	cd /home/wu/my_new_dog/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wu/my_new_dog/my_lib/src/RobotControl.cpp -o CMakeFiles/my_lib.dir/src/RobotControl.cpp.s
 
 my_lib/CMakeFiles/my_lib.dir/src/Utils.cpp.o: my_lib/CMakeFiles/my_lib.dir/flags.make
 my_lib/CMakeFiles/my_lib.dir/src/Utils.cpp.o: ../my_lib/src/Utils.cpp
 my_lib/CMakeFiles/my_lib.dir/src/Utils.cpp.o: my_lib/CMakeFiles/my_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wu/my_dog_8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object my_lib/CMakeFiles/my_lib.dir/src/Utils.cpp.o"
-	cd /home/wu/my_dog_8/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT my_lib/CMakeFiles/my_lib.dir/src/Utils.cpp.o -MF CMakeFiles/my_lib.dir/src/Utils.cpp.o.d -o CMakeFiles/my_lib.dir/src/Utils.cpp.o -c /home/wu/my_dog_8/my_lib/src/Utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wu/my_new_dog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object my_lib/CMakeFiles/my_lib.dir/src/Utils.cpp.o"
+	cd /home/wu/my_new_dog/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT my_lib/CMakeFiles/my_lib.dir/src/Utils.cpp.o -MF CMakeFiles/my_lib.dir/src/Utils.cpp.o.d -o CMakeFiles/my_lib.dir/src/Utils.cpp.o -c /home/wu/my_new_dog/my_lib/src/Utils.cpp
 
 my_lib/CMakeFiles/my_lib.dir/src/Utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_lib.dir/src/Utils.cpp.i"
-	cd /home/wu/my_dog_8/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wu/my_dog_8/my_lib/src/Utils.cpp > CMakeFiles/my_lib.dir/src/Utils.cpp.i
+	cd /home/wu/my_new_dog/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wu/my_new_dog/my_lib/src/Utils.cpp > CMakeFiles/my_lib.dir/src/Utils.cpp.i
 
 my_lib/CMakeFiles/my_lib.dir/src/Utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_lib.dir/src/Utils.cpp.s"
-	cd /home/wu/my_dog_8/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wu/my_dog_8/my_lib/src/Utils.cpp -o CMakeFiles/my_lib.dir/src/Utils.cpp.s
+	cd /home/wu/my_new_dog/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wu/my_new_dog/my_lib/src/Utils.cpp -o CMakeFiles/my_lib.dir/src/Utils.cpp.s
 
 my_lib/CMakeFiles/my_lib.dir/src/my_usb.cpp.o: my_lib/CMakeFiles/my_lib.dir/flags.make
 my_lib/CMakeFiles/my_lib.dir/src/my_usb.cpp.o: ../my_lib/src/my_usb.cpp
 my_lib/CMakeFiles/my_lib.dir/src/my_usb.cpp.o: my_lib/CMakeFiles/my_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wu/my_dog_8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object my_lib/CMakeFiles/my_lib.dir/src/my_usb.cpp.o"
-	cd /home/wu/my_dog_8/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT my_lib/CMakeFiles/my_lib.dir/src/my_usb.cpp.o -MF CMakeFiles/my_lib.dir/src/my_usb.cpp.o.d -o CMakeFiles/my_lib.dir/src/my_usb.cpp.o -c /home/wu/my_dog_8/my_lib/src/my_usb.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wu/my_new_dog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object my_lib/CMakeFiles/my_lib.dir/src/my_usb.cpp.o"
+	cd /home/wu/my_new_dog/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT my_lib/CMakeFiles/my_lib.dir/src/my_usb.cpp.o -MF CMakeFiles/my_lib.dir/src/my_usb.cpp.o.d -o CMakeFiles/my_lib.dir/src/my_usb.cpp.o -c /home/wu/my_new_dog/my_lib/src/my_usb.cpp
 
 my_lib/CMakeFiles/my_lib.dir/src/my_usb.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_lib.dir/src/my_usb.cpp.i"
-	cd /home/wu/my_dog_8/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wu/my_dog_8/my_lib/src/my_usb.cpp > CMakeFiles/my_lib.dir/src/my_usb.cpp.i
+	cd /home/wu/my_new_dog/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wu/my_new_dog/my_lib/src/my_usb.cpp > CMakeFiles/my_lib.dir/src/my_usb.cpp.i
 
 my_lib/CMakeFiles/my_lib.dir/src/my_usb.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_lib.dir/src/my_usb.cpp.s"
-	cd /home/wu/my_dog_8/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wu/my_dog_8/my_lib/src/my_usb.cpp -o CMakeFiles/my_lib.dir/src/my_usb.cpp.s
+	cd /home/wu/my_new_dog/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wu/my_new_dog/my_lib/src/my_usb.cpp -o CMakeFiles/my_lib.dir/src/my_usb.cpp.s
 
 my_lib/CMakeFiles/my_lib.dir/src/pid.cpp.o: my_lib/CMakeFiles/my_lib.dir/flags.make
 my_lib/CMakeFiles/my_lib.dir/src/pid.cpp.o: ../my_lib/src/pid.cpp
 my_lib/CMakeFiles/my_lib.dir/src/pid.cpp.o: my_lib/CMakeFiles/my_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wu/my_dog_8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object my_lib/CMakeFiles/my_lib.dir/src/pid.cpp.o"
-	cd /home/wu/my_dog_8/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT my_lib/CMakeFiles/my_lib.dir/src/pid.cpp.o -MF CMakeFiles/my_lib.dir/src/pid.cpp.o.d -o CMakeFiles/my_lib.dir/src/pid.cpp.o -c /home/wu/my_dog_8/my_lib/src/pid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wu/my_new_dog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object my_lib/CMakeFiles/my_lib.dir/src/pid.cpp.o"
+	cd /home/wu/my_new_dog/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT my_lib/CMakeFiles/my_lib.dir/src/pid.cpp.o -MF CMakeFiles/my_lib.dir/src/pid.cpp.o.d -o CMakeFiles/my_lib.dir/src/pid.cpp.o -c /home/wu/my_new_dog/my_lib/src/pid.cpp
 
 my_lib/CMakeFiles/my_lib.dir/src/pid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_lib.dir/src/pid.cpp.i"
-	cd /home/wu/my_dog_8/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wu/my_dog_8/my_lib/src/pid.cpp > CMakeFiles/my_lib.dir/src/pid.cpp.i
+	cd /home/wu/my_new_dog/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wu/my_new_dog/my_lib/src/pid.cpp > CMakeFiles/my_lib.dir/src/pid.cpp.i
 
 my_lib/CMakeFiles/my_lib.dir/src/pid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_lib.dir/src/pid.cpp.s"
-	cd /home/wu/my_dog_8/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wu/my_dog_8/my_lib/src/pid.cpp -o CMakeFiles/my_lib.dir/src/pid.cpp.s
+	cd /home/wu/my_new_dog/build/my_lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wu/my_new_dog/my_lib/src/pid.cpp -o CMakeFiles/my_lib.dir/src/pid.cpp.s
 
 # Object files for target my_lib
 my_lib_OBJECTS = \
@@ -173,19 +173,19 @@ my_lib/libmy_lib.a: my_lib/CMakeFiles/my_lib.dir/src/my_usb.cpp.o
 my_lib/libmy_lib.a: my_lib/CMakeFiles/my_lib.dir/src/pid.cpp.o
 my_lib/libmy_lib.a: my_lib/CMakeFiles/my_lib.dir/build.make
 my_lib/libmy_lib.a: my_lib/CMakeFiles/my_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wu/my_dog_8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libmy_lib.a"
-	cd /home/wu/my_dog_8/build/my_lib && $(CMAKE_COMMAND) -P CMakeFiles/my_lib.dir/cmake_clean_target.cmake
-	cd /home/wu/my_dog_8/build/my_lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_lib.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wu/my_new_dog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libmy_lib.a"
+	cd /home/wu/my_new_dog/build/my_lib && $(CMAKE_COMMAND) -P CMakeFiles/my_lib.dir/cmake_clean_target.cmake
+	cd /home/wu/my_new_dog/build/my_lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 my_lib/CMakeFiles/my_lib.dir/build: my_lib/libmy_lib.a
 .PHONY : my_lib/CMakeFiles/my_lib.dir/build
 
 my_lib/CMakeFiles/my_lib.dir/clean:
-	cd /home/wu/my_dog_8/build/my_lib && $(CMAKE_COMMAND) -P CMakeFiles/my_lib.dir/cmake_clean.cmake
+	cd /home/wu/my_new_dog/build/my_lib && $(CMAKE_COMMAND) -P CMakeFiles/my_lib.dir/cmake_clean.cmake
 .PHONY : my_lib/CMakeFiles/my_lib.dir/clean
 
 my_lib/CMakeFiles/my_lib.dir/depend:
-	cd /home/wu/my_dog_8/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wu/my_dog_8 /home/wu/my_dog_8/my_lib /home/wu/my_dog_8/build /home/wu/my_dog_8/build/my_lib /home/wu/my_dog_8/build/my_lib/CMakeFiles/my_lib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wu/my_new_dog/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wu/my_new_dog /home/wu/my_new_dog/my_lib /home/wu/my_new_dog/build /home/wu/my_new_dog/build/my_lib /home/wu/my_new_dog/build/my_lib/CMakeFiles/my_lib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : my_lib/CMakeFiles/my_lib.dir/depend
 

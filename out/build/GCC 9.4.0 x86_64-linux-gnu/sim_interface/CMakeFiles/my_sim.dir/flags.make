@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_SYSTEM_DYN_LINK
 
-CXX_INCLUDES = -I"/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu" -I/home/wu/my_dog_8 -I/home/wu/my_dog_8/sim_interface/../third-party/eigen3 -I/home/wu/my_dog_8/sim_interface/../sim_interface/include -I/home/wu/my_dog_8/sim_interface/../third-party/mujoco -I/home/wu/my_dog_8/sim_interface/../third-party/glfw
+CXX_INCLUDES = -I"/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" -I/home/wu/my_new_dog -I/home/wu/my_new_dog/sim_interface/../third-party/eigen3 -I/home/wu/my_new_dog/sim_interface/../sim_interface/include -I/home/wu/my_new_dog/sim_interface/../third-party/mujoco -I/home/wu/my_new_dog/sim_interface/../third-party/glfw
 
 CXX_FLAGS = -g -std=c++17
 

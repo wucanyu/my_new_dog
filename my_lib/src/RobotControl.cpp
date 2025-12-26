@@ -443,7 +443,7 @@ Eigen::Vector3d RobotControl::compute_walking_surface(CtrlStates &state) {
 void RobotControl::update_plan(CtrlStates &state, double dt) {
     for (int i = 0; i < NUM_LEG; ++i) 
     {
-        if (state.contacts[i])
+        if (state.contacts[i] && !state.early_contacts[i])//
         {
             //时刻更新足端位置
             state.foot_pos_start_world.block<3, 1>(0, i) = state.foot_pos_world.block<3, 1>(0, i);
@@ -454,10 +454,10 @@ void RobotControl::update_plan(CtrlStates &state, double dt) {
             Eigen::Vector3d pos_body_hip[4];
             Eigen::Vector3d pos_body_hip_offset;
             pos_body_hip_offset << -0.018 , 0, 0;
-            pos_body_hip[0] <<  0.211332  ,0.166815  ,0;
-            pos_body_hip[1] <<  0.211332  ,-0.166815  ,0;
-            pos_body_hip[2] << -0.211332  ,0.166815  ,0;
-            pos_body_hip[3] << -0.211332  ,-0.166815  ,0;
+            pos_body_hip[0] <<  0.211332  ,-0.166815  ,0;
+            pos_body_hip[1] <<  0.211332  ,0.166815  ,0;
+            pos_body_hip[2] << -0.211332  ,-0.166815  ,0;
+            pos_body_hip[3] << -0.211332  ,0.166815  ,0;
             for (int i = 0; i < NUM_LEG; ++i)
             {
                 pos_body_hip[i] += pos_body_hip_offset;

@@ -206,7 +206,7 @@ bool HardwareDog::main_update(double dt,const UIctr &uiController,double t) {
 
     _root_control.update_plan(ctrl_states, dt);
     _root_control.generate_swing_legs_ctrl(ctrl_states, dt);
-    _root_control.cout_data(ctrl_states);
+    // _root_control.cout_data(ctrl_states);
 
     return true;
 }
@@ -224,12 +224,12 @@ HardwareDog::HardwareDog(){
 
 void HardwareDog::read_data(const data_bus &robotState,double t ,double start_t){
     //仿真状态切换
-    // static int flag = 0;
-    // if(start_t < t && flag == 0)
-    // {
-    //     joy_cmd_ctrl_state_change_request = true;
-    //     flag = 1;
-    // }
+    static int flag = 0;
+    if(start_t < t && flag == 0)
+    {
+        joy_cmd_ctrl_state_change_request = true;
+        flag = 1;
+    }
     //身体速度指令
     joy_cmd_velx = 0;
     joy_cmd_vely = 0;

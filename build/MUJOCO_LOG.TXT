@@ -1,99 +1,15 @@
-Thu Mar 20 20:57:58 2025
-WARNING: mju_openResource: unknown file '../models/go2/scene.xml'
+Fri Dec 26 19:12:56 2025
+WARNING: Nan, Inf or huge value in CTRL at ACTUATOR 3. The simulation is unstable. Time = 2.8320.
 
-Thu Mar 20 20:58:22 2025
-WARNING: mju_openResource: unknown file '../models/go2/scene.xml'
+Fri Dec 26 19:12:56 2025
+WARNING: Nan, Inf or huge value in QACC at DOF 1. The simulation is unstable. Time = 2.8320.
 
-Thu Mar 20 20:59:15 2025
-WARNING: mju_openResource: unknown file '../../model/scene.xml'
+Fri Dec 26 19:40:36 2025
+WARNING: Nan, Inf or huge value in CTRL at ACTUATOR 9. The simulation is unstable. Time = 4.0180.
 
-Thu Mar 20 20:59:23 2025
-WARNING: mju_openResource: unknown file '../../model/scene.xml'
+Fri Dec 26 19:40:36 2025
+WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 4.0180.
 
-Thu Mar 20 20:59:26 2025
-WARNING: mju_openResource: unknown file '../../model/go2/scene.xml'
-
-Thu Mar 20 21:01:22 2025
-WARNING: mju_openResource: unknown file '../../model/go2/scene.xml'
-
-Thu Mar 20 21:02:03 2025
-WARNING: mju_openResource: unknown file '../../model/go2/scene.xml'
-
-Thu Mar 20 21:03:51 2025
-WARNING: mju_openResource: unknown file '../../model/go2/scene.xml'
-
-Sun Mar 30 21:18:02 2025
-WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 2.0460.
-
-Sun Mar 30 21:18:41 2025
-WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 2.0360.
-
-Tue Apr  1 12:54:34 2025
-WARNING: Nan, Inf or huge value in CTRL at ACTUATOR 10. The simulation is unstable. Time = 2.0180.
-
-Tue Apr  1 12:54:34 2025
-WARNING: Nan, Inf or huge value in QACC at DOF 4. The simulation is unstable. Time = 2.0180.
-
-Tue Apr  1 12:56:41 2025
-WARNING: Nan, Inf or huge value in CTRL at ACTUATOR 10. The simulation is unstable. Time = 2.0180.
-
-Tue Apr  1 12:56:41 2025
-WARNING: Nan, Inf or huge value in QACC at DOF 4. The simulation is unstable. Time = 2.0180.
-
-Wed Apr 23 18:57:12 2025
-WARNING: Nan, Inf or huge value in QACC at DOF 15. The simulation is unstable. Time = 0.6820.
-
-Wed Apr 23 19:03:26 2025
-WARNING: Nan, Inf or huge value in QACC at DOF 15. The simulation is unstable. Time = 0.6820.
-
-Wed Apr 23 19:04:35 2025
-WARNING: Nan, Inf or huge value in QACC at DOF 12. The simulation is unstable. Time = 0.6120.
-
-Wed Apr 23 19:04:44 2025
-WARNING: Nan, Inf or huge value in CTRL at ACTUATOR 0. The simulation is unstable. Time = 0.8760.
-
-Wed Apr 23 19:04:51 2025
-WARNING: Nan, Inf or huge value in CTRL at ACTUATOR 0. The simulation is unstable. Time = 0.6640.
-
-Wed Apr 23 19:04:58 2025
-WARNING: Nan, Inf or huge value in CTRL at ACTUATOR 0. The simulation is unstable. Time = 0.6440.
-
-Wed Apr 23 19:05:05 2025
-WARNING: Nan, Inf or huge value in CTRL at ACTUATOR 9. The simulation is unstable. Time = 0.6860.
-
-Wed Apr 23 19:15:54 2025
-WARNING: Nan, Inf or huge value in QACC at DOF 12. The simulation is unstable. Time = 0.6120.
-
-Wed Apr 23 19:16:09 2025
-WARNING: Nan, Inf or huge value in QACC at DOF 12. The simulation is unstable. Time = 0.6120.
-
-Wed Apr 23 20:07:59 2025
-WARNING: Nan, Inf or huge value in QACC at DOF 12. The simulation is unstable. Time = 0.6120.
-
-Fri Apr 25 14:31:25 2025
-WARNING: Nan, Inf or huge value in QACC at DOF 3. The simulation is unstable. Time = 0.8740.
-
-Fri May  9 16:02:03 2025
-WARNING: Nan, Inf or huge value in CTRL at ACTUATOR 3. The simulation is unstable. Time = 2.4740.
-
-Fri May  9 16:02:03 2025
-WARNING: Nan, Inf or huge value in QACC at DOF 9. The simulation is unstable. Time = 2.4740.
-
-Mon Dec 22 17:48:37 2025
-WARNING: mju_openResource: unknown file '../../../model/new_dog/meshes/scene.xml'
-
-Wed Dec 24 16:08:34 2025
-WARNING: Nan, Inf or huge value in QACC at DOF 17. The simulation is unstable. Time = 1.2780.
-
-Thu Dec 25 16:33:19 2025
-WARNING: Nan, Inf or huge value in QACC at DOF 7. The simulation is unstable. Time = 0.6580.
-
-Thu Dec 25 22:25:26 2025
-WARNING: Nan, Inf or huge value in CTRL at ACTUATOR 10. The simulation is unstable. Time = 3.7980.
-
-Thu Dec 25 22:25:26 2025
-WARNING: Nan, Inf or huge value in QACC at DOF 3. The simulation is unstable. Time = 3.7980.
-
-Fri Dec 26 14:40:34 2025
-WARNING: Nan, Inf or huge value in CTRL at ACTUATOR 0. The simulation is unstable. Time = 1.5000.
+Fri Dec 26 19:48:49 2025
+WARNING: Nan, Inf or huge value in QACC at DOF 4. The simulation is unstable. Time = 3.0040.
 

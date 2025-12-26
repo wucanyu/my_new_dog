@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_SYSTEM_DYN_LINK
 
-CXX_INCLUDES = -I"/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu" -I/home/wu/my_dog_8 -I/home/wu/my_dog_8/user/sim/../../third-party/eigen3 -I/usr/local/include/osqp -I/usr/local/include/OsqpEigen -I/home/wu/my_dog_8/user/sim/../../my_lib/include -I/home/wu/my_dog_8/user/sim/../../my_lib_sim/include -I/home/wu/my_dog_8/user/sim/../../my_wbc/include -I/home/wu/my_dog_8/user/sim/../sim/include -I/home/wu/my_dog_8/user/sim/../sim_interface/include -I/home/wu/my_dog_8/user/sim/../../third-party/mujoco -I/home/wu/my_dog_8/user/sim/../../third-party/glfw -I/home/wu/my_dog_8/user/sim/../../sim_interface/include -I/home/wu/my_dog_8/user/sim/../../third-party/urdfdom -I/home/wu/my_dog_8/user/sim/../../third-party/pinocchio -I/home/wu/my_dog_8/user/sim/../../third-party/qpOASES
+CXX_INCLUDES = -I"/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" -I/home/wu/my_new_dog -I/home/wu/my_new_dog/user/sim/../../third-party/eigen3 -I/usr/local/include/osqp -I/usr/local/include/OsqpEigen -I/home/wu/my_new_dog/user/sim/../../my_lib/include -I/home/wu/my_new_dog/user/sim/../../my_lib_sim/include -I/home/wu/my_new_dog/user/sim/../../my_wbc/include -I/home/wu/my_new_dog/user/sim/../sim/include -I/home/wu/my_new_dog/user/sim/../sim_interface/include -I/home/wu/my_new_dog/user/sim/../../third-party/mujoco -I/home/wu/my_new_dog/user/sim/../../third-party/glfw -I/home/wu/my_new_dog/user/sim/../../sim_interface/include -I/home/wu/my_new_dog/user/sim/../../third-party/urdfdom -I/home/wu/my_new_dog/user/sim/../../third-party/pinocchio -I/home/wu/my_new_dog/user/sim/../../third-party/qpOASES
 
 CXX_FLAGS = -g -std=c++17
 

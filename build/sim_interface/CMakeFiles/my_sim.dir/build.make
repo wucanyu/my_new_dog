@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wu/my_dog_8
+CMAKE_SOURCE_DIR = /home/wu/my_new_dog
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wu/my_dog_8/build
+CMAKE_BINARY_DIR = /home/wu/my_new_dog/build
 
 # Include any dependencies generated for this target.
 include sim_interface/CMakeFiles/my_sim.dir/depend.make
@@ -72,30 +72,30 @@ include sim_interface/CMakeFiles/my_sim.dir/flags.make
 sim_interface/CMakeFiles/my_sim.dir/src/GLFW_callbacks.cpp.o: sim_interface/CMakeFiles/my_sim.dir/flags.make
 sim_interface/CMakeFiles/my_sim.dir/src/GLFW_callbacks.cpp.o: ../sim_interface/src/GLFW_callbacks.cpp
 sim_interface/CMakeFiles/my_sim.dir/src/GLFW_callbacks.cpp.o: sim_interface/CMakeFiles/my_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wu/my_dog_8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sim_interface/CMakeFiles/my_sim.dir/src/GLFW_callbacks.cpp.o"
-	cd /home/wu/my_dog_8/build/sim_interface && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sim_interface/CMakeFiles/my_sim.dir/src/GLFW_callbacks.cpp.o -MF CMakeFiles/my_sim.dir/src/GLFW_callbacks.cpp.o.d -o CMakeFiles/my_sim.dir/src/GLFW_callbacks.cpp.o -c /home/wu/my_dog_8/sim_interface/src/GLFW_callbacks.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wu/my_new_dog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sim_interface/CMakeFiles/my_sim.dir/src/GLFW_callbacks.cpp.o"
+	cd /home/wu/my_new_dog/build/sim_interface && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sim_interface/CMakeFiles/my_sim.dir/src/GLFW_callbacks.cpp.o -MF CMakeFiles/my_sim.dir/src/GLFW_callbacks.cpp.o.d -o CMakeFiles/my_sim.dir/src/GLFW_callbacks.cpp.o -c /home/wu/my_new_dog/sim_interface/src/GLFW_callbacks.cpp
 
 sim_interface/CMakeFiles/my_sim.dir/src/GLFW_callbacks.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_sim.dir/src/GLFW_callbacks.cpp.i"
-	cd /home/wu/my_dog_8/build/sim_interface && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wu/my_dog_8/sim_interface/src/GLFW_callbacks.cpp > CMakeFiles/my_sim.dir/src/GLFW_callbacks.cpp.i
+	cd /home/wu/my_new_dog/build/sim_interface && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wu/my_new_dog/sim_interface/src/GLFW_callbacks.cpp > CMakeFiles/my_sim.dir/src/GLFW_callbacks.cpp.i
 
 sim_interface/CMakeFiles/my_sim.dir/src/GLFW_callbacks.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_sim.dir/src/GLFW_callbacks.cpp.s"
-	cd /home/wu/my_dog_8/build/sim_interface && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wu/my_dog_8/sim_interface/src/GLFW_callbacks.cpp -o CMakeFiles/my_sim.dir/src/GLFW_callbacks.cpp.s
+	cd /home/wu/my_new_dog/build/sim_interface && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wu/my_new_dog/sim_interface/src/GLFW_callbacks.cpp -o CMakeFiles/my_sim.dir/src/GLFW_callbacks.cpp.s
 
 sim_interface/CMakeFiles/my_sim.dir/src/MJ_interface.cpp.o: sim_interface/CMakeFiles/my_sim.dir/flags.make
 sim_interface/CMakeFiles/my_sim.dir/src/MJ_interface.cpp.o: ../sim_interface/src/MJ_interface.cpp
 sim_interface/CMakeFiles/my_sim.dir/src/MJ_interface.cpp.o: sim_interface/CMakeFiles/my_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wu/my_dog_8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object sim_interface/CMakeFiles/my_sim.dir/src/MJ_interface.cpp.o"
-	cd /home/wu/my_dog_8/build/sim_interface && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sim_interface/CMakeFiles/my_sim.dir/src/MJ_interface.cpp.o -MF CMakeFiles/my_sim.dir/src/MJ_interface.cpp.o.d -o CMakeFiles/my_sim.dir/src/MJ_interface.cpp.o -c /home/wu/my_dog_8/sim_interface/src/MJ_interface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wu/my_new_dog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object sim_interface/CMakeFiles/my_sim.dir/src/MJ_interface.cpp.o"
+	cd /home/wu/my_new_dog/build/sim_interface && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sim_interface/CMakeFiles/my_sim.dir/src/MJ_interface.cpp.o -MF CMakeFiles/my_sim.dir/src/MJ_interface.cpp.o.d -o CMakeFiles/my_sim.dir/src/MJ_interface.cpp.o -c /home/wu/my_new_dog/sim_interface/src/MJ_interface.cpp
 
 sim_interface/CMakeFiles/my_sim.dir/src/MJ_interface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_sim.dir/src/MJ_interface.cpp.i"
-	cd /home/wu/my_dog_8/build/sim_interface && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wu/my_dog_8/sim_interface/src/MJ_interface.cpp > CMakeFiles/my_sim.dir/src/MJ_interface.cpp.i
+	cd /home/wu/my_new_dog/build/sim_interface && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wu/my_new_dog/sim_interface/src/MJ_interface.cpp > CMakeFiles/my_sim.dir/src/MJ_interface.cpp.i
 
 sim_interface/CMakeFiles/my_sim.dir/src/MJ_interface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_sim.dir/src/MJ_interface.cpp.s"
-	cd /home/wu/my_dog_8/build/sim_interface && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wu/my_dog_8/sim_interface/src/MJ_interface.cpp -o CMakeFiles/my_sim.dir/src/MJ_interface.cpp.s
+	cd /home/wu/my_new_dog/build/sim_interface && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wu/my_new_dog/sim_interface/src/MJ_interface.cpp -o CMakeFiles/my_sim.dir/src/MJ_interface.cpp.s
 
 # Object files for target my_sim
 my_sim_OBJECTS = \
@@ -109,19 +109,19 @@ sim_interface/libmy_sim.a: sim_interface/CMakeFiles/my_sim.dir/src/GLFW_callback
 sim_interface/libmy_sim.a: sim_interface/CMakeFiles/my_sim.dir/src/MJ_interface.cpp.o
 sim_interface/libmy_sim.a: sim_interface/CMakeFiles/my_sim.dir/build.make
 sim_interface/libmy_sim.a: sim_interface/CMakeFiles/my_sim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wu/my_dog_8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libmy_sim.a"
-	cd /home/wu/my_dog_8/build/sim_interface && $(CMAKE_COMMAND) -P CMakeFiles/my_sim.dir/cmake_clean_target.cmake
-	cd /home/wu/my_dog_8/build/sim_interface && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_sim.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wu/my_new_dog/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libmy_sim.a"
+	cd /home/wu/my_new_dog/build/sim_interface && $(CMAKE_COMMAND) -P CMakeFiles/my_sim.dir/cmake_clean_target.cmake
+	cd /home/wu/my_new_dog/build/sim_interface && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_sim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 sim_interface/CMakeFiles/my_sim.dir/build: sim_interface/libmy_sim.a
 .PHONY : sim_interface/CMakeFiles/my_sim.dir/build
 
 sim_interface/CMakeFiles/my_sim.dir/clean:
-	cd /home/wu/my_dog_8/build/sim_interface && $(CMAKE_COMMAND) -P CMakeFiles/my_sim.dir/cmake_clean.cmake
+	cd /home/wu/my_new_dog/build/sim_interface && $(CMAKE_COMMAND) -P CMakeFiles/my_sim.dir/cmake_clean.cmake
 .PHONY : sim_interface/CMakeFiles/my_sim.dir/clean
 
 sim_interface/CMakeFiles/my_sim.dir/depend:
-	cd /home/wu/my_dog_8/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wu/my_dog_8 /home/wu/my_dog_8/sim_interface /home/wu/my_dog_8/build /home/wu/my_dog_8/build/sim_interface /home/wu/my_dog_8/build/sim_interface/CMakeFiles/my_sim.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wu/my_new_dog/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wu/my_new_dog /home/wu/my_new_dog/sim_interface /home/wu/my_new_dog/build /home/wu/my_new_dog/build/sim_interface /home/wu/my_new_dog/build/sim_interface/CMakeFiles/my_sim.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sim_interface/CMakeFiles/my_sim.dir/depend
 

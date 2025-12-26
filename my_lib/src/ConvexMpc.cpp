@@ -191,7 +191,7 @@ void ConvexMpc::calculate_qp_mats(CtrlStates &state) {
     // calculate lower bound and upper bound
     //垂直力的最小值 fz_min 为 0，最大值 fz_max 为 180
     fz_min = 0;
-    fz_max = 180;
+    fz_max = 150;
 
     Eigen::VectorXd lb_one_horizon(MPC_CONSTRAINT_DIM);
     Eigen::VectorXd ub_one_horizon(MPC_CONSTRAINT_DIM);

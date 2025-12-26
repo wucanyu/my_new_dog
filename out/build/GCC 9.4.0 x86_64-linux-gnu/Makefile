@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wu/my_dog_8
+CMAKE_SOURCE_DIR = /home/wu/my_new_dog
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu"
+CMAKE_BINARY_DIR = "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles" "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles" "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -207,19 +207,6 @@ DOG_SIM/fast:
 	$(MAKE) $(MAKESILENT) -f user/sim/CMakeFiles/DOG_SIM.dir/build.make user/sim/CMakeFiles/DOG_SIM.dir/build
 .PHONY : DOG_SIM/fast
 
-#=============================================================================
-# Target rules for targets named DOG_TEXT
-
-# Build rule for target.
-DOG_TEXT: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DOG_TEXT
-.PHONY : DOG_TEXT
-
-# fast build rule for target.
-DOG_TEXT/fast:
-	$(MAKE) $(MAKESILENT) -f user/pin_text/CMakeFiles/DOG_TEXT.dir/build.make user/pin_text/CMakeFiles/DOG_TEXT.dir/build
-.PHONY : DOG_TEXT/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -230,7 +217,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... DOG"
 	@echo "... DOG_SIM"
-	@echo "... DOG_TEXT"
 	@echo "... DOG_WBC"
 	@echo "... my_lib"
 	@echo "... my_lib_sim"

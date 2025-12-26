@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wu/my_dog_8
+CMAKE_SOURCE_DIR = /home/wu/my_new_dog
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu"
+CMAKE_BINARY_DIR = "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu"
 
 # Include any dependencies generated for this target.
 include my_wbc/CMakeFiles/my_wbc.dir/depend.make
@@ -72,30 +72,30 @@ include my_wbc/CMakeFiles/my_wbc.dir/flags.make
 my_wbc/CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.o: my_wbc/CMakeFiles/my_wbc.dir/flags.make
 my_wbc/CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.o: ../../../my_wbc/src/priority_tasks.cpp
 my_wbc/CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.o: my_wbc/CMakeFiles/my_wbc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object my_wbc/CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.o"
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/my_wbc" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT my_wbc/CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.o -MF CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.o.d -o CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.o -c /home/wu/my_dog_8/my_wbc/src/priority_tasks.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object my_wbc/CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.o"
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/my_wbc" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT my_wbc/CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.o -MF CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.o.d -o CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.o -c /home/wu/my_new_dog/my_wbc/src/priority_tasks.cpp
 
 my_wbc/CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.i"
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/my_wbc" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wu/my_dog_8/my_wbc/src/priority_tasks.cpp > CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.i
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/my_wbc" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wu/my_new_dog/my_wbc/src/priority_tasks.cpp > CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.i
 
 my_wbc/CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.s"
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/my_wbc" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wu/my_dog_8/my_wbc/src/priority_tasks.cpp -o CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.s
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/my_wbc" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wu/my_new_dog/my_wbc/src/priority_tasks.cpp -o CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.s
 
 my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: my_wbc/CMakeFiles/my_wbc.dir/flags.make
 my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../../../my_wbc/src/wbc_priority.cpp
 my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: my_wbc/CMakeFiles/my_wbc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o"
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/my_wbc" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o -MF CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o.d -o CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o -c /home/wu/my_dog_8/my_wbc/src/wbc_priority.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o"
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/my_wbc" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o -MF CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o.d -o CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o -c /home/wu/my_new_dog/my_wbc/src/wbc_priority.cpp
 
 my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.i"
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/my_wbc" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wu/my_dog_8/my_wbc/src/wbc_priority.cpp > CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.i
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/my_wbc" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wu/my_new_dog/my_wbc/src/wbc_priority.cpp > CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.i
 
 my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.s"
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/my_wbc" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wu/my_dog_8/my_wbc/src/wbc_priority.cpp -o CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.s
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/my_wbc" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wu/my_new_dog/my_wbc/src/wbc_priority.cpp -o CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.s
 
 # Object files for target my_wbc
 my_wbc_OBJECTS = \
@@ -109,19 +109,19 @@ my_wbc/libmy_wbc.a: my_wbc/CMakeFiles/my_wbc.dir/src/priority_tasks.cpp.o
 my_wbc/libmy_wbc.a: my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o
 my_wbc/libmy_wbc.a: my_wbc/CMakeFiles/my_wbc.dir/build.make
 my_wbc/libmy_wbc.a: my_wbc/CMakeFiles/my_wbc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libmy_wbc.a"
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/my_wbc" && $(CMAKE_COMMAND) -P CMakeFiles/my_wbc.dir/cmake_clean_target.cmake
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/my_wbc" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_wbc.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libmy_wbc.a"
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/my_wbc" && $(CMAKE_COMMAND) -P CMakeFiles/my_wbc.dir/cmake_clean_target.cmake
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/my_wbc" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_wbc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 my_wbc/CMakeFiles/my_wbc.dir/build: my_wbc/libmy_wbc.a
 .PHONY : my_wbc/CMakeFiles/my_wbc.dir/build
 
 my_wbc/CMakeFiles/my_wbc.dir/clean:
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/my_wbc" && $(CMAKE_COMMAND) -P CMakeFiles/my_wbc.dir/cmake_clean.cmake
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/my_wbc" && $(CMAKE_COMMAND) -P CMakeFiles/my_wbc.dir/cmake_clean.cmake
 .PHONY : my_wbc/CMakeFiles/my_wbc.dir/clean
 
 my_wbc/CMakeFiles/my_wbc.dir/depend:
-	cd "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wu/my_dog_8 /home/wu/my_dog_8/my_wbc "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu" "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/my_wbc" "/home/wu/my_dog_8/out/build/GCC 9.4.0 x86_64-linux-gnu/my_wbc/CMakeFiles/my_wbc.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wu/my_new_dog /home/wu/my_new_dog/my_wbc "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/my_wbc" "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/my_wbc/CMakeFiles/my_wbc.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : my_wbc/CMakeFiles/my_wbc.dir/depend
 

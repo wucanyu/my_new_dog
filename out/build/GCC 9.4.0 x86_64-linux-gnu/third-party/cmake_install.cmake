@@ -1,8 +1,8 @@
-# Install script for directory: /home/wu/my_dog_8/third-party
+# Install script for directory: /home/wu/my_new_dog/third-party
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/wu/my_dog_8/out/install/GCC 9.4.0 x86_64-linux-gnu")
+  set(CMAKE_INSTALL_PREFIX "/home/wu/my_new_dog/out/install/GCC 9.4.0 x86_64-linux-gnu")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

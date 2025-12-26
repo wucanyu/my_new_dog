@@ -1,4 +1,4 @@
-# Install script for directory: /home/wu/my_dog_8
+# Install script for directory: /home/wu/my_new_dog
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,12 +44,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/wu/my_dog_8/build/sim_interface/cmake_install.cmake")
-  include("/home/wu/my_dog_8/build/third-party/cmake_install.cmake")
-  include("/home/wu/my_dog_8/build/my_lib/cmake_install.cmake")
-  include("/home/wu/my_dog_8/build/my_lib_sim/cmake_install.cmake")
-  include("/home/wu/my_dog_8/build/my_wbc/cmake_install.cmake")
-  include("/home/wu/my_dog_8/build/user/cmake_install.cmake")
+  include("/home/wu/my_new_dog/build/sim_interface/cmake_install.cmake")
+  include("/home/wu/my_new_dog/build/third-party/cmake_install.cmake")
+  include("/home/wu/my_new_dog/build/my_lib/cmake_install.cmake")
+  include("/home/wu/my_new_dog/build/my_lib_sim/cmake_install.cmake")
+  include("/home/wu/my_new_dog/build/my_wbc/cmake_install.cmake")
+  include("/home/wu/my_new_dog/build/user/cmake_install.cmake")
 
 endif()
 
@@ -61,5 +61,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/wu/my_dog_8/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/wu/my_new_dog/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
