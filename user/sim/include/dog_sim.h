@@ -124,39 +124,19 @@ bool HardwareDog::main_update(double dt,const UIctr &uiController,double t) {
     // root_lin_vel_d_world is in world frame    
     ctrl_states.root_lin_vel_d_world = ctrl_states.root_rot_mat * ctrl_states.root_lin_vel_d;
     
-    // static double rpy_int[2];
-    // if(fabs(ctrl_states.root_lin_vel(1)) > 0.1)
-    // {
-    //     rpy_int[0] += dt*(0 - ctrl_states.root_euler(0))/ctrl_states.root_lin_vel(1);
-    // }
-    // if(fabs(ctrl_states.root_lin_vel(0)) > 0.2)   //avoid dividing by zero
-    // {
-    //     rpy_int[1] += dt*(0 - ctrl_states.root_euler(1))/ctrl_states.root_lin_vel(0);
-    // }
-    // rpy_int[0] = fminf(fmaxf(rpy_int[0], -0.25), 0.25);
-    // rpy_int[1] = fminf(fmaxf(rpy_int[1], -0.25), 0.25);
-    // ctrl_states.root_euler_d[1] = ctrl_states.root_lin_vel(0) * rpy_int[1];
-    // ctrl_states.root_euler_d[0] = ctrl_states.root_lin_vel(1) * rpy_int[0];
-
-    // root_ang_vel_d is in robot frame
-    // ctrl_states.root_ang_vel_d[0] = joy_cmd_roll_rate;
-    // ctrl_states.root_ang_vel_d[1] = joy_cmd_pitch_rate;
     ctrl_states.root_ang_vel_d[0] = 0;
     ctrl_states.root_ang_vel_d[1] = 0;
     ctrl_states.root_ang_vel_d[2] = joy_cmd_yaw_rate;
-    // ctrl_states.root_euler_d[0] += joy_cmd_roll_rate * dt;
-    // ctrl_states.root_euler_d[1] += joy_cmd_pitch_rate * dt;
     ctrl_states.root_euler_d[0] = 0;// 默认横滚角
     ctrl_states.root_euler_d[1] = 0;// 默认俯仰角
     ctrl_states.root_euler_d[2] += joy_cmd_yaw_rate * dt;
     ctrl_states.root_pos_d[2] = joy_cmd_body_height;
 
-
-    // determine movement mode
-    ctrl_states.early_contacts[0] = ctrl_states.contacts[0];
-    ctrl_states.early_contacts[1] = ctrl_states.contacts[1]; 
-    ctrl_states.early_contacts[2] = ctrl_states.contacts[2];
-    ctrl_states.early_contacts[3] = ctrl_states.contacts[3];
+    //记录上一次的contact
+    for (int i = 0; i < NUM_LEG; ++i) 
+    {
+        ctrl_states.early_contacts[i] = ctrl_states.contacts[i];
+    }
 
     // determine movement mode
     if (joy_cmd_ctrl_state == 1) {
@@ -206,7 +186,8 @@ bool HardwareDog::main_update(double dt,const UIctr &uiController,double t) {
 
     _root_control.update_plan(ctrl_states, dt);
     _root_control.generate_swing_legs_ctrl(ctrl_states, dt);
-    // _root_control.cout_data(ctrl_states);
+    _root_control.cout_data(ctrl_states);
+    
 
     return true;
 }
@@ -236,12 +217,13 @@ void HardwareDog::read_data(const data_bus &robotState,double t ,double start_t)
     joy_cmd_roll_rate = 0;
     joy_cmd_pitch_rate = 0;
     joy_cmd_yaw_rate = 0;      
-    //时间 相位计算
+    //时间
     ctrl_states.robot_time += 0.002;
     if(ctrl_states.robot_time >= ctrl_states.max_time)
     {
         ctrl_states.robot_time = 0;
     }
+    //当前相位的时间
     if(ctrl_states.robot_time > ctrl_states.max_time * 0.5)
     {
         ctrl_states.robot_time_half = ctrl_states.robot_time - ctrl_states.max_time * 0.5;
@@ -250,15 +232,8 @@ void HardwareDog::read_data(const data_bus &robotState,double t ,double start_t)
     {
         ctrl_states.robot_time_half = ctrl_states.robot_time;
     }
+    ctrl_states.robot_phase = ctrl_states.robot_time_half / (ctrl_states.max_time * 0.5);
 
-    if(ctrl_states.robot_time_half == 0)
-    {
-        ctrl_states.robot_phase = 0;
-    }
-    else
-    {
-        ctrl_states.robot_phase = ctrl_states.robot_time_half / 0.5;
-    }
     ctrl_states.robot_time_half_remain = ctrl_states.max_time_half - ctrl_states.robot_time_half;
     ctrl_states.robot_phase_remain = 1 - ctrl_states.robot_phase;
     //基础数据

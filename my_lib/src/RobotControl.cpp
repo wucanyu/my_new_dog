@@ -441,38 +441,47 @@ Eigen::Vector3d RobotControl::compute_walking_surface(CtrlStates &state) {
 
 
 void RobotControl::update_plan(CtrlStates &state, double dt) {
+    //更新摆动相足端起点
     for (int i = 0; i < NUM_LEG; ++i) 
     {
-        if (state.contacts[i] && !state.early_contacts[i])//
+        if ((state.contacts[i] != state.early_contacts[i]) && state.contacts[i] == true)
         {
             //时刻更新足端位置
             state.foot_pos_start_world.block<3, 1>(0, i) = state.foot_pos_world.block<3, 1>(0, i);
-            state.foot_pos_end_world.block<3, 1>(0, i) << 0 , 0 , 0;
         }
         else
+        {
+            state.foot_pos_start_world.block<3, 1>(0, i) << 0,0,0;              
+        }
+    }
+    for (int i = 0; i < NUM_LEG; ++i) 
+    {
+        if (!state.contacts[i])
         {
             Eigen::Vector3d pos_body_hip[4];
             Eigen::Vector3d pos_body_hip_offset;
             pos_body_hip_offset << -0.018 , 0, 0;
-            pos_body_hip[0] <<  0.211332  ,-0.166815  ,0;
-            pos_body_hip[1] <<  0.211332  ,0.166815  ,0;
-            pos_body_hip[2] << -0.211332  ,-0.166815  ,0;
-            pos_body_hip[3] << -0.211332  ,0.166815  ,0;
+            pos_body_hip[0] <<  0.211332  ,-0.1668  ,0;
+            pos_body_hip[1] <<  0.211332  , 0.1668  ,0;
+            pos_body_hip[2] << -0.211332  ,-0.1668  ,0;
+            pos_body_hip[3] << -0.211332  , 0.1668  ,0;
+
             for (int i = 0; i < NUM_LEG; ++i)
             {
                 pos_body_hip[i] += pos_body_hip_offset;
             }
             Eigen::Vector3d ptouchcom = state.root_pos +
             state.root_rot_mat * state.root_lin_vel_d * state.robot_phase_remain * state.robot_time_half;
-            Eigen::AngleAxisd yaw_touch  (Eigen::AngleAxisd(state.root_euler(2) + state.root_ang_vel_d_world(2) * state.robot_phase_remain * state.robot_time_half,
+            Eigen::AngleAxisd yaw_touch = (Eigen::AngleAxisd(state.root_euler(2) 
+                                        + state.root_ang_vel_d_world(2) * state.robot_phase_remain * state.robot_time_half,
                                           Eigen::Vector3d::UnitZ()));
             Eigen::AngleAxisd yaw_vary  (Eigen::AngleAxisd(0.5 * state.robot_time_half * state.root_ang_vel_d_world(2),
                                         Eigen::Vector3d::UnitZ()));
             Eigen::Vector3d ptouchhip = ptouchcom + yaw_touch * pos_body_hip[i];
 
-            Eigen::Vector3d padd1 = 0.5 * state.robot_time_half * state.root_lin_vel;
+            Eigen::Vector3d padd1 = 0.5 * state.robot_time_half * state.root_lin_vel_d_world;
             Eigen::Vector3d padd2 = yaw_touch * (yaw_vary * pos_body_hip[i] - pos_body_hip[i]);
-            Eigen::Vector3d padd3 = 0.001 * (state.root_lin_vel - state.root_lin_vel_d_world);
+            Eigen::Vector3d padd3 = 0.15 * (state.root_lin_vel - state.root_lin_vel_d_world);
             Eigen::Vector3d padd4 = Utils::skew((state.root_pos(2) / 9.81f) * state.root_lin_vel) * state.root_ang_vel;
             
             state.foot_pos_end_world.block<3, 1>(0, i) = ptouchhip + padd1 + padd2 + padd3 + padd4;
@@ -494,7 +503,6 @@ void RobotControl::update_plan(CtrlStates &state, double dt) {
                 footPos(2) = bezierUtils[i].cubicBezier(state.foot_pos_start_world(2,i) + 0.07, 0.0, state.robot_phase * 2 - 1);
                 footVel(2) = bezierUtils[i].cubicBezier_v(state.foot_pos_start_world(2,i) + 0.07, 0.0, state.robot_phase * 2 - 1)*2/state.max_time_half;
             }
-
             state.foot_pos_target_world.block<3, 1>(0, i) = footPos;
             state.foot_vel_target_world.block<3, 1>(0, i) = footVel;
         }
@@ -549,250 +557,3 @@ void RobotControl::generate_swing_legs_ctrl(CtrlStates &state, double dt) {
         }
     }
 }
-
-/*
-// void RobotControl::update_plan(CtrlStates &state, double dt) {
-//     // update foot plan: state.foot_pos_target_world
-//     Eigen::Vector3d lin_vel_world = state.root_lin_vel; // 质心世界方向速度
-
-//     // Raibert Heuristic, calculate foothold position
-//     state.foot_pos_end_rel = state.default_foot_pos;
-//     for (int i = 0; i < NUM_LEG; ++i) {
-//         // double delta_x =
-//         //         std::sqrt(std::abs(state.default_foot_pos(2)) / 9.8) * (lin_vel_rel(0) - state.root_lin_vel_d(0)) +
-//         //         (0.5 * state.control_dt) / 2.0 * state.root_lin_vel_d(0);
-//         // double delta_y =
-//         //         std::sqrt(std::abs(state.default_foot_pos(2)) / 9.8) * (lin_vel_rel(1) - state.root_lin_vel_d(1)) +
-//         //         (0.5 * state.control_dt) / 2.0 * state.root_lin_vel_d(0);
-
-//         if (state.contacts[i])
-//         {
-//             //时刻更新足端位置
-//             state.foot_pos_start_world.block<3, 1>(0, i) = state.foot_pos_world.block<3, 1>(0, i);
-//             state.foot_pos_end_world.block<3, 1>(0, i) << 0 , 0 , 0;
-//         }
-//         else
-//         {
-//             // MIT
-//             // Eigen::Vector3d pos_body_hip[4];
-//             // Eigen::Vector3d pos_body_hip_offset;
-//             // double interleave_y[4] = {0.08, -0.08, -0.02, 0.02};
-//             // double interleave_gain = -0.2;
-//             // pos_body_hip[0] <<  0.211332  ,0.166815  ,0;
-//             // pos_body_hip[1] <<  0.211332  ,-0.166815  ,0;
-//             // pos_body_hip[2] << -0.211332  ,0.166815  ,0;
-//             // pos_body_hip[3] << -0.211332  ,-0.166815  ,0;
-//             // pos_body_hip_offset << -0.018 , 0, 0;
-
-
-//             // Eigen::Vector3d pRobotFrame = pos_body_hip[i] + pos_body_hip_offset;
-//             // pRobotFrame(1) += interleave_y[i] * std::fabs(state.root_lin_vel_d(0)) * interleave_gain;
-//             // Eigen::AngleAxisd yawAngle  (Eigen::AngleAxisd(-state.root_ang_vel_d_world(2) * state.max_time_half / 2,Eigen::Vector3d::UnitZ()));
-//             // Eigen::Vector3d pYawCorrected = yawAngle * pRobotFrame;
-
-//             // Eigen::Vector3d des_vel;
-//             // des_vel[0] = state.root_lin_vel_d_world(0);
-//             // des_vel[1] = state.root_lin_vel_d_world(1);
-//             // des_vel[2] = 0.0;
-
-//             // Eigen::Vector3d Pf = state.root_pos + state.root_rot_mat.transpose() * (pYawCorrected + des_vel * state.robot_time_half_remain);
-
-//             // double pfx_rel = 
-//             // lin_vel_world(0) * 0.5 * state.max_time_half +
-//             // 0.005f * (lin_vel_world(0) - state.root_lin_vel_d_world(0)) +
-//             // (0.5f * std::abs(state.default_foot_pos(2)) / 9.81f) * (lin_vel_world(1) * state.root_ang_vel_d_world(2));
-//             // double pfy_rel = 
-//             // lin_vel_world(1) * 0.5 * state.max_time_half  +
-//             // 0.005f * (lin_vel_world(1) - state.root_lin_vel_d_world(1)) +
-//             // (0.5f * std::abs(state.default_foot_pos(2)) / 9.81f) * (-lin_vel_world(0) * state.root_ang_vel_d_world(2));
-
-//             // if (Pf[0] < -FOOT_DELTA_X_LIMIT) {
-//             //     Pf[0] = -FOOT_DELTA_X_LIMIT;
-//             // }
-//             // if (Pf[0] > FOOT_DELTA_X_LIMIT) {
-//             //     Pf[0] = FOOT_DELTA_X_LIMIT;
-//             // }
-//             // if (Pf[1] < -FOOT_DELTA_Y_LIMIT) {
-//             //     Pf[1] = -FOOT_DELTA_Y_LIMIT;
-//             // }
-//             // if (Pf[1] > FOOT_DELTA_Y_LIMIT) {
-//             //     Pf[1] = FOOT_DELTA_Y_LIMIT;
-//             // }
-
-//             // Pf[0] +=  pfx_rel;
-//             // Pf[1] +=  pfy_rel;
-//             // Pf[2] = -0.003;
-
-//             // state.foot_pos_end_world.block<3, 1>(0, i) = Pf;
-
-//             Eigen::Vector3d footPos;
-//             Eigen::Vector3d footVel;         
-//             footPos(0) = bezierUtils[i].cubicBezier(state.foot_pos_start_world(0,i), state.foot_pos_end_world(0,i), state.robot_phase);
-//             footPos(1) = bezierUtils[i].cubicBezier(state.foot_pos_start_world(1,i), state.foot_pos_end_world(1,i), state.robot_phase);
-//             footVel(0) = bezierUtils[i].cubicBezier_v(state.foot_pos_start_world(0,i), state.foot_pos_end_world(0,i), state.robot_phase)/state.max_time_half;
-//             footVel(1) = bezierUtils[i].cubicBezier_v(state.foot_pos_start_world(1,i), state.foot_pos_end_world(1,i), state.robot_phase)/state.max_time_half;
-
-//             if(state.robot_phase < 0.5)
-//             {
-//                 footPos(2) = bezierUtils[i].cubicBezier(state.foot_pos_start_world(2,i), state.foot_pos_start_world(2,i) + 0.07, state.robot_phase*2 );
-//                 footVel(2) = bezierUtils[i].cubicBezier_v(state.foot_pos_start_world(0,i), state.foot_pos_end_world(0,i), state.robot_phase*2 )*2/state.max_time_half;
-//             }
-//             else
-//             {
-//                 footPos(2) = bezierUtils[i].cubicBezier(state.foot_pos_start_world(2,i) + 0.07, state.foot_pos_start_world(2,i), state.robot_phase * 2 - 1);
-//                 footVel(2) = bezierUtils[i].cubicBezier_v(state.foot_pos_start_world(0,i), state.foot_pos_end_world(0,i), state.robot_phase * 2 - 1)*2/state.max_time_half;
-//             }
-
-//             state.foot_pos_target_world.block<3, 1>(0, i) = footPos;
-//             state.foot_vel_target_world.block<3, 1>(0, i) = footVel;
-//         }
-//     }
-// }
-
-// void RobotControl::generate_swing_legs_ctrl(CtrlStates &state, double dt) {
-//     Eigen::Matrix<double, 3, NUM_LEG> foot_pos_target;  foot_pos_target.setZero();
-//     Eigen::Matrix<double, 3, NUM_LEG> foot_vel_target;  foot_vel_target.setZero();
-//     Eigen::Matrix<double, 3, NUM_LEG> foot_pos_error;
-//     Eigen::Matrix<double, 3, NUM_LEG> foot_vel_error;
-//     Eigen::Matrix<double, 3, NUM_LEG> foot_forces_kin;
-//     Eigen::Matrix<double, 3, NUM_LEG> foot_forces_kin_world;
-//     for (int i = 0; i < NUM_LEG; ++i) {
-//         //时刻计算足端摆动相的力
-//         if (state.contacts[i]) 
-//         {
-//             foot_forces_kin_world.block<3, 1>(0, i) << 0,0,0;
-//             foot_forces_kin.block<3, 1>(0, i) << 0,0,0;
-//         }
-//         else 
-//         {
-//             foot_pos_target.block<3, 1>(0, i) = state.foot_pos_target_world.block<3, 1>(0, i);
-//             foot_vel_target.block<3, 1>(0, i) = state.foot_vel_target_world.block<3, 1>(0, i);
-
-//             foot_pos_error.block<3, 1>(0, i) = foot_pos_target.block<3, 1>(0, i) - state.foot_pos_world.block<3, 1>(0, i);
-//             foot_vel_error.block<3, 1>(0, i) = foot_vel_target.block<3, 1>(0, i) - state.foot_vel_world.block<3, 1>(0, i);
-        
-//             foot_forces_kin_world.block<3, 1>(0, i) = foot_pos_error.block<3, 1>(0, i).cwiseProduct(state.kp_foot.block<3, 1>(0, i)) +
-//                                                       foot_vel_error.block<3, 1>(0, i).cwiseProduct(state.kd_foot.block<3, 1>(0, i));
-
-//             foot_forces_kin.block<3, 1>(0, i) = state.root_rot_mat.transpose() * foot_forces_kin_world.block<3, 1>(0, i);
-            
-//         }
-//     }
-//     state.foot_forces_kin = foot_forces_kin;
-//     state.foot_forces_kin_world = foot_forces_kin_world;
-
-//     state.joint_torques_swing.block<3, 1>(0, 0) = state.J3_FL_body.transpose()  * state.foot_forces_kin.block<3, 1>(0, 0);
-//     state.joint_torques_swing.block<3, 1>(3, 0) = state.J3_FR_body.transpose()  * state.foot_forces_kin.block<3, 1>(0, 1);
-//     state.joint_torques_swing.block<3, 1>(6, 0) = state.J3_BL_body.transpose()  * state.foot_forces_kin.block<3, 1>(0, 2);
-//     state.joint_torques_swing.block<3, 1>(9, 0) = state.J3_BR_body.transpose()  * state.foot_forces_kin.block<3, 1>(0, 3);
-
-//     for (int i = 0; i < NUM_LEG; ++i) {
-//         if(state.contacts[i] == true)
-//         {
-//             state.joint_torques_out.block<3, 1>(i*3, 0) = state.joint_torques.block<3, 1>(i*3, 0);
-//         }
-//         else
-//         {
-//             state.joint_torques_out.block<3, 1>(i*3, 0) = state.joint_torques_swing.block<3, 1>(i*3, 0);
-//         }
-//     }
-// }
-
-
-/*
-void RobotControl::update_plan(CtrlStates &state, double dt) {
-    for (int i = 0; i < NUM_LEG; ++i) 
-    {
-        if (state.contacts[i])
-        {
-            //时刻更新足端位置
-            state.foot_pos_start_world.block<3, 1>(0, i) = state.foot_pos_world.block<3, 1>(0, i);
-            state.foot_pos_end_world.block<3, 1>(0, i) << 0 , 0 , 0;
-        }
-        else 
-        {
-            state.foot_pos_end_world.block<3, 1>(0, i)  = bezierUtils[i].calFootEndPos( i, 
-                                                                                        state.root_lin_vel_d_world(0), 
-                                                                                        state.root_lin_vel_d_world(1),
-                                                                                        state.root_euler(2), 
-                                                                                        state.root_ang_vel(2),
-                                                                                        0,
-                                                                                        state.root_pos,
-                                                                                        state.root_lin_vel,
-                                                                                        state.default_foot_pos,
-                                                                                        state.max_time/2,
-                                                                                        0);
-     
-                                                                                        
-            Eigen::Vector3d footPos;
-            footPos(0) = bezierUtils[i].cubicBezier(state.foot_pos_start_world(0,i), state.foot_pos_end_world(0,i), state.robot_phase);
-            footPos(1) = bezierUtils[i].cubicBezier(state.foot_pos_start_world(1,i), state.foot_pos_end_world(1,i), state.robot_phase);
-
-            if(state.robot_phase < 0.5)
-            {
-                footPos(2) = bezierUtils[i].cubicBezier(state.foot_pos_start_world(2,i), state.foot_pos_start_world(2,i) + 0.07, state.robot_phase*2 );
-            }
-            else
-            {
-                footPos(2) = bezierUtils[i].cubicBezier(state.foot_pos_start_world(2,i) + 0.07, state.foot_pos_start_world(2,i), state.robot_phase * 2 - 1);
-            }
-
-
-            state.foot_pos_target_world.block<3, 1>(0, i) = footPos;
-            state.foot_pos_target_rel.block<3, 1>(0, i) = state.root_rot_mat.transpose() * state.foot_pos_target_world.block<3, 1>(0, i);
-        }
-    }
-
-}
-
-
-void RobotControl::generate_swing_legs_ctrl(CtrlStates &state, double dt) {
-    Eigen::Matrix<double, 3, NUM_LEG> foot_pos_target;  foot_pos_target.setZero();
-    Eigen::Matrix<double, 3, NUM_LEG> foot_vel_target;  foot_vel_target.setZero();
-    Eigen::Matrix<double, 3, NUM_LEG> foot_pos_error;
-    Eigen::Matrix<double, 3, NUM_LEG> foot_vel_error;
-    Eigen::Matrix<double, 3, NUM_LEG> foot_forces_kin;
-    Eigen::Matrix<double, 3, NUM_LEG> foot_forces_kin_world;
-    for (int i = 0; i < NUM_LEG; ++i) {
-        //时刻计算足端摆动相的力
-        if (state.contacts[i]) 
-        {
-            foot_forces_kin.block<3, 1>(0, i) << 0,0,0;
-        }
-        else 
-        {
-            foot_pos_target.block<3, 1>(0, i) =  state.foot_pos_target_world.block<3, 1>(0, i);
-            foot_vel_target.block<3, 1>(0, i) = (foot_pos_target.block<3, 1>(0, i) - state.foot_pos_target_last_time.block<3, 1>(0, i)) / dt;
-            state.foot_pos_target_last_time.block<3, 1>(0, i) = foot_pos_target.block<3, 1>(0, i);
-
-            foot_pos_error.block<3, 1>(0, i) = foot_pos_target.block<3, 1>(0, i) - state.foot_pos_world.block<3, 1>(0, i);
-            foot_vel_error.block<3, 1>(0, i) = foot_vel_target.block<3, 1>(0, i) - state.foot_vel_world.block<3, 1>(0, i);
-        
-            foot_forces_kin_world.block<3, 1>(0, i) = foot_pos_error.block<3, 1>(0, i).cwiseProduct(state.kp_foot.block<3, 1>(0, i)) +
-                                                      foot_vel_error.block<3, 1>(0, i).cwiseProduct(state.kd_foot.block<3, 1>(0, i));
-
-            foot_forces_kin.block<3, 1>(0, i) = state.root_rot_mat.transpose() * foot_forces_kin_world.block<3, 1>(0, i);
-            
-        }
-    }
-    state.foot_forces_kin = foot_forces_kin;
-    state.foot_forces_kin_world = foot_forces_kin_world;
-
-    state.joint_torques_swing.block<3, 1>(0, 0) = state.J3_FL_body.transpose()  * state.foot_forces_kin.block<3, 1>(0, 0);
-    state.joint_torques_swing.block<3, 1>(3, 0) = state.J3_FR_body.transpose()  * state.foot_forces_kin.block<3, 1>(0, 1);
-    state.joint_torques_swing.block<3, 1>(6, 0) = state.J3_BL_body.transpose()  * state.foot_forces_kin.block<3, 1>(0, 2);
-    state.joint_torques_swing.block<3, 1>(9, 0) = state.J3_BR_body.transpose()  * state.foot_forces_kin.block<3, 1>(0, 3);
-
-    for (int i = 0; i < NUM_LEG; ++i) {
-        if(state.contacts[i] == true)
-        {
-            state.joint_torques_out.block<3, 1>(i*3, 0) = state.joint_torques.block<3, 1>(i*3, 0);
-        }
-        else
-        {
-            state.joint_torques_out.block<3, 1>(i*3, 0) = state.joint_torques_swing.block<3, 1>(i*3, 0);
-        }
-    }
-}
-
-*/

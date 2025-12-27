@@ -41,20 +41,6 @@ int main(int argc, char **argv) {
 
     double startwaitingTime = 0.5;
     double startwalkingTime = 1.5;
-
-    std::thread compute_MPC_thread([&]() {
-        // 使用std::chrono::high_resolution_clock来获取时间
-        auto start = std::chrono::high_resolution_clock::now();
-        auto prev = start;
-        // prepare variables to monitor time and control the while loop
-        while (1) {
-            if (MPC_stance_count > (dt_25Hz / dt-1)) {
-                dog_sim->update_foot_forces_grf(dt_25Hz);
-                MPC_stance_count = 0;
-            }
-            usleep(100);  //程序挂起100us
-        }
-    });
     
 
     while (!glfwWindowShouldClose(uiController.window)) {
@@ -78,6 +64,10 @@ int main(int argc, char **argv) {
             dog_sim->read_data(mj_interface.Robotstate,simTime,startwalkingTime);
             //支撑相
 			MPC_stance_count = MPC_stance_count + 1;
+            if (MPC_stance_count > (dt_25Hz / dt-1)) {
+                dog_sim->update_foot_forces_grf(dt_25Hz);
+                MPC_stance_count = 0;
+            }
         
             std::cout << "time now :" << std::endl;
             std::cout << simTime << std::endl;
