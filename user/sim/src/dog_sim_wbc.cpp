@@ -12,6 +12,7 @@
 
 const double dt = 0.002;
 const double dt_25Hz = 0.04;
+const double dt_100Hz = 0.01;
 int MPC_stance_count = 0;  
 
 // MuJoCo load and compile model
@@ -59,8 +60,8 @@ int main(int argc, char **argv) {
             // ------------- MPC ------------
             // 支撑相
 			MPC_stance_count = MPC_stance_count + 1;
-            if (MPC_stance_count > (dt_25Hz / dt-1)) {
-                dog_sim->update_foot_forces_grf(dt_25Hz);
+            if (MPC_stance_count > (dt_100Hz / dt-1)) {
+                dog_sim->update_foot_forces_grf(dt_100Hz);
                 MPC_stance_count = 0;
             }
             //摆动相 
@@ -76,6 +77,7 @@ int main(int argc, char **argv) {
 
             std::cout << "time now :" << std::endl;
             std::cout << simTime << std::endl;
+            std::cout << "--------------------------------------------------------:" << std::endl;
 
             if(simTime <= startwaitingTime)
             {

@@ -263,7 +263,7 @@ void WBC_priority::computeDdq(Pin_KinDyn &pinKinDynIn)
         kinwbc_tasks_walk.taskLib[id].dJ =  Eigen::MatrixXd::Zero(6,model_nv);
         kinwbc_tasks_walk.taskLib[id].W.diagonal() = Eigen::VectorXd::Ones(model_nv);
 
-    /***************身体朝向任务**********/    
+    /***************身体姿态任务**********/    
         id = kinwbc_tasks_walk.getId("BodyOriTask");
         //rpy状态的状态差
         kinwbc_tasks_walk.taskLib[id].errX = Eigen::VectorXd::Zero(3);
@@ -277,7 +277,7 @@ void WBC_priority::computeDdq(Pin_KinDyn &pinKinDynIn)
         //期望速度为零
         kinwbc_tasks_walk.taskLib[id].dxDes = Eigen::VectorXd::Zero(3);
         //KP权重为100
-        kinwbc_tasks_walk.taskLib[id].kp = Eigen::MatrixXd::Identity(3, 3) * 100;
+        kinwbc_tasks_walk.taskLib[id].kp = Eigen::MatrixXd::Identity(3, 3) * 150;
         //KP权重为10     
         kinwbc_tasks_walk.taskLib[id].kd = Eigen::MatrixXd::Identity(3, 3) * 10;
 
@@ -309,8 +309,8 @@ void WBC_priority::computeDdq(Pin_KinDyn &pinKinDynIn)
         kinwbc_tasks_walk.taskLib[id].derrX = Eigen::VectorXd::Zero(6);
         kinwbc_tasks_walk.taskLib[id].ddxDes = Eigen::VectorXd::Zero(6);
         kinwbc_tasks_walk.taskLib[id].dxDes = Eigen::VectorXd::Zero(6);
-        kinwbc_tasks_walk.taskLib[id].kp = Eigen::MatrixXd::Identity(6, 6) * 350;
-        kinwbc_tasks_walk.taskLib[id].kd = Eigen::MatrixXd::Identity(6, 6) * 35;
+        kinwbc_tasks_walk.taskLib[id].kp = Eigen::MatrixXd::Identity(6, 6) * 300;
+        kinwbc_tasks_walk.taskLib[id].kd = Eigen::MatrixXd::Identity(6, 6) * 10;
         kinwbc_tasks_walk.taskLib[id].J = Jsw;
         kinwbc_tasks_walk.taskLib[id].dJ = dJsw;
         kinwbc_tasks_walk.taskLib[id].W.diagonal() = Eigen::VectorXd::Ones(model_nv);

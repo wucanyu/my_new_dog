@@ -267,7 +267,7 @@ Eigen::Matrix<double, 3, NUM_LEG> RobotControl::compute_grf(CtrlStates &state, d
                             state.root_lin_vel[0], state.root_lin_vel[1], state.root_lin_vel[2],
                             -9.8;
 
-        double mpc_dt = 0.04;
+        double mpc_dt = dt;
 
         // state.mpc_states_d.resize(13 * PLAN_HORIZON);
         if(state.movement_mode == 0)
@@ -444,19 +444,19 @@ void RobotControl::update_plan(CtrlStates &state, double dt) {
     //更新摆动相足端起点
     for (int i = 0; i < NUM_LEG; ++i) 
     {
-        if ((state.contacts[i] != state.early_contacts[i]) && state.contacts[i] == true)
+        if ((state.contacts[i] == false) && (state.early_contacts[i] == true) )
         {
             //时刻更新足端位置
             state.foot_pos_start_world.block<3, 1>(0, i) = state.foot_pos_world.block<3, 1>(0, i);
         }
-        else
+        else if(state.contacts[i] == true)
         {
-            state.foot_pos_start_world.block<3, 1>(0, i) << 0,0,0;              
+            state.foot_pos_start_world.block<3, 1>(0, i) << 0,0,0;             
         }
     }
     for (int i = 0; i < NUM_LEG; ++i) 
     {
-        if (!state.contacts[i])
+        if (state.contacts[i] == false)
         {
             Eigen::Vector3d pos_body_hip[4];
             Eigen::Vector3d pos_body_hip_offset;
@@ -505,6 +505,12 @@ void RobotControl::update_plan(CtrlStates &state, double dt) {
             }
             state.foot_pos_target_world.block<3, 1>(0, i) = footPos;
             state.foot_vel_target_world.block<3, 1>(0, i) = footVel;
+        }
+        else if(state.contacts[i] == true)
+        {
+            state.foot_pos_end_world.block<3, 1>(0, i) << 0,0,0;
+            state.foot_pos_target_world.block<3, 1>(0, i) << 0,0,0;
+            state.foot_vel_target_world.block<3, 1>(0, i) << 0,0,0;
         }
     }
 }

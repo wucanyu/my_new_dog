@@ -51,28 +51,28 @@ int main(int argc, char **argv) {
             mj_step(mj_model, mj_data);
             simTime=mj_data->time;
             
-            // 更新传感器值
-            mj_interface.updateSensorValues();
-            mj_interface.update_data_to_phnocchio();
+            // // 更新传感器值
+            // mj_interface.updateSensorValues();
+            // mj_interface.update_data_to_phnocchio();
 
-            // update kinematics and dynamics info
-            kinDynSolver.data_Read(mj_interface.Robotstate);
-            kinDynSolver.computeJ_dJ();
-            kinDynSolver.computeDyn();
-            kinDynSolver.update_data_to_MJ_interface(mj_interface.Robotstate);
-            //控制器接收数据
-            dog_sim->read_data(mj_interface.Robotstate,simTime,startwalkingTime);
-            //支撑相
-			MPC_stance_count = MPC_stance_count + 1;
-            if (MPC_stance_count > (dt_25Hz / dt-1)) {
-                dog_sim->update_foot_forces_grf(dt_25Hz);
-                MPC_stance_count = 0;
-            }
+            // // update kinematics and dynamics info
+            // kinDynSolver.data_Read(mj_interface.Robotstate);
+            // kinDynSolver.computeJ_dJ();
+            // kinDynSolver.computeDyn();
+            // kinDynSolver.update_data_to_MJ_interface(mj_interface.Robotstate);
+            // //控制器接收数据
+            // dog_sim->read_data(mj_interface.Robotstate,simTime,startwalkingTime);
+            // //支撑相
+			// MPC_stance_count = MPC_stance_count + 1;
+            // if (MPC_stance_count > (dt_25Hz / dt-1)) {
+            //     dog_sim->update_foot_forces_grf(dt_25Hz);
+            //     MPC_stance_count = 0;
+            // }
         
-            std::cout << "time now :" << std::endl;
-            std::cout << simTime << std::endl;
-            //摆动相 
-            dog_sim->main_update(dt,uiController,simTime);
+            // std::cout << "time now :" << std::endl;
+            // std::cout << simTime << std::endl;
+            // //摆动相 
+            // dog_sim->main_update(dt,uiController,simTime);
 
             if(simTime <= startwaitingTime)
             {

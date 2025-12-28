@@ -10,6 +10,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <cmath>
  
 #include <stdio.h>
 #include <fcntl.h>
@@ -134,7 +135,7 @@ bool HardwareDog::main_update(double dt,const UIctr &uiController,double t) {
 
     //记录上一次的contact
     for (int i = 0; i < NUM_LEG; ++i) 
-    {
+    {        
         ctrl_states.early_contacts[i] = ctrl_states.contacts[i];
     }
 
@@ -162,15 +163,12 @@ bool HardwareDog::main_update(double dt,const UIctr &uiController,double t) {
         ctrl_states.contacts[1] = true; 
         ctrl_states.contacts[2] = true;
         ctrl_states.contacts[3] = true;
-    } else {
-        ctrl_states.movement_mode = 0;
+    } else if(joy_cmd_ctrl_state == 0) {
         ctrl_states.contacts[0] = true;
         ctrl_states.contacts[1] = true; 
         ctrl_states.contacts[2] = true;
         ctrl_states.contacts[3] = true;
     }
-
-    
 
     // in walking mode, do position locking if no root_lin_vel_d, otherwise do not lock position
     if (ctrl_states.movement_mode == 1) {
@@ -204,9 +202,10 @@ HardwareDog::HardwareDog(){
 }
 
 void HardwareDog::read_data(const data_bus &robotState,double t ,double start_t){
+    std::cout << "--------------------------------------------------------:" << std::endl;
     //仿真状态切换
     static int flag = 0;
-    if(start_t < t && flag == 0)
+    if(start_t <= t && flag == 0)
     {
         joy_cmd_ctrl_state_change_request = true;
         flag = 1;
@@ -218,11 +217,9 @@ void HardwareDog::read_data(const data_bus &robotState,double t ,double start_t)
     joy_cmd_pitch_rate = 0;
     joy_cmd_yaw_rate = 0;      
     //时间
-    ctrl_states.robot_time += 0.002;
-    if(ctrl_states.robot_time >= ctrl_states.max_time)
-    {
-        ctrl_states.robot_time = 0;
-    }
+    double mid_t = fmod(t, ctrl_states.max_time);
+    ctrl_states.robot_time = mid_t;
+    std::cout << "ctrl_states.robot_time =" << ctrl_states.robot_time <<std::endl;            
     //当前相位的时间
     if(ctrl_states.robot_time > ctrl_states.max_time * 0.5)
     {
