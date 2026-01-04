@@ -190,8 +190,8 @@ void ConvexMpc::calculate_qp_mats(CtrlStates &state) {
     // auto t5 = std::chrono::high_resolution_clock::now();
     // calculate lower bound and upper bound
     //垂直力的最小值 fz_min 为 0，最大值 fz_max 为 180
-    fz_min = 0;
-    fz_max = 150;
+    fz_min = state.F_min;
+    fz_max = state.F_max;
 
     Eigen::VectorXd lb_one_horizon(MPC_CONSTRAINT_DIM);
     Eigen::VectorXd ub_one_horizon(MPC_CONSTRAINT_DIM);

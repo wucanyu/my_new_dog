@@ -6,12 +6,14 @@
 #include <string>
 #include <iostream>
 #include "dog_sim.h"
+#include <sched.h>
+#include <pthread.h>
 #include <thread>
 #include <mutex>
 #include "wbc_priority.h"
 
 const double dt = 0.002;
-const double dt_25Hz = 0.04;
+const double dt_100Hz = 0.01;
 int MPC_stance_count = 0;  
 
 //条件变量
@@ -41,8 +43,8 @@ int main(int argc, char **argv) {
     mjtNum simstart = mj_data->time;
     double simTime = mj_data->time;
 
-    double startwaitingTime = 0.5;
-    double startwalkingTime = 1.5;
+    double startwaitingTime = 0.2;
+    double startwalkingTime = 3.0;
 
     // -------------------------- 1. MPC计算线程（独立线程） --------------------------
     std::thread compute_MPC_thread([&]() {
@@ -52,7 +54,7 @@ int main(int argc, char **argv) {
             // 步骤1：加锁检测MPC触发条件（读取共享变量MPC_stance_count）
             {
                 std::lock_guard<std::mutex> lock(mpc_mutex); // 自动加锁，作用域结束自动解锁
-                if (MPC_stance_count > (dt_25Hz / dt - 1)) {
+                if (MPC_stance_count > (dt_100Hz / dt - 1)) {
                     need_mpc = true;
                 }
             } // 锁在此处自动释放，避免MPC计算期间持有锁
@@ -60,7 +62,7 @@ int main(int argc, char **argv) {
             // 步骤2：执行耗时MPC计算（无需持有锁，仅在读写共享资源时加锁）
             if (need_mpc) {
                 std::lock_guard<std::mutex> lock(mpc_mutex);
-                dog_sim->update_foot_forces_grf(dt_25Hz); // 访问共享资源dog_sim，加锁保护
+                dog_sim->update_foot_forces_grf(dt_100Hz); // 访问共享资源dog_sim，加锁保护
                 MPC_stance_count = 0; // 重置共享计数，加锁保护
             }
             // 步骤3：精准延时，避免CPU空转（与仿真步长一致）

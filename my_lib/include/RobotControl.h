@@ -48,8 +48,6 @@ private:
     double _beta;
     // ground friction coefficient
     double mu;
-    double F_min;
-    double F_max;
     // allocate QP problem matrices and vectors
     Eigen::SparseMatrix<double> hessian;
     Eigen::VectorXd gradient;

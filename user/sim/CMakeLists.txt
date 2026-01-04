@@ -47,3 +47,14 @@ target_link_libraries(DOG_WBC
     glfw 
     mujoco
 )
+
+add_executable(DOG_PRO src/dog_sim_process.cpp)
+
+#目标生成
+target_link_libraries(DOG_PRO 
+    my_wbc
+    my_lib_sim
+    glfw 
+    mujoco
+)
+

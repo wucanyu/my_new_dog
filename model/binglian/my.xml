@@ -49,11 +49,8 @@
     </contact>
 
     <equality>
-                                                 <!-- 指定约束的锚点位置，即两个刚体连接的位置。 -->
-        <connect name="c1" body1="b4" body2="b5" anchor="0.2 0 0" />
-
-   <!-- <connect name="c2" body1="b1" body2="b3" anchor="0.2 0 0"  />
-        <connect name="c3" body1="b2" body2="b4" anchor="0 0 -0.2" /> -->
+        <!-- 指定约束的锚点位置，即两个刚体连接的位置。 -->
+        <connect site1 = "site_bb1" site2 = "site_bb0" />
     </equality>
 
     <actuator>

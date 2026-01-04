@@ -530,10 +530,10 @@ void WBC_priority::computeTau()
 	if (joy_cmd_ctrl_state == 0){
         eigen_qp_H.block<6, 6>(0, 0) = Q1 * 1.0;
         eigen_qp_H.block<12, 12>(6, 6) = Q2 * 0.1;
-		// eigen_qp_H(9,9) *= 100;
-		// eigen_qp_H(10,10) *= 100;
-		// eigen_qp_H(15,15) *= 100;
-		// eigen_qp_H(16,16) *= 100;
+		eigen_qp_H(9,9) *= 100;
+		eigen_qp_H(10,10) *= 100;
+		eigen_qp_H(15,15) *= 100;
+		eigen_qp_H(16,16) *= 100;
 	}
 	else{
         eigen_qp_H.block<6, 6>(0, 0) = Q1 * 1.0;

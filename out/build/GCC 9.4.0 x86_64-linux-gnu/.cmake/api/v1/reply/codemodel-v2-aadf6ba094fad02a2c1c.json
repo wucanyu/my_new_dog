@@ -33,7 +33,7 @@
 					"source" : "sim_interface",
 					"targetIndexes" : 
 					[
-						5
+						6
 					]
 				},
 				{
@@ -57,7 +57,7 @@
 					"source" : "my_lib",
 					"targetIndexes" : 
 					[
-						3
+						4
 					]
 				},
 				{
@@ -71,7 +71,7 @@
 					"source" : "my_lib_sim",
 					"targetIndexes" : 
 					[
-						4
+						5
 					]
 				},
 				{
@@ -85,7 +85,7 @@
 					"source" : "my_wbc",
 					"targetIndexes" : 
 					[
-						6
+						7
 					]
 				},
 				{
@@ -129,7 +129,8 @@
 					"targetIndexes" : 
 					[
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -158,7 +159,8 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7
 					]
 				}
 			],
@@ -169,6 +171,13 @@
 					"id" : "DOG::@f267a97ee4f47a789caf",
 					"jsonFile" : "target-DOG-Debug-79ae21dfe4f8b0147465.json",
 					"name" : "DOG",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "DOG_PRO::@8b90196172f1369cacce",
+					"jsonFile" : "target-DOG_PRO-Debug-15127a34e273ec4f0c70.json",
+					"name" : "DOG_PRO",
 					"projectIndex" : 0
 				},
 				{

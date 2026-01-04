@@ -19,7 +19,8 @@
 /home/wu/my_new_dog/build/user/hardware/CMakeFiles/edit_cache.dir
 /home/wu/my_new_dog/build/user/hardware/CMakeFiles/rebuild_cache.dir
 /home/wu/my_new_dog/build/user/hardware/CMakeFiles/DOG.dir
-/home/wu/my_new_dog/build/user/sim/CMakeFiles/edit_cache.dir
 /home/wu/my_new_dog/build/user/sim/CMakeFiles/rebuild_cache.dir
-/home/wu/my_new_dog/build/user/sim/CMakeFiles/DOG_WBC.dir
 /home/wu/my_new_dog/build/user/sim/CMakeFiles/DOG_SIM.dir
+/home/wu/my_new_dog/build/user/sim/CMakeFiles/DOG_PRO.dir
+/home/wu/my_new_dog/build/user/sim/CMakeFiles/DOG_WBC.dir
+/home/wu/my_new_dog/build/user/sim/CMakeFiles/edit_cache.dir

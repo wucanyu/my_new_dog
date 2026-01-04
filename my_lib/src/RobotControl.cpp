@@ -7,8 +7,6 @@ RobotControl::RobotControl() {
     //权重矩阵
     Q.diagonal() << 20.0, 20.0, 50.0, 450.0, 450.0, 450.0;
     mu = 0.4;
-    F_min = 0;
-    F_max = 150;
     hessian.resize(3 * NUM_LEG, 3 * NUM_LEG);
     gradient.resize(3 * NUM_LEG);
     linearMatrix.resize(NUM_LEG + 4 * NUM_LEG, 3 * NUM_LEG);
@@ -70,6 +68,7 @@ RobotControl::RobotControl() {
         recent_contact_y_filter[i] = MovingWindowFilter(60);
         recent_contact_z_filter[i] = MovingWindowFilter(60);
     }
+
 }
 
 void RobotControl::cout_data(CtrlStates &state) {
@@ -192,13 +191,13 @@ Eigen::Matrix<double, 3, NUM_LEG> RobotControl::compute_grf(CtrlStates &state, d
             lowerBound[5 * i + 1] = -c_flag * OsqpEigen::INFTY;
             lowerBound[5 * i + 2] = 0;
             lowerBound[5 * i + 3] = 0;
-            lowerBound[5 * i + 4] = c_flag * F_min;
+            lowerBound[5 * i + 4] = c_flag * state.F_min;
 
             upperBound[5 * i + 0] = 0;
             upperBound[5 * i + 1] = 0;
             upperBound[5 * i + 2] = c_flag * OsqpEigen::INFTY;
             upperBound[5 * i + 3] = c_flag * OsqpEigen::INFTY;
-            upperBound[5 * i + 4] = c_flag * F_max;
+            upperBound[5 * i + 4] = c_flag * state.F_max;
         }
  
         // instantiate the solver
@@ -389,11 +388,11 @@ Eigen::Matrix<double, 3, NUM_LEG> RobotControl::compute_grf(CtrlStates &state, d
         std::chrono::duration<double, std::milli> ms_double_4 = t5 - t4;
         std::chrono::duration<double, std::milli> ms_double_5 = t6 - t5;
 
-    //    std::cout << "mpc cal A_mat_c: " << ms_double_1.count() << "ms" << std::endl;
-    //    std::cout << "mpc cal B_mat_d_list: " << ms_double_2.count() << "ms" << std::endl;
-    //    std::cout << "mpc cal qp mats: " << ms_double_3.count() << "ms" << std::endl;
-    //    std::cout << "mpc init time: " << ms_double_4.count() << "ms" << std::endl;
-    //    std::cout << "mpc solve time: " << ms_double_5.count() << "ms" << std::endl << std::endl;
+       std::cout << "mpc cal A_mat_c: " << ms_double_1.count() << "ms" << std::endl;
+       std::cout << "mpc cal B_mat_d_list: " << ms_double_2.count() << "ms" << std::endl;
+       std::cout << "mpc cal qp mats: " << ms_double_3.count() << "ms" << std::endl;
+       std::cout << "mpc init time: " << ms_double_4.count() << "ms" << std::endl;
+       std::cout << "mpc solve time: " << ms_double_5.count() << "ms" << std::endl << std::endl;
 
         Eigen::VectorXd solution = solver.getSolution();
         // std::cout << solution.transpose() << std::endl;

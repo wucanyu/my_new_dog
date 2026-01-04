@@ -80,6 +80,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "my_lib_sim/CMakeFiles/my_lib_sim.dir/DependInfo.cmake"
   "my_wbc/CMakeFiles/my_wbc.dir/DependInfo.cmake"
   "user/hardware/CMakeFiles/DOG.dir/DependInfo.cmake"
-  "user/sim/CMakeFiles/DOG_WBC.dir/DependInfo.cmake"
   "user/sim/CMakeFiles/DOG_SIM.dir/DependInfo.cmake"
+  "user/sim/CMakeFiles/DOG_PRO.dir/DependInfo.cmake"
+  "user/sim/CMakeFiles/DOG_WBC.dir/DependInfo.cmake"
   )

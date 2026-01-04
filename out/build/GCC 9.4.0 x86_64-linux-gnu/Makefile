@@ -182,19 +182,6 @@ DOG/fast:
 .PHONY : DOG/fast
 
 #=============================================================================
-# Target rules for targets named DOG_WBC
-
-# Build rule for target.
-DOG_WBC: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DOG_WBC
-.PHONY : DOG_WBC
-
-# fast build rule for target.
-DOG_WBC/fast:
-	$(MAKE) $(MAKESILENT) -f user/sim/CMakeFiles/DOG_WBC.dir/build.make user/sim/CMakeFiles/DOG_WBC.dir/build
-.PHONY : DOG_WBC/fast
-
-#=============================================================================
 # Target rules for targets named DOG_SIM
 
 # Build rule for target.
@@ -207,6 +194,32 @@ DOG_SIM/fast:
 	$(MAKE) $(MAKESILENT) -f user/sim/CMakeFiles/DOG_SIM.dir/build.make user/sim/CMakeFiles/DOG_SIM.dir/build
 .PHONY : DOG_SIM/fast
 
+#=============================================================================
+# Target rules for targets named DOG_PRO
+
+# Build rule for target.
+DOG_PRO: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DOG_PRO
+.PHONY : DOG_PRO
+
+# fast build rule for target.
+DOG_PRO/fast:
+	$(MAKE) $(MAKESILENT) -f user/sim/CMakeFiles/DOG_PRO.dir/build.make user/sim/CMakeFiles/DOG_PRO.dir/build
+.PHONY : DOG_PRO/fast
+
+#=============================================================================
+# Target rules for targets named DOG_WBC
+
+# Build rule for target.
+DOG_WBC: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DOG_WBC
+.PHONY : DOG_WBC
+
+# fast build rule for target.
+DOG_WBC/fast:
+	$(MAKE) $(MAKESILENT) -f user/sim/CMakeFiles/DOG_WBC.dir/build.make user/sim/CMakeFiles/DOG_WBC.dir/build
+.PHONY : DOG_WBC/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -216,6 +229,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... DOG"
+	@echo "... DOG_PRO"
 	@echo "... DOG_SIM"
 	@echo "... DOG_WBC"
 	@echo "... my_lib"

@@ -65,16 +65,6 @@ CMAKE_BINARY_DIR = "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu"
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -84,6 +74,16 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/local/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -117,20 +117,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-user/sim/CMakeFiles/DOG_WBC.dir/rule:
-	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/sim/CMakeFiles/DOG_WBC.dir/rule
-.PHONY : user/sim/CMakeFiles/DOG_WBC.dir/rule
-
-# Convenience name for target.
-DOG_WBC: user/sim/CMakeFiles/DOG_WBC.dir/rule
-.PHONY : DOG_WBC
-
-# fast build rule for target.
-DOG_WBC/fast:
-	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f user/sim/CMakeFiles/DOG_WBC.dir/build.make user/sim/CMakeFiles/DOG_WBC.dir/build
-.PHONY : DOG_WBC/fast
-
-# Convenience name for target.
 user/sim/CMakeFiles/DOG_SIM.dir/rule:
 	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/sim/CMakeFiles/DOG_SIM.dir/rule
 .PHONY : user/sim/CMakeFiles/DOG_SIM.dir/rule
@@ -143,6 +129,34 @@ DOG_SIM: user/sim/CMakeFiles/DOG_SIM.dir/rule
 DOG_SIM/fast:
 	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f user/sim/CMakeFiles/DOG_SIM.dir/build.make user/sim/CMakeFiles/DOG_SIM.dir/build
 .PHONY : DOG_SIM/fast
+
+# Convenience name for target.
+user/sim/CMakeFiles/DOG_PRO.dir/rule:
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/sim/CMakeFiles/DOG_PRO.dir/rule
+.PHONY : user/sim/CMakeFiles/DOG_PRO.dir/rule
+
+# Convenience name for target.
+DOG_PRO: user/sim/CMakeFiles/DOG_PRO.dir/rule
+.PHONY : DOG_PRO
+
+# fast build rule for target.
+DOG_PRO/fast:
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f user/sim/CMakeFiles/DOG_PRO.dir/build.make user/sim/CMakeFiles/DOG_PRO.dir/build
+.PHONY : DOG_PRO/fast
+
+# Convenience name for target.
+user/sim/CMakeFiles/DOG_WBC.dir/rule:
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user/sim/CMakeFiles/DOG_WBC.dir/rule
+.PHONY : user/sim/CMakeFiles/DOG_WBC.dir/rule
+
+# Convenience name for target.
+DOG_WBC: user/sim/CMakeFiles/DOG_WBC.dir/rule
+.PHONY : DOG_WBC
+
+# fast build rule for target.
+DOG_WBC/fast:
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f user/sim/CMakeFiles/DOG_WBC.dir/build.make user/sim/CMakeFiles/DOG_WBC.dir/build
+.PHONY : DOG_WBC/fast
 
 src/dog_sim.o: src/dog_sim.cpp.o
 .PHONY : src/dog_sim.o
@@ -167,6 +181,30 @@ src/dog_sim.s: src/dog_sim.cpp.s
 src/dog_sim.cpp.s:
 	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f user/sim/CMakeFiles/DOG_SIM.dir/build.make user/sim/CMakeFiles/DOG_SIM.dir/src/dog_sim.cpp.s
 .PHONY : src/dog_sim.cpp.s
+
+src/dog_sim_process.o: src/dog_sim_process.cpp.o
+.PHONY : src/dog_sim_process.o
+
+# target to build an object file
+src/dog_sim_process.cpp.o:
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f user/sim/CMakeFiles/DOG_PRO.dir/build.make user/sim/CMakeFiles/DOG_PRO.dir/src/dog_sim_process.cpp.o
+.PHONY : src/dog_sim_process.cpp.o
+
+src/dog_sim_process.i: src/dog_sim_process.cpp.i
+.PHONY : src/dog_sim_process.i
+
+# target to preprocess a source file
+src/dog_sim_process.cpp.i:
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f user/sim/CMakeFiles/DOG_PRO.dir/build.make user/sim/CMakeFiles/DOG_PRO.dir/src/dog_sim_process.cpp.i
+.PHONY : src/dog_sim_process.cpp.i
+
+src/dog_sim_process.s: src/dog_sim_process.cpp.s
+.PHONY : src/dog_sim_process.s
+
+# target to generate assembly for a file
+src/dog_sim_process.cpp.s:
+	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu" && $(MAKE) $(MAKESILENT) -f user/sim/CMakeFiles/DOG_PRO.dir/build.make user/sim/CMakeFiles/DOG_PRO.dir/src/dog_sim_process.cpp.s
+.PHONY : src/dog_sim_process.cpp.s
 
 src/dog_sim_wbc.o: src/dog_sim_wbc.cpp.o
 .PHONY : src/dog_sim_wbc.o
@@ -200,11 +238,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... DOG_PRO"
 	@echo "... DOG_SIM"
 	@echo "... DOG_WBC"
 	@echo "... src/dog_sim.o"
 	@echo "... src/dog_sim.i"
 	@echo "... src/dog_sim.s"
+	@echo "... src/dog_sim_process.o"
+	@echo "... src/dog_sim_process.i"
+	@echo "... src/dog_sim_process.s"
 	@echo "... src/dog_sim_wbc.o"
 	@echo "... src/dog_sim_wbc.i"
 	@echo "... src/dog_sim_wbc.s"

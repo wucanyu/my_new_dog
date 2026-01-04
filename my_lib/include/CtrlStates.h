@@ -18,6 +18,9 @@ public:
         use_terrain_adapt = 0;
         movement_mode = 0;
 
+        F_min = 0;
+        F_max = 180;
+
         root_pos_d.setZero();
         root_euler_d.setZero();
         root_lin_vel_d.setZero();
@@ -57,25 +60,25 @@ public:
         // x y z 
         // wx wy wz 
         // vx vy vz
-        q_weights_trot <<   20, 20, 5, 
-                            60, 60, 120, 
-                            0.5,0.5,10.0, 
-                            5,  5,  1,
+        q_weights_trot <<   300, 300, 100, 
+                            1000, 1000, 1500, 
+                            10,10,30.0, 
+                            15,  15,  100,
                             0.0;
-        r_weights_trot <<   6e-5, 6e-5, 6e-5,
-                            6e-5, 6e-5, 6e-5,
-                            6e-5, 6e-5, 6e-5,
-                            6e-5, 6e-5, 6e-5;
+        r_weights_trot <<   10e-5, 10e-5, 10e-5,
+                            10e-5, 10e-5, 10e-5,
+                            10e-5, 10e-5, 10e-5,
+                            10e-5, 10e-5, 10e-5;
 
-        q_weights << 20, 40, 5, 
-                     40, 60, 80, 
+        q_weights << 20, 20, 5, 
+                     60, 20, 150, 
                      0, 0, 0.5, 
-                     5, 5, 1,
+                     5, 5, 10,
                      0.0;                     
-        r_weights <<    8e-5, 8e-5, 8e-5,
-                        8e-5, 8e-5, 8e-5,
-                        8e-5, 8e-5, 8e-5,
-                        8e-5, 8e-5, 8e-5;
+        r_weights <<    6e-5, 6e-5, 6e-5,
+                        6e-5, 6e-5, 6e-5,
+                        6e-5, 6e-5, 6e-5,
+                        6e-5, 6e-5, 6e-5;
 
         root_pos.setZero();
         root_quat.setIdentity();
@@ -153,6 +156,9 @@ public:
     int stance_leg_control_type; // 0: QP, 1: MPC 选择控制方式
     int movement_mode;  // 0: standstill, 1: start to locomote 选择控制状态
     int use_terrain_adapt; //选择是否使用地形估计的标志位
+    //force
+    double F_min;
+    double F_max;
 
     //机器人在机体坐标系下的期望位置
     Eigen::Vector3d root_pos_d;

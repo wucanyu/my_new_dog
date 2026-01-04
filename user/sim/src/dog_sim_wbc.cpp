@@ -35,7 +35,7 @@ int main(int argc, char **argv) {
     double simTime = mj_data->time;
 
     double startwaitingTime = 0.5;
-    double startwalkingTime = 1.5;
+    double startwalkingTime = 2.0;
 
     while (!glfwWindowShouldClose(uiController.window)) {
         simstart = mj_data->time;
@@ -99,23 +99,6 @@ int main(int argc, char **argv) {
                                 dog_sim->ctrl_states.joint_torques_out(9,0),
                                 dog_sim->ctrl_states.joint_torques_out(10,0),
                                 dog_sim->ctrl_states.joint_torques_out(11,0)};
-
-                // std::vector<double> set_tor = { 
-                //                 WBC_solv.tauJointRes(0),
-                //                 WBC_solv.tauJointRes(1),
-                //                 WBC_solv.tauJointRes(2),
-
-                //                 WBC_solv.tauJointRes(3),
-                //                 WBC_solv.tauJointRes(4),
-                //                 WBC_solv.tauJointRes(5),
-
-                //                 WBC_solv.tauJointRes(6),
-                //                 WBC_solv.tauJointRes(7),
-                //                 WBC_solv.tauJointRes(8),
-
-                //                 WBC_solv.tauJointRes(9),
-                //                 WBC_solv.tauJointRes(10),
-                //                 WBC_solv.tauJointRes(11)};
 
                 mj_interface.setMotorsTorque(set_tor);       
             }
