@@ -486,24 +486,30 @@ void RobotControl::update_plan(CtrlStates &state, double dt) {
             state.foot_pos_end_world.block<3, 1>(0, i) = ptouchhip + padd1 + padd2 + padd3 + padd4;
 
             Eigen::Vector3d footPos;
-            Eigen::Vector3d footVel;         
+            Eigen::Vector3d footVel;   
+            Eigen::Vector3d footacc;       
             footPos(0) = bezierUtils[i].cubicBezier(state.foot_pos_start_world(0,i), state.foot_pos_end_world(0,i), state.robot_phase);
-            footPos(1) = bezierUtils[i].cubicBezier(state.foot_pos_start_world(1,i), state.foot_pos_end_world(1,i), state.robot_phase);
             footVel(0) = bezierUtils[i].cubicBezier_v(state.foot_pos_start_world(0,i), state.foot_pos_end_world(0,i), state.robot_phase)/state.max_time_half;
+            footacc(0) = bezierUtils[i].cubicBezier_a(state.foot_pos_start_world(0,i), state.foot_pos_end_world(0,i), state.robot_phase)/(state.max_time_half * state.max_time_half);
+            footPos(1) = bezierUtils[i].cubicBezier(state.foot_pos_start_world(1,i), state.foot_pos_end_world(1,i), state.robot_phase);
             footVel(1) = bezierUtils[i].cubicBezier_v(state.foot_pos_start_world(1,i), state.foot_pos_end_world(1,i), state.robot_phase)/state.max_time_half;
+            footacc(1) = bezierUtils[i].cubicBezier_a(state.foot_pos_start_world(1,i), state.foot_pos_end_world(1,i), state.robot_phase)/(state.max_time_half * state.max_time_half);
 
             if(state.robot_phase < 0.5)
             {
                 footPos(2) = bezierUtils[i].cubicBezier(state.foot_pos_start_world(2,i), state.foot_pos_start_world(2,i) + 0.07, state.robot_phase*2 );
                 footVel(2) = bezierUtils[i].cubicBezier_v(state.foot_pos_start_world(2,i),state.foot_pos_start_world(2,i) + 0.07, state.robot_phase*2 )*2/state.max_time_half;
+                footacc(2) = bezierUtils[i].cubicBezier_a(state.foot_pos_start_world(2,i), state.foot_pos_start_world(2,i) + 0.07, state.robot_phase*2 )*4/(state.max_time_half * state.max_time_half);
             }
             else
             {
                 footPos(2) = bezierUtils[i].cubicBezier(state.foot_pos_start_world(2,i) + 0.07, 0.0, state.robot_phase * 2 - 1);
                 footVel(2) = bezierUtils[i].cubicBezier_v(state.foot_pos_start_world(2,i) + 0.07, 0.0, state.robot_phase * 2 - 1)*2/state.max_time_half;
+                footacc(2) = bezierUtils[i].cubicBezier_a(state.foot_pos_start_world(2,i) + 0.07, 0.0, state.robot_phase*2 - 1 )*4/(state.max_time_half * state.max_time_half);
             }
             state.foot_pos_target_world.block<3, 1>(0, i) = footPos;
             state.foot_vel_target_world.block<3, 1>(0, i) = footVel;
+            state.foot_acc_target_world.block<3, 1>(0, i) = footacc;
         }
         else if(state.contacts[i] == true)
         {

@@ -134,6 +134,8 @@ void UIctr::Keyboard(int key, int scancode, int act, int mods) {
         isContinuous = false;
     }
 
+
+    if (act == GLFW_RELEASE && key == GLFW_KEY_W) buttonRead.key_w = true;
     if (act == GLFW_RELEASE && key == GLFW_KEY_A) buttonRead.key_a = true;
     if (act == GLFW_RELEASE && key == GLFW_KEY_S) buttonRead.key_s = true;
     if (act == GLFW_RELEASE && key == GLFW_KEY_D) buttonRead.key_d = true;

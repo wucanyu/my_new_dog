@@ -88,7 +88,23 @@ int main(int argc, char **argv) {
                 kinDynSolver.computeJ_dJ();
                 kinDynSolver.computeDyn();
                 kinDynSolver.update_data_to_MJ_interface(mj_interface.Robotstate);
+
                 //控制器接收数据
+                if(uiController.buttonRead.key_w == true)
+                {
+                    static int flag = 1;
+                    flag = -flag;
+                    if(flag == 1)
+                    {
+                        dog_sim->setX(0);
+                        std::cout << "-00000000000000000000000000000000000000000-"<<std::endl;
+                    }
+                    else if(flag == -1)
+                    {
+                        dog_sim->setX(0.1);
+                        std::cout << "-11111111111111111111111111111111111111111-"<<std::endl;
+                    }
+                }
                 dog_sim->read_data(mj_interface.Robotstate,simTime,startwalkingTime);
 
                 //支撑相 加锁自增共享变量MPC_stance_count（保护共享资源）
@@ -143,7 +159,7 @@ int main(int argc, char **argv) {
                 }
 
             }
-            // 更新场景显示
+           // 更新场景显示
             uiController.updateScene();
         }
 

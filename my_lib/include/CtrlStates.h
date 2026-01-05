@@ -243,6 +243,9 @@ public:
     Eigen::Matrix<double, 3, NUM_LEG> foot_vel_target_rel;
     Eigen::Matrix<double, 3, NUM_LEG> foot_vel_target_abs; 
     Eigen::Matrix<double, 3, NUM_LEG> foot_vel_target_world; 
+    Eigen::Matrix<double, 3, NUM_LEG> foot_acc_target_rel;
+    Eigen::Matrix<double, 3, NUM_LEG> foot_acc_target_abs; 
+    Eigen::Matrix<double, 3, NUM_LEG> foot_acc_target_world; 
     
     Eigen::Matrix<double, 3, NUM_LEG> foot_pos_rel; // 足端当前的位置，在机器人坐标系
     Eigen::Matrix<double, 3, NUM_LEG> foot_pos_abs; // 足端当前的位置，在世界坐标系

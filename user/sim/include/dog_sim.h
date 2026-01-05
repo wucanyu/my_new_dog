@@ -61,6 +61,15 @@ public:
 
     void write_data(data_bus &robotState);
 
+    void setX(double a)  
+	{  
+		joy_cmd_velx = a;  
+	}  
+	void setY(double b)  
+	{  
+		joy_cmd_vely = b;  
+	}  
+
     CtrlStates ctrl_states;
 private:
     bool destruct = false;
@@ -287,9 +296,6 @@ void HardwareDog::write_data(data_bus &robotState)
 {
     robotState.joy_cmd_ctrl_state = joy_cmd_ctrl_state;
 
-    robotState.base_rpy_des = ctrl_states.root_euler_d;
-    robotState.base_pos_des = ctrl_states.root_pos_d;
-
     for (int i = 0; i < 4; i++)
     {   
         robotState.contacts[i] = ctrl_states.contacts[i]; 
@@ -315,12 +321,15 @@ void HardwareDog::write_data(data_bus &robotState)
     robotState.des_dq = Eigen::VectorXd::Zero(18);
     robotState.des_delta_q = Eigen::VectorXd::Zero(18);
 
-    //mpc算出来的xy方向的加速度速度
-    robotState.des_ddq.block<2, 1>(0, 0) << 0, 0;
-    //mpc算出来的xy方向的位置
-    robotState.des_dq.block<3, 1>(0, 0) << ctrl_states.root_lin_vel_d_world[0], ctrl_states.root_lin_vel_d_world[1], 0;
-    //
-    robotState.des_delta_q.block<2, 1>(0, 0) = robotState.des_dq.block<2, 1>(0, 0) * 0.002;
+    robotState.base_rpy_des = ctrl_states.root_euler_d;
+    robotState.base_pos_des = ctrl_states.root_pos_d;
+
+    // //mpc算出来的xy方向的加速度速度
+    // robotState.des_ddq.block<2, 1>(0, 0) << 0, 0;
+    // //mpc算出来的xy方向的位置
+    // robotState.des_dq.block<3, 1>(0, 0) << ctrl_states.root_lin_vel_d_world[0], ctrl_states.root_lin_vel_d_world[1], 0;
+    // //
+    // robotState.des_delta_q.block<2, 1>(0, 0) = robotState.des_dq.block<2, 1>(0, 0) * 0.002;
 
 }
  

@@ -419,11 +419,6 @@ void WBC_priority::computeTau()
     //算出余项优化用于松弛变量的计算
     eqRes = - Sf * dyn_M * ddq_final_kin - Sf * dyn_Non + Sf * Jfe.transpose() * Fr_ff;
             
-    std::cout << "ddq_final_kin:" << std::endl;
-    std::cout << ddq_final_kin.transpose() << std::endl;
-    std::cout << "Fr_ff:" << std::endl;
-    std::cout << Fr_ff.transpose() << std::endl;
-
     //mit,于宪元的论文中的CTe  A矩阵的上部分  
     Eigen::MatrixXd eigen_qp_A1 = Eigen::MatrixXd::Zero(6, 18); 
     eigen_qp_A1.block<6, 6>(0, 0) = Sf * dyn_M * St_qpV1;
@@ -530,10 +525,10 @@ void WBC_priority::computeTau()
 	if (joy_cmd_ctrl_state == 0){
         eigen_qp_H.block<6, 6>(0, 0) = Q1 * 1.0;
         eigen_qp_H.block<12, 12>(6, 6) = Q2 * 0.1;
-		eigen_qp_H(9,9) *= 100;
-		eigen_qp_H(10,10) *= 100;
-		eigen_qp_H(15,15) *= 100;
-		eigen_qp_H(16,16) *= 100;
+		// eigen_qp_H(9,9) *= 100;
+		// eigen_qp_H(10,10) *= 100;
+		// eigen_qp_H(15,15) *= 100;
+		// eigen_qp_H(16,16) *= 100;
 	}
 	else{
         eigen_qp_H.block<6, 6>(0, 0) = Q1 * 1.0;
@@ -626,6 +621,13 @@ void WBC_priority::computeTau()
 
     tauJointRes = tauRes.block(6, 0, model_nv - 6, 1);
 
+
+    std::cout << "dq_final_kin:" << std::endl;
+    std::cout << dq_final_kin.transpose() << std::endl;
+    std::cout << "delta_q_final_kin:" << std::endl;
+    std::cout << delta_q_final_kin.transpose() << std::endl;
+    std::cout << "Fr_ff:" << std::endl;
+    std::cout << Fr_ff.transpose() << std::endl;
     std::cout << "tauJointRes:" << std::endl;
     std::cout << tauJointRes.transpose() << std::endl;
     std::cout << "eigen_fr_Opt:" << std::endl;

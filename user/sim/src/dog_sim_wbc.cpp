@@ -35,7 +35,7 @@ int main(int argc, char **argv) {
     double simTime = mj_data->time;
 
     double startwaitingTime = 0.5;
-    double startwalkingTime = 2.0;
+    double startwalkingTime = 3.0;
 
     while (!glfwWindowShouldClose(uiController.window)) {
         simstart = mj_data->time;

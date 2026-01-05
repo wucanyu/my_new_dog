@@ -35,29 +35,11 @@ public:
     }
 
     //三次贝塞尔位置
-    Eigen::Vector3d cubicBezier(Eigen::Vector3d p0,Eigen::Vector3d pf,float phase);
-    //三次贝塞尔速度
-    Eigen::Vector3d cubicBezier_v(Eigen::Vector3d p0,Eigen::Vector3d pf,float phase);
-    //三次贝塞尔加速度
-    Eigen::Vector3d cubicBezier_a(Eigen::Vector3d p0,Eigen::Vector3d pf,float phase);
-
-    //三次贝塞尔位置
     double cubicBezier(double p0,double pf,double phase);
     //三次贝塞尔速度
     double cubicBezier_v(double p0,double pf,double phase);
     //三次贝塞尔加速度
     double cubicBezier_a(double p0,double pf,double phase);
-
-    //  摆动轨迹计算
-    //  起点 终点 相位 摆动时间 脚抬起的最大高度 存储输出的足端位置 存储输出的足端速度 存储输出的足端加速度
-    void SwingTrajectoryBezier(const Eigen::Vector3d& pf_init, const Eigen::Vector3d& pf_final, double phase, double swingtime, double h,
-                               Eigen::Vector3d& pout, Eigen::Vector3d& p_v, Eigen::Vector3d& p_a);
-
-    // set of functions create bezier curves, get points, reset
-    Eigen::Vector3d get_foot_pos_curve(float t,
-                                       Eigen::Vector3d foot_pos_start,
-                                       Eigen::Vector3d foot_pos_final,
-                                       double terrain_pitch_angle);
 
     bool reset_foot_pos_curve() {curve_constructed = false;}
 

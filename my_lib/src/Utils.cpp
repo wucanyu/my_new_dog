@@ -184,31 +184,10 @@ double BezierUtils::bezier_curve(double t, const std::vector<double> &P) {
 }
 
 //三次贝塞尔位置
-Eigen::Vector3d BezierUtils::cubicBezier(Eigen::Vector3d p0,Eigen::Vector3d pf,float phase)
-{
-    Eigen::Vector3d pout;
-    pout = p0 + (std::pow(phase, 3) + 3*  std::pow(phase, 2) * (1-phase)) * (pf - p0); 
-    return pout;
-}
-//三次贝塞尔速度
-Eigen::Vector3d BezierUtils::cubicBezier_v(Eigen::Vector3d p0,Eigen::Vector3d pf,float phase)
-{
-    Eigen::Vector3d pout;
-    pout = 6 * phase * (1 - phase) * (pf - p0); 
-    return pout;
-}
-//三次贝塞尔加速度
-Eigen::Vector3d BezierUtils::cubicBezier_a(Eigen::Vector3d p0,Eigen::Vector3d pf,float phase)
-{
-    Eigen::Vector3d pout;
-    pout = (6 - 12 * phase) * (pf - p0);
-    return pout;
-}
-//三次贝塞尔位置
 double BezierUtils::cubicBezier(double p0,double pf,double phase)
 {
     double pout;
-    pout = p0 + (std::pow(phase, 3) + 3*  std::pow(phase, 2) * (1-phase)) * (pf - p0); 
+    pout = p0 + (3 * std::pow(phase, 2) - 2 * std::pow(phase, 3) ) * (pf - p0); 
     return pout;
 }
 //三次贝塞尔速度
@@ -226,79 +205,6 @@ double BezierUtils::cubicBezier_a(double p0,double pf,double phase)
     return pout;
 }
 
-
-void BezierUtils::SwingTrajectoryBezier(const Eigen::Vector3d& pf_init, 
-                                        const Eigen::Vector3d& pf_final, 
-                                        double phase, 
-                                        double swingtime, 
-                                        double h,
-                                        Eigen::Vector3d& pout, 
-                                        Eigen::Vector3d& p_v, 
-                                        Eigen::Vector3d& p_a) 
-{
-    // Eigen::Vector3d pout = cubicBezier(pf_init, pf_final, phase);
-    // Eigen::Vector3d p_v = cubicBezier_v(pf_init, pf_final, phase) / swingtime;
-    // Eigen::Vector3d p_a = cubicBezier_a(pf_init, pf_final, phase) / (swingtime * swingtime);
-
-    // double zp, zv, za;
-    // if (phase < 0.5) {
-    //     zp = cubicBezier  (pf_init(2), pf_init(2) + h, phase * 2);
-    //     zv = cubicBezier_v(pf_init(2), pf_init(2) + h, phase * 2) * 2 / swingtime;
-    //     za = cubicBezier_a(pf_init(2), pf_init(2) + h, phase * 2) * 4 / (swingtime * swingtime);
-    // } else {
-    //     zp = cubicBezier  (pf_init(2) + h, pf_final(2), phase * 2 - 1);
-    //     zv = cubicBezier_v(pf_init(2) + h, pf_final(2), phase * 2 - 1) * 2 / swingtime;
-    //     za = cubicBezier_a(pf_init(2) + h, pf_final(2), phase * 2 - 1) * 4 / (swingtime * swingtime);
-    // }
-    // //Z轴
-    // pout(2) = zp;
-    // p_v(2) = zv;
-    // p_a(2) = za;
-}
-
-
-
-
-//根据贝塞尔曲线计算脚部位置
-Eigen::Vector3d BezierUtils::get_foot_pos_curve(float t,
-                                   Eigen::Vector3d foot_pos_start,
-                                   Eigen::Vector3d foot_pos_final, 
-                                   double terrain_pitch_angle = 0)
-{
-    Eigen::Vector3d foot_pos_target;
-    // X-axis
-    std::vector<double> bezierX{foot_pos_start(0),
-                                foot_pos_start(0),
-                                foot_pos_final(0),
-                                foot_pos_final(0),
-                                foot_pos_final(0)};
-    foot_pos_target(0) = bezier_curve(t, bezierX);
-
-    // Y-axis
-    std::vector<double> bezierY{foot_pos_start(1),
-                                foot_pos_start(1),
-                                foot_pos_final(1),
-                                foot_pos_final(1),
-                                foot_pos_final(1)};
-    foot_pos_target(1) = bezier_curve(t, bezierY);
-
-    // Z-axis
-    std::vector<double> bezierZ{foot_pos_start(2),
-                                foot_pos_start(2),
-                                foot_pos_final(2),
-                                foot_pos_final(2),
-                                foot_pos_final(2)};
-    // bezierZ[1] += FOOT_SWING_CLEARANCE1;
-    // bezierZ[2] += FOOT_SWING_CLEARANCE2 + 0.5*sin(terrain_pitch_angle);
-    bezierZ[1] += FOOT_SWING_CLEARANCE1;
-    bezierZ[2] += FOOT_SWING_CLEARANCE2;
-    foot_pos_target(2) = bezier_curve(t, bezierZ);
-
-    return foot_pos_target;
-}
-/*
-    
-*/
 Eigen::Matrix<double, 3, 1> BezierUtils::calFootEndPos( int legID, 
                                                         double dvx, 
                                                         double dvy ,
