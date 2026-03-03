@@ -86,19 +86,36 @@ int main(int argc, char **argv) {
             }
             else if(simTime <= startwalkingTime)
             {            
+                // std::vector<double> set_tor = { 
+                //                 dog_sim->ctrl_states.joint_torques_out(0,0),
+                //                 dog_sim->ctrl_states.joint_torques_out(1,0),
+                //                 dog_sim->ctrl_states.joint_torques_out(2,0),
+                //                 dog_sim->ctrl_states.joint_torques_out(3,0),
+                //                 dog_sim->ctrl_states.joint_torques_out(4,0),
+                //                 dog_sim->ctrl_states.joint_torques_out(5,0),
+                //                 dog_sim->ctrl_states.joint_torques_out(6,0),
+                //                 dog_sim->ctrl_states.joint_torques_out(7,0),
+                //                 dog_sim->ctrl_states.joint_torques_out(8,0),
+                //                 dog_sim->ctrl_states.joint_torques_out(9,0),
+                //                 dog_sim->ctrl_states.joint_torques_out(10,0),
+                //                 dog_sim->ctrl_states.joint_torques_out(11,0)};
+
                 std::vector<double> set_tor = { 
-                                dog_sim->ctrl_states.joint_torques_out(0,0),
-                                dog_sim->ctrl_states.joint_torques_out(1,0),
-                                dog_sim->ctrl_states.joint_torques_out(2,0),
-                                dog_sim->ctrl_states.joint_torques_out(3,0),
-                                dog_sim->ctrl_states.joint_torques_out(4,0),
-                                dog_sim->ctrl_states.joint_torques_out(5,0),
-                                dog_sim->ctrl_states.joint_torques_out(6,0),
-                                dog_sim->ctrl_states.joint_torques_out(7,0),
-                                dog_sim->ctrl_states.joint_torques_out(8,0),
-                                dog_sim->ctrl_states.joint_torques_out(9,0),
-                                dog_sim->ctrl_states.joint_torques_out(10,0),
-                                dog_sim->ctrl_states.joint_torques_out(11,0)};
+                                WBC_solv.tauJointRes(0),
+                                WBC_solv.tauJointRes(1),
+                                WBC_solv.tauJointRes(2),
+
+                                WBC_solv.tauJointRes(3),
+                                WBC_solv.tauJointRes(4),
+                                WBC_solv.tauJointRes(5),
+
+                                WBC_solv.tauJointRes(6),
+                                WBC_solv.tauJointRes(7),
+                                WBC_solv.tauJointRes(8),
+
+                                WBC_solv.tauJointRes(9),
+                                WBC_solv.tauJointRes(10),
+                                WBC_solv.tauJointRes(11)};
 
                 mj_interface.setMotorsTorque(set_tor);       
             }

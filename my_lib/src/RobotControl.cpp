@@ -516,6 +516,7 @@ void RobotControl::update_plan(CtrlStates &state, double dt) {
             state.foot_pos_end_world.block<3, 1>(0, i) << 0,0,0;
             state.foot_pos_target_world.block<3, 1>(0, i) << 0,0,0;
             state.foot_vel_target_world.block<3, 1>(0, i) << 0,0,0;
+            state.foot_acc_target_world.block<3, 1>(0, i) << 0,0,0;
         }
     }
 }

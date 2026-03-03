@@ -295,20 +295,14 @@ void HardwareDog::read_data(const data_bus &robotState,double t ,double start_t)
 void HardwareDog::write_data(data_bus &robotState)
 {
     robotState.joy_cmd_ctrl_state = joy_cmd_ctrl_state;
-
-    for (int i = 0; i < 4; i++)
-    {   
-        robotState.contacts[i] = ctrl_states.contacts[i]; 
-    }
  
     for (int i = 0; i < 4; i++)
     {  
-        robotState.fe_pos_world[i] = ctrl_states.foot_pos_world.block<3, 1>(0, i);
-    }
-
-    for (int i = 0; i < 4; i++)
-    {  
+        robotState.contacts[i] = ctrl_states.contacts[i]; 
+        robotState.fe_pos_world[i] = ctrl_states.foot_pos_world.block<3, 1>(0, i);       
         robotState.fe_pos_world_des[i] = ctrl_states.foot_pos_target_world.block<3, 1>(0, i);
+        robotState.fe_vel_world_des[i] = ctrl_states.foot_vel_target_world.block<3, 1>(0, i);       
+        robotState.fe_acc_world_des[i] = ctrl_states.foot_acc_target_world.block<3, 1>(0, i);  
     }
 
     robotState.Fr_ff = Eigen::VectorXd::Zero(12);

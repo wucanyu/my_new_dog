@@ -77,28 +77,24 @@ void PriorityTasks::computeAll(const Eigen::VectorXd &des_delta_q,const Eigen::V
         //如果是最高优先级
         if (parentId==-1)
         {
-
             //将最高优先级任务的N(也就是该任务所被允许的零空间)设定为1，可以为所欲为的操作所有关节。雅克比矩阵的列数是关节数量(广义坐标)
-            taskLib[curId].N=Eigen::MatrixXd::Identity(taskLib[curId].J.cols(),taskLib[curId].J.cols());
+            taskLib[curId].N = Eigen::MatrixXd::Identity(taskLib[curId].J.cols(),taskLib[curId].J.cols());
             //该任务的雅克比矩阵就是J*N(对于所有优先级任务的通用迭代写法)，就是该任务在父任务的(或父任务的综合)零空间下的允许的雅克比任务矩阵
-            taskLib[curId].Jpre=taskLib[curId].J*taskLib[curId].N;
+            taskLib[curId].Jpre = taskLib[curId].J * taskLib[curId].N;
             //广义位置的增量就是期望的广义位置增量 + 零空间优化后的调整
             //(位置任务)，这里实际上是利用deata_q = q_des - d_cur(这里算增量利用速度雅克比的公式
             //进行公示转换后就是delta_q = des_delta_q (这个一般是父任务算完后的结果)+ 父任务零空任务的解算。(北航论文，应该是MIT原始论文公式)
             //如里是最后-那最终的期望的发给关节的位置就是 前位置(q_cur)+关节位置差(delta_q)
             taskLib[curId].delta_q = des_delta_q + Utils::pseudoInv_right_weighted(taskLib[curId].Jpre,taskLib[curId].W)*taskLib[curId].errX;
             //最高优先级的速度就直接是期望速度，一般是上个任务优化后的期望速鹰
-            taskLib[curId].dq=des_dq;
+            taskLib[curId].dq = des_dq;
             //这里使用自己定的PD控制设定了加速度指令(显然，这取决于机器人本身调节状态的基本能力)
             //这里是给定了当前任务状态的跟踪力度。
-            Eigen::VectorXd ddxcmd= taskLib[curId].ddxDes + taskLib[curId].kp * taskLib[curId].errX+taskLib[curId].kd*taskLib[curId].derrX;
+            Eigen::VectorXd ddxcmd = taskLib[curId].ddxDes + taskLib[curId].kp * taskLib[curId].errX + taskLib[curId].kd*taskLib[curId].derrX;
             //广义加速度，这个严格按公式走的
             //第一个任务全为零
-            taskLib[curId].ddq= des_ddq + Utils::dyn_pseudoInv(taskLib[curId].Jpre,dyn_M_inv,true) * (ddxcmd - taskLib[curId].dJ * dq);
-            // taskLib[curId].ddq = des_ddq;
-            // std::cout << "curId: " << curId << std::endl;
-            // std::cout << taskLib[curId].ddq.transpose() << std::endl;
-            
+            taskLib[curId].ddq = des_ddq + 
+            Utils::dyn_pseudoInv(taskLib[curId].Jpre,dyn_M_inv,true) * (ddxcmd - taskLib[curId].dJ * dq);  
         }
         else
         {

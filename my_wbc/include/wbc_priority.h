@@ -58,11 +58,11 @@ class WBC_priority
     private:
         double timeStep{0.002};
 
-        //6*22 上6*6为单位阵 浮动基座选择矩阵
+        //6*18 上6*6为单位阵 浮动基座选择矩阵
         Eigen::MatrixXd Sf;
-        //22*6 上6*6为单位阵
+        //18*6 上6*6为单位阵
         Eigen::MatrixXd St_qpV1;
-        //22*16 下16*16为单位阵
+        //18*12 下12*12为单位阵
         Eigen::MatrixXd St_qpV2; 
         //足端是否触地
         bool contacts[4]; 
@@ -76,6 +76,10 @@ class WBC_priority
         Eigen::Matrix3d base_rot;
         //摆动期望位置，摆动当前位置    
         Eigen::VectorXd swing_fe_pos_des_W,swing_fe_pos_cur_W;
+        //摆动期望速度，摆动当前速度    
+        Eigen::VectorXd swing_fe_vel_des_W,swing_fe_vel_cur_W;
+        //摆动期望加速度
+        Eigen::VectorXd swing_fe_acc_des_W;
 
         Eigen::VectorXd des_delta_q, des_q, des_dq, des_ddq;
 
@@ -95,7 +99,7 @@ class WBC_priority
         int QP_nc;
 
         static const int QP_nv_des=18;
-        static const int QP_nc_des=26;
+        static const int QP_nc_des=22;
 
         qpOASES::real_t qp_H[QP_nv_des*QP_nv_des];
         qpOASES::real_t qp_A[QP_nc_des*QP_nv_des];

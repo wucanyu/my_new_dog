@@ -13,14 +13,19 @@ public:
     {
     };
 
-    Eigen::VectorXd q, qOld, dq, ddq; //发给动力学库特意定义的变量
-    Eigen::Matrix3d base_rot;   // 基链接旋转矩阵
+    Eigen::VectorXd q, qOld, dq, ddq; 
+    Eigen::Matrix3d base_rot;   
 
     Eigen::Vector3d fe_pos_body[4];
     Eigen::Vector3d fe_spd_body[4];
 
     Eigen::Vector3d fe_pos_world[4];
+    Eigen::Vector3d fe_vel_world[4];
+    Eigen::Vector3d fe_acc_world[4];
     Eigen::Vector3d fe_pos_world_des[4];
+    Eigen::Vector3d fe_vel_world_des[4];
+    Eigen::Vector3d fe_acc_world_des[4];
+
 
     Eigen::Quaterniond quaternion;
     Eigen::Vector3d imu_euler;

@@ -5,7 +5,7 @@
 WBC_priority::WBC_priority(int model_nv_In, int QP_nvIn, int QP_ncIn, double mu_In, double dt) : QP_prob(QP_nvIn,QP_ncIn)
 {
     timeStep = dt;
-    model_nv = model_nv_In;
+    model_nv = model_nv_In;//18
     mu = mu_In;
 
     QP_nv = QP_nvIn;
@@ -82,12 +82,9 @@ void WBC_priority::dataBusRead(const data_bus &robotState)
     for (int i = 0; i < 4; i++)
     {
         contacts[i] = robotState.contacts[i]; 
-    }
-
-    for (int i = 0; i < 4; i++)
-    {
         fe_pos_world[i] = robotState.fe_pos_world[i];
     }
+
 
     //期望的广义(带虚拟浮动基六自由度的关节)坐标(关节坐标)的加速度
     //前两个代表body在世界坐标系的x y 方向的线加速度，第6个是body的Z轴在世界下的角加速度，剩下的是实体关节加速度
@@ -115,11 +112,6 @@ void WBC_priority::dataBusRead(const data_bus &robotState)
     dJfe.block(6, 0, 3, model_nv) = robotState.dJ_BR;
     dJfe.block(9, 0, 3, model_nv) = robotState.dJ_BL;
 
-    std::cout << "Jfe: " << std::endl;
-    std::cout << Jfe << std::endl;
-    std::cout << "dJfe: " << std::endl;
-    std::cout << dJfe << std::endl;
-
     //由MPC计算得出的地面反力 0123
     Fr_ff = robotState.Fr_ff;
     //动力学M矩阵，与加速度有关的系数
@@ -141,29 +133,44 @@ void WBC_priority::dataBusRead(const data_bus &robotState)
     joy_cmd_ctrl_state = robotState.joy_cmd_ctrl_state;
     //摆动足的期望位置
     swing_fe_pos_des_W = Eigen::VectorXd::Zero(6);
+    swing_fe_vel_des_W = Eigen::VectorXd::Zero(6);
+    swing_fe_acc_des_W = Eigen::VectorXd::Zero(6);
     //摆动足的当前位置
     swing_fe_pos_cur_W = Eigen::VectorXd::Zero(6);
+    swing_fe_vel_cur_W = Eigen::VectorXd::Zero(6);
     if(joy_cmd_ctrl_state == 1)
     {
         if(!contacts[0])
         {
             swing_fe_pos_des_W.block(0, 0, 3, 1) = robotState.fe_pos_world_des[0];
+            swing_fe_vel_des_W.block(0, 0, 3, 1) = robotState.fe_vel_world_des[0];
+            swing_fe_acc_des_W.block(0, 0, 3, 1) = robotState.fe_acc_world_des[0];
             swing_fe_pos_cur_W.block(0, 0, 3, 1) = robotState.fe_pos_world[0];
+            swing_fe_vel_cur_W.block(0, 0, 3, 1) = robotState.fe_vel_world[0];
         }
         if(!contacts[1])
         {
             swing_fe_pos_des_W.block(0, 0, 3, 1) = robotState.fe_pos_world_des[1];
+            swing_fe_vel_des_W.block(0, 0, 3, 1) = robotState.fe_vel_world_des[1];
+            swing_fe_acc_des_W.block(0, 0, 3, 1) = robotState.fe_acc_world_des[1];
             swing_fe_pos_cur_W.block(0, 0, 3, 1) = robotState.fe_pos_world[1];
+            swing_fe_vel_cur_W.block(0, 0, 3, 1) = robotState.fe_vel_world[1];
         }
         if(!contacts[2])
         {
             swing_fe_pos_des_W.block(3, 0, 3, 1) = robotState.fe_pos_world_des[2]; 
+            swing_fe_vel_des_W.block(3, 0, 3, 1) = robotState.fe_vel_world_des[2];
+            swing_fe_acc_des_W.block(3, 0, 3, 1) = robotState.fe_acc_world_des[2];
             swing_fe_pos_cur_W.block(3, 0, 3, 1) = robotState.fe_pos_world[2];      
+            swing_fe_vel_cur_W.block(3, 0, 3, 1) = robotState.fe_vel_world[2];
         }
         if(!contacts[3])
         {
             swing_fe_pos_des_W.block(3, 0, 3, 1) = robotState.fe_pos_world_des[3]; 
+            swing_fe_vel_des_W.block(3, 0, 3, 1) = robotState.fe_vel_world_des[3];
+            swing_fe_acc_des_W.block(3, 0, 3, 1) = robotState.fe_acc_world_des[3];
             swing_fe_pos_cur_W.block(3, 0, 3, 1) = robotState.fe_pos_world[3];    
+            swing_fe_vel_cur_W.block(3, 0, 3, 1) = robotState.fe_vel_world[3];
         } 
     }
 
@@ -250,6 +257,7 @@ void WBC_priority::dataBusWrite(data_bus &robotState)
 void WBC_priority::computeDdq(Pin_KinDyn &pinKinDynIn)
 {
     // -------- trot -------------
+    if (joy_cmd_ctrl_state == 1)
     {
     /***************支撑腿****************/   
         int id = kinwbc_tasks_walk.getId("StanceLeg");
@@ -305,18 +313,19 @@ void WBC_priority::computeDdq(Pin_KinDyn &pinKinDynIn)
     /***************摆动腿任务****************/
         id = kinwbc_tasks_walk.getId("SwingLeg");
         kinwbc_tasks_walk.taskLib[id].errX = Eigen::VectorXd::Zero(6);
-        kinwbc_tasks_walk.taskLib[id].errX.block<6, 1>(0, 0) = swing_fe_pos_des_W - swing_fe_pos_cur_W;
+        kinwbc_tasks_walk.taskLib[id].errX = swing_fe_pos_des_W - swing_fe_pos_cur_W;
         kinwbc_tasks_walk.taskLib[id].derrX = Eigen::VectorXd::Zero(6);
-        kinwbc_tasks_walk.taskLib[id].ddxDes = Eigen::VectorXd::Zero(6);
-        kinwbc_tasks_walk.taskLib[id].dxDes = Eigen::VectorXd::Zero(6);
-        kinwbc_tasks_walk.taskLib[id].kp = Eigen::MatrixXd::Identity(6, 6) * 300;
+        kinwbc_tasks_walk.taskLib[id].derrX = swing_fe_vel_des_W - swing_fe_vel_cur_W;
+        kinwbc_tasks_walk.taskLib[id].ddxDes = swing_fe_acc_des_W;
+        kinwbc_tasks_walk.taskLib[id].dxDes = swing_fe_vel_des_W;
+        kinwbc_tasks_walk.taskLib[id].kp = Eigen::MatrixXd::Identity(6, 6) * 500;
         kinwbc_tasks_walk.taskLib[id].kd = Eigen::MatrixXd::Identity(6, 6) * 10;
         kinwbc_tasks_walk.taskLib[id].J = Jsw;
         kinwbc_tasks_walk.taskLib[id].dJ = dJsw;
         kinwbc_tasks_walk.taskLib[id].W.diagonal() = Eigen::VectorXd::Ones(model_nv);
-    }
 
-    /// -------- stand -------------
+    }
+    else    /// -------- stand -------------
     {
     /***************支撑腿****************/   
         int id = kinwbc_tasks_stand.getId("StanceLeg");
@@ -412,17 +421,20 @@ bool isPositiveDefinite(const Eigen::MatrixXd& matrix) {
 //WBC计算关节前馈力矩
 //WBC根据广义加速度和地面反力计算关节前馈力矩
 //x的状态变量为6 + 12 = 18
+//约束
 void WBC_priority::computeTau()
 {
-    //mit,于宪元的论文中的 Ce
+    //CTe * X + Ce = 0
+    //mit,于宪元的论文中的 -Ce
     Eigen::VectorXd eqRes = Eigen::VectorXd::Zero(6);
-    //算出余项优化用于松弛变量的计算
+    //算出余项优化用于松弛变量的计算           
+    // -Ce =   -论文Mf * ddq_cmd - Cf + JCF的T * F;
     eqRes = - Sf * dyn_M * ddq_final_kin - Sf * dyn_Non + Sf * Jfe.transpose() * Fr_ff;
             
     //mit,于宪元的论文中的CTe  A矩阵的上部分  
     Eigen::MatrixXd eigen_qp_A1 = Eigen::MatrixXd::Zero(6, 18); 
-    eigen_qp_A1.block<6, 6>(0, 0) = Sf * dyn_M * St_qpV1;
-    eigen_qp_A1.block<6, 12>(0, 6) = -Sf * Jfe.transpose();
+    eigen_qp_A1.block<6, 6>(0, 0) = Sf * dyn_M * St_qpV1;//6*18 18*18 18*6 M的浮动基参数
+    eigen_qp_A1.block<6, 12>(0, 6) = -Sf * Jfe.transpose();//6*18 18*12
 
     //这里是建立一个矩阵，实现世界坐标到body坐标系的转换（12*12），
     //将支撑脚的姿态转换到body下表示
@@ -438,15 +450,15 @@ void WBC_priority::computeTau()
     //建立摩擦约束矩阵 
     //mit,于宪元的论文中的 CA
     //    -1  0  mu
-    //    -1  0  mu
-    //     0  1  mu
+    //     0 -1  mu
+    //     1  0  mu
     //     0  1  mu 
     //     0  0   1
     Eigen::MatrixXd W = Eigen::MatrixXd::Zero(20, 12);
-    W(0, 0) = -1;                   W(0, 2) = sqrt(2) / 2.0 * mu;
-                    W(1, 1) =-1;    W(1, 2) = sqrt(2) / 2.0 * mu;
-    W(2, 0) =  1;                   W(2, 2) = sqrt(2) / 2.0 * mu;
-                    W(3, 1) = 1;    W(3, 2) = sqrt(2) / 2.0 * mu;
+    W(0, 0) = -1;                   W(0, 2) = mu;
+                    W(1, 1) =-1;    W(1, 2) = mu;
+    W(2, 0) =  1;                   W(2, 2) = mu;
+                    W(3, 1) = 1;    W(3, 2) = mu;
                                     W(4, 2) = 1;
 
     W.block<5, 3>(5 , 3) = W.block<5, 3>(0, 0);
@@ -458,17 +470,6 @@ void WBC_priority::computeTau()
     // 定义力的上下界约束
     Eigen::VectorXd f_low = Eigen::VectorXd::Zero(20);
     Eigen::VectorXd f_upp = Eigen::VectorXd::Zero(20);
-
-    // 初始设置，假设所有足端都处于支撑相
-    f_low.block<5, 1>(0 , 0) << 0, 0, 0, 0, f_z_low;
-    f_low.block<5, 1>(5 , 0) << 0, 0, 0, 0, f_z_low;
-    f_low.block<5, 1>(10, 0) << 0, 0, 0, 0, f_z_low;
-    f_low.block<5, 1>(15, 0) << 0, 0, 0, 0, f_z_low;
-
-    f_upp.block<5, 1>(0 , 0) << 1e10, 1e10, 1e10, 1e10, f_z_upp;
-    f_upp.block<5, 1>(5 , 0) << 1e10, 1e10, 1e10, 1e10, f_z_upp;
-    f_upp.block<5, 1>(10, 0) << 1e10, 1e10, 1e10, 1e10, f_z_upp;
-    f_upp.block<5, 1>(15, 0) << 1e10, 1e10, 1e10, 1e10, f_z_upp;
 
     // 根据 joy_cmd_ctrl_state 和 contacts 判断足端状态
     if (joy_cmd_ctrl_state == 1)
@@ -485,20 +486,30 @@ void WBC_priority::computeTau()
             {
                 // 摆动相
                 f_low.block<5, 1>(i * 5, 0) << -1e-7, -1e-7, -1e-7, -1e-7, -1e-7;
-                f_upp.block<5, 1>(i * 5, 0) << 1e-7, 1e-7, 1e-7, 1e-7, 1e-7;
+                f_upp.block<5, 1>(i * 5, 0) <<  1e-7,  1e-7,  1e-7,  1e-7,  1e-7;
             }
         }
     }
+    else
+    {
+        f_low.block<5, 1>(0 , 0) << 0, 0, 0, 0, f_z_low;
+        f_low.block<5, 1>(5 , 0) << 0, 0, 0, 0, f_z_low;
+        f_low.block<5, 1>(10, 0) << 0, 0, 0, 0, f_z_low;
+        f_low.block<5, 1>(15, 0) << 0, 0, 0, 0, f_z_low;
+
+        f_upp.block<5, 1>(0 , 0) << 1e10, 1e10, 1e10, 1e10, f_z_upp;
+        f_upp.block<5, 1>(5 , 0) << 1e10, 1e10, 1e10, 1e10, f_z_upp;
+        f_upp.block<5, 1>(10, 0) << 1e10, 1e10, 1e10, 1e10, f_z_upp;
+        f_upp.block<5, 1>(15, 0) << 1e10, 1e10, 1e10, 1e10, f_z_upp;
+    }
 
     //mit,于宪元的论文中的 CTi
-    Eigen::MatrixXd eigen_qp_A2 = Eigen::MatrixXd::Zero(20, 18);
+    Eigen::MatrixXd eigen_qp_A2 = Eigen::MatrixXd::Zero(20, 18);//[0,W]
     eigen_qp_A2.block<20, 12>(0, 6) = W;
 
     //ci限制幅度
     Eigen::VectorXd neqRes_low = Eigen::VectorXd::Zero(20);
     Eigen::VectorXd neqRes_upp = Eigen::VectorXd::Zero(20);
-
-    //
     neqRes_low = f_low - W * Fr_ff;
     neqRes_upp = f_upp - W * Fr_ff;
 
@@ -513,29 +524,17 @@ void WBC_priority::computeTau()
     //等式约束
     eigen_qp_lbA.block<6, 1>(0, 0) = eqRes;
     eigen_qp_ubA.block<6, 1>(0, 0) = eqRes;
-
     //上下限约束
     eigen_qp_lbA.block<20, 1>(6, 0) = neqRes_low;
     eigen_qp_ubA.block<20, 1>(6, 0) = neqRes_upp;
 
-    //
+    //权重参数
     Eigen::MatrixXd eigen_qp_H = Eigen::MatrixXd::Zero(18, 18);
     Q1 = Eigen::MatrixXd::Identity(6, 6);
     Q2 = Eigen::MatrixXd::Identity(12, 12);
-	if (joy_cmd_ctrl_state == 0){
-        eigen_qp_H.block<6, 6>(0, 0) = Q1 * 1.0;
-        eigen_qp_H.block<12, 12>(6, 6) = Q2 * 0.1;
-		// eigen_qp_H(9,9) *= 100;
-		// eigen_qp_H(10,10) *= 100;
-		// eigen_qp_H(15,15) *= 100;
-		// eigen_qp_H(16,16) *= 100;
-	}
-	else{
-        eigen_qp_H.block<6, 6>(0, 0) = Q1 * 1.0;
-        eigen_qp_H.block<12, 12>(6, 6) = Q2 * 0.1;
-	}
-
-
+    eigen_qp_H.block<6, 6>(0, 0) = Q1 * 1.0;
+    eigen_qp_H.block<12, 12>(6, 6) = Q2 * 0.005;
+	
     // obj: (1/2)x'Hx+x'g
     // s.t. lbA<=Ax<=ubA
     //      lb <= x<=ub
@@ -555,7 +554,6 @@ void WBC_priority::computeTau()
 
     // std::cout << "Fr_ff:" << std::endl;
     // std::cout << Fr_ff << std::endl;
-
     // std::cout << "Jfe:" << std::endl;
     // std::cout << Jfe << std::endl;
     // std::cout << "eigen_qp_H:" << std::endl;
@@ -621,10 +619,13 @@ void WBC_priority::computeTau()
 
     tauJointRes = tauRes.block(6, 0, model_nv - 6, 1);
 
-
-    std::cout << "dq_final_kin:" << std::endl;
+    std::cout << "dyn_Non:" << std::endl;
+    std::cout << dyn_Non.transpose() << std::endl;
+    std::cout << "delta_q_final_kin位置:" << std::endl;
+    std::cout << delta_q_final_kin.transpose() << std::endl;
+    std::cout << "dq_final_kin速度:" << std::endl;
     std::cout << dq_final_kin.transpose() << std::endl;
-    std::cout << "delta_q_final_kin:" << std::endl;
+    std::cout << "delta_q_final_kin加速度:" << std::endl;
     std::cout << delta_q_final_kin.transpose() << std::endl;
     std::cout << "Fr_ff:" << std::endl;
     std::cout << Fr_ff.transpose() << std::endl;
