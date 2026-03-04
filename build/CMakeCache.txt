@@ -244,7 +244,7 @@ my_lib_sim_LIB_DEPENDS:STATIC=general;my_sim;general;pinocchio_lin_x64;general;u
 my_sim_LIB_DEPENDS:STATIC=general;my_lib;
 
 //Dependencies for the target
-my_wbc_LIB_DEPENDS:STATIC=general;qpOASES;
+my_wbc_LIB_DEPENDS:STATIC=general;qpOASES;general;my_lib;general;my_sim;general;my_lib_sim;
 
 
 ########################

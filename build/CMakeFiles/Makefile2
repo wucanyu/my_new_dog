@@ -299,7 +299,9 @@ my_lib_sim/CMakeFiles/my_lib_sim.dir/clean:
 # Target rules for target my_wbc/CMakeFiles/my_wbc.dir
 
 # All Build rule for target.
-my_wbc/CMakeFiles/my_wbc.dir/all:
+my_wbc/CMakeFiles/my_wbc.dir/all: sim_interface/CMakeFiles/my_sim.dir/all
+my_wbc/CMakeFiles/my_wbc.dir/all: my_lib/CMakeFiles/my_lib.dir/all
+my_wbc/CMakeFiles/my_wbc.dir/all: my_lib_sim/CMakeFiles/my_lib_sim.dir/all
 	$(MAKE) $(MAKESILENT) -f my_wbc/CMakeFiles/my_wbc.dir/build.make my_wbc/CMakeFiles/my_wbc.dir/depend
 	$(MAKE) $(MAKESILENT) -f my_wbc/CMakeFiles/my_wbc.dir/build.make my_wbc/CMakeFiles/my_wbc.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wu/my_new_dog/build/CMakeFiles --progress-num=21,22,23 "Built target my_wbc"
@@ -307,7 +309,7 @@ my_wbc/CMakeFiles/my_wbc.dir/all:
 
 # Build rule for subdir invocation for target.
 my_wbc/CMakeFiles/my_wbc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wu/my_new_dog/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wu/my_new_dog/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_wbc/CMakeFiles/my_wbc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wu/my_new_dog/build/CMakeFiles 0
 .PHONY : my_wbc/CMakeFiles/my_wbc.dir/rule

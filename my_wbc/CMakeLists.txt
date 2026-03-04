@@ -29,10 +29,12 @@ link_directories("../third-party/pinocchio/pinocchio")
 link_directories(${allInc})
 
 file(GLOB_RECURSE sources "src/*.cpp")
-
 add_library(my_wbc ${sources})
 
 #目标生成
 target_link_libraries(my_wbc  
     qpOASES
+    my_lib          
+    my_sim   
+    my_lib_sim       
 )

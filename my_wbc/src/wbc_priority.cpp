@@ -74,7 +74,7 @@ void WBC_priority::dataBusRead(const data_bus &robotState)
     base_rpy_cur = robotState.imu_euler;
     //Body的在世界的期望rpy
     base_rpy_des = robotState.base_rpy_des;  
-    //body在世界位置期望
+    //body在世界位置期望=
     base_pos_des = robotState.base_pos_des;      
     //基座(body)的在世界坐标系下的旋转矩阵
     base_rot = robotState.base_rot;
@@ -234,25 +234,6 @@ void WBC_priority::dataBusRead(const data_bus &robotState)
 
 }
 
-//发送数据
-void WBC_priority::dataBusWrite(data_bus &robotState)
-{
-
-    robotState.tauJointRes = tauJointRes;
-    // robotState.wbc_FrRes = eigen_fr_Opt;
-    // robotState.qp_cpuTime = cpu_time;
-    // robotState.qp_nWSR = nWSR;
-    // robotState.qp_status = qpStatus;
-
-    // robotState.wbc_delta_q_final = delta_q_final_kin;
-    // robotState.wbc_dq_final = dq_final_kin;
-    // robotState.wbc_ddq_final = ddq_final_kin;
-
-    // robotState.qp_status = qpStatus;
-    // robotState.qp_nWSR = nWSR;
-    // robotState.qp_cpuTime = cpu_time;
-}
-
 //计算关节空间的期望 q ，dq ，dqq
 void WBC_priority::computeDdq(Pin_KinDyn &pinKinDynIn)
 {
@@ -316,9 +297,9 @@ void WBC_priority::computeDdq(Pin_KinDyn &pinKinDynIn)
         kinwbc_tasks_walk.taskLib[id].errX = swing_fe_pos_des_W - swing_fe_pos_cur_W;
         kinwbc_tasks_walk.taskLib[id].derrX = Eigen::VectorXd::Zero(6);
         kinwbc_tasks_walk.taskLib[id].derrX = swing_fe_vel_des_W - swing_fe_vel_cur_W;
-        kinwbc_tasks_walk.taskLib[id].ddxDes = swing_fe_acc_des_W;
-        kinwbc_tasks_walk.taskLib[id].dxDes = swing_fe_vel_des_W;
-        kinwbc_tasks_walk.taskLib[id].kp = Eigen::MatrixXd::Identity(6, 6) * 500;
+        kinwbc_tasks_walk.taskLib[id].ddxDes = Eigen::VectorXd::Zero(6);;
+        kinwbc_tasks_walk.taskLib[id].dxDes = Eigen::VectorXd::Zero(6);;
+        kinwbc_tasks_walk.taskLib[id].kp = Eigen::MatrixXd::Identity(6, 6) * 350;
         kinwbc_tasks_walk.taskLib[id].kd = Eigen::MatrixXd::Identity(6, 6) * 10;
         kinwbc_tasks_walk.taskLib[id].J = Jsw;
         kinwbc_tasks_walk.taskLib[id].dJ = dJsw;
@@ -504,7 +485,7 @@ void WBC_priority::computeTau()
     }
 
     //mit,于宪元的论文中的 CTi
-    Eigen::MatrixXd eigen_qp_A2 = Eigen::MatrixXd::Zero(20, 18);//[0,W]
+    Eigen::MatrixXd eigen_qp_A2 = Eigen::MatrixXd::Zero(20, 18);
     eigen_qp_A2.block<20, 12>(0, 6) = W;
 
     //ci限制幅度
@@ -550,21 +531,6 @@ void WBC_priority::computeTau()
     copy_Eigen_to_real_t(qp_lbA , eigen_qp_lbA      , eigen_qp_lbA.rows()       , eigen_qp_lbA.cols()       );
     copy_Eigen_to_real_t(qp_ubA , eigen_qp_ubA      , eigen_qp_ubA.rows()       , eigen_qp_ubA.cols()       );
 
-
-
-    // std::cout << "Fr_ff:" << std::endl;
-    // std::cout << Fr_ff << std::endl;
-    // std::cout << "Jfe:" << std::endl;
-    // std::cout << Jfe << std::endl;
-    // std::cout << "eigen_qp_H:" << std::endl;
-    // std::cout << eigen_qp_H << std::endl;
-    // std::cout << "eigen_qp_A_final:" << std::endl;
-    // std::cout << eigen_qp_A_final << std::endl;
-    // std::cout << "eigen_qp_lbA:" << std::endl;
-    // std::cout << eigen_qp_lbA.transpose() << std::endl;
-    // std::cout << "eigen_qp_ubA:" << std::endl;
-    // std::cout << eigen_qp_ubA.transpose() << std::endl;
-
     for (int i = 0; i < QP_nv; i++)
     {
         xOpt_iniGuess[i] = 0;//清空解的中间变量，防止将上次的计算结果发送
@@ -596,6 +562,8 @@ void WBC_priority::computeTau()
             eigen_xOpt(i) = xOpt[i];
         }
     }
+    std::cout << "eigen_xOpt" << std::endl;
+    std::cout << eigen_xOpt.transpose() << std::endl;
 
     //那么新的广义加速度就是基于任务算出的加速度 + 优化后的增量
     eigen_ddq_Opt = ddq_final_kin;
@@ -629,8 +597,8 @@ void WBC_priority::computeTau()
     std::cout << delta_q_final_kin.transpose() << std::endl;
     std::cout << "Fr_ff:" << std::endl;
     std::cout << Fr_ff.transpose() << std::endl;
-    std::cout << "tauJointRes:" << std::endl;
-    std::cout << tauJointRes.transpose() << std::endl;
+    std::cout << "tauRes:" << std::endl;
+    std::cout << tauRes.transpose() << std::endl;
     std::cout << "eigen_fr_Opt:" << std::endl;
     std::cout << eigen_fr_Opt.transpose() << std::endl;
 
@@ -660,4 +628,21 @@ void WBC_priority::setQini(const Eigen::VectorXd &qIniDesIn, const Eigen::Vector
     qIniCur = qIniCurIn;
 }
 
+//发送数据
+void WBC_priority::dataBusWrite(data_bus &robotState)
+{
 
+    robotState.tauJointRes = tauJointRes;
+    // robotState.wbc_FrRes = eigen_fr_Opt;
+    // robotState.qp_cpuTime = cpu_time;
+    // robotState.qp_nWSR = nWSR;
+    // robotState.qp_status = qpStatus;
+
+    // robotState.wbc_delta_q_final = delta_q_final_kin;
+    // robotState.wbc_dq_final = dq_final_kin;
+    // robotState.wbc_ddq_final = ddq_final_kin;
+
+    // robotState.qp_status = qpStatus;
+    // robotState.qp_nWSR = nWSR;
+    // robotState.qp_cpuTime = cpu_time;
+}

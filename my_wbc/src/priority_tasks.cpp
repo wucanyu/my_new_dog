@@ -121,8 +121,7 @@ void PriorityTasks::computeAll(const Eigen::VectorXd &des_delta_q,const Eigen::V
             taskLib[curId].ddq= taskLib[parentId].ddq + 
             Utils::dyn_pseudoInv(taskLib[curId].Jpre,dyn_M_inv,true) *
             (ddxcmd - taskLib[curId].dJ * dq - taskLib[curId].J * taskLib[parentId].ddq);
-            // std::cout << "curId" << curId << std::endl;
-            // std::cout << taskLib[curId].ddq << std::endl;
+
         }
 
         if (childId!=-1){
