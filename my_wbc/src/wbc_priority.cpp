@@ -234,6 +234,50 @@ void WBC_priority::dataBusRead(const data_bus &robotState)
 
 }
 
+// 核心IK求解函数（修复版）0.07 0.1668 0.0968 0.2110 大腿 0.21 0.22
+void WBC_priority::computeInK_Quadruped_3DOF(Eigen::Vector3d fe_pos_target_body[4])
+{
+    qIK = Eigen::VectorXd::Zero(12,1);
+    for(int i = 0;i<=3;i++)
+    {
+        Eigen::Vector3d fe = fe_pos_target_body[i];
+        Eigen::Vector3d omega = Eigen::Vector3d::Zero();
+        double xp = fe.x();
+        if(i == 0 || i == 1)//在前
+            xp = xp - 0.211;
+        else                //在后
+            xp = xp + 0.211; 
+        double yp = fe.y();
+        if(i == 0 || i == 2)//在右
+            yp = yp + 0.07;
+        else                //在左
+            yp = yp - 0.07; 
+        double zp = fe.z();
+        double l1 = 0.0968; //在左
+        if(i == 0 || i == 2)//在右
+        {
+            l1 = -l1;
+        }
+        double l2 = -0.235;  
+        double l3 = -0.213;
+        double L = sqrt(zp*zp + yp*yp - l1*l1);
+        omega(0) = atan2(zp*l1+yp*L , yp*l1-zp*L);
+        double ap = sqrt(xp*xp + yp*yp + zp*zp - l1*l1);
+        omega(2) = -3.1415926 + acos((l2*l2 + l3*l3 - ap*ap)/(2*l2*l3));
+        double a1 = yp * sin(omega(0)) - zp * cos(omega(0));
+        double a2 = xp; 
+        double m1 = l3*sin(omega(2));
+        double m2 = l3*cos(omega(2)) + l2;
+        omega(1) = atan2(a1 * m1 + a2 * m2 , a2 * m1 - a1 * m2);
+        qIK.block<3,1>(i*3,0) << omega;
+    }
+    std::cout << "qIK" << std::endl;
+    std::cout << qIK.transpose() << std::endl;
+    std::cout << "q" << std::endl;
+    std::cout << q.block<12,1>(7,0).transpose() << std::endl;
+}
+
+
 //计算关节空间的期望 q ，dq ，dqq
 void WBC_priority::computeDdq(Pin_KinDyn &pinKinDynIn)
 {
@@ -368,6 +412,7 @@ void WBC_priority::computeDdq(Pin_KinDyn &pinKinDynIn)
     }
     else if(joy_cmd_ctrl_state == 0)
     {
+
         kinwbc_tasks_stand.computeAll(des_delta_q, des_dq, des_ddq, dyn_M, dyn_M_inv, dq);
         delta_q_final_kin = kinwbc_tasks_stand.out_delta_q;
         dq_final_kin = kinwbc_tasks_stand.out_dq;
@@ -380,24 +425,6 @@ void WBC_priority::computeDdq(Pin_KinDyn &pinKinDynIn)
         ddq_final_kin = Eigen::VectorXd::Zero(model_nv);
     }
 }
-
-// 计算矩阵的特征值
-bool isPositiveDefinite(const Eigen::MatrixXd& matrix) {
-    Eigen::SelfAdjointEigenSolver<Eigen::MatrixXd> eigensolver(matrix);
-    if (eigensolver.info() != Eigen::Success) {
-        std::cerr << "特征值计算失败" << std::endl;
-        return false;
-    }
-    // 检查所有特征值是否都大于零
-    Eigen::VectorXd eigenvalues = eigensolver.eigenvalues();
-    for (int i = 0; i < eigenvalues.size(); ++i) {
-        if (eigenvalues(i) <= 0) {
-            return false;
-        }
-    }
-    return true;
-}
-
 
 //WBC计算关节前馈力矩
 //WBC根据广义加速度和地面反力计算关节前馈力矩
@@ -626,6 +653,23 @@ void WBC_priority::setQini(const Eigen::VectorXd &qIniDesIn, const Eigen::Vector
 {
     qIniDes = qIniDesIn;
     qIniCur = qIniCurIn;
+}
+
+// 计算矩阵的特征值
+bool isPositiveDefinite(const Eigen::MatrixXd& matrix) {
+    Eigen::SelfAdjointEigenSolver<Eigen::MatrixXd> eigensolver(matrix);
+    if (eigensolver.info() != Eigen::Success) {
+        std::cerr << "特征值计算失败" << std::endl;
+        return false;
+    }
+    // 检查所有特征值是否都大于零
+    Eigen::VectorXd eigenvalues = eigensolver.eigenvalues();
+    for (int i = 0; i < eigenvalues.size(); ++i) {
+        if (eigenvalues(i) <= 0) {
+            return false;
+        }
+    }
+    return true;
 }
 
 //发送数据

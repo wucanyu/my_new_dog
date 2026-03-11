@@ -96,8 +96,8 @@ user/sim/DOG_PRO: my_wbc/libmy_wbc.a
 user/sim/DOG_PRO: my_lib_sim/libmy_lib_sim.a
 user/sim/DOG_PRO: sim_interface/libmy_sim.a
 user/sim/DOG_PRO: my_lib/libmy_lib.a
-user/sim/DOG_PRO: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-user/sim/DOG_PRO: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+user/sim/DOG_PRO: /usr/local/lib/libboost_filesystem.so.1.71.0
+user/sim/DOG_PRO: /usr/local/lib/libboost_system.so.1.71.0
 user/sim/DOG_PRO: user/sim/CMakeFiles/DOG_PRO.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable DOG_PRO"
 	cd "/home/wu/my_new_dog/out/build/GCC 9.4.0 x86_64-linux-gnu/user/sim" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DOG_PRO.dir/link.txt --verbose=$(VERBOSE)

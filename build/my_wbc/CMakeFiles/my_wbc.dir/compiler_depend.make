@@ -1098,14 +1098,14 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
   ../third-party/pinocchio/pinocchio/spatial/se3-tpl.hpp \
   ../third-party/pinocchio/pinocchio/math/quaternion.hpp \
   ../third-party/pinocchio/pinocchio/math/fwd.hpp \
-  /usr/include/boost/math/constants/constants.hpp \
-  /usr/include/boost/math/tools/config.hpp \
-  /usr/include/boost/config.hpp \
-  /usr/include/boost/config/user.hpp \
-  /usr/include/boost/config/detail/select_compiler_config.hpp \
-  /usr/include/boost/config/compiler/gcc.hpp \
-  /usr/include/boost/config/detail/select_stdlib_config.hpp \
-  /usr/include/boost/config/stdlib/libstdcpp3.hpp \
+  /usr/local/include/boost/math/constants/constants.hpp \
+  /usr/local/include/boost/math/tools/config.hpp \
+  /usr/local/include/boost/config.hpp \
+  /usr/local/include/boost/config/user.hpp \
+  /usr/local/include/boost/config/detail/select_compiler_config.hpp \
+  /usr/local/include/boost/config/compiler/gcc.hpp \
+  /usr/local/include/boost/config/detail/select_stdlib_config.hpp \
+  /usr/local/include/boost/config/stdlib/libstdcpp3.hpp \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/environments.h \
@@ -1113,521 +1113,521 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/boost/config/detail/select_platform_config.hpp \
-  /usr/include/boost/config/platform/linux.hpp \
-  /usr/include/boost/config/detail/posix_features.hpp \
-  /usr/include/boost/config/detail/suffix.hpp \
-  /usr/include/boost/config/helper_macros.hpp \
-  /usr/include/boost/predef/architecture/x86.h \
-  /usr/include/boost/predef/architecture/x86/32.h \
-  /usr/include/boost/predef/version_number.h \
-  /usr/include/boost/predef/make.h \
-  /usr/include/boost/predef/detail/test.h \
-  /usr/include/boost/predef/architecture/x86/64.h \
-  /usr/include/boost/cstdint.hpp \
-  /usr/include/boost/detail/workaround.hpp \
-  /usr/include/boost/config/workaround.hpp \
-  /usr/include/boost/type_traits/is_integral.hpp \
-  /usr/include/boost/type_traits/integral_constant.hpp \
-  /usr/include/boost/config/no_tr1/cmath.hpp \
+  /usr/local/include/boost/config/detail/select_platform_config.hpp \
+  /usr/local/include/boost/config/platform/linux.hpp \
+  /usr/local/include/boost/config/detail/posix_features.hpp \
+  /usr/local/include/boost/config/detail/suffix.hpp \
+  /usr/local/include/boost/config/helper_macros.hpp \
+  /usr/local/include/boost/predef/architecture/x86.h \
+  /usr/local/include/boost/predef/architecture/x86/32.h \
+  /usr/local/include/boost/predef/version_number.h \
+  /usr/local/include/boost/predef/make.h \
+  /usr/local/include/boost/predef/detail/test.h \
+  /usr/local/include/boost/predef/architecture/x86/64.h \
+  /usr/local/include/boost/cstdint.hpp \
+  /usr/local/include/boost/detail/workaround.hpp \
+  /usr/local/include/boost/config/workaround.hpp \
+  /usr/local/include/boost/type_traits/is_integral.hpp \
+  /usr/local/include/boost/type_traits/integral_constant.hpp \
+  /usr/local/include/boost/config/no_tr1/cmath.hpp \
   /usr/include/c++/9/cfloat \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/float.h \
-  /usr/include/boost/math/tools/user.hpp \
-  /usr/include/boost/math/policies/policy.hpp \
-  /usr/include/boost/mpl/list.hpp \
-  /usr/include/boost/mpl/limits/list.hpp \
-  /usr/include/boost/mpl/aux_/na.hpp \
-  /usr/include/boost/mpl/bool.hpp \
-  /usr/include/boost/mpl/bool_fwd.hpp \
-  /usr/include/boost/mpl/aux_/adl_barrier.hpp \
-  /usr/include/boost/mpl/aux_/config/adl.hpp \
-  /usr/include/boost/mpl/aux_/config/msvc.hpp \
-  /usr/include/boost/mpl/aux_/config/intel.hpp \
-  /usr/include/boost/mpl/aux_/config/gcc.hpp \
-  /usr/include/boost/mpl/aux_/config/workaround.hpp \
-  /usr/include/boost/mpl/integral_c_tag.hpp \
-  /usr/include/boost/mpl/aux_/config/static_constant.hpp \
-  /usr/include/boost/mpl/aux_/na_fwd.hpp \
-  /usr/include/boost/mpl/aux_/config/ctps.hpp \
-  /usr/include/boost/mpl/aux_/config/preprocessor.hpp \
-  /usr/include/boost/preprocessor/inc.hpp \
-  /usr/include/boost/preprocessor/arithmetic/inc.hpp \
-  /usr/include/boost/preprocessor/config/config.hpp \
-  /usr/include/boost/preprocessor/cat.hpp \
-  /usr/include/boost/preprocessor/stringize.hpp \
-  /usr/include/boost/mpl/list/list30.hpp \
-  /usr/include/boost/mpl/list/list20.hpp \
-  /usr/include/boost/mpl/list/list10.hpp \
-  /usr/include/boost/mpl/list/list0.hpp \
-  /usr/include/boost/mpl/long.hpp \
-  /usr/include/boost/mpl/long_fwd.hpp \
-  /usr/include/boost/mpl/aux_/nttp_decl.hpp \
-  /usr/include/boost/mpl/aux_/config/nttp.hpp \
-  /usr/include/boost/mpl/aux_/integral_wrapper.hpp \
-  /usr/include/boost/mpl/aux_/static_cast.hpp \
-  /usr/include/boost/mpl/list/aux_/push_front.hpp \
-  /usr/include/boost/mpl/push_front_fwd.hpp \
-  /usr/include/boost/mpl/next.hpp \
-  /usr/include/boost/mpl/next_prior.hpp \
-  /usr/include/boost/mpl/aux_/common_name_wknd.hpp \
-  /usr/include/boost/mpl/aux_/na_spec.hpp \
-  /usr/include/boost/mpl/lambda_fwd.hpp \
-  /usr/include/boost/mpl/void_fwd.hpp \
-  /usr/include/boost/mpl/aux_/config/lambda.hpp \
-  /usr/include/boost/mpl/aux_/config/ttp.hpp \
-  /usr/include/boost/mpl/int.hpp \
-  /usr/include/boost/mpl/int_fwd.hpp \
-  /usr/include/boost/mpl/aux_/lambda_arity_param.hpp \
-  /usr/include/boost/mpl/aux_/template_arity_fwd.hpp \
-  /usr/include/boost/mpl/aux_/arity.hpp \
-  /usr/include/boost/mpl/aux_/config/dtp.hpp \
-  /usr/include/boost/mpl/aux_/preprocessor/params.hpp \
-  /usr/include/boost/preprocessor/comma_if.hpp \
-  /usr/include/boost/preprocessor/punctuation/comma_if.hpp \
-  /usr/include/boost/preprocessor/control/if.hpp \
-  /usr/include/boost/preprocessor/control/iif.hpp \
-  /usr/include/boost/preprocessor/logical/bool.hpp \
-  /usr/include/boost/preprocessor/facilities/empty.hpp \
-  /usr/include/boost/preprocessor/punctuation/comma.hpp \
-  /usr/include/boost/preprocessor/repeat.hpp \
-  /usr/include/boost/preprocessor/repetition/repeat.hpp \
-  /usr/include/boost/preprocessor/debug/error.hpp \
-  /usr/include/boost/preprocessor/detail/auto_rec.hpp \
-  /usr/include/boost/preprocessor/tuple/eat.hpp \
-  /usr/include/boost/mpl/aux_/preprocessor/enum.hpp \
-  /usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp \
-  /usr/include/boost/mpl/limits/arity.hpp \
-  /usr/include/boost/preprocessor/logical/and.hpp \
-  /usr/include/boost/preprocessor/logical/bitand.hpp \
-  /usr/include/boost/preprocessor/identity.hpp \
-  /usr/include/boost/preprocessor/facilities/identity.hpp \
-  /usr/include/boost/preprocessor/empty.hpp \
-  /usr/include/boost/preprocessor/arithmetic/add.hpp \
-  /usr/include/boost/preprocessor/arithmetic/dec.hpp \
-  /usr/include/boost/preprocessor/control/while.hpp \
-  /usr/include/boost/preprocessor/list/fold_left.hpp \
-  /usr/include/boost/preprocessor/list/detail/fold_left.hpp \
-  /usr/include/boost/preprocessor/control/expr_iif.hpp \
-  /usr/include/boost/preprocessor/list/adt.hpp \
-  /usr/include/boost/preprocessor/detail/is_binary.hpp \
-  /usr/include/boost/preprocessor/detail/check.hpp \
-  /usr/include/boost/preprocessor/logical/compl.hpp \
-  /usr/include/boost/preprocessor/list/fold_right.hpp \
-  /usr/include/boost/preprocessor/list/detail/fold_right.hpp \
-  /usr/include/boost/preprocessor/list/reverse.hpp \
-  /usr/include/boost/preprocessor/control/detail/while.hpp \
-  /usr/include/boost/preprocessor/tuple/elem.hpp \
-  /usr/include/boost/preprocessor/facilities/expand.hpp \
-  /usr/include/boost/preprocessor/facilities/overload.hpp \
-  /usr/include/boost/preprocessor/variadic/size.hpp \
-  /usr/include/boost/preprocessor/tuple/rem.hpp \
-  /usr/include/boost/preprocessor/tuple/detail/is_single_return.hpp \
-  /usr/include/boost/preprocessor/variadic/elem.hpp \
-  /usr/include/boost/preprocessor/arithmetic/sub.hpp \
-  /usr/include/boost/mpl/aux_/config/eti.hpp \
-  /usr/include/boost/mpl/aux_/config/overload_resolution.hpp \
-  /usr/include/boost/mpl/aux_/lambda_support.hpp \
-  /usr/include/boost/mpl/list/aux_/item.hpp \
-  /usr/include/boost/mpl/list/aux_/tag.hpp \
-  /usr/include/boost/mpl/list/aux_/pop_front.hpp \
-  /usr/include/boost/mpl/pop_front_fwd.hpp \
-  /usr/include/boost/mpl/list/aux_/push_back.hpp \
-  /usr/include/boost/mpl/push_back_fwd.hpp \
-  /usr/include/boost/mpl/list/aux_/front.hpp \
-  /usr/include/boost/mpl/front_fwd.hpp \
-  /usr/include/boost/mpl/list/aux_/clear.hpp \
-  /usr/include/boost/mpl/clear_fwd.hpp \
-  /usr/include/boost/mpl/list/aux_/O1_size.hpp \
-  /usr/include/boost/mpl/O1_size_fwd.hpp \
-  /usr/include/boost/mpl/list/aux_/size.hpp \
-  /usr/include/boost/mpl/size_fwd.hpp \
-  /usr/include/boost/mpl/list/aux_/empty.hpp \
-  /usr/include/boost/mpl/empty_fwd.hpp \
-  /usr/include/boost/mpl/not.hpp \
-  /usr/include/boost/mpl/aux_/nested_type_wknd.hpp \
-  /usr/include/boost/mpl/list/aux_/begin_end.hpp \
-  /usr/include/boost/mpl/begin_end_fwd.hpp \
-  /usr/include/boost/mpl/list/aux_/iterator.hpp \
-  /usr/include/boost/mpl/iterator_tags.hpp \
-  /usr/include/boost/mpl/deref.hpp \
-  /usr/include/boost/mpl/aux_/msvc_type.hpp \
-  /usr/include/boost/mpl/aux_/is_msvc_eti_arg.hpp \
-  /usr/include/boost/mpl/aux_/yes_no.hpp \
-  /usr/include/boost/mpl/aux_/config/arrays.hpp \
-  /usr/include/boost/mpl/aux_/lambda_spec.hpp \
-  /usr/include/boost/mpl/void.hpp \
-  /usr/include/boost/mpl/aux_/config/use_preprocessed.hpp \
-  /usr/include/boost/preprocessor/iterate.hpp \
-  /usr/include/boost/preprocessor/iteration/iterate.hpp \
-  /usr/include/boost/preprocessor/array/elem.hpp \
-  /usr/include/boost/preprocessor/array/data.hpp \
-  /usr/include/boost/preprocessor/array/size.hpp \
-  /usr/include/boost/preprocessor/slot/slot.hpp \
-  /usr/include/boost/preprocessor/slot/detail/def.hpp \
-  /usr/include/boost/preprocessor/iteration/detail/iter/forward1.hpp \
-  /usr/include/boost/preprocessor/iteration/detail/bounds/lower1.hpp \
-  /usr/include/boost/preprocessor/slot/detail/shared.hpp \
-  /usr/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp \
-  /usr/include/boost/mpl/list/aux_/numbered.hpp \
-  /usr/include/boost/preprocessor/enum_params.hpp \
-  /usr/include/boost/preprocessor/repetition/enum_params.hpp \
-  /usr/include/boost/preprocessor/enum_shifted_params.hpp \
-  /usr/include/boost/preprocessor/repetition/enum_shifted_params.hpp \
-  /usr/include/boost/preprocessor/dec.hpp \
-  /usr/include/boost/mpl/aux_/sequence_wrapper.hpp \
-  /usr/include/boost/preprocessor/enum_params_with_a_default.hpp \
-  /usr/include/boost/preprocessor/repetition/enum_params_with_a_default.hpp \
-  /usr/include/boost/preprocessor/facilities/intercept.hpp \
-  /usr/include/boost/preprocessor/repetition/enum_binary_params.hpp \
-  /usr/include/boost/preprocessor/enum.hpp \
-  /usr/include/boost/preprocessor/repetition/enum.hpp \
-  /usr/include/boost/mpl/contains.hpp \
-  /usr/include/boost/mpl/contains_fwd.hpp \
-  /usr/include/boost/mpl/sequence_tag.hpp \
-  /usr/include/boost/mpl/sequence_tag_fwd.hpp \
-  /usr/include/boost/mpl/aux_/has_tag.hpp \
-  /usr/include/boost/mpl/has_xxx.hpp \
-  /usr/include/boost/mpl/aux_/type_wrapper.hpp \
-  /usr/include/boost/mpl/aux_/config/has_xxx.hpp \
-  /usr/include/boost/mpl/aux_/config/msvc_typename.hpp \
-  /usr/include/boost/preprocessor/repetition/enum_trailing_params.hpp \
-  /usr/include/boost/mpl/aux_/has_begin.hpp \
-  /usr/include/boost/mpl/aux_/contains_impl.hpp \
-  /usr/include/boost/mpl/begin_end.hpp \
-  /usr/include/boost/mpl/aux_/begin_end_impl.hpp \
-  /usr/include/boost/mpl/eval_if.hpp \
-  /usr/include/boost/mpl/if.hpp \
-  /usr/include/boost/mpl/aux_/value_wknd.hpp \
-  /usr/include/boost/mpl/aux_/config/integral.hpp \
-  /usr/include/boost/mpl/aux_/traits_lambda_spec.hpp \
-  /usr/include/boost/mpl/find.hpp \
-  /usr/include/boost/mpl/find_if.hpp \
-  /usr/include/boost/mpl/aux_/find_if_pred.hpp \
-  /usr/include/boost/mpl/aux_/iter_apply.hpp \
-  /usr/include/boost/mpl/apply.hpp \
-  /usr/include/boost/mpl/apply_fwd.hpp \
-  /usr/include/boost/mpl/aux_/preprocessor/default_params.hpp \
-  /usr/include/boost/mpl/apply_wrap.hpp \
-  /usr/include/boost/mpl/aux_/has_apply.hpp \
-  /usr/include/boost/mpl/aux_/config/has_apply.hpp \
-  /usr/include/boost/mpl/aux_/msvc_never_true.hpp \
-  /usr/include/boost/mpl/aux_/preprocessor/add.hpp \
-  /usr/include/boost/mpl/aux_/config/bcc.hpp \
-  /usr/include/boost/mpl/placeholders.hpp \
-  /usr/include/boost/mpl/arg.hpp \
-  /usr/include/boost/mpl/arg_fwd.hpp \
-  /usr/include/boost/mpl/aux_/na_assert.hpp \
-  /usr/include/boost/mpl/assert.hpp \
-  /usr/include/boost/mpl/aux_/config/gpu.hpp \
-  /usr/include/boost/mpl/aux_/config/pp_counter.hpp \
-  /usr/include/boost/mpl/aux_/arity_spec.hpp \
-  /usr/include/boost/mpl/aux_/arg_typedef.hpp \
-  /usr/include/boost/mpl/lambda.hpp \
-  /usr/include/boost/mpl/bind.hpp \
-  /usr/include/boost/mpl/bind_fwd.hpp \
-  /usr/include/boost/mpl/aux_/config/bind.hpp \
-  /usr/include/boost/mpl/aux_/config/dmc_ambiguous_ctps.hpp \
-  /usr/include/boost/mpl/protect.hpp \
-  /usr/include/boost/mpl/aux_/preprocessor/partial_spec_params.hpp \
-  /usr/include/boost/mpl/aux_/preprocessor/sub.hpp \
-  /usr/include/boost/mpl/aux_/preprocessor/ext_params.hpp \
-  /usr/include/boost/mpl/aux_/preprocessor/repeat.hpp \
-  /usr/include/boost/preprocessor/iteration/detail/iter/forward2.hpp \
-  /usr/include/boost/preprocessor/iteration/detail/bounds/lower2.hpp \
-  /usr/include/boost/preprocessor/iteration/detail/bounds/upper2.hpp \
-  /usr/include/boost/mpl/aux_/full_lambda.hpp \
-  /usr/include/boost/mpl/quote.hpp \
-  /usr/include/boost/mpl/aux_/has_type.hpp \
-  /usr/include/boost/mpl/aux_/template_arity.hpp \
-  /usr/include/boost/mpl/aux_/preprocessor/range.hpp \
-  /usr/include/boost/preprocessor/seq/subseq.hpp \
-  /usr/include/boost/preprocessor/seq/first_n.hpp \
-  /usr/include/boost/preprocessor/seq/detail/split.hpp \
-  /usr/include/boost/preprocessor/seq/rest_n.hpp \
-  /usr/include/boost/preprocessor/comparison/not_equal.hpp \
-  /usr/include/boost/preprocessor/seq/detail/is_empty.hpp \
-  /usr/include/boost/preprocessor/seq/size.hpp \
-  /usr/include/boost/preprocessor/seq/fold_left.hpp \
-  /usr/include/boost/preprocessor/seq/seq.hpp \
-  /usr/include/boost/preprocessor/seq/elem.hpp \
-  /usr/include/boost/mpl/iter_fold_if.hpp \
-  /usr/include/boost/mpl/logical.hpp \
-  /usr/include/boost/mpl/or.hpp \
-  /usr/include/boost/mpl/aux_/logical_op.hpp \
-  /usr/include/boost/mpl/and.hpp \
-  /usr/include/boost/mpl/always.hpp \
-  /usr/include/boost/mpl/pair.hpp \
-  /usr/include/boost/mpl/aux_/msvc_eti_base.hpp \
-  /usr/include/boost/mpl/aux_/iter_fold_if_impl.hpp \
-  /usr/include/boost/mpl/identity.hpp \
-  /usr/include/boost/mpl/limits/unrolling.hpp \
-  /usr/include/boost/mpl/aux_/config/forwarding.hpp \
-  /usr/include/boost/type_traits/is_same.hpp \
-  /usr/include/boost/mpl/same_as.hpp \
-  /usr/include/boost/mpl/remove_if.hpp \
-  /usr/include/boost/mpl/fold.hpp \
-  /usr/include/boost/mpl/O1_size.hpp \
-  /usr/include/boost/mpl/aux_/O1_size_impl.hpp \
-  /usr/include/boost/mpl/aux_/has_size.hpp \
-  /usr/include/boost/mpl/aux_/fold_impl.hpp \
-  /usr/include/boost/mpl/aux_/fold_impl_body.hpp \
-  /usr/include/boost/mpl/reverse_fold.hpp \
-  /usr/include/boost/mpl/aux_/reverse_fold_impl.hpp \
-  /usr/include/boost/mpl/aux_/reverse_fold_impl_body.hpp \
-  /usr/include/boost/mpl/aux_/inserter_algorithm.hpp \
-  /usr/include/boost/mpl/back_inserter.hpp \
-  /usr/include/boost/mpl/push_back.hpp \
-  /usr/include/boost/mpl/aux_/push_back_impl.hpp \
-  /usr/include/boost/mpl/inserter.hpp \
-  /usr/include/boost/mpl/front_inserter.hpp \
-  /usr/include/boost/mpl/push_front.hpp \
-  /usr/include/boost/mpl/aux_/push_front_impl.hpp \
-  /usr/include/boost/mpl/clear.hpp \
-  /usr/include/boost/mpl/aux_/clear_impl.hpp \
-  /usr/include/boost/mpl/vector.hpp \
-  /usr/include/boost/mpl/limits/vector.hpp \
-  /usr/include/boost/mpl/vector/vector20.hpp \
-  /usr/include/boost/mpl/vector/vector10.hpp \
-  /usr/include/boost/mpl/vector/vector0.hpp \
-  /usr/include/boost/mpl/vector/aux_/at.hpp \
-  /usr/include/boost/mpl/at_fwd.hpp \
-  /usr/include/boost/mpl/vector/aux_/tag.hpp \
-  /usr/include/boost/mpl/aux_/config/typeof.hpp \
-  /usr/include/boost/mpl/vector/aux_/front.hpp \
-  /usr/include/boost/mpl/vector/aux_/push_front.hpp \
-  /usr/include/boost/mpl/vector/aux_/item.hpp \
-  /usr/include/boost/mpl/vector/aux_/pop_front.hpp \
-  /usr/include/boost/mpl/vector/aux_/push_back.hpp \
-  /usr/include/boost/mpl/vector/aux_/pop_back.hpp \
-  /usr/include/boost/mpl/pop_back_fwd.hpp \
-  /usr/include/boost/mpl/vector/aux_/back.hpp \
-  /usr/include/boost/mpl/back_fwd.hpp \
-  /usr/include/boost/mpl/vector/aux_/clear.hpp \
-  /usr/include/boost/mpl/vector/aux_/vector0.hpp \
-  /usr/include/boost/mpl/vector/aux_/iterator.hpp \
-  /usr/include/boost/mpl/plus.hpp \
-  /usr/include/boost/mpl/aux_/arithmetic_op.hpp \
-  /usr/include/boost/mpl/integral_c.hpp \
-  /usr/include/boost/mpl/integral_c_fwd.hpp \
-  /usr/include/boost/mpl/aux_/largest_int.hpp \
-  /usr/include/boost/mpl/aux_/numeric_op.hpp \
-  /usr/include/boost/mpl/numeric_cast.hpp \
-  /usr/include/boost/mpl/tag.hpp \
-  /usr/include/boost/mpl/aux_/numeric_cast_utils.hpp \
-  /usr/include/boost/preprocessor/iteration/detail/iter/reverse1.hpp \
-  /usr/include/boost/mpl/minus.hpp \
-  /usr/include/boost/mpl/advance_fwd.hpp \
-  /usr/include/boost/mpl/distance_fwd.hpp \
-  /usr/include/boost/mpl/prior.hpp \
-  /usr/include/boost/mpl/vector/aux_/O1_size.hpp \
-  /usr/include/boost/mpl/vector/aux_/size.hpp \
-  /usr/include/boost/mpl/vector/aux_/empty.hpp \
-  /usr/include/boost/mpl/vector/aux_/begin_end.hpp \
-  /usr/include/boost/mpl/vector/aux_/numbered.hpp \
-  /usr/include/boost/mpl/at.hpp \
-  /usr/include/boost/mpl/aux_/at_impl.hpp \
-  /usr/include/boost/mpl/advance.hpp \
-  /usr/include/boost/mpl/less.hpp \
-  /usr/include/boost/mpl/aux_/comparison_op.hpp \
-  /usr/include/boost/mpl/negate.hpp \
-  /usr/include/boost/mpl/aux_/advance_forward.hpp \
-  /usr/include/boost/mpl/aux_/advance_backward.hpp \
-  /usr/include/boost/mpl/size.hpp \
-  /usr/include/boost/mpl/aux_/size_impl.hpp \
-  /usr/include/boost/mpl/distance.hpp \
-  /usr/include/boost/mpl/iter_fold.hpp \
-  /usr/include/boost/mpl/aux_/iter_fold_impl.hpp \
-  /usr/include/boost/mpl/iterator_range.hpp \
-  /usr/include/boost/mpl/comparison.hpp \
-  /usr/include/boost/mpl/equal_to.hpp \
-  /usr/include/boost/mpl/not_equal_to.hpp \
-  /usr/include/boost/mpl/greater.hpp \
-  /usr/include/boost/mpl/less_equal.hpp \
-  /usr/include/boost/mpl/greater_equal.hpp \
-  /usr/include/boost/static_assert.hpp \
-  /usr/include/boost/assert.hpp \
-  /usr/include/boost/math/tools/precision.hpp \
-  /usr/include/boost/limits.hpp \
-  /usr/include/boost/math/tools/convert_from_string.hpp \
-  /usr/include/boost/type_traits/is_constructible.hpp \
-  /usr/include/boost/type_traits/is_destructible.hpp \
-  /usr/include/boost/type_traits/is_complete.hpp \
-  /usr/include/boost/type_traits/declval.hpp \
-  /usr/include/boost/type_traits/add_rvalue_reference.hpp \
-  /usr/include/boost/type_traits/is_void.hpp \
-  /usr/include/boost/type_traits/is_reference.hpp \
-  /usr/include/boost/type_traits/is_lvalue_reference.hpp \
-  /usr/include/boost/type_traits/is_rvalue_reference.hpp \
-  /usr/include/boost/type_traits/remove_reference.hpp \
-  /usr/include/boost/type_traits/is_function.hpp \
-  /usr/include/boost/type_traits/detail/config.hpp \
-  /usr/include/boost/version.hpp \
-  /usr/include/boost/type_traits/detail/is_function_cxx_11.hpp \
-  /usr/include/boost/type_traits/detail/yes_no_type.hpp \
-  /usr/include/boost/type_traits/is_default_constructible.hpp \
-  /usr/include/boost/type_traits/conditional.hpp \
-  /usr/include/boost/lexical_cast.hpp \
-  /usr/include/boost/range/iterator_range_core.hpp \
-  /usr/include/boost/iterator/iterator_traits.hpp \
+  /usr/local/include/boost/math/tools/user.hpp \
+  /usr/local/include/boost/math/policies/policy.hpp \
+  /usr/local/include/boost/mpl/list.hpp \
+  /usr/local/include/boost/mpl/limits/list.hpp \
+  /usr/local/include/boost/mpl/aux_/na.hpp \
+  /usr/local/include/boost/mpl/bool.hpp \
+  /usr/local/include/boost/mpl/bool_fwd.hpp \
+  /usr/local/include/boost/mpl/aux_/adl_barrier.hpp \
+  /usr/local/include/boost/mpl/aux_/config/adl.hpp \
+  /usr/local/include/boost/mpl/aux_/config/msvc.hpp \
+  /usr/local/include/boost/mpl/aux_/config/intel.hpp \
+  /usr/local/include/boost/mpl/aux_/config/gcc.hpp \
+  /usr/local/include/boost/mpl/aux_/config/workaround.hpp \
+  /usr/local/include/boost/mpl/integral_c_tag.hpp \
+  /usr/local/include/boost/mpl/aux_/config/static_constant.hpp \
+  /usr/local/include/boost/mpl/aux_/na_fwd.hpp \
+  /usr/local/include/boost/mpl/aux_/config/ctps.hpp \
+  /usr/local/include/boost/mpl/aux_/config/preprocessor.hpp \
+  /usr/local/include/boost/preprocessor/inc.hpp \
+  /usr/local/include/boost/preprocessor/arithmetic/inc.hpp \
+  /usr/local/include/boost/preprocessor/config/config.hpp \
+  /usr/local/include/boost/preprocessor/cat.hpp \
+  /usr/local/include/boost/preprocessor/stringize.hpp \
+  /usr/local/include/boost/mpl/list/list30.hpp \
+  /usr/local/include/boost/mpl/list/list20.hpp \
+  /usr/local/include/boost/mpl/list/list10.hpp \
+  /usr/local/include/boost/mpl/list/list0.hpp \
+  /usr/local/include/boost/mpl/long.hpp \
+  /usr/local/include/boost/mpl/long_fwd.hpp \
+  /usr/local/include/boost/mpl/aux_/nttp_decl.hpp \
+  /usr/local/include/boost/mpl/aux_/config/nttp.hpp \
+  /usr/local/include/boost/mpl/aux_/integral_wrapper.hpp \
+  /usr/local/include/boost/mpl/aux_/static_cast.hpp \
+  /usr/local/include/boost/mpl/list/aux_/push_front.hpp \
+  /usr/local/include/boost/mpl/push_front_fwd.hpp \
+  /usr/local/include/boost/mpl/next.hpp \
+  /usr/local/include/boost/mpl/next_prior.hpp \
+  /usr/local/include/boost/mpl/aux_/common_name_wknd.hpp \
+  /usr/local/include/boost/mpl/aux_/na_spec.hpp \
+  /usr/local/include/boost/mpl/lambda_fwd.hpp \
+  /usr/local/include/boost/mpl/void_fwd.hpp \
+  /usr/local/include/boost/mpl/aux_/config/lambda.hpp \
+  /usr/local/include/boost/mpl/aux_/config/ttp.hpp \
+  /usr/local/include/boost/mpl/int.hpp \
+  /usr/local/include/boost/mpl/int_fwd.hpp \
+  /usr/local/include/boost/mpl/aux_/lambda_arity_param.hpp \
+  /usr/local/include/boost/mpl/aux_/template_arity_fwd.hpp \
+  /usr/local/include/boost/mpl/aux_/arity.hpp \
+  /usr/local/include/boost/mpl/aux_/config/dtp.hpp \
+  /usr/local/include/boost/mpl/aux_/preprocessor/params.hpp \
+  /usr/local/include/boost/preprocessor/comma_if.hpp \
+  /usr/local/include/boost/preprocessor/punctuation/comma_if.hpp \
+  /usr/local/include/boost/preprocessor/control/if.hpp \
+  /usr/local/include/boost/preprocessor/control/iif.hpp \
+  /usr/local/include/boost/preprocessor/logical/bool.hpp \
+  /usr/local/include/boost/preprocessor/facilities/empty.hpp \
+  /usr/local/include/boost/preprocessor/punctuation/comma.hpp \
+  /usr/local/include/boost/preprocessor/repeat.hpp \
+  /usr/local/include/boost/preprocessor/repetition/repeat.hpp \
+  /usr/local/include/boost/preprocessor/debug/error.hpp \
+  /usr/local/include/boost/preprocessor/detail/auto_rec.hpp \
+  /usr/local/include/boost/preprocessor/tuple/eat.hpp \
+  /usr/local/include/boost/mpl/aux_/preprocessor/enum.hpp \
+  /usr/local/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp \
+  /usr/local/include/boost/mpl/limits/arity.hpp \
+  /usr/local/include/boost/preprocessor/logical/and.hpp \
+  /usr/local/include/boost/preprocessor/logical/bitand.hpp \
+  /usr/local/include/boost/preprocessor/identity.hpp \
+  /usr/local/include/boost/preprocessor/facilities/identity.hpp \
+  /usr/local/include/boost/preprocessor/empty.hpp \
+  /usr/local/include/boost/preprocessor/arithmetic/add.hpp \
+  /usr/local/include/boost/preprocessor/arithmetic/dec.hpp \
+  /usr/local/include/boost/preprocessor/control/while.hpp \
+  /usr/local/include/boost/preprocessor/list/fold_left.hpp \
+  /usr/local/include/boost/preprocessor/list/detail/fold_left.hpp \
+  /usr/local/include/boost/preprocessor/control/expr_iif.hpp \
+  /usr/local/include/boost/preprocessor/list/adt.hpp \
+  /usr/local/include/boost/preprocessor/detail/is_binary.hpp \
+  /usr/local/include/boost/preprocessor/detail/check.hpp \
+  /usr/local/include/boost/preprocessor/logical/compl.hpp \
+  /usr/local/include/boost/preprocessor/list/fold_right.hpp \
+  /usr/local/include/boost/preprocessor/list/detail/fold_right.hpp \
+  /usr/local/include/boost/preprocessor/list/reverse.hpp \
+  /usr/local/include/boost/preprocessor/control/detail/while.hpp \
+  /usr/local/include/boost/preprocessor/tuple/elem.hpp \
+  /usr/local/include/boost/preprocessor/facilities/expand.hpp \
+  /usr/local/include/boost/preprocessor/facilities/overload.hpp \
+  /usr/local/include/boost/preprocessor/variadic/size.hpp \
+  /usr/local/include/boost/preprocessor/tuple/rem.hpp \
+  /usr/local/include/boost/preprocessor/tuple/detail/is_single_return.hpp \
+  /usr/local/include/boost/preprocessor/variadic/elem.hpp \
+  /usr/local/include/boost/preprocessor/arithmetic/sub.hpp \
+  /usr/local/include/boost/mpl/aux_/config/eti.hpp \
+  /usr/local/include/boost/mpl/aux_/config/overload_resolution.hpp \
+  /usr/local/include/boost/mpl/aux_/lambda_support.hpp \
+  /usr/local/include/boost/mpl/list/aux_/item.hpp \
+  /usr/local/include/boost/mpl/list/aux_/tag.hpp \
+  /usr/local/include/boost/mpl/list/aux_/pop_front.hpp \
+  /usr/local/include/boost/mpl/pop_front_fwd.hpp \
+  /usr/local/include/boost/mpl/list/aux_/push_back.hpp \
+  /usr/local/include/boost/mpl/push_back_fwd.hpp \
+  /usr/local/include/boost/mpl/list/aux_/front.hpp \
+  /usr/local/include/boost/mpl/front_fwd.hpp \
+  /usr/local/include/boost/mpl/list/aux_/clear.hpp \
+  /usr/local/include/boost/mpl/clear_fwd.hpp \
+  /usr/local/include/boost/mpl/list/aux_/O1_size.hpp \
+  /usr/local/include/boost/mpl/O1_size_fwd.hpp \
+  /usr/local/include/boost/mpl/list/aux_/size.hpp \
+  /usr/local/include/boost/mpl/size_fwd.hpp \
+  /usr/local/include/boost/mpl/list/aux_/empty.hpp \
+  /usr/local/include/boost/mpl/empty_fwd.hpp \
+  /usr/local/include/boost/mpl/not.hpp \
+  /usr/local/include/boost/mpl/aux_/nested_type_wknd.hpp \
+  /usr/local/include/boost/mpl/list/aux_/begin_end.hpp \
+  /usr/local/include/boost/mpl/begin_end_fwd.hpp \
+  /usr/local/include/boost/mpl/list/aux_/iterator.hpp \
+  /usr/local/include/boost/mpl/iterator_tags.hpp \
+  /usr/local/include/boost/mpl/deref.hpp \
+  /usr/local/include/boost/mpl/aux_/msvc_type.hpp \
+  /usr/local/include/boost/mpl/aux_/is_msvc_eti_arg.hpp \
+  /usr/local/include/boost/mpl/aux_/yes_no.hpp \
+  /usr/local/include/boost/mpl/aux_/config/arrays.hpp \
+  /usr/local/include/boost/mpl/aux_/lambda_spec.hpp \
+  /usr/local/include/boost/mpl/void.hpp \
+  /usr/local/include/boost/mpl/aux_/config/use_preprocessed.hpp \
+  /usr/local/include/boost/preprocessor/iterate.hpp \
+  /usr/local/include/boost/preprocessor/iteration/iterate.hpp \
+  /usr/local/include/boost/preprocessor/array/elem.hpp \
+  /usr/local/include/boost/preprocessor/array/data.hpp \
+  /usr/local/include/boost/preprocessor/array/size.hpp \
+  /usr/local/include/boost/preprocessor/slot/slot.hpp \
+  /usr/local/include/boost/preprocessor/slot/detail/def.hpp \
+  /usr/local/include/boost/preprocessor/iteration/detail/iter/forward1.hpp \
+  /usr/local/include/boost/preprocessor/iteration/detail/bounds/lower1.hpp \
+  /usr/local/include/boost/preprocessor/slot/detail/shared.hpp \
+  /usr/local/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp \
+  /usr/local/include/boost/mpl/list/aux_/numbered.hpp \
+  /usr/local/include/boost/preprocessor/enum_params.hpp \
+  /usr/local/include/boost/preprocessor/repetition/enum_params.hpp \
+  /usr/local/include/boost/preprocessor/enum_shifted_params.hpp \
+  /usr/local/include/boost/preprocessor/repetition/enum_shifted_params.hpp \
+  /usr/local/include/boost/preprocessor/dec.hpp \
+  /usr/local/include/boost/mpl/aux_/sequence_wrapper.hpp \
+  /usr/local/include/boost/preprocessor/enum_params_with_a_default.hpp \
+  /usr/local/include/boost/preprocessor/repetition/enum_params_with_a_default.hpp \
+  /usr/local/include/boost/preprocessor/facilities/intercept.hpp \
+  /usr/local/include/boost/preprocessor/repetition/enum_binary_params.hpp \
+  /usr/local/include/boost/preprocessor/enum.hpp \
+  /usr/local/include/boost/preprocessor/repetition/enum.hpp \
+  /usr/local/include/boost/mpl/contains.hpp \
+  /usr/local/include/boost/mpl/contains_fwd.hpp \
+  /usr/local/include/boost/mpl/sequence_tag.hpp \
+  /usr/local/include/boost/mpl/sequence_tag_fwd.hpp \
+  /usr/local/include/boost/mpl/aux_/has_tag.hpp \
+  /usr/local/include/boost/mpl/has_xxx.hpp \
+  /usr/local/include/boost/mpl/aux_/type_wrapper.hpp \
+  /usr/local/include/boost/mpl/aux_/config/has_xxx.hpp \
+  /usr/local/include/boost/mpl/aux_/config/msvc_typename.hpp \
+  /usr/local/include/boost/preprocessor/repetition/enum_trailing_params.hpp \
+  /usr/local/include/boost/mpl/aux_/has_begin.hpp \
+  /usr/local/include/boost/mpl/aux_/contains_impl.hpp \
+  /usr/local/include/boost/mpl/begin_end.hpp \
+  /usr/local/include/boost/mpl/aux_/begin_end_impl.hpp \
+  /usr/local/include/boost/mpl/eval_if.hpp \
+  /usr/local/include/boost/mpl/if.hpp \
+  /usr/local/include/boost/mpl/aux_/value_wknd.hpp \
+  /usr/local/include/boost/mpl/aux_/config/integral.hpp \
+  /usr/local/include/boost/mpl/aux_/traits_lambda_spec.hpp \
+  /usr/local/include/boost/mpl/find.hpp \
+  /usr/local/include/boost/mpl/find_if.hpp \
+  /usr/local/include/boost/mpl/aux_/find_if_pred.hpp \
+  /usr/local/include/boost/mpl/aux_/iter_apply.hpp \
+  /usr/local/include/boost/mpl/apply.hpp \
+  /usr/local/include/boost/mpl/apply_fwd.hpp \
+  /usr/local/include/boost/mpl/aux_/preprocessor/default_params.hpp \
+  /usr/local/include/boost/mpl/apply_wrap.hpp \
+  /usr/local/include/boost/mpl/aux_/has_apply.hpp \
+  /usr/local/include/boost/mpl/aux_/config/has_apply.hpp \
+  /usr/local/include/boost/mpl/aux_/msvc_never_true.hpp \
+  /usr/local/include/boost/mpl/aux_/preprocessor/add.hpp \
+  /usr/local/include/boost/mpl/aux_/config/bcc.hpp \
+  /usr/local/include/boost/mpl/placeholders.hpp \
+  /usr/local/include/boost/mpl/arg.hpp \
+  /usr/local/include/boost/mpl/arg_fwd.hpp \
+  /usr/local/include/boost/mpl/aux_/na_assert.hpp \
+  /usr/local/include/boost/mpl/assert.hpp \
+  /usr/local/include/boost/mpl/aux_/config/gpu.hpp \
+  /usr/local/include/boost/mpl/aux_/config/pp_counter.hpp \
+  /usr/local/include/boost/mpl/aux_/arity_spec.hpp \
+  /usr/local/include/boost/mpl/aux_/arg_typedef.hpp \
+  /usr/local/include/boost/mpl/lambda.hpp \
+  /usr/local/include/boost/mpl/bind.hpp \
+  /usr/local/include/boost/mpl/bind_fwd.hpp \
+  /usr/local/include/boost/mpl/aux_/config/bind.hpp \
+  /usr/local/include/boost/mpl/aux_/config/dmc_ambiguous_ctps.hpp \
+  /usr/local/include/boost/mpl/protect.hpp \
+  /usr/local/include/boost/mpl/aux_/preprocessor/partial_spec_params.hpp \
+  /usr/local/include/boost/mpl/aux_/preprocessor/sub.hpp \
+  /usr/local/include/boost/mpl/aux_/preprocessor/ext_params.hpp \
+  /usr/local/include/boost/mpl/aux_/preprocessor/repeat.hpp \
+  /usr/local/include/boost/preprocessor/iteration/detail/iter/forward2.hpp \
+  /usr/local/include/boost/preprocessor/iteration/detail/bounds/lower2.hpp \
+  /usr/local/include/boost/preprocessor/iteration/detail/bounds/upper2.hpp \
+  /usr/local/include/boost/mpl/aux_/full_lambda.hpp \
+  /usr/local/include/boost/mpl/quote.hpp \
+  /usr/local/include/boost/mpl/aux_/has_type.hpp \
+  /usr/local/include/boost/mpl/aux_/template_arity.hpp \
+  /usr/local/include/boost/mpl/aux_/preprocessor/range.hpp \
+  /usr/local/include/boost/preprocessor/seq/subseq.hpp \
+  /usr/local/include/boost/preprocessor/seq/first_n.hpp \
+  /usr/local/include/boost/preprocessor/seq/detail/split.hpp \
+  /usr/local/include/boost/preprocessor/seq/rest_n.hpp \
+  /usr/local/include/boost/preprocessor/comparison/not_equal.hpp \
+  /usr/local/include/boost/preprocessor/seq/detail/is_empty.hpp \
+  /usr/local/include/boost/preprocessor/seq/size.hpp \
+  /usr/local/include/boost/preprocessor/seq/fold_left.hpp \
+  /usr/local/include/boost/preprocessor/seq/seq.hpp \
+  /usr/local/include/boost/preprocessor/seq/elem.hpp \
+  /usr/local/include/boost/mpl/iter_fold_if.hpp \
+  /usr/local/include/boost/mpl/logical.hpp \
+  /usr/local/include/boost/mpl/or.hpp \
+  /usr/local/include/boost/mpl/aux_/logical_op.hpp \
+  /usr/local/include/boost/mpl/and.hpp \
+  /usr/local/include/boost/mpl/always.hpp \
+  /usr/local/include/boost/mpl/pair.hpp \
+  /usr/local/include/boost/mpl/aux_/msvc_eti_base.hpp \
+  /usr/local/include/boost/mpl/aux_/iter_fold_if_impl.hpp \
+  /usr/local/include/boost/mpl/identity.hpp \
+  /usr/local/include/boost/mpl/limits/unrolling.hpp \
+  /usr/local/include/boost/mpl/aux_/config/forwarding.hpp \
+  /usr/local/include/boost/type_traits/is_same.hpp \
+  /usr/local/include/boost/mpl/same_as.hpp \
+  /usr/local/include/boost/mpl/remove_if.hpp \
+  /usr/local/include/boost/mpl/fold.hpp \
+  /usr/local/include/boost/mpl/O1_size.hpp \
+  /usr/local/include/boost/mpl/aux_/O1_size_impl.hpp \
+  /usr/local/include/boost/mpl/aux_/has_size.hpp \
+  /usr/local/include/boost/mpl/aux_/fold_impl.hpp \
+  /usr/local/include/boost/mpl/aux_/fold_impl_body.hpp \
+  /usr/local/include/boost/mpl/reverse_fold.hpp \
+  /usr/local/include/boost/mpl/aux_/reverse_fold_impl.hpp \
+  /usr/local/include/boost/mpl/aux_/reverse_fold_impl_body.hpp \
+  /usr/local/include/boost/mpl/aux_/inserter_algorithm.hpp \
+  /usr/local/include/boost/mpl/back_inserter.hpp \
+  /usr/local/include/boost/mpl/push_back.hpp \
+  /usr/local/include/boost/mpl/aux_/push_back_impl.hpp \
+  /usr/local/include/boost/mpl/inserter.hpp \
+  /usr/local/include/boost/mpl/front_inserter.hpp \
+  /usr/local/include/boost/mpl/push_front.hpp \
+  /usr/local/include/boost/mpl/aux_/push_front_impl.hpp \
+  /usr/local/include/boost/mpl/clear.hpp \
+  /usr/local/include/boost/mpl/aux_/clear_impl.hpp \
+  /usr/local/include/boost/mpl/vector.hpp \
+  /usr/local/include/boost/mpl/limits/vector.hpp \
+  /usr/local/include/boost/mpl/vector/vector20.hpp \
+  /usr/local/include/boost/mpl/vector/vector10.hpp \
+  /usr/local/include/boost/mpl/vector/vector0.hpp \
+  /usr/local/include/boost/mpl/vector/aux_/at.hpp \
+  /usr/local/include/boost/mpl/at_fwd.hpp \
+  /usr/local/include/boost/mpl/vector/aux_/tag.hpp \
+  /usr/local/include/boost/mpl/aux_/config/typeof.hpp \
+  /usr/local/include/boost/mpl/vector/aux_/front.hpp \
+  /usr/local/include/boost/mpl/vector/aux_/push_front.hpp \
+  /usr/local/include/boost/mpl/vector/aux_/item.hpp \
+  /usr/local/include/boost/mpl/vector/aux_/pop_front.hpp \
+  /usr/local/include/boost/mpl/vector/aux_/push_back.hpp \
+  /usr/local/include/boost/mpl/vector/aux_/pop_back.hpp \
+  /usr/local/include/boost/mpl/pop_back_fwd.hpp \
+  /usr/local/include/boost/mpl/vector/aux_/back.hpp \
+  /usr/local/include/boost/mpl/back_fwd.hpp \
+  /usr/local/include/boost/mpl/vector/aux_/clear.hpp \
+  /usr/local/include/boost/mpl/vector/aux_/vector0.hpp \
+  /usr/local/include/boost/mpl/vector/aux_/iterator.hpp \
+  /usr/local/include/boost/mpl/plus.hpp \
+  /usr/local/include/boost/mpl/aux_/arithmetic_op.hpp \
+  /usr/local/include/boost/mpl/integral_c.hpp \
+  /usr/local/include/boost/mpl/integral_c_fwd.hpp \
+  /usr/local/include/boost/mpl/aux_/largest_int.hpp \
+  /usr/local/include/boost/mpl/aux_/numeric_op.hpp \
+  /usr/local/include/boost/mpl/numeric_cast.hpp \
+  /usr/local/include/boost/mpl/tag.hpp \
+  /usr/local/include/boost/mpl/aux_/numeric_cast_utils.hpp \
+  /usr/local/include/boost/preprocessor/iteration/detail/iter/reverse1.hpp \
+  /usr/local/include/boost/mpl/minus.hpp \
+  /usr/local/include/boost/mpl/advance_fwd.hpp \
+  /usr/local/include/boost/mpl/distance_fwd.hpp \
+  /usr/local/include/boost/mpl/prior.hpp \
+  /usr/local/include/boost/mpl/vector/aux_/O1_size.hpp \
+  /usr/local/include/boost/mpl/vector/aux_/size.hpp \
+  /usr/local/include/boost/mpl/vector/aux_/empty.hpp \
+  /usr/local/include/boost/mpl/vector/aux_/begin_end.hpp \
+  /usr/local/include/boost/mpl/vector/aux_/numbered.hpp \
+  /usr/local/include/boost/mpl/at.hpp \
+  /usr/local/include/boost/mpl/aux_/at_impl.hpp \
+  /usr/local/include/boost/mpl/advance.hpp \
+  /usr/local/include/boost/mpl/less.hpp \
+  /usr/local/include/boost/mpl/aux_/comparison_op.hpp \
+  /usr/local/include/boost/mpl/negate.hpp \
+  /usr/local/include/boost/mpl/aux_/advance_forward.hpp \
+  /usr/local/include/boost/mpl/aux_/advance_backward.hpp \
+  /usr/local/include/boost/mpl/size.hpp \
+  /usr/local/include/boost/mpl/aux_/size_impl.hpp \
+  /usr/local/include/boost/mpl/distance.hpp \
+  /usr/local/include/boost/mpl/iter_fold.hpp \
+  /usr/local/include/boost/mpl/aux_/iter_fold_impl.hpp \
+  /usr/local/include/boost/mpl/iterator_range.hpp \
+  /usr/local/include/boost/mpl/comparison.hpp \
+  /usr/local/include/boost/mpl/equal_to.hpp \
+  /usr/local/include/boost/mpl/not_equal_to.hpp \
+  /usr/local/include/boost/mpl/greater.hpp \
+  /usr/local/include/boost/mpl/less_equal.hpp \
+  /usr/local/include/boost/mpl/greater_equal.hpp \
+  /usr/local/include/boost/static_assert.hpp \
+  /usr/local/include/boost/assert.hpp \
+  /usr/local/include/boost/math/tools/precision.hpp \
+  /usr/local/include/boost/limits.hpp \
+  /usr/local/include/boost/math/tools/convert_from_string.hpp \
+  /usr/local/include/boost/type_traits/is_constructible.hpp \
+  /usr/local/include/boost/type_traits/is_destructible.hpp \
+  /usr/local/include/boost/type_traits/is_complete.hpp \
+  /usr/local/include/boost/type_traits/declval.hpp \
+  /usr/local/include/boost/type_traits/add_rvalue_reference.hpp \
+  /usr/local/include/boost/type_traits/is_void.hpp \
+  /usr/local/include/boost/type_traits/is_reference.hpp \
+  /usr/local/include/boost/type_traits/is_lvalue_reference.hpp \
+  /usr/local/include/boost/type_traits/is_rvalue_reference.hpp \
+  /usr/local/include/boost/type_traits/remove_reference.hpp \
+  /usr/local/include/boost/type_traits/is_function.hpp \
+  /usr/local/include/boost/type_traits/detail/config.hpp \
+  /usr/local/include/boost/version.hpp \
+  /usr/local/include/boost/type_traits/detail/is_function_cxx_11.hpp \
+  /usr/local/include/boost/type_traits/detail/yes_no_type.hpp \
+  /usr/local/include/boost/type_traits/is_default_constructible.hpp \
+  /usr/local/include/boost/type_traits/conditional.hpp \
+  /usr/local/include/boost/lexical_cast.hpp \
+  /usr/local/include/boost/range/iterator_range_core.hpp \
+  /usr/local/include/boost/iterator/iterator_traits.hpp \
   /usr/include/c++/9/iterator \
   /usr/include/c++/9/bits/stream_iterator.h \
-  /usr/include/boost/iterator/iterator_facade.hpp \
-  /usr/include/boost/iterator/interoperable.hpp \
-  /usr/include/boost/type_traits/is_convertible.hpp \
-  /usr/include/boost/type_traits/intrinsics.hpp \
-  /usr/include/boost/type_traits/is_array.hpp \
-  /usr/include/boost/type_traits/is_arithmetic.hpp \
-  /usr/include/boost/type_traits/is_floating_point.hpp \
-  /usr/include/boost/type_traits/is_abstract.hpp \
-  /usr/include/boost/type_traits/add_lvalue_reference.hpp \
-  /usr/include/boost/type_traits/add_reference.hpp \
-  /usr/include/boost/iterator/detail/config_def.hpp \
-  /usr/include/boost/iterator/detail/config_undef.hpp \
-  /usr/include/boost/iterator/iterator_categories.hpp \
-  /usr/include/boost/iterator/detail/facade_iterator_category.hpp \
-  /usr/include/boost/core/use_default.hpp \
-  /usr/include/boost/type_traits/is_const.hpp \
-  /usr/include/boost/detail/indirect_traits.hpp \
-  /usr/include/boost/type_traits/is_pointer.hpp \
-  /usr/include/boost/type_traits/is_class.hpp \
-  /usr/include/boost/type_traits/is_volatile.hpp \
-  /usr/include/boost/type_traits/is_member_function_pointer.hpp \
-  /usr/include/boost/type_traits/detail/is_member_function_pointer_cxx_11.hpp \
-  /usr/include/boost/type_traits/is_member_pointer.hpp \
-  /usr/include/boost/type_traits/remove_cv.hpp \
-  /usr/include/boost/type_traits/remove_pointer.hpp \
-  /usr/include/boost/detail/select_type.hpp \
-  /usr/include/boost/iterator/detail/enable_if.hpp \
-  /usr/include/boost/core/addressof.hpp \
-  /usr/include/boost/type_traits/add_const.hpp \
-  /usr/include/boost/type_traits/add_pointer.hpp \
-  /usr/include/boost/type_traits/remove_const.hpp \
-  /usr/include/boost/type_traits/is_pod.hpp \
-  /usr/include/boost/type_traits/is_scalar.hpp \
-  /usr/include/boost/type_traits/is_enum.hpp \
-  /usr/include/boost/type_traits/is_base_and_derived.hpp \
-  /usr/include/boost/range/functions.hpp \
-  /usr/include/boost/range/begin.hpp \
-  /usr/include/boost/range/config.hpp \
-  /usr/include/boost/range/iterator.hpp \
-  /usr/include/boost/range/range_fwd.hpp \
-  /usr/include/boost/range/mutable_iterator.hpp \
-  /usr/include/boost/range/detail/extract_optional_type.hpp \
-  /usr/include/boost/range/detail/msvc_has_iterator_workaround.hpp \
-  /usr/include/boost/range/const_iterator.hpp \
-  /usr/include/boost/range/end.hpp \
-  /usr/include/boost/range/detail/implementation_help.hpp \
-  /usr/include/boost/range/detail/common.hpp \
-  /usr/include/boost/range/detail/sfinae.hpp \
-  /usr/include/boost/range/size.hpp \
-  /usr/include/boost/range/size_type.hpp \
-  /usr/include/boost/range/difference_type.hpp \
-  /usr/include/boost/range/has_range_iterator.hpp \
-  /usr/include/boost/utility/enable_if.hpp \
-  /usr/include/boost/core/enable_if.hpp \
-  /usr/include/boost/range/concepts.hpp \
-  /usr/include/boost/concept_check.hpp \
-  /usr/include/boost/concept/assert.hpp \
-  /usr/include/boost/concept/detail/general.hpp \
-  /usr/include/boost/concept/detail/backward_compatibility.hpp \
-  /usr/include/boost/concept/detail/has_constraints.hpp \
-  /usr/include/boost/type_traits/conversion_traits.hpp \
-  /usr/include/boost/concept/usage.hpp \
-  /usr/include/boost/concept/detail/concept_def.hpp \
-  /usr/include/boost/preprocessor/seq/for_each_i.hpp \
-  /usr/include/boost/preprocessor/repetition/for.hpp \
-  /usr/include/boost/preprocessor/repetition/detail/for.hpp \
-  /usr/include/boost/preprocessor/seq/enum.hpp \
-  /usr/include/boost/concept/detail/concept_undef.hpp \
-  /usr/include/boost/iterator/iterator_concepts.hpp \
-  /usr/include/boost/range/value_type.hpp \
-  /usr/include/boost/range/detail/misc_concept.hpp \
-  /usr/include/boost/type_traits/make_unsigned.hpp \
-  /usr/include/boost/type_traits/is_signed.hpp \
-  /usr/include/boost/type_traits/is_unsigned.hpp \
-  /usr/include/boost/type_traits/add_volatile.hpp \
-  /usr/include/boost/range/detail/has_member_size.hpp \
-  /usr/include/boost/utility.hpp \
-  /usr/include/boost/utility/base_from_member.hpp \
-  /usr/include/boost/preprocessor/repetition/repeat_from_to.hpp \
-  /usr/include/boost/utility/binary.hpp \
-  /usr/include/boost/preprocessor/control/deduce_d.hpp \
-  /usr/include/boost/preprocessor/seq/cat.hpp \
-  /usr/include/boost/preprocessor/seq/transform.hpp \
-  /usr/include/boost/preprocessor/arithmetic/mod.hpp \
-  /usr/include/boost/preprocessor/arithmetic/detail/div_base.hpp \
-  /usr/include/boost/preprocessor/comparison/less_equal.hpp \
-  /usr/include/boost/preprocessor/logical/not.hpp \
-  /usr/include/boost/utility/identity_type.hpp \
-  /usr/include/boost/type_traits/function_traits.hpp \
-  /usr/include/boost/core/checked_delete.hpp \
-  /usr/include/boost/core/noncopyable.hpp \
-  /usr/include/boost/range/distance.hpp \
-  /usr/include/boost/iterator/distance.hpp \
-  /usr/include/boost/range/empty.hpp \
-  /usr/include/boost/range/rbegin.hpp \
-  /usr/include/boost/range/reverse_iterator.hpp \
-  /usr/include/boost/iterator/reverse_iterator.hpp \
-  /usr/include/boost/iterator/iterator_adaptor.hpp \
-  /usr/include/boost/range/rend.hpp \
-  /usr/include/boost/range/algorithm/equal.hpp \
-  /usr/include/boost/range/detail/safe_bool.hpp \
-  /usr/include/boost/next_prior.hpp \
-  /usr/include/boost/type_traits/has_plus.hpp \
-  /usr/include/boost/type_traits/detail/has_binary_operator.hpp \
-  /usr/include/boost/type_traits/make_void.hpp \
-  /usr/include/boost/type_traits/has_plus_assign.hpp \
-  /usr/include/boost/type_traits/has_minus.hpp \
-  /usr/include/boost/type_traits/has_minus_assign.hpp \
-  /usr/include/boost/iterator/advance.hpp \
-  /usr/include/boost/lexical_cast/bad_lexical_cast.hpp \
-  /usr/include/boost/throw_exception.hpp \
-  /usr/include/boost/exception/exception.hpp \
-  /usr/include/boost/current_function.hpp \
-  /usr/include/boost/lexical_cast/try_lexical_convert.hpp \
-  /usr/include/boost/type_traits/type_identity.hpp \
-  /usr/include/boost/lexical_cast/detail/is_character.hpp \
-  /usr/include/boost/lexical_cast/detail/converter_numeric.hpp \
-  /usr/include/boost/type_traits/is_base_of.hpp \
-  /usr/include/boost/type_traits/is_float.hpp \
-  /usr/include/boost/numeric/conversion/cast.hpp \
-  /usr/include/boost/type.hpp \
-  /usr/include/boost/numeric/conversion/converter.hpp \
-  /usr/include/boost/numeric/conversion/conversion_traits.hpp \
-  /usr/include/boost/numeric/conversion/detail/conversion_traits.hpp \
-  /usr/include/boost/numeric/conversion/detail/meta.hpp \
-  /usr/include/boost/numeric/conversion/detail/int_float_mixture.hpp \
-  /usr/include/boost/numeric/conversion/int_float_mixture_enum.hpp \
-  /usr/include/boost/numeric/conversion/detail/sign_mixture.hpp \
-  /usr/include/boost/numeric/conversion/sign_mixture_enum.hpp \
-  /usr/include/boost/numeric/conversion/detail/udt_builtin_mixture.hpp \
-  /usr/include/boost/numeric/conversion/udt_builtin_mixture_enum.hpp \
-  /usr/include/boost/numeric/conversion/detail/is_subranged.hpp \
-  /usr/include/boost/mpl/multiplies.hpp \
-  /usr/include/boost/mpl/times.hpp \
-  /usr/include/boost/numeric/conversion/converter_policies.hpp \
-  /usr/include/boost/numeric/conversion/detail/converter.hpp \
-  /usr/include/boost/numeric/conversion/bounds.hpp \
-  /usr/include/boost/numeric/conversion/detail/bounds.hpp \
-  /usr/include/boost/numeric/conversion/numeric_cast_traits.hpp \
-  /usr/include/boost/numeric/conversion/detail/numeric_cast_traits.hpp \
-  /usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_common.hpp \
-  /usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_long_long.hpp \
-  /usr/include/boost/lexical_cast/detail/converter_lexical.hpp \
-  /usr/include/boost/type_traits/has_left_shift.hpp \
-  /usr/include/boost/type_traits/has_right_shift.hpp \
-  /usr/include/boost/detail/lcast_precision.hpp \
-  /usr/include/boost/integer_traits.hpp \
-  /usr/include/boost/lexical_cast/detail/widest_char.hpp \
-  /usr/include/boost/array.hpp \
-  /usr/include/boost/swap.hpp \
-  /usr/include/boost/core/swap.hpp \
-  /usr/include/boost/detail/iterator.hpp \
-  /usr/include/boost/container/container_fwd.hpp \
-  /usr/include/boost/container/detail/std_fwd.hpp \
-  /usr/include/boost/move/detail/std_ns_begin.hpp \
-  /usr/include/boost/move/detail/std_ns_end.hpp \
-  /usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp \
+  /usr/local/include/boost/iterator/iterator_facade.hpp \
+  /usr/local/include/boost/iterator/interoperable.hpp \
+  /usr/local/include/boost/type_traits/is_convertible.hpp \
+  /usr/local/include/boost/type_traits/intrinsics.hpp \
+  /usr/local/include/boost/type_traits/is_array.hpp \
+  /usr/local/include/boost/type_traits/is_arithmetic.hpp \
+  /usr/local/include/boost/type_traits/is_floating_point.hpp \
+  /usr/local/include/boost/type_traits/is_abstract.hpp \
+  /usr/local/include/boost/type_traits/add_lvalue_reference.hpp \
+  /usr/local/include/boost/type_traits/add_reference.hpp \
+  /usr/local/include/boost/iterator/detail/config_def.hpp \
+  /usr/local/include/boost/iterator/detail/config_undef.hpp \
+  /usr/local/include/boost/iterator/iterator_categories.hpp \
+  /usr/local/include/boost/iterator/detail/facade_iterator_category.hpp \
+  /usr/local/include/boost/core/use_default.hpp \
+  /usr/local/include/boost/type_traits/is_const.hpp \
+  /usr/local/include/boost/detail/indirect_traits.hpp \
+  /usr/local/include/boost/type_traits/is_pointer.hpp \
+  /usr/local/include/boost/type_traits/is_class.hpp \
+  /usr/local/include/boost/type_traits/is_volatile.hpp \
+  /usr/local/include/boost/type_traits/is_member_function_pointer.hpp \
+  /usr/local/include/boost/type_traits/detail/is_member_function_pointer_cxx_11.hpp \
+  /usr/local/include/boost/type_traits/is_member_pointer.hpp \
+  /usr/local/include/boost/type_traits/remove_cv.hpp \
+  /usr/local/include/boost/type_traits/remove_pointer.hpp \
+  /usr/local/include/boost/detail/select_type.hpp \
+  /usr/local/include/boost/iterator/detail/enable_if.hpp \
+  /usr/local/include/boost/core/addressof.hpp \
+  /usr/local/include/boost/type_traits/add_const.hpp \
+  /usr/local/include/boost/type_traits/add_pointer.hpp \
+  /usr/local/include/boost/type_traits/remove_const.hpp \
+  /usr/local/include/boost/type_traits/is_pod.hpp \
+  /usr/local/include/boost/type_traits/is_scalar.hpp \
+  /usr/local/include/boost/type_traits/is_enum.hpp \
+  /usr/local/include/boost/type_traits/is_base_and_derived.hpp \
+  /usr/local/include/boost/range/functions.hpp \
+  /usr/local/include/boost/range/begin.hpp \
+  /usr/local/include/boost/range/config.hpp \
+  /usr/local/include/boost/range/iterator.hpp \
+  /usr/local/include/boost/range/range_fwd.hpp \
+  /usr/local/include/boost/range/mutable_iterator.hpp \
+  /usr/local/include/boost/range/detail/extract_optional_type.hpp \
+  /usr/local/include/boost/range/detail/msvc_has_iterator_workaround.hpp \
+  /usr/local/include/boost/range/const_iterator.hpp \
+  /usr/local/include/boost/range/end.hpp \
+  /usr/local/include/boost/range/detail/implementation_help.hpp \
+  /usr/local/include/boost/range/detail/common.hpp \
+  /usr/local/include/boost/range/detail/sfinae.hpp \
+  /usr/local/include/boost/range/size.hpp \
+  /usr/local/include/boost/range/size_type.hpp \
+  /usr/local/include/boost/range/difference_type.hpp \
+  /usr/local/include/boost/range/has_range_iterator.hpp \
+  /usr/local/include/boost/utility/enable_if.hpp \
+  /usr/local/include/boost/core/enable_if.hpp \
+  /usr/local/include/boost/range/concepts.hpp \
+  /usr/local/include/boost/concept_check.hpp \
+  /usr/local/include/boost/concept/assert.hpp \
+  /usr/local/include/boost/concept/detail/general.hpp \
+  /usr/local/include/boost/concept/detail/backward_compatibility.hpp \
+  /usr/local/include/boost/concept/detail/has_constraints.hpp \
+  /usr/local/include/boost/type_traits/conversion_traits.hpp \
+  /usr/local/include/boost/concept/usage.hpp \
+  /usr/local/include/boost/concept/detail/concept_def.hpp \
+  /usr/local/include/boost/preprocessor/seq/for_each_i.hpp \
+  /usr/local/include/boost/preprocessor/repetition/for.hpp \
+  /usr/local/include/boost/preprocessor/repetition/detail/for.hpp \
+  /usr/local/include/boost/preprocessor/seq/enum.hpp \
+  /usr/local/include/boost/concept/detail/concept_undef.hpp \
+  /usr/local/include/boost/iterator/iterator_concepts.hpp \
+  /usr/local/include/boost/range/value_type.hpp \
+  /usr/local/include/boost/range/detail/misc_concept.hpp \
+  /usr/local/include/boost/type_traits/make_unsigned.hpp \
+  /usr/local/include/boost/type_traits/is_signed.hpp \
+  /usr/local/include/boost/type_traits/is_unsigned.hpp \
+  /usr/local/include/boost/type_traits/add_volatile.hpp \
+  /usr/local/include/boost/range/detail/has_member_size.hpp \
+  /usr/local/include/boost/utility.hpp \
+  /usr/local/include/boost/utility/base_from_member.hpp \
+  /usr/local/include/boost/preprocessor/repetition/repeat_from_to.hpp \
+  /usr/local/include/boost/utility/binary.hpp \
+  /usr/local/include/boost/preprocessor/control/deduce_d.hpp \
+  /usr/local/include/boost/preprocessor/seq/cat.hpp \
+  /usr/local/include/boost/preprocessor/seq/transform.hpp \
+  /usr/local/include/boost/preprocessor/arithmetic/mod.hpp \
+  /usr/local/include/boost/preprocessor/arithmetic/detail/div_base.hpp \
+  /usr/local/include/boost/preprocessor/comparison/less_equal.hpp \
+  /usr/local/include/boost/preprocessor/logical/not.hpp \
+  /usr/local/include/boost/utility/identity_type.hpp \
+  /usr/local/include/boost/type_traits/function_traits.hpp \
+  /usr/local/include/boost/core/checked_delete.hpp \
+  /usr/local/include/boost/core/noncopyable.hpp \
+  /usr/local/include/boost/range/distance.hpp \
+  /usr/local/include/boost/iterator/distance.hpp \
+  /usr/local/include/boost/range/empty.hpp \
+  /usr/local/include/boost/range/rbegin.hpp \
+  /usr/local/include/boost/range/reverse_iterator.hpp \
+  /usr/local/include/boost/iterator/reverse_iterator.hpp \
+  /usr/local/include/boost/iterator/iterator_adaptor.hpp \
+  /usr/local/include/boost/range/rend.hpp \
+  /usr/local/include/boost/range/algorithm/equal.hpp \
+  /usr/local/include/boost/range/detail/safe_bool.hpp \
+  /usr/local/include/boost/next_prior.hpp \
+  /usr/local/include/boost/type_traits/has_plus.hpp \
+  /usr/local/include/boost/type_traits/detail/has_binary_operator.hpp \
+  /usr/local/include/boost/type_traits/make_void.hpp \
+  /usr/local/include/boost/type_traits/has_plus_assign.hpp \
+  /usr/local/include/boost/type_traits/has_minus.hpp \
+  /usr/local/include/boost/type_traits/has_minus_assign.hpp \
+  /usr/local/include/boost/iterator/advance.hpp \
+  /usr/local/include/boost/lexical_cast/bad_lexical_cast.hpp \
+  /usr/local/include/boost/throw_exception.hpp \
+  /usr/local/include/boost/exception/exception.hpp \
+  /usr/local/include/boost/current_function.hpp \
+  /usr/local/include/boost/lexical_cast/try_lexical_convert.hpp \
+  /usr/local/include/boost/type_traits/type_identity.hpp \
+  /usr/local/include/boost/lexical_cast/detail/is_character.hpp \
+  /usr/local/include/boost/lexical_cast/detail/converter_numeric.hpp \
+  /usr/local/include/boost/type_traits/is_base_of.hpp \
+  /usr/local/include/boost/type_traits/is_float.hpp \
+  /usr/local/include/boost/numeric/conversion/cast.hpp \
+  /usr/local/include/boost/type.hpp \
+  /usr/local/include/boost/numeric/conversion/converter.hpp \
+  /usr/local/include/boost/numeric/conversion/conversion_traits.hpp \
+  /usr/local/include/boost/numeric/conversion/detail/conversion_traits.hpp \
+  /usr/local/include/boost/numeric/conversion/detail/meta.hpp \
+  /usr/local/include/boost/numeric/conversion/detail/int_float_mixture.hpp \
+  /usr/local/include/boost/numeric/conversion/int_float_mixture_enum.hpp \
+  /usr/local/include/boost/numeric/conversion/detail/sign_mixture.hpp \
+  /usr/local/include/boost/numeric/conversion/sign_mixture_enum.hpp \
+  /usr/local/include/boost/numeric/conversion/detail/udt_builtin_mixture.hpp \
+  /usr/local/include/boost/numeric/conversion/udt_builtin_mixture_enum.hpp \
+  /usr/local/include/boost/numeric/conversion/detail/is_subranged.hpp \
+  /usr/local/include/boost/mpl/multiplies.hpp \
+  /usr/local/include/boost/mpl/times.hpp \
+  /usr/local/include/boost/numeric/conversion/converter_policies.hpp \
+  /usr/local/include/boost/numeric/conversion/detail/converter.hpp \
+  /usr/local/include/boost/numeric/conversion/bounds.hpp \
+  /usr/local/include/boost/numeric/conversion/detail/bounds.hpp \
+  /usr/local/include/boost/numeric/conversion/numeric_cast_traits.hpp \
+  /usr/local/include/boost/numeric/conversion/detail/numeric_cast_traits.hpp \
+  /usr/local/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_common.hpp \
+  /usr/local/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_long_long.hpp \
+  /usr/local/include/boost/lexical_cast/detail/converter_lexical.hpp \
+  /usr/local/include/boost/type_traits/has_left_shift.hpp \
+  /usr/local/include/boost/type_traits/has_right_shift.hpp \
+  /usr/local/include/boost/detail/lcast_precision.hpp \
+  /usr/local/include/boost/integer_traits.hpp \
+  /usr/local/include/boost/lexical_cast/detail/widest_char.hpp \
+  /usr/local/include/boost/array.hpp \
+  /usr/local/include/boost/swap.hpp \
+  /usr/local/include/boost/core/swap.hpp \
+  /usr/local/include/boost/detail/iterator.hpp \
+  /usr/local/include/boost/container/container_fwd.hpp \
+  /usr/local/include/boost/container/detail/std_fwd.hpp \
+  /usr/local/include/boost/move/detail/std_ns_begin.hpp \
+  /usr/local/include/boost/move/detail/std_ns_end.hpp \
+  /usr/local/include/boost/lexical_cast/detail/converter_lexical_streams.hpp \
   /usr/include/c++/9/locale \
   /usr/include/c++/9/bits/locale_facets_nonio.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
@@ -1636,130 +1636,130 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
   /usr/include/c++/9/bits/codecvt.h \
   /usr/include/c++/9/bits/locale_facets_nonio.tcc \
   /usr/include/c++/9/bits/locale_conv.h \
-  /usr/include/boost/lexical_cast/detail/lcast_char_constants.hpp \
-  /usr/include/boost/lexical_cast/detail/lcast_unsigned_converters.hpp \
-  /usr/include/boost/noncopyable.hpp \
-  /usr/include/boost/lexical_cast/detail/inf_nan.hpp \
-  /usr/include/boost/math/special_functions/sign.hpp \
-  /usr/include/boost/math/special_functions/math_fwd.hpp \
-  /usr/include/boost/math/special_functions/detail/round_fwd.hpp \
-  /usr/include/boost/math/tools/promotion.hpp \
-  /usr/include/boost/config/no_tr1/complex.hpp \
-  /usr/include/boost/math/special_functions/detail/fp_traits.hpp \
-  /usr/include/boost/predef/other/endian.h \
-  /usr/include/boost/predef/library/c/gnu.h \
-  /usr/include/boost/predef/library/c/_prefix.h \
-  /usr/include/boost/predef/detail/_cassert.h \
-  /usr/include/boost/predef/os/macos.h \
-  /usr/include/boost/predef/os/ios.h \
-  /usr/include/boost/predef/os/bsd.h \
-  /usr/include/boost/predef/os/bsd/bsdi.h \
-  /usr/include/boost/predef/os/bsd/dragonfly.h \
-  /usr/include/boost/predef/os/bsd/free.h \
-  /usr/include/boost/predef/os/bsd/open.h \
-  /usr/include/boost/predef/os/bsd/net.h \
-  /usr/include/boost/predef/os/android.h \
-  /usr/include/boost/math/special_functions/fpclassify.hpp \
-  /usr/include/boost/math/tools/real_cast.hpp \
-  /usr/include/boost/integer.hpp \
-  /usr/include/boost/integer_fwd.hpp \
-  /usr/include/boost/detail/basic_pointerbuf.hpp \
-  /usr/include/boost/utility/declval.hpp \
-  /usr/include/boost/math/constants/calculate_constants.hpp \
-  /usr/include/boost/math/special_functions/trunc.hpp \
-  /usr/include/boost/math/policies/error_handling.hpp \
+  /usr/local/include/boost/lexical_cast/detail/lcast_char_constants.hpp \
+  /usr/local/include/boost/lexical_cast/detail/lcast_unsigned_converters.hpp \
+  /usr/local/include/boost/noncopyable.hpp \
+  /usr/local/include/boost/lexical_cast/detail/inf_nan.hpp \
+  /usr/local/include/boost/math/special_functions/sign.hpp \
+  /usr/local/include/boost/math/special_functions/math_fwd.hpp \
+  /usr/local/include/boost/math/special_functions/detail/round_fwd.hpp \
+  /usr/local/include/boost/math/tools/promotion.hpp \
+  /usr/local/include/boost/config/no_tr1/complex.hpp \
+  /usr/local/include/boost/math/special_functions/detail/fp_traits.hpp \
+  /usr/local/include/boost/predef/other/endian.h \
+  /usr/local/include/boost/predef/library/c/gnu.h \
+  /usr/local/include/boost/predef/library/c/_prefix.h \
+  /usr/local/include/boost/predef/detail/_cassert.h \
+  /usr/local/include/boost/predef/os/macos.h \
+  /usr/local/include/boost/predef/os/ios.h \
+  /usr/local/include/boost/predef/os/bsd.h \
+  /usr/local/include/boost/predef/os/bsd/bsdi.h \
+  /usr/local/include/boost/predef/os/bsd/dragonfly.h \
+  /usr/local/include/boost/predef/os/bsd/free.h \
+  /usr/local/include/boost/predef/os/bsd/open.h \
+  /usr/local/include/boost/predef/os/bsd/net.h \
+  /usr/local/include/boost/predef/os/android.h \
+  /usr/local/include/boost/math/special_functions/fpclassify.hpp \
+  /usr/local/include/boost/math/tools/real_cast.hpp \
+  /usr/local/include/boost/integer.hpp \
+  /usr/local/include/boost/integer_fwd.hpp \
+  /usr/local/include/boost/detail/basic_pointerbuf.hpp \
+  /usr/local/include/boost/utility/declval.hpp \
+  /usr/local/include/boost/math/constants/calculate_constants.hpp \
+  /usr/local/include/boost/math/special_functions/trunc.hpp \
+  /usr/local/include/boost/math/policies/error_handling.hpp \
   /usr/include/c++/9/iomanip \
   /usr/include/c++/9/bits/quoted_string.h \
   ../third-party/pinocchio/pinocchio/math/comparison-operators.hpp \
   ../third-party/pinocchio/pinocchio/math/matrix.hpp \
-  /usr/include/boost/type_traits.hpp \
-  /usr/include/boost/type_traits/add_cv.hpp \
-  /usr/include/boost/type_traits/aligned_storage.hpp \
-  /usr/include/boost/type_traits/alignment_of.hpp \
-  /usr/include/boost/type_traits/type_with_alignment.hpp \
-  /usr/include/boost/type_traits/common_type.hpp \
-  /usr/include/boost/type_traits/decay.hpp \
-  /usr/include/boost/type_traits/remove_bounds.hpp \
-  /usr/include/boost/type_traits/remove_extent.hpp \
-  /usr/include/boost/type_traits/detail/mp_defer.hpp \
-  /usr/include/boost/type_traits/copy_cv.hpp \
-  /usr/include/boost/type_traits/copy_cv_ref.hpp \
-  /usr/include/boost/type_traits/copy_reference.hpp \
-  /usr/include/boost/type_traits/enable_if.hpp \
-  /usr/include/boost/type_traits/extent.hpp \
-  /usr/include/boost/type_traits/floating_point_promotion.hpp \
-  /usr/include/boost/type_traits/has_bit_and.hpp \
-  /usr/include/boost/type_traits/has_bit_and_assign.hpp \
-  /usr/include/boost/type_traits/has_bit_or.hpp \
-  /usr/include/boost/type_traits/has_bit_or_assign.hpp \
-  /usr/include/boost/type_traits/has_bit_xor.hpp \
-  /usr/include/boost/type_traits/has_bit_xor_assign.hpp \
-  /usr/include/boost/type_traits/has_complement.hpp \
-  /usr/include/boost/type_traits/detail/has_prefix_operator.hpp \
-  /usr/include/boost/type_traits/has_dereference.hpp \
-  /usr/include/boost/type_traits/has_divides.hpp \
-  /usr/include/boost/type_traits/has_divides_assign.hpp \
-  /usr/include/boost/type_traits/has_equal_to.hpp \
-  /usr/include/boost/type_traits/has_greater.hpp \
-  /usr/include/boost/type_traits/has_greater_equal.hpp \
-  /usr/include/boost/type_traits/has_left_shift_assign.hpp \
-  /usr/include/boost/type_traits/has_less.hpp \
-  /usr/include/boost/type_traits/has_less_equal.hpp \
-  /usr/include/boost/type_traits/has_logical_and.hpp \
-  /usr/include/boost/type_traits/has_logical_not.hpp \
-  /usr/include/boost/type_traits/has_logical_or.hpp \
-  /usr/include/boost/type_traits/has_modulus.hpp \
-  /usr/include/boost/type_traits/has_modulus_assign.hpp \
-  /usr/include/boost/type_traits/has_multiplies.hpp \
-  /usr/include/boost/type_traits/has_multiplies_assign.hpp \
-  /usr/include/boost/type_traits/has_negate.hpp \
-  /usr/include/boost/type_traits/has_new_operator.hpp \
-  /usr/include/boost/type_traits/has_not_equal_to.hpp \
-  /usr/include/boost/type_traits/has_nothrow_assign.hpp \
-  /usr/include/boost/type_traits/is_assignable.hpp \
-  /usr/include/boost/type_traits/has_nothrow_constructor.hpp \
-  /usr/include/boost/type_traits/has_nothrow_copy.hpp \
-  /usr/include/boost/type_traits/is_copy_constructible.hpp \
-  /usr/include/boost/type_traits/has_nothrow_destructor.hpp \
-  /usr/include/boost/type_traits/has_trivial_destructor.hpp \
-  /usr/include/boost/type_traits/has_post_decrement.hpp \
-  /usr/include/boost/type_traits/detail/has_postfix_operator.hpp \
-  /usr/include/boost/type_traits/has_post_increment.hpp \
-  /usr/include/boost/type_traits/has_pre_decrement.hpp \
-  /usr/include/boost/type_traits/has_pre_increment.hpp \
-  /usr/include/boost/type_traits/has_right_shift_assign.hpp \
-  /usr/include/boost/type_traits/has_trivial_assign.hpp \
-  /usr/include/boost/type_traits/has_trivial_constructor.hpp \
-  /usr/include/boost/type_traits/has_trivial_copy.hpp \
-  /usr/include/boost/type_traits/has_trivial_move_assign.hpp \
-  /usr/include/boost/type_traits/has_trivial_move_constructor.hpp \
-  /usr/include/boost/type_traits/has_unary_minus.hpp \
-  /usr/include/boost/type_traits/has_unary_plus.hpp \
-  /usr/include/boost/type_traits/has_virtual_destructor.hpp \
-  /usr/include/boost/type_traits/is_complex.hpp \
-  /usr/include/boost/type_traits/is_compound.hpp \
-  /usr/include/boost/type_traits/is_fundamental.hpp \
-  /usr/include/boost/type_traits/is_copy_assignable.hpp \
-  /usr/include/boost/type_traits/is_noncopyable.hpp \
-  /usr/include/boost/type_traits/is_empty.hpp \
-  /usr/include/boost/type_traits/is_final.hpp \
-  /usr/include/boost/type_traits/is_list_constructible.hpp \
-  /usr/include/boost/type_traits/is_member_object_pointer.hpp \
-  /usr/include/boost/type_traits/is_nothrow_move_assignable.hpp \
-  /usr/include/boost/type_traits/is_nothrow_move_constructible.hpp \
-  /usr/include/boost/type_traits/is_nothrow_swappable.hpp \
-  /usr/include/boost/type_traits/is_object.hpp \
-  /usr/include/boost/type_traits/is_polymorphic.hpp \
-  /usr/include/boost/type_traits/is_stateless.hpp \
-  /usr/include/boost/type_traits/is_union.hpp \
-  /usr/include/boost/type_traits/is_virtual_base_of.hpp \
-  /usr/include/boost/type_traits/make_signed.hpp \
-  /usr/include/boost/type_traits/rank.hpp \
-  /usr/include/boost/type_traits/remove_all_extents.hpp \
-  /usr/include/boost/type_traits/remove_cv_ref.hpp \
-  /usr/include/boost/type_traits/remove_volatile.hpp \
-  /usr/include/boost/type_traits/integral_promotion.hpp \
-  /usr/include/boost/type_traits/promote.hpp \
+  /usr/local/include/boost/type_traits.hpp \
+  /usr/local/include/boost/type_traits/add_cv.hpp \
+  /usr/local/include/boost/type_traits/aligned_storage.hpp \
+  /usr/local/include/boost/type_traits/alignment_of.hpp \
+  /usr/local/include/boost/type_traits/type_with_alignment.hpp \
+  /usr/local/include/boost/type_traits/common_type.hpp \
+  /usr/local/include/boost/type_traits/decay.hpp \
+  /usr/local/include/boost/type_traits/remove_bounds.hpp \
+  /usr/local/include/boost/type_traits/remove_extent.hpp \
+  /usr/local/include/boost/type_traits/detail/mp_defer.hpp \
+  /usr/local/include/boost/type_traits/copy_cv.hpp \
+  /usr/local/include/boost/type_traits/copy_cv_ref.hpp \
+  /usr/local/include/boost/type_traits/copy_reference.hpp \
+  /usr/local/include/boost/type_traits/enable_if.hpp \
+  /usr/local/include/boost/type_traits/extent.hpp \
+  /usr/local/include/boost/type_traits/floating_point_promotion.hpp \
+  /usr/local/include/boost/type_traits/has_bit_and.hpp \
+  /usr/local/include/boost/type_traits/has_bit_and_assign.hpp \
+  /usr/local/include/boost/type_traits/has_bit_or.hpp \
+  /usr/local/include/boost/type_traits/has_bit_or_assign.hpp \
+  /usr/local/include/boost/type_traits/has_bit_xor.hpp \
+  /usr/local/include/boost/type_traits/has_bit_xor_assign.hpp \
+  /usr/local/include/boost/type_traits/has_complement.hpp \
+  /usr/local/include/boost/type_traits/detail/has_prefix_operator.hpp \
+  /usr/local/include/boost/type_traits/has_dereference.hpp \
+  /usr/local/include/boost/type_traits/has_divides.hpp \
+  /usr/local/include/boost/type_traits/has_divides_assign.hpp \
+  /usr/local/include/boost/type_traits/has_equal_to.hpp \
+  /usr/local/include/boost/type_traits/has_greater.hpp \
+  /usr/local/include/boost/type_traits/has_greater_equal.hpp \
+  /usr/local/include/boost/type_traits/has_left_shift_assign.hpp \
+  /usr/local/include/boost/type_traits/has_less.hpp \
+  /usr/local/include/boost/type_traits/has_less_equal.hpp \
+  /usr/local/include/boost/type_traits/has_logical_and.hpp \
+  /usr/local/include/boost/type_traits/has_logical_not.hpp \
+  /usr/local/include/boost/type_traits/has_logical_or.hpp \
+  /usr/local/include/boost/type_traits/has_modulus.hpp \
+  /usr/local/include/boost/type_traits/has_modulus_assign.hpp \
+  /usr/local/include/boost/type_traits/has_multiplies.hpp \
+  /usr/local/include/boost/type_traits/has_multiplies_assign.hpp \
+  /usr/local/include/boost/type_traits/has_negate.hpp \
+  /usr/local/include/boost/type_traits/has_new_operator.hpp \
+  /usr/local/include/boost/type_traits/has_not_equal_to.hpp \
+  /usr/local/include/boost/type_traits/has_nothrow_assign.hpp \
+  /usr/local/include/boost/type_traits/is_assignable.hpp \
+  /usr/local/include/boost/type_traits/has_nothrow_constructor.hpp \
+  /usr/local/include/boost/type_traits/has_nothrow_copy.hpp \
+  /usr/local/include/boost/type_traits/is_copy_constructible.hpp \
+  /usr/local/include/boost/type_traits/has_nothrow_destructor.hpp \
+  /usr/local/include/boost/type_traits/has_trivial_destructor.hpp \
+  /usr/local/include/boost/type_traits/has_post_decrement.hpp \
+  /usr/local/include/boost/type_traits/detail/has_postfix_operator.hpp \
+  /usr/local/include/boost/type_traits/has_post_increment.hpp \
+  /usr/local/include/boost/type_traits/has_pre_decrement.hpp \
+  /usr/local/include/boost/type_traits/has_pre_increment.hpp \
+  /usr/local/include/boost/type_traits/has_right_shift_assign.hpp \
+  /usr/local/include/boost/type_traits/has_trivial_assign.hpp \
+  /usr/local/include/boost/type_traits/has_trivial_constructor.hpp \
+  /usr/local/include/boost/type_traits/has_trivial_copy.hpp \
+  /usr/local/include/boost/type_traits/has_trivial_move_assign.hpp \
+  /usr/local/include/boost/type_traits/has_trivial_move_constructor.hpp \
+  /usr/local/include/boost/type_traits/has_unary_minus.hpp \
+  /usr/local/include/boost/type_traits/has_unary_plus.hpp \
+  /usr/local/include/boost/type_traits/has_virtual_destructor.hpp \
+  /usr/local/include/boost/type_traits/is_complex.hpp \
+  /usr/local/include/boost/type_traits/is_compound.hpp \
+  /usr/local/include/boost/type_traits/is_fundamental.hpp \
+  /usr/local/include/boost/type_traits/is_copy_assignable.hpp \
+  /usr/local/include/boost/type_traits/is_noncopyable.hpp \
+  /usr/local/include/boost/type_traits/is_empty.hpp \
+  /usr/local/include/boost/type_traits/is_final.hpp \
+  /usr/local/include/boost/type_traits/is_list_constructible.hpp \
+  /usr/local/include/boost/type_traits/is_member_object_pointer.hpp \
+  /usr/local/include/boost/type_traits/is_nothrow_move_assignable.hpp \
+  /usr/local/include/boost/type_traits/is_nothrow_move_constructible.hpp \
+  /usr/local/include/boost/type_traits/is_nothrow_swappable.hpp \
+  /usr/local/include/boost/type_traits/is_object.hpp \
+  /usr/local/include/boost/type_traits/is_polymorphic.hpp \
+  /usr/local/include/boost/type_traits/is_stateless.hpp \
+  /usr/local/include/boost/type_traits/is_union.hpp \
+  /usr/local/include/boost/type_traits/is_virtual_base_of.hpp \
+  /usr/local/include/boost/type_traits/make_signed.hpp \
+  /usr/local/include/boost/type_traits/rank.hpp \
+  /usr/local/include/boost/type_traits/remove_all_extents.hpp \
+  /usr/local/include/boost/type_traits/remove_cv_ref.hpp \
+  /usr/local/include/boost/type_traits/remove_volatile.hpp \
+  /usr/local/include/boost/type_traits/integral_promotion.hpp \
+  /usr/local/include/boost/type_traits/promote.hpp \
   ../third-party/pinocchio/pinocchio/math/sincos.hpp \
   ../third-party/pinocchio/pinocchio/utils/static-if.hpp \
   ../third-party/eigen3/Eigen/Geometry \
@@ -1815,101 +1815,101 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
   ../third-party/pinocchio/pinocchio/multibody/joint/joint-spherical-ZYX.hpp \
   ../third-party/pinocchio/pinocchio/multibody/joint/joint-spherical.hpp \
   ../third-party/pinocchio/pinocchio/multibody/joint/joint-mimic.hpp \
-  /usr/include/boost/variant.hpp \
-  /usr/include/boost/variant/variant.hpp \
-  /usr/include/boost/type_index.hpp \
-  /usr/include/boost/type_index/stl_type_index.hpp \
-  /usr/include/boost/type_index/type_index_facade.hpp \
-  /usr/include/boost/container_hash/hash_fwd.hpp \
-  /usr/include/boost/core/demangle.hpp \
+  /usr/local/include/boost/variant.hpp \
+  /usr/local/include/boost/variant/variant.hpp \
+  /usr/local/include/boost/type_index.hpp \
+  /usr/local/include/boost/type_index/stl_type_index.hpp \
+  /usr/local/include/boost/type_index/type_index_facade.hpp \
+  /usr/local/include/boost/container_hash/hash_fwd.hpp \
+  /usr/local/include/boost/core/demangle.hpp \
   /usr/include/c++/9/cxxabi.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/cxxabi_tweaks.h \
-  /usr/include/boost/variant/detail/config.hpp \
-  /usr/include/boost/variant/variant_fwd.hpp \
-  /usr/include/boost/blank_fwd.hpp \
-  /usr/include/boost/variant/detail/substitute_fwd.hpp \
-  /usr/include/boost/variant/detail/backup_holder.hpp \
-  /usr/include/boost/variant/detail/enable_recursive_fwd.hpp \
-  /usr/include/boost/variant/detail/forced_return.hpp \
-  /usr/include/boost/variant/detail/initializer.hpp \
-  /usr/include/boost/call_traits.hpp \
-  /usr/include/boost/detail/call_traits.hpp \
-  /usr/include/boost/detail/reference_content.hpp \
-  /usr/include/boost/variant/recursive_wrapper_fwd.hpp \
-  /usr/include/boost/variant/detail/move.hpp \
-  /usr/include/boost/move/move.hpp \
-  /usr/include/boost/move/detail/config_begin.hpp \
-  /usr/include/boost/move/utility.hpp \
-  /usr/include/boost/move/detail/workaround.hpp \
-  /usr/include/boost/move/utility_core.hpp \
-  /usr/include/boost/move/core.hpp \
-  /usr/include/boost/move/detail/config_end.hpp \
-  /usr/include/boost/move/detail/meta_utils.hpp \
-  /usr/include/boost/move/detail/meta_utils_core.hpp \
-  /usr/include/boost/move/traits.hpp \
-  /usr/include/boost/move/detail/type_traits.hpp \
-  /usr/include/boost/move/iterator.hpp \
-  /usr/include/boost/move/detail/iterator_traits.hpp \
-  /usr/include/boost/move/algorithm.hpp \
-  /usr/include/boost/move/algo/move.hpp \
-  /usr/include/boost/move/detail/iterator_to_raw_pointer.hpp \
-  /usr/include/boost/move/detail/to_raw_pointer.hpp \
-  /usr/include/boost/move/detail/pointer_element.hpp \
-  /usr/include/boost/core/no_exceptions_support.hpp \
-  /usr/include/boost/move/adl_move_swap.hpp \
-  /usr/include/boost/variant/detail/make_variant_list.hpp \
-  /usr/include/boost/variant/detail/over_sequence.hpp \
-  /usr/include/boost/variant/detail/visitation_impl.hpp \
-  /usr/include/boost/variant/detail/cast_storage.hpp \
-  /usr/include/boost/variant/detail/hash_variant.hpp \
-  /usr/include/boost/variant/static_visitor.hpp \
-  /usr/include/boost/variant/apply_visitor.hpp \
-  /usr/include/boost/variant/detail/apply_visitor_unary.hpp \
-  /usr/include/boost/variant/detail/has_result_type.hpp \
-  /usr/include/boost/variant/detail/apply_visitor_binary.hpp \
-  /usr/include/boost/variant/detail/apply_visitor_delayed.hpp \
-  /usr/include/boost/functional/hash_fwd.hpp \
-  /usr/include/boost/variant/detail/std_hash.hpp \
-  /usr/include/boost/detail/no_exceptions_support.hpp \
-  /usr/include/boost/aligned_storage.hpp \
-  /usr/include/boost/blank.hpp \
-  /usr/include/boost/detail/templated_streams.hpp \
-  /usr/include/boost/integer/common_factor_ct.hpp \
-  /usr/include/boost/mpl/empty.hpp \
-  /usr/include/boost/mpl/aux_/empty_impl.hpp \
-  /usr/include/boost/mpl/front.hpp \
-  /usr/include/boost/mpl/aux_/front_impl.hpp \
-  /usr/include/boost/mpl/insert_range.hpp \
-  /usr/include/boost/mpl/insert_range_fwd.hpp \
-  /usr/include/boost/mpl/aux_/insert_range_impl.hpp \
-  /usr/include/boost/mpl/insert.hpp \
-  /usr/include/boost/mpl/insert_fwd.hpp \
-  /usr/include/boost/mpl/aux_/insert_impl.hpp \
-  /usr/include/boost/mpl/joint_view.hpp \
-  /usr/include/boost/mpl/aux_/joint_iter.hpp \
-  /usr/include/boost/mpl/aux_/iter_push_front.hpp \
-  /usr/include/boost/type_traits/same_traits.hpp \
-  /usr/include/boost/mpl/is_sequence.hpp \
-  /usr/include/boost/mpl/max_element.hpp \
-  /usr/include/boost/mpl/size_t.hpp \
-  /usr/include/boost/mpl/size_t_fwd.hpp \
-  /usr/include/boost/mpl/sizeof.hpp \
-  /usr/include/boost/mpl/transform.hpp \
-  /usr/include/boost/mpl/pair_view.hpp \
-  /usr/include/boost/mpl/iterator_category.hpp \
-  /usr/include/boost/mpl/min_max.hpp \
-  /usr/include/boost/variant/detail/variant_io.hpp \
-  /usr/include/boost/variant/recursive_variant.hpp \
-  /usr/include/boost/variant/detail/enable_recursive.hpp \
-  /usr/include/boost/variant/detail/substitute.hpp \
-  /usr/include/boost/variant/recursive_wrapper.hpp \
-  /usr/include/boost/checked_delete.hpp \
-  /usr/include/boost/mpl/equal.hpp \
-  /usr/include/boost/variant/get.hpp \
-  /usr/include/boost/utility/addressof.hpp \
-  /usr/include/boost/variant/detail/element_index.hpp \
-  /usr/include/boost/variant/visitor_ptr.hpp \
-  /usr/include/boost/variant/bad_visit.hpp \
+  /usr/local/include/boost/variant/detail/config.hpp \
+  /usr/local/include/boost/variant/variant_fwd.hpp \
+  /usr/local/include/boost/blank_fwd.hpp \
+  /usr/local/include/boost/variant/detail/substitute_fwd.hpp \
+  /usr/local/include/boost/variant/detail/backup_holder.hpp \
+  /usr/local/include/boost/variant/detail/enable_recursive_fwd.hpp \
+  /usr/local/include/boost/variant/detail/forced_return.hpp \
+  /usr/local/include/boost/variant/detail/initializer.hpp \
+  /usr/local/include/boost/call_traits.hpp \
+  /usr/local/include/boost/detail/call_traits.hpp \
+  /usr/local/include/boost/detail/reference_content.hpp \
+  /usr/local/include/boost/variant/recursive_wrapper_fwd.hpp \
+  /usr/local/include/boost/variant/detail/move.hpp \
+  /usr/local/include/boost/move/move.hpp \
+  /usr/local/include/boost/move/detail/config_begin.hpp \
+  /usr/local/include/boost/move/utility.hpp \
+  /usr/local/include/boost/move/detail/workaround.hpp \
+  /usr/local/include/boost/move/utility_core.hpp \
+  /usr/local/include/boost/move/core.hpp \
+  /usr/local/include/boost/move/detail/config_end.hpp \
+  /usr/local/include/boost/move/detail/meta_utils.hpp \
+  /usr/local/include/boost/move/detail/meta_utils_core.hpp \
+  /usr/local/include/boost/move/traits.hpp \
+  /usr/local/include/boost/move/detail/type_traits.hpp \
+  /usr/local/include/boost/move/iterator.hpp \
+  /usr/local/include/boost/move/detail/iterator_traits.hpp \
+  /usr/local/include/boost/move/algorithm.hpp \
+  /usr/local/include/boost/move/algo/move.hpp \
+  /usr/local/include/boost/move/detail/iterator_to_raw_pointer.hpp \
+  /usr/local/include/boost/move/detail/to_raw_pointer.hpp \
+  /usr/local/include/boost/move/detail/pointer_element.hpp \
+  /usr/local/include/boost/core/no_exceptions_support.hpp \
+  /usr/local/include/boost/move/adl_move_swap.hpp \
+  /usr/local/include/boost/variant/detail/make_variant_list.hpp \
+  /usr/local/include/boost/variant/detail/over_sequence.hpp \
+  /usr/local/include/boost/variant/detail/visitation_impl.hpp \
+  /usr/local/include/boost/variant/detail/cast_storage.hpp \
+  /usr/local/include/boost/variant/detail/hash_variant.hpp \
+  /usr/local/include/boost/variant/static_visitor.hpp \
+  /usr/local/include/boost/variant/apply_visitor.hpp \
+  /usr/local/include/boost/variant/detail/apply_visitor_unary.hpp \
+  /usr/local/include/boost/variant/detail/has_result_type.hpp \
+  /usr/local/include/boost/variant/detail/apply_visitor_binary.hpp \
+  /usr/local/include/boost/variant/detail/apply_visitor_delayed.hpp \
+  /usr/local/include/boost/functional/hash_fwd.hpp \
+  /usr/local/include/boost/variant/detail/std_hash.hpp \
+  /usr/local/include/boost/detail/no_exceptions_support.hpp \
+  /usr/local/include/boost/aligned_storage.hpp \
+  /usr/local/include/boost/blank.hpp \
+  /usr/local/include/boost/detail/templated_streams.hpp \
+  /usr/local/include/boost/integer/common_factor_ct.hpp \
+  /usr/local/include/boost/mpl/empty.hpp \
+  /usr/local/include/boost/mpl/aux_/empty_impl.hpp \
+  /usr/local/include/boost/mpl/front.hpp \
+  /usr/local/include/boost/mpl/aux_/front_impl.hpp \
+  /usr/local/include/boost/mpl/insert_range.hpp \
+  /usr/local/include/boost/mpl/insert_range_fwd.hpp \
+  /usr/local/include/boost/mpl/aux_/insert_range_impl.hpp \
+  /usr/local/include/boost/mpl/insert.hpp \
+  /usr/local/include/boost/mpl/insert_fwd.hpp \
+  /usr/local/include/boost/mpl/aux_/insert_impl.hpp \
+  /usr/local/include/boost/mpl/joint_view.hpp \
+  /usr/local/include/boost/mpl/aux_/joint_iter.hpp \
+  /usr/local/include/boost/mpl/aux_/iter_push_front.hpp \
+  /usr/local/include/boost/type_traits/same_traits.hpp \
+  /usr/local/include/boost/mpl/is_sequence.hpp \
+  /usr/local/include/boost/mpl/max_element.hpp \
+  /usr/local/include/boost/mpl/size_t.hpp \
+  /usr/local/include/boost/mpl/size_t_fwd.hpp \
+  /usr/local/include/boost/mpl/sizeof.hpp \
+  /usr/local/include/boost/mpl/transform.hpp \
+  /usr/local/include/boost/mpl/pair_view.hpp \
+  /usr/local/include/boost/mpl/iterator_category.hpp \
+  /usr/local/include/boost/mpl/min_max.hpp \
+  /usr/local/include/boost/variant/detail/variant_io.hpp \
+  /usr/local/include/boost/variant/recursive_variant.hpp \
+  /usr/local/include/boost/variant/detail/enable_recursive.hpp \
+  /usr/local/include/boost/variant/detail/substitute.hpp \
+  /usr/local/include/boost/variant/recursive_wrapper.hpp \
+  /usr/local/include/boost/checked_delete.hpp \
+  /usr/local/include/boost/mpl/equal.hpp \
+  /usr/local/include/boost/variant/get.hpp \
+  /usr/local/include/boost/utility/addressof.hpp \
+  /usr/local/include/boost/variant/detail/element_index.hpp \
+  /usr/local/include/boost/variant/visitor_ptr.hpp \
+  /usr/local/include/boost/variant/bad_visit.hpp \
   ../third-party/pinocchio/pinocchio/multibody/joint/joint-composite.hpp \
   ../third-party/pinocchio/pinocchio/multibody/joint/joint-basic-visitors.hpp \
   ../third-party/pinocchio/pinocchio/container/aligned-vector.hpp \
@@ -1917,269 +1917,269 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
   ../third-party/eigen3/Eigen/src/StlSupport/StdVector.h \
   ../third-party/eigen3/Eigen/src/StlSupport/details.h \
   ../third-party/pinocchio/pinocchio/serialization/fwd.hpp \
-  /usr/include/boost/serialization/nvp.hpp \
-  /usr/include/boost/serialization/level.hpp \
-  /usr/include/boost/serialization/level_enum.hpp \
-  /usr/include/boost/serialization/tracking.hpp \
-  /usr/include/boost/serialization/tracking_enum.hpp \
-  /usr/include/boost/serialization/type_info_implementation.hpp \
-  /usr/include/boost/serialization/traits.hpp \
-  /usr/include/boost/serialization/split_member.hpp \
-  /usr/include/boost/serialization/access.hpp \
-  /usr/include/boost/serialization/base_object.hpp \
-  /usr/include/boost/serialization/force_include.hpp \
-  /usr/include/boost/serialization/void_cast_fwd.hpp \
-  /usr/include/boost/serialization/wrapper.hpp \
+  /usr/local/include/boost/serialization/nvp.hpp \
+  /usr/local/include/boost/serialization/level.hpp \
+  /usr/local/include/boost/serialization/level_enum.hpp \
+  /usr/local/include/boost/serialization/tracking.hpp \
+  /usr/local/include/boost/serialization/tracking_enum.hpp \
+  /usr/local/include/boost/serialization/type_info_implementation.hpp \
+  /usr/local/include/boost/serialization/traits.hpp \
+  /usr/local/include/boost/serialization/split_member.hpp \
+  /usr/local/include/boost/serialization/access.hpp \
+  /usr/local/include/boost/serialization/base_object.hpp \
+  /usr/local/include/boost/serialization/force_include.hpp \
+  /usr/local/include/boost/serialization/void_cast_fwd.hpp \
+  /usr/local/include/boost/serialization/wrapper.hpp \
   ../third-party/pinocchio/pinocchio/serialization/eigen.hpp \
   ../third-party/pinocchio/pinocchio/math/tensor.hpp \
-  /usr/include/boost/serialization/split_free.hpp \
-  /usr/include/boost/serialization/serialization.hpp \
-  /usr/include/boost/serialization/strong_typedef.hpp \
-  /usr/include/boost/operators.hpp \
-  /usr/include/boost/serialization/vector.hpp \
-  /usr/include/boost/archive/detail/basic_iarchive.hpp \
-  /usr/include/boost/scoped_ptr.hpp \
-  /usr/include/boost/smart_ptr/scoped_ptr.hpp \
-  /usr/include/boost/smart_ptr/detail/sp_nullptr_t.hpp \
-  /usr/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp \
-  /usr/include/boost/smart_ptr/detail/sp_noexcept.hpp \
-  /usr/include/boost/smart_ptr/detail/operator_bool.hpp \
-  /usr/include/boost/archive/basic_archive.hpp \
-  /usr/include/boost/archive/detail/auto_link_archive.hpp \
-  /usr/include/boost/archive/detail/decl.hpp \
-  /usr/include/boost/archive/detail/abi_prefix.hpp \
-  /usr/include/boost/config/abi_prefix.hpp \
-  /usr/include/boost/archive/detail/abi_suffix.hpp \
-  /usr/include/boost/config/abi_suffix.hpp \
-  /usr/include/boost/serialization/is_bitwise_serializable.hpp \
-  /usr/include/boost/archive/detail/helper_collection.hpp \
-  /usr/include/boost/smart_ptr/shared_ptr.hpp \
-  /usr/include/boost/config/no_tr1/memory.hpp \
-  /usr/include/boost/smart_ptr/detail/shared_count.hpp \
-  /usr/include/boost/smart_ptr/bad_weak_ptr.hpp \
-  /usr/include/boost/smart_ptr/detail/sp_counted_base.hpp \
-  /usr/include/boost/smart_ptr/detail/sp_has_sync.hpp \
-  /usr/include/boost/smart_ptr/detail/sp_counted_base_std_atomic.hpp \
-  /usr/include/boost/smart_ptr/detail/sp_typeinfo_.hpp \
-  /usr/include/boost/smart_ptr/detail/sp_counted_impl.hpp \
-  /usr/include/boost/smart_ptr/detail/sp_convertible.hpp \
-  /usr/include/boost/smart_ptr/detail/spinlock_pool.hpp \
-  /usr/include/boost/smart_ptr/detail/spinlock.hpp \
-  /usr/include/boost/smart_ptr/detail/spinlock_std_atomic.hpp \
-  /usr/include/boost/smart_ptr/detail/yield_k.hpp \
-  /usr/include/boost/predef/platform/windows_runtime.h \
-  /usr/include/boost/predef/os/windows.h \
-  /usr/include/boost/predef/platform/windows_phone.h \
-  /usr/include/boost/predef/platform/windows_uwp.h \
-  /usr/include/boost/predef/platform/windows_store.h \
-  /usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
-  /usr/include/boost/smart_ptr/detail/local_counted_base.hpp \
-  /usr/include/boost/smart_ptr/make_shared.hpp \
-  /usr/include/boost/smart_ptr/make_shared_object.hpp \
-  /usr/include/boost/smart_ptr/detail/sp_forward.hpp \
-  /usr/include/boost/smart_ptr/make_shared_array.hpp \
-  /usr/include/boost/core/default_allocator.hpp \
-  /usr/include/boost/smart_ptr/allocate_shared_array.hpp \
-  /usr/include/boost/core/alloc_construct.hpp \
-  /usr/include/boost/core/noinit_adaptor.hpp \
-  /usr/include/boost/core/first_scalar.hpp \
-  /usr/include/boost/type_traits/is_bounded_array.hpp \
-  /usr/include/boost/type_traits/is_unbounded_array.hpp \
-  /usr/include/boost/serialization/collection_size_type.hpp \
-  /usr/include/boost/serialization/item_version_type.hpp \
-  /usr/include/boost/serialization/collections_save_imp.hpp \
-  /usr/include/boost/serialization/version.hpp \
-  /usr/include/boost/serialization/collections_load_imp.hpp \
-  /usr/include/boost/serialization/detail/stack_constructor.hpp \
-  /usr/include/boost/serialization/detail/is_default_constructible.hpp \
-  /usr/include/boost/serialization/array_wrapper.hpp \
-  /usr/include/boost/serialization/array_optimization.hpp \
-  /usr/include/boost/serialization/collection_traits.hpp \
-  /usr/include/boost/serialization/array.hpp \
+  /usr/local/include/boost/serialization/split_free.hpp \
+  /usr/local/include/boost/serialization/serialization.hpp \
+  /usr/local/include/boost/serialization/strong_typedef.hpp \
+  /usr/local/include/boost/operators.hpp \
+  /usr/local/include/boost/serialization/vector.hpp \
+  /usr/local/include/boost/archive/detail/basic_iarchive.hpp \
+  /usr/local/include/boost/scoped_ptr.hpp \
+  /usr/local/include/boost/smart_ptr/scoped_ptr.hpp \
+  /usr/local/include/boost/smart_ptr/detail/sp_nullptr_t.hpp \
+  /usr/local/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp \
+  /usr/local/include/boost/smart_ptr/detail/sp_noexcept.hpp \
+  /usr/local/include/boost/smart_ptr/detail/operator_bool.hpp \
+  /usr/local/include/boost/archive/basic_archive.hpp \
+  /usr/local/include/boost/archive/detail/auto_link_archive.hpp \
+  /usr/local/include/boost/archive/detail/decl.hpp \
+  /usr/local/include/boost/archive/detail/abi_prefix.hpp \
+  /usr/local/include/boost/config/abi_prefix.hpp \
+  /usr/local/include/boost/archive/detail/abi_suffix.hpp \
+  /usr/local/include/boost/config/abi_suffix.hpp \
+  /usr/local/include/boost/serialization/is_bitwise_serializable.hpp \
+  /usr/local/include/boost/archive/detail/helper_collection.hpp \
+  /usr/local/include/boost/smart_ptr/shared_ptr.hpp \
+  /usr/local/include/boost/config/no_tr1/memory.hpp \
+  /usr/local/include/boost/smart_ptr/detail/shared_count.hpp \
+  /usr/local/include/boost/smart_ptr/bad_weak_ptr.hpp \
+  /usr/local/include/boost/smart_ptr/detail/sp_counted_base.hpp \
+  /usr/local/include/boost/smart_ptr/detail/sp_has_sync.hpp \
+  /usr/local/include/boost/smart_ptr/detail/sp_counted_base_std_atomic.hpp \
+  /usr/local/include/boost/smart_ptr/detail/sp_typeinfo_.hpp \
+  /usr/local/include/boost/smart_ptr/detail/sp_counted_impl.hpp \
+  /usr/local/include/boost/smart_ptr/detail/sp_convertible.hpp \
+  /usr/local/include/boost/smart_ptr/detail/spinlock_pool.hpp \
+  /usr/local/include/boost/smart_ptr/detail/spinlock.hpp \
+  /usr/local/include/boost/smart_ptr/detail/spinlock_std_atomic.hpp \
+  /usr/local/include/boost/smart_ptr/detail/yield_k.hpp \
+  /usr/local/include/boost/predef/platform/windows_runtime.h \
+  /usr/local/include/boost/predef/os/windows.h \
+  /usr/local/include/boost/predef/platform/windows_phone.h \
+  /usr/local/include/boost/predef/platform/windows_uwp.h \
+  /usr/local/include/boost/predef/platform/windows_store.h \
+  /usr/local/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
+  /usr/local/include/boost/smart_ptr/detail/local_counted_base.hpp \
+  /usr/local/include/boost/smart_ptr/make_shared.hpp \
+  /usr/local/include/boost/smart_ptr/make_shared_object.hpp \
+  /usr/local/include/boost/smart_ptr/detail/sp_forward.hpp \
+  /usr/local/include/boost/smart_ptr/make_shared_array.hpp \
+  /usr/local/include/boost/core/default_allocator.hpp \
+  /usr/local/include/boost/smart_ptr/allocate_shared_array.hpp \
+  /usr/local/include/boost/core/alloc_construct.hpp \
+  /usr/local/include/boost/core/noinit_adaptor.hpp \
+  /usr/local/include/boost/core/first_scalar.hpp \
+  /usr/local/include/boost/type_traits/is_bounded_array.hpp \
+  /usr/local/include/boost/type_traits/is_unbounded_array.hpp \
+  /usr/local/include/boost/serialization/collection_size_type.hpp \
+  /usr/local/include/boost/serialization/item_version_type.hpp \
+  /usr/local/include/boost/serialization/collections_save_imp.hpp \
+  /usr/local/include/boost/serialization/version.hpp \
+  /usr/local/include/boost/serialization/collections_load_imp.hpp \
+  /usr/local/include/boost/serialization/detail/stack_constructor.hpp \
+  /usr/local/include/boost/serialization/detail/is_default_constructible.hpp \
+  /usr/local/include/boost/serialization/array_wrapper.hpp \
+  /usr/local/include/boost/serialization/array_optimization.hpp \
+  /usr/local/include/boost/serialization/collection_traits.hpp \
+  /usr/local/include/boost/serialization/array.hpp \
   ../third-party/pinocchio/pinocchio/multibody/joint/joint-composite.hxx \
   ../third-party/pinocchio/pinocchio/multibody/visitor.hpp \
   ../third-party/pinocchio/pinocchio/multibody/visitor/joint-unary-visitor.hpp \
   ../third-party/pinocchio/pinocchio/multibody/visitor/fusion.hpp \
-  /usr/include/boost/fusion/include/invoke.hpp \
-  /usr/include/boost/fusion/support/config.hpp \
-  /usr/include/boost/fusion/functional/invocation/invoke.hpp \
-  /usr/include/boost/preprocessor/repetition/enum_shifted.hpp \
-  /usr/include/boost/function_types/is_function.hpp \
-  /usr/include/boost/function_types/components.hpp \
-  /usr/include/boost/mpl/remove.hpp \
-  /usr/include/boost/function_types/config/config.hpp \
-  /usr/include/boost/function_types/config/compiler.hpp \
-  /usr/include/boost/function_types/config/cc_names.hpp \
-  /usr/include/boost/mpl/vector/vector30.hpp \
-  /usr/include/boost/function_types/detail/class_transform.hpp \
-  /usr/include/boost/function_types/property_tags.hpp \
-  /usr/include/boost/mpl/bitxor.hpp \
-  /usr/include/boost/function_types/detail/pp_tags/preprocessed.hpp \
-  /usr/include/boost/function_types/detail/pp_loop.hpp \
-  /usr/include/boost/preprocessor/punctuation/paren.hpp \
-  /usr/include/boost/function_types/detail/encoding/def.hpp \
-  /usr/include/boost/function_types/detail/encoding/aliases_def.hpp \
-  /usr/include/boost/function_types/detail/pp_cc_loop/preprocessed.hpp \
-  /usr/include/boost/function_types/detail/pp_tags/cc_tag.hpp \
-  /usr/include/boost/function_types/detail/encoding/aliases_undef.hpp \
-  /usr/include/boost/function_types/detail/encoding/undef.hpp \
-  /usr/include/boost/function_types/detail/pp_variate_loop/preprocessed.hpp \
-  /usr/include/boost/function_types/detail/pp_arity_loop.hpp \
-  /usr/include/boost/function_types/detail/components_impl/arity20_0.hpp \
-  /usr/include/boost/function_types/detail/components_impl/arity10_0.hpp \
-  /usr/include/boost/function_types/detail/components_impl/arity20_1.hpp \
-  /usr/include/boost/function_types/detail/components_impl/arity10_1.hpp \
-  /usr/include/boost/function_types/detail/components_as_mpl_sequence.hpp \
-  /usr/include/boost/function_types/detail/retag_default_cc.hpp \
-  /usr/include/boost/mpl/bitand.hpp \
-  /usr/include/boost/function_types/detail/pp_retag_default_cc/preprocessed.hpp \
-  /usr/include/boost/function_types/is_callable_builtin.hpp \
-  /usr/include/boost/function_types/is_member_pointer.hpp \
-  /usr/include/boost/function_types/is_member_function_pointer.hpp \
-  /usr/include/boost/function_types/result_type.hpp \
-  /usr/include/boost/function_types/parameter_types.hpp \
-  /usr/include/boost/mpl/pop_front.hpp \
-  /usr/include/boost/mpl/aux_/pop_front_impl.hpp \
-  /usr/include/boost/utility/result_of.hpp \
-  /usr/include/boost/utility/detail/result_of_iterate.hpp \
-  /usr/include/boost/fusion/support/category_of.hpp \
-  /usr/include/boost/fusion/support/tag_of.hpp \
-  /usr/include/boost/fusion/support/tag_of_fwd.hpp \
-  /usr/include/boost/fusion/support/detail/is_mpl_sequence.hpp \
-  /usr/include/boost/fusion/support/detail/is_native_fusion_sequence.hpp \
-  /usr/include/boost/fusion/support/sequence_base.hpp \
-  /usr/include/boost/config/no_tr1/utility.hpp \
-  /usr/include/boost/fusion/sequence/intrinsic/at.hpp \
-  /usr/include/boost/mpl/empty_base.hpp \
-  /usr/include/boost/fusion/sequence/intrinsic_fwd.hpp \
-  /usr/include/boost/fusion/support/is_sequence.hpp \
-  /usr/include/boost/fusion/sequence/intrinsic/size.hpp \
-  /usr/include/boost/fusion/support/is_segmented.hpp \
-  /usr/include/boost/fusion/sequence/intrinsic/detail/segmented_size.hpp \
-  /usr/include/boost/fusion/mpl/begin.hpp \
-  /usr/include/boost/fusion/sequence/intrinsic/begin.hpp \
-  /usr/include/boost/fusion/sequence/intrinsic/detail/segmented_begin.hpp \
-  /usr/include/boost/fusion/sequence/intrinsic/detail/segmented_begin_impl.hpp \
-  /usr/include/boost/fusion/container/list/cons_fwd.hpp \
-  /usr/include/boost/fusion/sequence/intrinsic/detail/segmented_end_impl.hpp \
-  /usr/include/boost/fusion/support/detail/segmented_fold_until_impl.hpp \
-  /usr/include/boost/fusion/support/void.hpp \
-  /usr/include/boost/fusion/iterator/equal_to.hpp \
-  /usr/include/boost/fusion/support/is_iterator.hpp \
-  /usr/include/boost/fusion/iterator/deref.hpp \
-  /usr/include/boost/fusion/support/iterator_base.hpp \
-  /usr/include/boost/fusion/iterator/next.hpp \
-  /usr/include/boost/fusion/sequence/intrinsic/segments.hpp \
-  /usr/include/boost/fusion/iterator/segmented_iterator.hpp \
-  /usr/include/boost/fusion/iterator/detail/segmented_iterator.hpp \
-  /usr/include/boost/fusion/iterator/iterator_facade.hpp \
-  /usr/include/boost/fusion/iterator/detail/advance.hpp \
-  /usr/include/boost/fusion/iterator/prior.hpp \
-  /usr/include/boost/fusion/iterator/detail/distance.hpp \
-  /usr/include/boost/fusion/iterator/deref_data.hpp \
-  /usr/include/boost/fusion/iterator/key_of.hpp \
-  /usr/include/boost/fusion/iterator/value_of.hpp \
-  /usr/include/boost/fusion/iterator/value_of_data.hpp \
-  /usr/include/boost/fusion/iterator/detail/segmented_equal_to.hpp \
-  /usr/include/boost/fusion/iterator/detail/segmented_next_impl.hpp \
-  /usr/include/boost/fusion/container/list/cons.hpp \
-  /usr/include/boost/fusion/support/detail/enabler.hpp \
-  /usr/include/boost/fusion/support/detail/access.hpp \
-  /usr/include/boost/fusion/sequence/intrinsic/end.hpp \
-  /usr/include/boost/fusion/sequence/intrinsic/detail/segmented_end.hpp \
-  /usr/include/boost/fusion/container/list/nil.hpp \
-  /usr/include/boost/fusion/container/list/cons_iterator.hpp \
-  /usr/include/boost/fusion/container/list/detail/deref_impl.hpp \
-  /usr/include/boost/fusion/container/list/detail/next_impl.hpp \
-  /usr/include/boost/fusion/container/list/detail/value_of_impl.hpp \
-  /usr/include/boost/fusion/container/list/detail/equal_to_impl.hpp \
-  /usr/include/boost/fusion/container/list/list_fwd.hpp \
-  /usr/include/boost/fusion/container/list/detail/begin_impl.hpp \
-  /usr/include/boost/fusion/container/list/detail/end_impl.hpp \
-  /usr/include/boost/fusion/container/list/detail/at_impl.hpp \
-  /usr/include/boost/fusion/container/list/detail/value_at_impl.hpp \
-  /usr/include/boost/fusion/container/list/detail/empty_impl.hpp \
-  /usr/include/boost/fusion/view/iterator_range.hpp \
-  /usr/include/boost/fusion/view/iterator_range/iterator_range.hpp \
-  /usr/include/boost/fusion/iterator/distance.hpp \
-  /usr/include/boost/fusion/iterator/mpl/convert_iterator.hpp \
-  /usr/include/boost/fusion/view/iterator_range/detail/begin_impl.hpp \
-  /usr/include/boost/fusion/view/iterator_range/detail/end_impl.hpp \
-  /usr/include/boost/fusion/view/iterator_range/detail/at_impl.hpp \
-  /usr/include/boost/fusion/iterator/advance.hpp \
-  /usr/include/boost/fusion/view/iterator_range/detail/size_impl.hpp \
-  /usr/include/boost/fusion/view/iterator_range/detail/value_at_impl.hpp \
-  /usr/include/boost/fusion/view/iterator_range/detail/is_segmented_impl.hpp \
-  /usr/include/boost/fusion/view/iterator_range/detail/segments_impl.hpp \
-  /usr/include/boost/fusion/view/iterator_range/detail/segmented_iterator_range.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/push_back.hpp \
-  /usr/include/boost/fusion/support/detail/as_fusion_element.hpp \
-  /usr/include/boost/ref.hpp \
-  /usr/include/boost/core/ref.hpp \
-  /usr/include/boost/fusion/view/joint_view/joint_view.hpp \
-  /usr/include/boost/fusion/view/joint_view/joint_view_fwd.hpp \
-  /usr/include/boost/fusion/support/is_view.hpp \
-  /usr/include/boost/fusion/view/joint_view/joint_view_iterator.hpp \
-  /usr/include/boost/fusion/adapted/mpl/mpl_iterator.hpp \
-  /usr/include/boost/fusion/support/detail/mpl_iterator_category.hpp \
-  /usr/include/boost/fusion/view/joint_view/detail/deref_impl.hpp \
-  /usr/include/boost/fusion/iterator/detail/adapt_deref_traits.hpp \
-  /usr/include/boost/fusion/view/joint_view/detail/next_impl.hpp \
-  /usr/include/boost/fusion/view/joint_view/detail/value_of_impl.hpp \
-  /usr/include/boost/fusion/iterator/detail/adapt_value_traits.hpp \
-  /usr/include/boost/fusion/view/joint_view/detail/deref_data_impl.hpp \
-  /usr/include/boost/fusion/view/joint_view/detail/value_of_data_impl.hpp \
-  /usr/include/boost/fusion/view/joint_view/detail/key_of_impl.hpp \
-  /usr/include/boost/fusion/view/joint_view/detail/begin_impl.hpp \
-  /usr/include/boost/fusion/view/joint_view/detail/end_impl.hpp \
-  /usr/include/boost/mpl/inherit.hpp \
-  /usr/include/boost/fusion/view/single_view/single_view.hpp \
-  /usr/include/boost/fusion/view/single_view/single_view_iterator.hpp \
-  /usr/include/boost/fusion/view/single_view/detail/deref_impl.hpp \
-  /usr/include/boost/fusion/view/single_view/detail/next_impl.hpp \
-  /usr/include/boost/fusion/view/single_view/detail/prior_impl.hpp \
-  /usr/include/boost/fusion/view/single_view/detail/advance_impl.hpp \
-  /usr/include/boost/fusion/view/single_view/detail/distance_impl.hpp \
-  /usr/include/boost/fusion/view/single_view/detail/equal_to_impl.hpp \
-  /usr/include/boost/fusion/view/single_view/detail/value_of_impl.hpp \
-  /usr/include/boost/fusion/view/single_view/detail/at_impl.hpp \
-  /usr/include/boost/fusion/view/single_view/detail/begin_impl.hpp \
-  /usr/include/boost/fusion/view/single_view/detail/end_impl.hpp \
-  /usr/include/boost/fusion/view/single_view/detail/size_impl.hpp \
-  /usr/include/boost/fusion/view/single_view/detail/value_at_impl.hpp \
-  /usr/include/boost/fusion/sequence/intrinsic/value_at.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/push_front.hpp \
-  /usr/include/boost/fusion/container/list/detail/reverse_cons.hpp \
-  /usr/include/boost/fusion/iterator/detail/segment_sequence.hpp \
-  /usr/include/boost/fusion/sequence/intrinsic/empty.hpp \
-  /usr/include/boost/fusion/adapted/mpl/detail/begin_impl.hpp \
-  /usr/include/boost/mpl/begin.hpp \
-  /usr/include/boost/fusion/iterator/mpl/fusion_iterator.hpp \
-  /usr/include/boost/fusion/mpl/end.hpp \
-  /usr/include/boost/fusion/adapted/mpl/detail/end_impl.hpp \
-  /usr/include/boost/mpl/end.hpp \
-  /usr/include/boost/fusion/sequence/intrinsic/front.hpp \
-  /usr/include/boost/fusion/functional/invocation/limits.hpp \
-  /usr/include/boost/fusion/functional/invocation/detail/that_ptr.hpp \
-  /usr/include/boost/get_pointer.hpp \
-  /usr/include/boost/fusion/container/generation/make_vector.hpp \
-  /usr/include/boost/fusion/container/vector/vector.hpp \
-  /usr/include/boost/fusion/container/vector/detail/config.hpp \
-  /usr/include/boost/fusion/container/vector/vector_fwd.hpp \
-  /usr/include/boost/fusion/support/detail/and.hpp \
-  /usr/include/boost/fusion/support/detail/index_sequence.hpp \
-  /usr/include/boost/fusion/container/vector/detail/at_impl.hpp \
-  /usr/include/boost/fusion/container/vector/detail/value_at_impl.hpp \
-  /usr/include/boost/fusion/container/vector/detail/begin_impl.hpp \
-  /usr/include/boost/fusion/container/vector/vector_iterator.hpp \
-  /usr/include/boost/fusion/container/vector/detail/deref_impl.hpp \
-  /usr/include/boost/fusion/container/vector/detail/value_of_impl.hpp \
-  /usr/include/boost/fusion/container/vector/detail/next_impl.hpp \
-  /usr/include/boost/fusion/container/vector/detail/prior_impl.hpp \
-  /usr/include/boost/fusion/container/vector/detail/equal_to_impl.hpp \
-  /usr/include/boost/fusion/container/vector/detail/distance_impl.hpp \
-  /usr/include/boost/fusion/container/vector/detail/advance_impl.hpp \
-  /usr/include/boost/fusion/container/vector/detail/end_impl.hpp \
+  /usr/local/include/boost/fusion/include/invoke.hpp \
+  /usr/local/include/boost/fusion/support/config.hpp \
+  /usr/local/include/boost/fusion/functional/invocation/invoke.hpp \
+  /usr/local/include/boost/preprocessor/repetition/enum_shifted.hpp \
+  /usr/local/include/boost/function_types/is_function.hpp \
+  /usr/local/include/boost/function_types/components.hpp \
+  /usr/local/include/boost/mpl/remove.hpp \
+  /usr/local/include/boost/function_types/config/config.hpp \
+  /usr/local/include/boost/function_types/config/compiler.hpp \
+  /usr/local/include/boost/function_types/config/cc_names.hpp \
+  /usr/local/include/boost/mpl/vector/vector30.hpp \
+  /usr/local/include/boost/function_types/detail/class_transform.hpp \
+  /usr/local/include/boost/function_types/property_tags.hpp \
+  /usr/local/include/boost/mpl/bitxor.hpp \
+  /usr/local/include/boost/function_types/detail/pp_tags/preprocessed.hpp \
+  /usr/local/include/boost/function_types/detail/pp_loop.hpp \
+  /usr/local/include/boost/preprocessor/punctuation/paren.hpp \
+  /usr/local/include/boost/function_types/detail/encoding/def.hpp \
+  /usr/local/include/boost/function_types/detail/encoding/aliases_def.hpp \
+  /usr/local/include/boost/function_types/detail/pp_cc_loop/preprocessed.hpp \
+  /usr/local/include/boost/function_types/detail/pp_tags/cc_tag.hpp \
+  /usr/local/include/boost/function_types/detail/encoding/aliases_undef.hpp \
+  /usr/local/include/boost/function_types/detail/encoding/undef.hpp \
+  /usr/local/include/boost/function_types/detail/pp_variate_loop/preprocessed.hpp \
+  /usr/local/include/boost/function_types/detail/pp_arity_loop.hpp \
+  /usr/local/include/boost/function_types/detail/components_impl/arity20_0.hpp \
+  /usr/local/include/boost/function_types/detail/components_impl/arity10_0.hpp \
+  /usr/local/include/boost/function_types/detail/components_impl/arity20_1.hpp \
+  /usr/local/include/boost/function_types/detail/components_impl/arity10_1.hpp \
+  /usr/local/include/boost/function_types/detail/components_as_mpl_sequence.hpp \
+  /usr/local/include/boost/function_types/detail/retag_default_cc.hpp \
+  /usr/local/include/boost/mpl/bitand.hpp \
+  /usr/local/include/boost/function_types/detail/pp_retag_default_cc/preprocessed.hpp \
+  /usr/local/include/boost/function_types/is_callable_builtin.hpp \
+  /usr/local/include/boost/function_types/is_member_pointer.hpp \
+  /usr/local/include/boost/function_types/is_member_function_pointer.hpp \
+  /usr/local/include/boost/function_types/result_type.hpp \
+  /usr/local/include/boost/function_types/parameter_types.hpp \
+  /usr/local/include/boost/mpl/pop_front.hpp \
+  /usr/local/include/boost/mpl/aux_/pop_front_impl.hpp \
+  /usr/local/include/boost/utility/result_of.hpp \
+  /usr/local/include/boost/utility/detail/result_of_iterate.hpp \
+  /usr/local/include/boost/fusion/support/category_of.hpp \
+  /usr/local/include/boost/fusion/support/tag_of.hpp \
+  /usr/local/include/boost/fusion/support/tag_of_fwd.hpp \
+  /usr/local/include/boost/fusion/support/detail/is_mpl_sequence.hpp \
+  /usr/local/include/boost/fusion/support/detail/is_native_fusion_sequence.hpp \
+  /usr/local/include/boost/fusion/support/sequence_base.hpp \
+  /usr/local/include/boost/config/no_tr1/utility.hpp \
+  /usr/local/include/boost/fusion/sequence/intrinsic/at.hpp \
+  /usr/local/include/boost/mpl/empty_base.hpp \
+  /usr/local/include/boost/fusion/sequence/intrinsic_fwd.hpp \
+  /usr/local/include/boost/fusion/support/is_sequence.hpp \
+  /usr/local/include/boost/fusion/sequence/intrinsic/size.hpp \
+  /usr/local/include/boost/fusion/support/is_segmented.hpp \
+  /usr/local/include/boost/fusion/sequence/intrinsic/detail/segmented_size.hpp \
+  /usr/local/include/boost/fusion/mpl/begin.hpp \
+  /usr/local/include/boost/fusion/sequence/intrinsic/begin.hpp \
+  /usr/local/include/boost/fusion/sequence/intrinsic/detail/segmented_begin.hpp \
+  /usr/local/include/boost/fusion/sequence/intrinsic/detail/segmented_begin_impl.hpp \
+  /usr/local/include/boost/fusion/container/list/cons_fwd.hpp \
+  /usr/local/include/boost/fusion/sequence/intrinsic/detail/segmented_end_impl.hpp \
+  /usr/local/include/boost/fusion/support/detail/segmented_fold_until_impl.hpp \
+  /usr/local/include/boost/fusion/support/void.hpp \
+  /usr/local/include/boost/fusion/iterator/equal_to.hpp \
+  /usr/local/include/boost/fusion/support/is_iterator.hpp \
+  /usr/local/include/boost/fusion/iterator/deref.hpp \
+  /usr/local/include/boost/fusion/support/iterator_base.hpp \
+  /usr/local/include/boost/fusion/iterator/next.hpp \
+  /usr/local/include/boost/fusion/sequence/intrinsic/segments.hpp \
+  /usr/local/include/boost/fusion/iterator/segmented_iterator.hpp \
+  /usr/local/include/boost/fusion/iterator/detail/segmented_iterator.hpp \
+  /usr/local/include/boost/fusion/iterator/iterator_facade.hpp \
+  /usr/local/include/boost/fusion/iterator/detail/advance.hpp \
+  /usr/local/include/boost/fusion/iterator/prior.hpp \
+  /usr/local/include/boost/fusion/iterator/detail/distance.hpp \
+  /usr/local/include/boost/fusion/iterator/deref_data.hpp \
+  /usr/local/include/boost/fusion/iterator/key_of.hpp \
+  /usr/local/include/boost/fusion/iterator/value_of.hpp \
+  /usr/local/include/boost/fusion/iterator/value_of_data.hpp \
+  /usr/local/include/boost/fusion/iterator/detail/segmented_equal_to.hpp \
+  /usr/local/include/boost/fusion/iterator/detail/segmented_next_impl.hpp \
+  /usr/local/include/boost/fusion/container/list/cons.hpp \
+  /usr/local/include/boost/fusion/support/detail/enabler.hpp \
+  /usr/local/include/boost/fusion/support/detail/access.hpp \
+  /usr/local/include/boost/fusion/sequence/intrinsic/end.hpp \
+  /usr/local/include/boost/fusion/sequence/intrinsic/detail/segmented_end.hpp \
+  /usr/local/include/boost/fusion/container/list/nil.hpp \
+  /usr/local/include/boost/fusion/container/list/cons_iterator.hpp \
+  /usr/local/include/boost/fusion/container/list/detail/deref_impl.hpp \
+  /usr/local/include/boost/fusion/container/list/detail/next_impl.hpp \
+  /usr/local/include/boost/fusion/container/list/detail/value_of_impl.hpp \
+  /usr/local/include/boost/fusion/container/list/detail/equal_to_impl.hpp \
+  /usr/local/include/boost/fusion/container/list/list_fwd.hpp \
+  /usr/local/include/boost/fusion/container/list/detail/begin_impl.hpp \
+  /usr/local/include/boost/fusion/container/list/detail/end_impl.hpp \
+  /usr/local/include/boost/fusion/container/list/detail/at_impl.hpp \
+  /usr/local/include/boost/fusion/container/list/detail/value_at_impl.hpp \
+  /usr/local/include/boost/fusion/container/list/detail/empty_impl.hpp \
+  /usr/local/include/boost/fusion/view/iterator_range.hpp \
+  /usr/local/include/boost/fusion/view/iterator_range/iterator_range.hpp \
+  /usr/local/include/boost/fusion/iterator/distance.hpp \
+  /usr/local/include/boost/fusion/iterator/mpl/convert_iterator.hpp \
+  /usr/local/include/boost/fusion/view/iterator_range/detail/begin_impl.hpp \
+  /usr/local/include/boost/fusion/view/iterator_range/detail/end_impl.hpp \
+  /usr/local/include/boost/fusion/view/iterator_range/detail/at_impl.hpp \
+  /usr/local/include/boost/fusion/iterator/advance.hpp \
+  /usr/local/include/boost/fusion/view/iterator_range/detail/size_impl.hpp \
+  /usr/local/include/boost/fusion/view/iterator_range/detail/value_at_impl.hpp \
+  /usr/local/include/boost/fusion/view/iterator_range/detail/is_segmented_impl.hpp \
+  /usr/local/include/boost/fusion/view/iterator_range/detail/segments_impl.hpp \
+  /usr/local/include/boost/fusion/view/iterator_range/detail/segmented_iterator_range.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/push_back.hpp \
+  /usr/local/include/boost/fusion/support/detail/as_fusion_element.hpp \
+  /usr/local/include/boost/ref.hpp \
+  /usr/local/include/boost/core/ref.hpp \
+  /usr/local/include/boost/fusion/view/joint_view/joint_view.hpp \
+  /usr/local/include/boost/fusion/view/joint_view/joint_view_fwd.hpp \
+  /usr/local/include/boost/fusion/support/is_view.hpp \
+  /usr/local/include/boost/fusion/view/joint_view/joint_view_iterator.hpp \
+  /usr/local/include/boost/fusion/adapted/mpl/mpl_iterator.hpp \
+  /usr/local/include/boost/fusion/support/detail/mpl_iterator_category.hpp \
+  /usr/local/include/boost/fusion/view/joint_view/detail/deref_impl.hpp \
+  /usr/local/include/boost/fusion/iterator/detail/adapt_deref_traits.hpp \
+  /usr/local/include/boost/fusion/view/joint_view/detail/next_impl.hpp \
+  /usr/local/include/boost/fusion/view/joint_view/detail/value_of_impl.hpp \
+  /usr/local/include/boost/fusion/iterator/detail/adapt_value_traits.hpp \
+  /usr/local/include/boost/fusion/view/joint_view/detail/deref_data_impl.hpp \
+  /usr/local/include/boost/fusion/view/joint_view/detail/value_of_data_impl.hpp \
+  /usr/local/include/boost/fusion/view/joint_view/detail/key_of_impl.hpp \
+  /usr/local/include/boost/fusion/view/joint_view/detail/begin_impl.hpp \
+  /usr/local/include/boost/fusion/view/joint_view/detail/end_impl.hpp \
+  /usr/local/include/boost/mpl/inherit.hpp \
+  /usr/local/include/boost/fusion/view/single_view/single_view.hpp \
+  /usr/local/include/boost/fusion/view/single_view/single_view_iterator.hpp \
+  /usr/local/include/boost/fusion/view/single_view/detail/deref_impl.hpp \
+  /usr/local/include/boost/fusion/view/single_view/detail/next_impl.hpp \
+  /usr/local/include/boost/fusion/view/single_view/detail/prior_impl.hpp \
+  /usr/local/include/boost/fusion/view/single_view/detail/advance_impl.hpp \
+  /usr/local/include/boost/fusion/view/single_view/detail/distance_impl.hpp \
+  /usr/local/include/boost/fusion/view/single_view/detail/equal_to_impl.hpp \
+  /usr/local/include/boost/fusion/view/single_view/detail/value_of_impl.hpp \
+  /usr/local/include/boost/fusion/view/single_view/detail/at_impl.hpp \
+  /usr/local/include/boost/fusion/view/single_view/detail/begin_impl.hpp \
+  /usr/local/include/boost/fusion/view/single_view/detail/end_impl.hpp \
+  /usr/local/include/boost/fusion/view/single_view/detail/size_impl.hpp \
+  /usr/local/include/boost/fusion/view/single_view/detail/value_at_impl.hpp \
+  /usr/local/include/boost/fusion/sequence/intrinsic/value_at.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/push_front.hpp \
+  /usr/local/include/boost/fusion/container/list/detail/reverse_cons.hpp \
+  /usr/local/include/boost/fusion/iterator/detail/segment_sequence.hpp \
+  /usr/local/include/boost/fusion/sequence/intrinsic/empty.hpp \
+  /usr/local/include/boost/fusion/adapted/mpl/detail/begin_impl.hpp \
+  /usr/local/include/boost/mpl/begin.hpp \
+  /usr/local/include/boost/fusion/iterator/mpl/fusion_iterator.hpp \
+  /usr/local/include/boost/fusion/mpl/end.hpp \
+  /usr/local/include/boost/fusion/adapted/mpl/detail/end_impl.hpp \
+  /usr/local/include/boost/mpl/end.hpp \
+  /usr/local/include/boost/fusion/sequence/intrinsic/front.hpp \
+  /usr/local/include/boost/fusion/functional/invocation/limits.hpp \
+  /usr/local/include/boost/fusion/functional/invocation/detail/that_ptr.hpp \
+  /usr/local/include/boost/get_pointer.hpp \
+  /usr/local/include/boost/fusion/container/generation/make_vector.hpp \
+  /usr/local/include/boost/fusion/container/vector/vector.hpp \
+  /usr/local/include/boost/fusion/container/vector/detail/config.hpp \
+  /usr/local/include/boost/fusion/container/vector/vector_fwd.hpp \
+  /usr/local/include/boost/fusion/support/detail/and.hpp \
+  /usr/local/include/boost/fusion/support/detail/index_sequence.hpp \
+  /usr/local/include/boost/fusion/container/vector/detail/at_impl.hpp \
+  /usr/local/include/boost/fusion/container/vector/detail/value_at_impl.hpp \
+  /usr/local/include/boost/fusion/container/vector/detail/begin_impl.hpp \
+  /usr/local/include/boost/fusion/container/vector/vector_iterator.hpp \
+  /usr/local/include/boost/fusion/container/vector/detail/deref_impl.hpp \
+  /usr/local/include/boost/fusion/container/vector/detail/value_of_impl.hpp \
+  /usr/local/include/boost/fusion/container/vector/detail/next_impl.hpp \
+  /usr/local/include/boost/fusion/container/vector/detail/prior_impl.hpp \
+  /usr/local/include/boost/fusion/container/vector/detail/equal_to_impl.hpp \
+  /usr/local/include/boost/fusion/container/vector/detail/distance_impl.hpp \
+  /usr/local/include/boost/fusion/container/vector/detail/advance_impl.hpp \
+  /usr/local/include/boost/fusion/container/vector/detail/end_impl.hpp \
   ../third-party/pinocchio/pinocchio/multibody/visitor/joint-binary-visitor.hpp \
   ../third-party/pinocchio/pinocchio/multibody/joint/joint-basic-visitors.hxx \
   ../third-party/pinocchio/pinocchio/serialization/serializable.hpp \
@@ -2189,152 +2189,152 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
   /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
   /usr/include/c++/9/bits/fstream.tcc \
-  /usr/include/boost/archive/text_oarchive.hpp \
-  /usr/include/boost/archive/basic_text_oprimitive.hpp \
-  /usr/include/boost/io/ios_state.hpp \
-  /usr/include/boost/io_fwd.hpp \
-  /usr/include/boost/serialization/throw_exception.hpp \
-  /usr/include/boost/archive/basic_streambuf_locale_saver.hpp \
-  /usr/include/boost/archive/codecvt_null.hpp \
-  /usr/include/boost/archive/archive_exception.hpp \
-  /usr/include/boost/archive/basic_text_oarchive.hpp \
-  /usr/include/boost/archive/detail/common_oarchive.hpp \
-  /usr/include/boost/archive/detail/basic_oarchive.hpp \
-  /usr/include/boost/archive/detail/interface_oarchive.hpp \
-  /usr/include/boost/archive/detail/oserializer.hpp \
-  /usr/include/boost/serialization/extended_type_info_typeid.hpp \
+  /usr/local/include/boost/archive/text_oarchive.hpp \
+  /usr/local/include/boost/archive/basic_text_oprimitive.hpp \
+  /usr/local/include/boost/io/ios_state.hpp \
+  /usr/local/include/boost/io_fwd.hpp \
+  /usr/local/include/boost/serialization/throw_exception.hpp \
+  /usr/local/include/boost/archive/basic_streambuf_locale_saver.hpp \
+  /usr/local/include/boost/archive/codecvt_null.hpp \
+  /usr/local/include/boost/archive/archive_exception.hpp \
+  /usr/local/include/boost/archive/basic_text_oarchive.hpp \
+  /usr/local/include/boost/archive/detail/common_oarchive.hpp \
+  /usr/local/include/boost/archive/detail/basic_oarchive.hpp \
+  /usr/local/include/boost/archive/detail/interface_oarchive.hpp \
+  /usr/local/include/boost/archive/detail/oserializer.hpp \
+  /usr/local/include/boost/serialization/extended_type_info_typeid.hpp \
   /usr/include/c++/9/cstdarg \
-  /usr/include/boost/serialization/static_warning.hpp \
-  /usr/include/boost/mpl/print.hpp \
-  /usr/include/boost/serialization/config.hpp \
-  /usr/include/boost/serialization/singleton.hpp \
-  /usr/include/boost/serialization/extended_type_info.hpp \
-  /usr/include/boost/serialization/factory.hpp \
-  /usr/include/boost/preprocessor/comparison/greater.hpp \
-  /usr/include/boost/preprocessor/comparison/less.hpp \
-  /usr/include/boost/serialization/smart_cast.hpp \
-  /usr/include/boost/serialization/assume_abstract.hpp \
-  /usr/include/boost/serialization/void_cast.hpp \
-  /usr/include/boost/archive/detail/basic_oserializer.hpp \
-  /usr/include/boost/archive/detail/basic_serializer.hpp \
-  /usr/include/boost/archive/detail/basic_pointer_oserializer.hpp \
-  /usr/include/boost/archive/detail/archive_serializer_map.hpp \
-  /usr/include/boost/archive/detail/check.hpp \
-  /usr/include/boost/serialization/string.hpp \
-  /usr/include/boost/archive/detail/register_archive.hpp \
-  /usr/include/boost/archive/text_iarchive.hpp \
-  /usr/include/boost/archive/basic_text_iprimitive.hpp \
-  /usr/include/boost/archive/basic_text_iarchive.hpp \
-  /usr/include/boost/archive/detail/common_iarchive.hpp \
-  /usr/include/boost/archive/detail/basic_pointer_iserializer.hpp \
-  /usr/include/boost/archive/detail/interface_iarchive.hpp \
-  /usr/include/boost/archive/detail/iserializer.hpp \
-  /usr/include/boost/archive/detail/basic_iserializer.hpp \
-  /usr/include/boost/archive/xml_iarchive.hpp \
-  /usr/include/boost/archive/basic_xml_iarchive.hpp \
-  /usr/include/boost/archive/xml_oarchive.hpp \
-  /usr/include/boost/archive/basic_xml_oarchive.hpp \
-  /usr/include/boost/archive/binary_iarchive.hpp \
-  /usr/include/boost/archive/binary_iarchive_impl.hpp \
-  /usr/include/boost/archive/basic_binary_iprimitive.hpp \
-  /usr/include/boost/archive/basic_binary_iarchive.hpp \
-  /usr/include/boost/archive/binary_oarchive.hpp \
-  /usr/include/boost/archive/binary_oarchive_impl.hpp \
-  /usr/include/boost/archive/basic_binary_oprimitive.hpp \
-  /usr/include/boost/archive/basic_binary_oarchive.hpp \
-  /usr/include/boost/asio/streambuf.hpp \
-  /usr/include/boost/asio/detail/config.hpp \
+  /usr/local/include/boost/serialization/static_warning.hpp \
+  /usr/local/include/boost/mpl/print.hpp \
+  /usr/local/include/boost/serialization/config.hpp \
+  /usr/local/include/boost/serialization/singleton.hpp \
+  /usr/local/include/boost/serialization/extended_type_info.hpp \
+  /usr/local/include/boost/serialization/factory.hpp \
+  /usr/local/include/boost/preprocessor/comparison/greater.hpp \
+  /usr/local/include/boost/preprocessor/comparison/less.hpp \
+  /usr/local/include/boost/serialization/smart_cast.hpp \
+  /usr/local/include/boost/serialization/assume_abstract.hpp \
+  /usr/local/include/boost/serialization/void_cast.hpp \
+  /usr/local/include/boost/archive/detail/basic_oserializer.hpp \
+  /usr/local/include/boost/archive/detail/basic_serializer.hpp \
+  /usr/local/include/boost/archive/detail/basic_pointer_oserializer.hpp \
+  /usr/local/include/boost/archive/detail/archive_serializer_map.hpp \
+  /usr/local/include/boost/archive/detail/check.hpp \
+  /usr/local/include/boost/serialization/string.hpp \
+  /usr/local/include/boost/archive/detail/register_archive.hpp \
+  /usr/local/include/boost/archive/text_iarchive.hpp \
+  /usr/local/include/boost/archive/basic_text_iprimitive.hpp \
+  /usr/local/include/boost/archive/basic_text_iarchive.hpp \
+  /usr/local/include/boost/archive/detail/common_iarchive.hpp \
+  /usr/local/include/boost/archive/detail/basic_pointer_iserializer.hpp \
+  /usr/local/include/boost/archive/detail/interface_iarchive.hpp \
+  /usr/local/include/boost/archive/detail/iserializer.hpp \
+  /usr/local/include/boost/archive/detail/basic_iserializer.hpp \
+  /usr/local/include/boost/archive/xml_iarchive.hpp \
+  /usr/local/include/boost/archive/basic_xml_iarchive.hpp \
+  /usr/local/include/boost/archive/xml_oarchive.hpp \
+  /usr/local/include/boost/archive/basic_xml_oarchive.hpp \
+  /usr/local/include/boost/archive/binary_iarchive.hpp \
+  /usr/local/include/boost/archive/binary_iarchive_impl.hpp \
+  /usr/local/include/boost/archive/basic_binary_iprimitive.hpp \
+  /usr/local/include/boost/archive/basic_binary_iarchive.hpp \
+  /usr/local/include/boost/archive/binary_oarchive.hpp \
+  /usr/local/include/boost/archive/binary_oarchive_impl.hpp \
+  /usr/local/include/boost/archive/basic_binary_oprimitive.hpp \
+  /usr/local/include/boost/archive/basic_binary_oarchive.hpp \
+  /usr/local/include/boost/asio/streambuf.hpp \
+  /usr/local/include/boost/asio/detail/config.hpp \
   /usr/include/linux/version.h \
-  /usr/include/boost/asio/basic_streambuf.hpp \
-  /usr/include/boost/asio/basic_streambuf_fwd.hpp \
-  /usr/include/boost/asio/buffer.hpp \
-  /usr/include/boost/asio/detail/array_fwd.hpp \
-  /usr/include/boost/asio/detail/memory.hpp \
-  /usr/include/boost/asio/detail/string_view.hpp \
-  /usr/include/boost/asio/detail/throw_exception.hpp \
-  /usr/include/boost/asio/detail/type_traits.hpp \
-  /usr/include/boost/asio/detail/push_options.hpp \
-  /usr/include/boost/asio/detail/pop_options.hpp \
-  /usr/include/boost/asio/detail/is_buffer_sequence.hpp \
-  /usr/include/boost/asio/detail/limits.hpp \
-  /usr/include/boost/asio/detail/noncopyable.hpp \
-  /usr/include/boost/iostreams/device/array.hpp \
-  /usr/include/boost/iostreams/categories.hpp \
-  /usr/include/boost/iostreams/stream.hpp \
-  /usr/include/boost/iostreams/constants.hpp \
-  /usr/include/boost/iostreams/detail/ios.hpp \
-  /usr/include/boost/iostreams/detail/config/wide_streams.hpp \
-  /usr/include/boost/iostreams/detail/char_traits.hpp \
-  /usr/include/boost/iostreams/detail/config/overload_resolution.hpp \
-  /usr/include/boost/iostreams/detail/config/gcc.hpp \
-  /usr/include/boost/iostreams/detail/forward.hpp \
-  /usr/include/boost/iostreams/detail/config/limits.hpp \
-  /usr/include/boost/iostreams/detail/push_params.hpp \
-  /usr/include/boost/iostreams/detail/iostream.hpp \
-  /usr/include/boost/iostreams/detail/select.hpp \
-  /usr/include/boost/iostreams/stream_buffer.hpp \
-  /usr/include/boost/iostreams/detail/streambuf/direct_streambuf.hpp \
-  /usr/include/boost/core/typeinfo.hpp \
-  /usr/include/boost/iostreams/detail/error.hpp \
-  /usr/include/boost/iostreams/detail/execute.hpp \
-  /usr/include/boost/preprocessor/iteration/local.hpp \
-  /usr/include/boost/preprocessor/iteration/detail/local.hpp \
-  /usr/include/boost/iostreams/detail/functional.hpp \
-  /usr/include/boost/iostreams/close.hpp \
-  /usr/include/boost/iostreams/flush.hpp \
-  /usr/include/boost/iostreams/detail/dispatch.hpp \
-  /usr/include/boost/iostreams/traits.hpp \
-  /usr/include/boost/iostreams/detail/bool_trait_def.hpp \
-  /usr/include/boost/iostreams/detail/template_params.hpp \
-  /usr/include/boost/preprocessor/control/expr_if.hpp \
-  /usr/include/boost/iostreams/detail/is_iterator_range.hpp \
-  /usr/include/boost/iostreams/detail/config/disable_warnings.hpp \
-  /usr/include/boost/iostreams/detail/config/enable_warnings.hpp \
-  /usr/include/boost/iostreams/detail/select_by_size.hpp \
-  /usr/include/boost/iostreams/detail/wrap_unwrap.hpp \
-  /usr/include/boost/iostreams/detail/enable_if_stream.hpp \
-  /usr/include/boost/iostreams/traits_fwd.hpp \
-  /usr/include/boost/range/iterator_range.hpp \
-  /usr/include/boost/range/iterator_range_io.hpp \
-  /usr/include/boost/iostreams/detail/streambuf.hpp \
-  /usr/include/boost/iostreams/operations_fwd.hpp \
-  /usr/include/boost/iostreams/detail/adapter/non_blocking_adapter.hpp \
-  /usr/include/boost/iostreams/read.hpp \
-  /usr/include/boost/iostreams/char_traits.hpp \
-  /usr/include/boost/iostreams/seek.hpp \
-  /usr/include/boost/iostreams/positioning.hpp \
-  /usr/include/boost/iostreams/detail/config/codecvt.hpp \
-  /usr/include/boost/iostreams/detail/config/fpos.hpp \
-  /usr/include/boost/iostreams/write.hpp \
-  /usr/include/boost/iostreams/detail/optional.hpp \
-  /usr/include/boost/iostreams/detail/streambuf/linked_streambuf.hpp \
-  /usr/include/boost/iostreams/operations.hpp \
-  /usr/include/boost/iostreams/imbue.hpp \
-  /usr/include/boost/iostreams/input_sequence.hpp \
-  /usr/include/boost/iostreams/optimal_buffer_size.hpp \
-  /usr/include/boost/iostreams/output_sequence.hpp \
-  /usr/include/boost/iostreams/detail/streambuf/indirect_streambuf.hpp \
-  /usr/include/boost/iostreams/detail/adapter/concept_adapter.hpp \
-  /usr/include/boost/iostreams/concepts.hpp \
-  /usr/include/boost/iostreams/detail/default_arg.hpp \
-  /usr/include/boost/iostreams/detail/call_traits.hpp \
-  /usr/include/boost/iostreams/detail/config/unreachable_return.hpp \
-  /usr/include/boost/iostreams/device/null.hpp \
-  /usr/include/boost/iostreams/detail/buffer.hpp \
-  /usr/include/boost/iostreams/checked_operations.hpp \
-  /usr/include/boost/iostreams/get.hpp \
-  /usr/include/boost/iostreams/put.hpp \
-  /usr/include/boost/iostreams/detail/double_object.hpp \
-  /usr/include/boost/iostreams/detail/push.hpp \
-  /usr/include/boost/iostreams/detail/adapter/range_adapter.hpp \
-  /usr/include/boost/iostreams/pipeline.hpp \
-  /usr/include/boost/iostreams/detail/resolve.hpp \
-  /usr/include/boost/detail/is_incrementable.hpp \
-  /usr/include/boost/type_traits/detail/bool_trait_undef.hpp \
-  /usr/include/boost/iostreams/detail/adapter/mode_adapter.hpp \
-  /usr/include/boost/iostreams/detail/adapter/output_iterator_adapter.hpp \
-  /usr/include/boost/iostreams/detail/is_dereferenceable.hpp \
-  /usr/include/boost/math/special_functions/nonfinite_num_facets.hpp \
+  /usr/local/include/boost/asio/basic_streambuf.hpp \
+  /usr/local/include/boost/asio/basic_streambuf_fwd.hpp \
+  /usr/local/include/boost/asio/buffer.hpp \
+  /usr/local/include/boost/asio/detail/array_fwd.hpp \
+  /usr/local/include/boost/asio/detail/memory.hpp \
+  /usr/local/include/boost/asio/detail/string_view.hpp \
+  /usr/local/include/boost/asio/detail/throw_exception.hpp \
+  /usr/local/include/boost/asio/detail/type_traits.hpp \
+  /usr/local/include/boost/asio/detail/push_options.hpp \
+  /usr/local/include/boost/asio/detail/pop_options.hpp \
+  /usr/local/include/boost/asio/detail/is_buffer_sequence.hpp \
+  /usr/local/include/boost/asio/detail/limits.hpp \
+  /usr/local/include/boost/asio/detail/noncopyable.hpp \
+  /usr/local/include/boost/iostreams/device/array.hpp \
+  /usr/local/include/boost/iostreams/categories.hpp \
+  /usr/local/include/boost/iostreams/stream.hpp \
+  /usr/local/include/boost/iostreams/constants.hpp \
+  /usr/local/include/boost/iostreams/detail/ios.hpp \
+  /usr/local/include/boost/iostreams/detail/config/wide_streams.hpp \
+  /usr/local/include/boost/iostreams/detail/char_traits.hpp \
+  /usr/local/include/boost/iostreams/detail/config/overload_resolution.hpp \
+  /usr/local/include/boost/iostreams/detail/config/gcc.hpp \
+  /usr/local/include/boost/iostreams/detail/forward.hpp \
+  /usr/local/include/boost/iostreams/detail/config/limits.hpp \
+  /usr/local/include/boost/iostreams/detail/push_params.hpp \
+  /usr/local/include/boost/iostreams/detail/iostream.hpp \
+  /usr/local/include/boost/iostreams/detail/select.hpp \
+  /usr/local/include/boost/iostreams/stream_buffer.hpp \
+  /usr/local/include/boost/iostreams/detail/streambuf/direct_streambuf.hpp \
+  /usr/local/include/boost/core/typeinfo.hpp \
+  /usr/local/include/boost/iostreams/detail/error.hpp \
+  /usr/local/include/boost/iostreams/detail/execute.hpp \
+  /usr/local/include/boost/preprocessor/iteration/local.hpp \
+  /usr/local/include/boost/preprocessor/iteration/detail/local.hpp \
+  /usr/local/include/boost/iostreams/detail/functional.hpp \
+  /usr/local/include/boost/iostreams/close.hpp \
+  /usr/local/include/boost/iostreams/flush.hpp \
+  /usr/local/include/boost/iostreams/detail/dispatch.hpp \
+  /usr/local/include/boost/iostreams/traits.hpp \
+  /usr/local/include/boost/iostreams/detail/bool_trait_def.hpp \
+  /usr/local/include/boost/iostreams/detail/template_params.hpp \
+  /usr/local/include/boost/preprocessor/control/expr_if.hpp \
+  /usr/local/include/boost/iostreams/detail/is_iterator_range.hpp \
+  /usr/local/include/boost/iostreams/detail/config/disable_warnings.hpp \
+  /usr/local/include/boost/iostreams/detail/config/enable_warnings.hpp \
+  /usr/local/include/boost/iostreams/detail/select_by_size.hpp \
+  /usr/local/include/boost/iostreams/detail/wrap_unwrap.hpp \
+  /usr/local/include/boost/iostreams/detail/enable_if_stream.hpp \
+  /usr/local/include/boost/iostreams/traits_fwd.hpp \
+  /usr/local/include/boost/range/iterator_range.hpp \
+  /usr/local/include/boost/range/iterator_range_io.hpp \
+  /usr/local/include/boost/iostreams/detail/streambuf.hpp \
+  /usr/local/include/boost/iostreams/operations_fwd.hpp \
+  /usr/local/include/boost/iostreams/detail/adapter/non_blocking_adapter.hpp \
+  /usr/local/include/boost/iostreams/read.hpp \
+  /usr/local/include/boost/iostreams/char_traits.hpp \
+  /usr/local/include/boost/iostreams/seek.hpp \
+  /usr/local/include/boost/iostreams/positioning.hpp \
+  /usr/local/include/boost/iostreams/detail/config/codecvt.hpp \
+  /usr/local/include/boost/iostreams/detail/config/fpos.hpp \
+  /usr/local/include/boost/iostreams/write.hpp \
+  /usr/local/include/boost/iostreams/detail/optional.hpp \
+  /usr/local/include/boost/iostreams/detail/streambuf/linked_streambuf.hpp \
+  /usr/local/include/boost/iostreams/operations.hpp \
+  /usr/local/include/boost/iostreams/imbue.hpp \
+  /usr/local/include/boost/iostreams/input_sequence.hpp \
+  /usr/local/include/boost/iostreams/optimal_buffer_size.hpp \
+  /usr/local/include/boost/iostreams/output_sequence.hpp \
+  /usr/local/include/boost/iostreams/detail/streambuf/indirect_streambuf.hpp \
+  /usr/local/include/boost/iostreams/detail/adapter/concept_adapter.hpp \
+  /usr/local/include/boost/iostreams/concepts.hpp \
+  /usr/local/include/boost/iostreams/detail/default_arg.hpp \
+  /usr/local/include/boost/iostreams/detail/call_traits.hpp \
+  /usr/local/include/boost/iostreams/detail/config/unreachable_return.hpp \
+  /usr/local/include/boost/iostreams/device/null.hpp \
+  /usr/local/include/boost/iostreams/detail/buffer.hpp \
+  /usr/local/include/boost/iostreams/checked_operations.hpp \
+  /usr/local/include/boost/iostreams/get.hpp \
+  /usr/local/include/boost/iostreams/put.hpp \
+  /usr/local/include/boost/iostreams/detail/double_object.hpp \
+  /usr/local/include/boost/iostreams/detail/push.hpp \
+  /usr/local/include/boost/iostreams/detail/adapter/range_adapter.hpp \
+  /usr/local/include/boost/iostreams/pipeline.hpp \
+  /usr/local/include/boost/iostreams/detail/resolve.hpp \
+  /usr/local/include/boost/detail/is_incrementable.hpp \
+  /usr/local/include/boost/type_traits/detail/bool_trait_undef.hpp \
+  /usr/local/include/boost/iostreams/detail/adapter/mode_adapter.hpp \
+  /usr/local/include/boost/iostreams/detail/adapter/output_iterator_adapter.hpp \
+  /usr/local/include/boost/iostreams/detail/is_dereferenceable.hpp \
+  /usr/local/include/boost/math/special_functions/nonfinite_num_facets.hpp \
   /usr/include/c++/9/map \
   /usr/include/c++/9/bits/stl_tree.h \
   /usr/include/c++/9/bits/stl_map.h \
@@ -2347,34 +2347,34 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
   ../third-party/pinocchio/pinocchio/multibody/liegroup/liegroup-base.hpp \
   ../third-party/pinocchio/pinocchio/multibody/liegroup/fwd.hpp \
   ../third-party/pinocchio/pinocchio/multibody/liegroup/liegroup-base.hxx \
-  /usr/include/boost/integer/static_min_max.hpp \
+  /usr/local/include/boost/integer/static_min_max.hpp \
   ../third-party/pinocchio/pinocchio/multibody/liegroup/cartesian-product.hpp \
   ../third-party/pinocchio/pinocchio/multibody/liegroup/special-orthogonal.hpp \
   ../third-party/pinocchio/pinocchio/multibody/liegroup/special-euclidean.hpp \
   ../third-party/pinocchio/pinocchio/multibody/liegroup/liegroup-algo.hxx \
   ../third-party/pinocchio/pinocchio/multibody/geometry.hpp \
   ../third-party/pinocchio/pinocchio/multibody/fcl.hpp \
-  /usr/include/boost/foreach.hpp \
-  /usr/include/boost/foreach_fwd.hpp \
+  /usr/local/include/boost/foreach.hpp \
+  /usr/local/include/boost/foreach_fwd.hpp \
   ../third-party/pinocchio/pinocchio/multibody/fcl.hxx \
   /usr/include/c++/9/list \
   /usr/include/c++/9/bits/stl_list.h \
   /usr/include/c++/9/bits/list.tcc \
   ../third-party/pinocchio/pinocchio/multibody/geometry.hxx \
-  /usr/include/boost/bind/bind.hpp \
-  /usr/include/boost/mem_fn.hpp \
-  /usr/include/boost/bind/mem_fn.hpp \
-  /usr/include/boost/bind/mem_fn_template.hpp \
-  /usr/include/boost/bind/mem_fn_cc.hpp \
-  /usr/include/boost/is_placeholder.hpp \
-  /usr/include/boost/bind/arg.hpp \
-  /usr/include/boost/visit_each.hpp \
-  /usr/include/boost/core/is_same.hpp \
-  /usr/include/boost/bind/storage.hpp \
-  /usr/include/boost/bind/bind_cc.hpp \
-  /usr/include/boost/bind/bind_mf_cc.hpp \
-  /usr/include/boost/bind/bind_mf2_cc.hpp \
-  /usr/include/boost/bind/placeholders.hpp \
+  /usr/local/include/boost/bind/bind.hpp \
+  /usr/local/include/boost/mem_fn.hpp \
+  /usr/local/include/boost/bind/mem_fn.hpp \
+  /usr/local/include/boost/bind/mem_fn_template.hpp \
+  /usr/local/include/boost/bind/mem_fn_cc.hpp \
+  /usr/local/include/boost/is_placeholder.hpp \
+  /usr/local/include/boost/bind/arg.hpp \
+  /usr/local/include/boost/visit_each.hpp \
+  /usr/local/include/boost/core/is_same.hpp \
+  /usr/local/include/boost/bind/storage.hpp \
+  /usr/local/include/boost/bind/bind_cc.hpp \
+  /usr/local/include/boost/bind/bind_mf_cc.hpp \
+  /usr/local/include/boost/bind/bind_mf2_cc.hpp \
+  /usr/local/include/boost/bind/placeholders.hpp \
   ../third-party/pinocchio/pinocchio/parsers/urdf/model.hxx \
   ../third-party/pinocchio/pinocchio/parsers/urdf/geometry.hxx \
   ../third-party/pinocchio/pinocchio/algorithm/jacobian.hpp \
@@ -2383,203 +2383,203 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
   ../third-party/pinocchio/pinocchio/multibody/data.hxx \
   ../third-party/pinocchio/pinocchio/algorithm/jacobian.hxx \
   ../third-party/pinocchio/pinocchio/algorithm/check.hpp \
-  /usr/include/boost/fusion/container/list.hpp \
-  /usr/include/boost/fusion/container/list/list.hpp \
-  /usr/include/boost/fusion/container/list/detail/list_to_cons.hpp \
-  /usr/include/boost/fusion/container/list/convert.hpp \
-  /usr/include/boost/fusion/container/list/detail/build_cons.hpp \
-  /usr/include/boost/fusion/container/list/detail/convert_impl.hpp \
-  /usr/include/boost/fusion/container/generation/make_list.hpp \
+  /usr/local/include/boost/fusion/container/list.hpp \
+  /usr/local/include/boost/fusion/container/list/list.hpp \
+  /usr/local/include/boost/fusion/container/list/detail/list_to_cons.hpp \
+  /usr/local/include/boost/fusion/container/list/convert.hpp \
+  /usr/local/include/boost/fusion/container/list/detail/build_cons.hpp \
+  /usr/local/include/boost/fusion/container/list/detail/convert_impl.hpp \
+  /usr/local/include/boost/fusion/container/generation/make_list.hpp \
   ../third-party/pinocchio/pinocchio/algorithm/check.hxx \
-  /usr/include/boost/fusion/algorithm.hpp \
-  /usr/include/boost/fusion/algorithm/iteration.hpp \
-  /usr/include/boost/fusion/algorithm/iteration/accumulate.hpp \
-  /usr/include/boost/fusion/algorithm/iteration/accumulate_fwd.hpp \
-  /usr/include/boost/fusion/algorithm/iteration/fold.hpp \
-  /usr/include/boost/fusion/algorithm/iteration/fold_fwd.hpp \
-  /usr/include/boost/fusion/algorithm/iteration/detail/preprocessed/fold.hpp \
-  /usr/include/boost/fusion/algorithm/iteration/detail/segmented_fold.hpp \
-  /usr/include/boost/fusion/support/segmented_fold_until.hpp \
-  /usr/include/boost/fusion/algorithm/iteration/for_each.hpp \
-  /usr/include/boost/fusion/algorithm/iteration/detail/for_each.hpp \
-  /usr/include/boost/fusion/algorithm/iteration/detail/segmented_for_each.hpp \
-  /usr/include/boost/fusion/algorithm/iteration/for_each_fwd.hpp \
-  /usr/include/boost/fusion/algorithm/iteration/iter_fold.hpp \
-  /usr/include/boost/fusion/algorithm/iteration/iter_fold_fwd.hpp \
-  /usr/include/boost/fusion/algorithm/iteration/detail/preprocessed/iter_fold.hpp \
-  /usr/include/boost/fusion/algorithm/iteration/reverse_fold.hpp \
-  /usr/include/boost/fusion/algorithm/iteration/reverse_fold_fwd.hpp \
-  /usr/include/boost/fusion/algorithm/iteration/detail/preprocessed/reverse_fold.hpp \
-  /usr/include/boost/fusion/algorithm/iteration/reverse_iter_fold.hpp \
-  /usr/include/boost/fusion/algorithm/iteration/reverse_iter_fold_fwd.hpp \
-  /usr/include/boost/fusion/algorithm/iteration/detail/preprocessed/reverse_iter_fold.hpp \
-  /usr/include/boost/fusion/algorithm/query.hpp \
-  /usr/include/boost/fusion/algorithm/query/all.hpp \
-  /usr/include/boost/fusion/algorithm/query/detail/all.hpp \
-  /usr/include/boost/fusion/algorithm/query/any.hpp \
-  /usr/include/boost/fusion/algorithm/query/detail/any.hpp \
-  /usr/include/boost/fusion/algorithm/query/count.hpp \
-  /usr/include/boost/fusion/algorithm/query/count_if.hpp \
-  /usr/include/boost/fusion/algorithm/query/detail/count_if.hpp \
-  /usr/include/boost/fusion/algorithm/query/detail/count.hpp \
-  /usr/include/boost/fusion/algorithm/query/find.hpp \
-  /usr/include/boost/fusion/algorithm/query/find_if_fwd.hpp \
-  /usr/include/boost/fusion/algorithm/query/detail/find_if.hpp \
-  /usr/include/boost/fusion/algorithm/query/detail/segmented_find.hpp \
-  /usr/include/boost/fusion/algorithm/query/find_fwd.hpp \
-  /usr/include/boost/fusion/algorithm/query/find_if.hpp \
-  /usr/include/boost/fusion/algorithm/query/detail/segmented_find_if.hpp \
-  /usr/include/boost/fusion/algorithm/query/none.hpp \
-  /usr/include/boost/fusion/algorithm/transformation.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/clear.hpp \
-  /usr/include/boost/fusion/container/vector/vector10.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/erase.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/erase_key.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/filter.hpp \
-  /usr/include/boost/fusion/view/filter_view/filter_view.hpp \
-  /usr/include/boost/fusion/view/filter_view/filter_view_iterator.hpp \
-  /usr/include/boost/fusion/view/filter_view/detail/deref_impl.hpp \
-  /usr/include/boost/fusion/view/filter_view/detail/next_impl.hpp \
-  /usr/include/boost/fusion/view/filter_view/detail/value_of_impl.hpp \
-  /usr/include/boost/fusion/view/filter_view/detail/equal_to_impl.hpp \
-  /usr/include/boost/fusion/view/filter_view/detail/deref_data_impl.hpp \
-  /usr/include/boost/fusion/view/filter_view/detail/value_of_data_impl.hpp \
-  /usr/include/boost/fusion/view/filter_view/detail/key_of_impl.hpp \
-  /usr/include/boost/fusion/view/filter_view/detail/begin_impl.hpp \
-  /usr/include/boost/fusion/view/filter_view/detail/end_impl.hpp \
-  /usr/include/boost/fusion/view/filter_view/detail/size_impl.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/filter_if.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/insert.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/insert_range.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/join.hpp \
-  /usr/include/boost/fusion/view/joint_view.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/pop_back.hpp \
-  /usr/include/boost/fusion/iterator/iterator_adapter.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/pop_front.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/remove.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/remove_if.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/replace.hpp \
-  /usr/include/boost/fusion/view/transform_view/transform_view.hpp \
-  /usr/include/boost/fusion/view/transform_view/transform_view_iterator.hpp \
-  /usr/include/boost/fusion/view/transform_view/detail/deref_impl.hpp \
-  /usr/include/boost/fusion/view/transform_view/detail/next_impl.hpp \
-  /usr/include/boost/fusion/view/transform_view/detail/prior_impl.hpp \
-  /usr/include/boost/fusion/view/transform_view/detail/value_of_impl.hpp \
-  /usr/include/boost/fusion/view/transform_view/detail/advance_impl.hpp \
-  /usr/include/boost/fusion/view/transform_view/detail/distance_impl.hpp \
-  /usr/include/boost/fusion/view/transform_view/detail/equal_to_impl.hpp \
-  /usr/include/boost/fusion/view/transform_view/transform_view_fwd.hpp \
-  /usr/include/boost/fusion/view/transform_view/detail/begin_impl.hpp \
-  /usr/include/boost/fusion/view/transform_view/detail/end_impl.hpp \
-  /usr/include/boost/fusion/view/transform_view/detail/at_impl.hpp \
-  /usr/include/boost/fusion/view/transform_view/detail/value_at_impl.hpp \
-  /usr/include/boost/fusion/view/detail/strictest_traversal.hpp \
-  /usr/include/boost/fusion/mpl.hpp \
-  /usr/include/boost/fusion/iterator/mpl.hpp \
-  /usr/include/boost/fusion/adapted/mpl.hpp \
-  /usr/include/boost/fusion/adapted/mpl/detail/is_sequence_impl.hpp \
-  /usr/include/boost/fusion/adapted/mpl/detail/size_impl.hpp \
-  /usr/include/boost/fusion/adapted/mpl/detail/value_at_impl.hpp \
-  /usr/include/boost/fusion/adapted/mpl/detail/at_impl.hpp \
-  /usr/include/boost/fusion/adapted/mpl/detail/has_key_impl.hpp \
-  /usr/include/boost/mpl/has_key.hpp \
-  /usr/include/boost/mpl/has_key_fwd.hpp \
-  /usr/include/boost/mpl/aux_/has_key_impl.hpp \
-  /usr/include/boost/fusion/adapted/mpl/detail/category_of_impl.hpp \
-  /usr/include/boost/fusion/adapted/mpl/detail/is_view_impl.hpp \
-  /usr/include/boost/fusion/adapted/mpl/detail/empty_impl.hpp \
-  /usr/include/boost/fusion/mpl/at.hpp \
-  /usr/include/boost/fusion/mpl/back.hpp \
-  /usr/include/boost/mpl/back.hpp \
-  /usr/include/boost/mpl/aux_/back_impl.hpp \
-  /usr/include/boost/fusion/mpl/clear.hpp \
-  /usr/include/boost/fusion/mpl/detail/clear.hpp \
-  /usr/include/boost/fusion/container/map/map_fwd.hpp \
-  /usr/include/boost/fusion/container/set/set_fwd.hpp \
-  /usr/include/boost/fusion/container/deque/deque_fwd.hpp \
-  /usr/include/boost/fusion/mpl/empty.hpp \
-  /usr/include/boost/fusion/mpl/erase.hpp \
-  /usr/include/boost/mpl/erase.hpp \
-  /usr/include/boost/mpl/erase_fwd.hpp \
-  /usr/include/boost/mpl/aux_/erase_impl.hpp \
-  /usr/include/boost/fusion/sequence/convert.hpp \
-  /usr/include/boost/fusion/mpl/erase_key.hpp \
-  /usr/include/boost/mpl/erase_key.hpp \
-  /usr/include/boost/mpl/erase_key_fwd.hpp \
-  /usr/include/boost/mpl/aux_/erase_key_impl.hpp \
-  /usr/include/boost/fusion/mpl/front.hpp \
-  /usr/include/boost/fusion/mpl/has_key.hpp \
-  /usr/include/boost/fusion/sequence/intrinsic/has_key.hpp \
-  /usr/include/boost/fusion/mpl/insert.hpp \
-  /usr/include/boost/fusion/mpl/insert_range.hpp \
-  /usr/include/boost/fusion/mpl/pop_back.hpp \
-  /usr/include/boost/mpl/pop_back.hpp \
-  /usr/include/boost/mpl/aux_/pop_back_impl.hpp \
-  /usr/include/boost/fusion/mpl/pop_front.hpp \
-  /usr/include/boost/fusion/mpl/push_back.hpp \
-  /usr/include/boost/fusion/mpl/push_front.hpp \
-  /usr/include/boost/fusion/mpl/size.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/detail/replace.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/replace_if.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/detail/replace_if.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/reverse.hpp \
-  /usr/include/boost/fusion/view/reverse_view/reverse_view.hpp \
-  /usr/include/boost/fusion/view/reverse_view/reverse_view_iterator.hpp \
-  /usr/include/boost/fusion/view/reverse_view/detail/deref_impl.hpp \
-  /usr/include/boost/fusion/view/reverse_view/detail/next_impl.hpp \
-  /usr/include/boost/fusion/view/reverse_view/detail/prior_impl.hpp \
-  /usr/include/boost/fusion/view/reverse_view/detail/advance_impl.hpp \
-  /usr/include/boost/fusion/view/reverse_view/detail/distance_impl.hpp \
-  /usr/include/boost/fusion/view/reverse_view/detail/value_of_impl.hpp \
-  /usr/include/boost/fusion/view/reverse_view/detail/deref_data_impl.hpp \
-  /usr/include/boost/fusion/view/reverse_view/detail/value_of_data_impl.hpp \
-  /usr/include/boost/fusion/view/reverse_view/detail/key_of_impl.hpp \
-  /usr/include/boost/fusion/view/reverse_view/detail/begin_impl.hpp \
-  /usr/include/boost/fusion/view/reverse_view/detail/end_impl.hpp \
-  /usr/include/boost/fusion/view/reverse_view/detail/at_impl.hpp \
-  /usr/include/boost/fusion/view/reverse_view/detail/value_at_impl.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/transform.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/zip.hpp \
-  /usr/include/boost/fusion/view/zip_view.hpp \
-  /usr/include/boost/fusion/view/zip_view/zip_view.hpp \
-  /usr/include/boost/fusion/support/unused.hpp \
-  /usr/include/boost/fusion/view/zip_view/detail/begin_impl.hpp \
-  /usr/include/boost/fusion/view/zip_view/zip_view_iterator_fwd.hpp \
-  /usr/include/boost/fusion/view/zip_view/detail/end_impl.hpp \
-  /usr/include/boost/mpl/min.hpp \
-  /usr/include/boost/fusion/view/zip_view/detail/size_impl.hpp \
-  /usr/include/boost/fusion/view/zip_view/detail/at_impl.hpp \
-  /usr/include/boost/fusion/container/vector.hpp \
-  /usr/include/boost/fusion/container/vector/convert.hpp \
-  /usr/include/boost/fusion/container/vector/detail/as_vector.hpp \
-  /usr/include/boost/fusion/container/vector/detail/convert_impl.hpp \
-  /usr/include/boost/fusion/view/zip_view/detail/value_at_impl.hpp \
-  /usr/include/boost/mpl/transform_view.hpp \
-  /usr/include/boost/mpl/aux_/transform_iter.hpp \
-  /usr/include/boost/fusion/view/zip_view/zip_view_iterator.hpp \
-  /usr/include/boost/fusion/view/zip_view/detail/deref_impl.hpp \
-  /usr/include/boost/fusion/view/zip_view/detail/next_impl.hpp \
-  /usr/include/boost/fusion/view/zip_view/detail/prior_impl.hpp \
-  /usr/include/boost/fusion/view/zip_view/detail/advance_impl.hpp \
-  /usr/include/boost/fusion/view/zip_view/detail/distance_impl.hpp \
-  /usr/include/boost/fusion/view/zip_view/detail/value_of_impl.hpp \
-  /usr/include/boost/fusion/view/zip_view/detail/equal_to_impl.hpp \
-  /usr/include/boost/mpl/zip_view.hpp \
-  /usr/include/boost/mpl/unpack_args.hpp \
-  /usr/include/boost/fusion/support/detail/pp_round.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/detail/preprocessed/zip.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/detail/preprocessed/zip10.hpp \
-  /usr/include/boost/fusion/algorithm/transformation/flatten.hpp \
-  /usr/include/boost/fusion/view/flatten_view.hpp \
-  /usr/include/boost/fusion/view/flatten_view/flatten_view.hpp \
-  /usr/include/boost/mpl/single_view.hpp \
-  /usr/include/boost/mpl/aux_/single_element_iter.hpp \
-  /usr/include/boost/fusion/view/flatten_view/flatten_view_iterator.hpp \
-  /usr/include/boost/fusion/include/equal_to.hpp \
-  /usr/include/boost/fusion/sequence/comparison/equal_to.hpp \
-  /usr/include/boost/fusion/sequence/comparison/detail/equal_to.hpp \
-  /usr/include/boost/fusion/support/as_const.hpp \
-  /usr/include/boost/fusion/sequence/comparison/enable_comparison.hpp \
+  /usr/local/include/boost/fusion/algorithm.hpp \
+  /usr/local/include/boost/fusion/algorithm/iteration.hpp \
+  /usr/local/include/boost/fusion/algorithm/iteration/accumulate.hpp \
+  /usr/local/include/boost/fusion/algorithm/iteration/accumulate_fwd.hpp \
+  /usr/local/include/boost/fusion/algorithm/iteration/fold.hpp \
+  /usr/local/include/boost/fusion/algorithm/iteration/fold_fwd.hpp \
+  /usr/local/include/boost/fusion/algorithm/iteration/detail/preprocessed/fold.hpp \
+  /usr/local/include/boost/fusion/algorithm/iteration/detail/segmented_fold.hpp \
+  /usr/local/include/boost/fusion/support/segmented_fold_until.hpp \
+  /usr/local/include/boost/fusion/algorithm/iteration/for_each.hpp \
+  /usr/local/include/boost/fusion/algorithm/iteration/detail/for_each.hpp \
+  /usr/local/include/boost/fusion/algorithm/iteration/detail/segmented_for_each.hpp \
+  /usr/local/include/boost/fusion/algorithm/iteration/for_each_fwd.hpp \
+  /usr/local/include/boost/fusion/algorithm/iteration/iter_fold.hpp \
+  /usr/local/include/boost/fusion/algorithm/iteration/iter_fold_fwd.hpp \
+  /usr/local/include/boost/fusion/algorithm/iteration/detail/preprocessed/iter_fold.hpp \
+  /usr/local/include/boost/fusion/algorithm/iteration/reverse_fold.hpp \
+  /usr/local/include/boost/fusion/algorithm/iteration/reverse_fold_fwd.hpp \
+  /usr/local/include/boost/fusion/algorithm/iteration/detail/preprocessed/reverse_fold.hpp \
+  /usr/local/include/boost/fusion/algorithm/iteration/reverse_iter_fold.hpp \
+  /usr/local/include/boost/fusion/algorithm/iteration/reverse_iter_fold_fwd.hpp \
+  /usr/local/include/boost/fusion/algorithm/iteration/detail/preprocessed/reverse_iter_fold.hpp \
+  /usr/local/include/boost/fusion/algorithm/query.hpp \
+  /usr/local/include/boost/fusion/algorithm/query/all.hpp \
+  /usr/local/include/boost/fusion/algorithm/query/detail/all.hpp \
+  /usr/local/include/boost/fusion/algorithm/query/any.hpp \
+  /usr/local/include/boost/fusion/algorithm/query/detail/any.hpp \
+  /usr/local/include/boost/fusion/algorithm/query/count.hpp \
+  /usr/local/include/boost/fusion/algorithm/query/count_if.hpp \
+  /usr/local/include/boost/fusion/algorithm/query/detail/count_if.hpp \
+  /usr/local/include/boost/fusion/algorithm/query/detail/count.hpp \
+  /usr/local/include/boost/fusion/algorithm/query/find.hpp \
+  /usr/local/include/boost/fusion/algorithm/query/find_if_fwd.hpp \
+  /usr/local/include/boost/fusion/algorithm/query/detail/find_if.hpp \
+  /usr/local/include/boost/fusion/algorithm/query/detail/segmented_find.hpp \
+  /usr/local/include/boost/fusion/algorithm/query/find_fwd.hpp \
+  /usr/local/include/boost/fusion/algorithm/query/find_if.hpp \
+  /usr/local/include/boost/fusion/algorithm/query/detail/segmented_find_if.hpp \
+  /usr/local/include/boost/fusion/algorithm/query/none.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/clear.hpp \
+  /usr/local/include/boost/fusion/container/vector/vector10.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/erase.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/erase_key.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/filter.hpp \
+  /usr/local/include/boost/fusion/view/filter_view/filter_view.hpp \
+  /usr/local/include/boost/fusion/view/filter_view/filter_view_iterator.hpp \
+  /usr/local/include/boost/fusion/view/filter_view/detail/deref_impl.hpp \
+  /usr/local/include/boost/fusion/view/filter_view/detail/next_impl.hpp \
+  /usr/local/include/boost/fusion/view/filter_view/detail/value_of_impl.hpp \
+  /usr/local/include/boost/fusion/view/filter_view/detail/equal_to_impl.hpp \
+  /usr/local/include/boost/fusion/view/filter_view/detail/deref_data_impl.hpp \
+  /usr/local/include/boost/fusion/view/filter_view/detail/value_of_data_impl.hpp \
+  /usr/local/include/boost/fusion/view/filter_view/detail/key_of_impl.hpp \
+  /usr/local/include/boost/fusion/view/filter_view/detail/begin_impl.hpp \
+  /usr/local/include/boost/fusion/view/filter_view/detail/end_impl.hpp \
+  /usr/local/include/boost/fusion/view/filter_view/detail/size_impl.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/filter_if.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/insert.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/insert_range.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/join.hpp \
+  /usr/local/include/boost/fusion/view/joint_view.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/pop_back.hpp \
+  /usr/local/include/boost/fusion/iterator/iterator_adapter.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/pop_front.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/remove.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/remove_if.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/replace.hpp \
+  /usr/local/include/boost/fusion/view/transform_view/transform_view.hpp \
+  /usr/local/include/boost/fusion/view/transform_view/transform_view_iterator.hpp \
+  /usr/local/include/boost/fusion/view/transform_view/detail/deref_impl.hpp \
+  /usr/local/include/boost/fusion/view/transform_view/detail/next_impl.hpp \
+  /usr/local/include/boost/fusion/view/transform_view/detail/prior_impl.hpp \
+  /usr/local/include/boost/fusion/view/transform_view/detail/value_of_impl.hpp \
+  /usr/local/include/boost/fusion/view/transform_view/detail/advance_impl.hpp \
+  /usr/local/include/boost/fusion/view/transform_view/detail/distance_impl.hpp \
+  /usr/local/include/boost/fusion/view/transform_view/detail/equal_to_impl.hpp \
+  /usr/local/include/boost/fusion/view/transform_view/transform_view_fwd.hpp \
+  /usr/local/include/boost/fusion/view/transform_view/detail/begin_impl.hpp \
+  /usr/local/include/boost/fusion/view/transform_view/detail/end_impl.hpp \
+  /usr/local/include/boost/fusion/view/transform_view/detail/at_impl.hpp \
+  /usr/local/include/boost/fusion/view/transform_view/detail/value_at_impl.hpp \
+  /usr/local/include/boost/fusion/view/detail/strictest_traversal.hpp \
+  /usr/local/include/boost/fusion/mpl.hpp \
+  /usr/local/include/boost/fusion/iterator/mpl.hpp \
+  /usr/local/include/boost/fusion/adapted/mpl.hpp \
+  /usr/local/include/boost/fusion/adapted/mpl/detail/is_sequence_impl.hpp \
+  /usr/local/include/boost/fusion/adapted/mpl/detail/size_impl.hpp \
+  /usr/local/include/boost/fusion/adapted/mpl/detail/value_at_impl.hpp \
+  /usr/local/include/boost/fusion/adapted/mpl/detail/at_impl.hpp \
+  /usr/local/include/boost/fusion/adapted/mpl/detail/has_key_impl.hpp \
+  /usr/local/include/boost/mpl/has_key.hpp \
+  /usr/local/include/boost/mpl/has_key_fwd.hpp \
+  /usr/local/include/boost/mpl/aux_/has_key_impl.hpp \
+  /usr/local/include/boost/fusion/adapted/mpl/detail/category_of_impl.hpp \
+  /usr/local/include/boost/fusion/adapted/mpl/detail/is_view_impl.hpp \
+  /usr/local/include/boost/fusion/adapted/mpl/detail/empty_impl.hpp \
+  /usr/local/include/boost/fusion/mpl/at.hpp \
+  /usr/local/include/boost/fusion/mpl/back.hpp \
+  /usr/local/include/boost/mpl/back.hpp \
+  /usr/local/include/boost/mpl/aux_/back_impl.hpp \
+  /usr/local/include/boost/fusion/mpl/clear.hpp \
+  /usr/local/include/boost/fusion/mpl/detail/clear.hpp \
+  /usr/local/include/boost/fusion/container/map/map_fwd.hpp \
+  /usr/local/include/boost/fusion/container/set/set_fwd.hpp \
+  /usr/local/include/boost/fusion/container/deque/deque_fwd.hpp \
+  /usr/local/include/boost/fusion/mpl/empty.hpp \
+  /usr/local/include/boost/fusion/mpl/erase.hpp \
+  /usr/local/include/boost/mpl/erase.hpp \
+  /usr/local/include/boost/mpl/erase_fwd.hpp \
+  /usr/local/include/boost/mpl/aux_/erase_impl.hpp \
+  /usr/local/include/boost/fusion/sequence/convert.hpp \
+  /usr/local/include/boost/fusion/mpl/erase_key.hpp \
+  /usr/local/include/boost/mpl/erase_key.hpp \
+  /usr/local/include/boost/mpl/erase_key_fwd.hpp \
+  /usr/local/include/boost/mpl/aux_/erase_key_impl.hpp \
+  /usr/local/include/boost/fusion/mpl/front.hpp \
+  /usr/local/include/boost/fusion/mpl/has_key.hpp \
+  /usr/local/include/boost/fusion/sequence/intrinsic/has_key.hpp \
+  /usr/local/include/boost/fusion/mpl/insert.hpp \
+  /usr/local/include/boost/fusion/mpl/insert_range.hpp \
+  /usr/local/include/boost/fusion/mpl/pop_back.hpp \
+  /usr/local/include/boost/mpl/pop_back.hpp \
+  /usr/local/include/boost/mpl/aux_/pop_back_impl.hpp \
+  /usr/local/include/boost/fusion/mpl/pop_front.hpp \
+  /usr/local/include/boost/fusion/mpl/push_back.hpp \
+  /usr/local/include/boost/fusion/mpl/push_front.hpp \
+  /usr/local/include/boost/fusion/mpl/size.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/detail/replace.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/replace_if.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/detail/replace_if.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/reverse.hpp \
+  /usr/local/include/boost/fusion/view/reverse_view/reverse_view.hpp \
+  /usr/local/include/boost/fusion/view/reverse_view/reverse_view_iterator.hpp \
+  /usr/local/include/boost/fusion/view/reverse_view/detail/deref_impl.hpp \
+  /usr/local/include/boost/fusion/view/reverse_view/detail/next_impl.hpp \
+  /usr/local/include/boost/fusion/view/reverse_view/detail/prior_impl.hpp \
+  /usr/local/include/boost/fusion/view/reverse_view/detail/advance_impl.hpp \
+  /usr/local/include/boost/fusion/view/reverse_view/detail/distance_impl.hpp \
+  /usr/local/include/boost/fusion/view/reverse_view/detail/value_of_impl.hpp \
+  /usr/local/include/boost/fusion/view/reverse_view/detail/deref_data_impl.hpp \
+  /usr/local/include/boost/fusion/view/reverse_view/detail/value_of_data_impl.hpp \
+  /usr/local/include/boost/fusion/view/reverse_view/detail/key_of_impl.hpp \
+  /usr/local/include/boost/fusion/view/reverse_view/detail/begin_impl.hpp \
+  /usr/local/include/boost/fusion/view/reverse_view/detail/end_impl.hpp \
+  /usr/local/include/boost/fusion/view/reverse_view/detail/at_impl.hpp \
+  /usr/local/include/boost/fusion/view/reverse_view/detail/value_at_impl.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/transform.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/zip.hpp \
+  /usr/local/include/boost/fusion/view/zip_view.hpp \
+  /usr/local/include/boost/fusion/view/zip_view/zip_view.hpp \
+  /usr/local/include/boost/fusion/support/unused.hpp \
+  /usr/local/include/boost/fusion/view/zip_view/detail/begin_impl.hpp \
+  /usr/local/include/boost/fusion/view/zip_view/zip_view_iterator_fwd.hpp \
+  /usr/local/include/boost/fusion/view/zip_view/detail/end_impl.hpp \
+  /usr/local/include/boost/mpl/min.hpp \
+  /usr/local/include/boost/fusion/view/zip_view/detail/size_impl.hpp \
+  /usr/local/include/boost/fusion/view/zip_view/detail/at_impl.hpp \
+  /usr/local/include/boost/fusion/container/vector.hpp \
+  /usr/local/include/boost/fusion/container/vector/convert.hpp \
+  /usr/local/include/boost/fusion/container/vector/detail/as_vector.hpp \
+  /usr/local/include/boost/fusion/container/vector/detail/convert_impl.hpp \
+  /usr/local/include/boost/fusion/view/zip_view/detail/value_at_impl.hpp \
+  /usr/local/include/boost/mpl/transform_view.hpp \
+  /usr/local/include/boost/mpl/aux_/transform_iter.hpp \
+  /usr/local/include/boost/fusion/view/zip_view/zip_view_iterator.hpp \
+  /usr/local/include/boost/fusion/view/zip_view/detail/deref_impl.hpp \
+  /usr/local/include/boost/fusion/view/zip_view/detail/next_impl.hpp \
+  /usr/local/include/boost/fusion/view/zip_view/detail/prior_impl.hpp \
+  /usr/local/include/boost/fusion/view/zip_view/detail/advance_impl.hpp \
+  /usr/local/include/boost/fusion/view/zip_view/detail/distance_impl.hpp \
+  /usr/local/include/boost/fusion/view/zip_view/detail/value_of_impl.hpp \
+  /usr/local/include/boost/fusion/view/zip_view/detail/equal_to_impl.hpp \
+  /usr/local/include/boost/mpl/zip_view.hpp \
+  /usr/local/include/boost/mpl/unpack_args.hpp \
+  /usr/local/include/boost/fusion/support/detail/pp_round.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/detail/preprocessed/zip.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/detail/preprocessed/zip10.hpp \
+  /usr/local/include/boost/fusion/algorithm/transformation/flatten.hpp \
+  /usr/local/include/boost/fusion/view/flatten_view.hpp \
+  /usr/local/include/boost/fusion/view/flatten_view/flatten_view.hpp \
+  /usr/local/include/boost/mpl/single_view.hpp \
+  /usr/local/include/boost/mpl/aux_/single_element_iter.hpp \
+  /usr/local/include/boost/fusion/view/flatten_view/flatten_view_iterator.hpp \
+  /usr/local/include/boost/fusion/include/equal_to.hpp \
+  /usr/local/include/boost/fusion/sequence/comparison/equal_to.hpp \
+  /usr/local/include/boost/fusion/sequence/comparison/detail/equal_to.hpp \
+  /usr/local/include/boost/fusion/support/as_const.hpp \
+  /usr/local/include/boost/fusion/sequence/comparison/enable_comparison.hpp \
   ../third-party/pinocchio/pinocchio/algorithm/kinematics.hpp \
   ../third-party/pinocchio/pinocchio/algorithm/kinematics.hxx \
   ../third-party/pinocchio/pinocchio/algorithm/frames.hpp \
@@ -2600,7 +2600,7 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 ../third-party/pinocchio/pinocchio/algorithm/aba.hxx:
 
-../third-party/pinocchio/pinocchio/algorithm/aba.hpp:
+../third-party/pinocchio/pinocchio/algorithm/center-of-mass.hxx:
 
 ../third-party/pinocchio/pinocchio/algorithm/center-of-mass.hpp:
 
@@ -2610,281 +2610,301 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 ../third-party/pinocchio/pinocchio/algorithm/rnea.hxx:
 
-../third-party/pinocchio/pinocchio/algorithm/joint-configuration.hxx:
-
-../third-party/pinocchio/pinocchio/algorithm/joint-configuration.hpp:
-
-../third-party/pinocchio/pinocchio/algorithm/frames.hxx:
-
-../third-party/pinocchio/pinocchio/algorithm/kinematics.hxx:
-
-/usr/include/boost/fusion/sequence/comparison/enable_comparison.hpp:
-
-/usr/include/boost/fusion/sequence/comparison/detail/equal_to.hpp:
-
-/usr/include/boost/fusion/include/equal_to.hpp:
-
-/usr/include/boost/mpl/single_view.hpp:
-
-/usr/include/boost/fusion/view/flatten_view/flatten_view.hpp:
-
-/usr/include/boost/fusion/algorithm/transformation/detail/preprocessed/zip10.hpp:
-
-/usr/include/boost/fusion/algorithm/transformation/detail/preprocessed/zip.hpp:
-
-/usr/include/boost/fusion/support/detail/pp_round.hpp:
-
-/usr/include/boost/mpl/zip_view.hpp:
-
-/usr/include/boost/fusion/view/zip_view/detail/equal_to_impl.hpp:
-
-/usr/include/boost/fusion/view/zip_view/detail/value_of_impl.hpp:
-
-/usr/include/boost/fusion/view/zip_view/detail/distance_impl.hpp:
-
-/usr/include/boost/fusion/view/zip_view/detail/deref_impl.hpp:
-
-/usr/include/boost/fusion/view/zip_view/zip_view_iterator.hpp:
-
-/usr/include/boost/mpl/aux_/transform_iter.hpp:
-
-/usr/include/boost/fusion/view/zip_view/detail/value_at_impl.hpp:
-
-/usr/include/boost/fusion/container/vector/detail/convert_impl.hpp:
-
-/usr/include/boost/fusion/container/vector/convert.hpp:
-
-/usr/include/boost/fusion/container/vector.hpp:
-
-/usr/include/boost/fusion/view/zip_view/detail/at_impl.hpp:
-
-/usr/include/boost/fusion/view/zip_view/detail/size_impl.hpp:
-
-/usr/include/boost/fusion/view/zip_view/detail/end_impl.hpp:
-
-/usr/include/boost/fusion/view/zip_view/zip_view_iterator_fwd.hpp:
-
-/usr/include/boost/fusion/view/zip_view/detail/begin_impl.hpp:
-
-/usr/include/boost/fusion/view/zip_view.hpp:
-
-/usr/include/boost/fusion/algorithm/transformation/zip.hpp:
-
-/usr/include/boost/fusion/algorithm/transformation/transform.hpp:
-
-/usr/include/boost/fusion/view/reverse_view/detail/value_at_impl.hpp:
-
-/usr/include/boost/fusion/view/reverse_view/detail/begin_impl.hpp:
-
-/usr/include/boost/fusion/view/reverse_view/detail/key_of_impl.hpp:
-
-/usr/include/boost/fusion/view/reverse_view/detail/deref_data_impl.hpp:
-
-/usr/include/boost/fusion/view/reverse_view/detail/value_of_impl.hpp:
-
-/usr/include/boost/fusion/view/reverse_view/detail/distance_impl.hpp:
-
-/usr/include/boost/fusion/view/reverse_view/detail/advance_impl.hpp:
-
-/usr/include/boost/fusion/view/reverse_view/detail/prior_impl.hpp:
-
-/usr/include/boost/fusion/view/reverse_view/detail/deref_impl.hpp:
-
-/usr/include/boost/fusion/view/reverse_view/reverse_view_iterator.hpp:
-
-/usr/include/boost/fusion/algorithm/transformation/replace_if.hpp:
-
-/usr/include/boost/fusion/algorithm/transformation/detail/replace.hpp:
-
-/usr/include/boost/fusion/mpl/size.hpp:
-
-/usr/include/boost/fusion/mpl/pop_front.hpp:
-
-/usr/include/boost/fusion/mpl/pop_back.hpp:
-
-/usr/include/boost/fusion/mpl/insert_range.hpp:
-
-/usr/include/boost/fusion/mpl/insert.hpp:
-
-/usr/include/boost/fusion/mpl/has_key.hpp:
-
-/usr/include/boost/fusion/mpl/front.hpp:
-
-/usr/include/boost/mpl/erase_key.hpp:
-
-/usr/include/boost/fusion/mpl/erase_key.hpp:
-
-/usr/include/boost/fusion/container/map/map_fwd.hpp:
-
-/usr/include/boost/fusion/mpl/clear.hpp:
-
-/usr/include/boost/mpl/aux_/back_impl.hpp:
-
-/usr/include/boost/mpl/erase_fwd.hpp:
-
-/usr/include/boost/mpl/back.hpp:
-
-/usr/include/boost/fusion/mpl/back.hpp:
-
-/usr/include/boost/fusion/mpl/at.hpp:
-
-/usr/include/boost/fusion/adapted/mpl/detail/empty_impl.hpp:
-
-/usr/include/boost/fusion/adapted/mpl/detail/category_of_impl.hpp:
-
-/usr/include/boost/mpl/has_key.hpp:
-
-/usr/include/boost/fusion/adapted/mpl/detail/at_impl.hpp:
-
-/usr/include/boost/fusion/adapted/mpl/detail/size_impl.hpp:
-
-/usr/include/boost/fusion/adapted/mpl/detail/is_sequence_impl.hpp:
-
-/usr/include/boost/fusion/adapted/mpl.hpp:
-
-/usr/include/boost/fusion/mpl.hpp:
-
-/usr/include/boost/fusion/view/transform_view/detail/value_at_impl.hpp:
-
-/usr/include/boost/fusion/view/transform_view/detail/end_impl.hpp:
-
-/usr/include/boost/fusion/view/transform_view/transform_view_fwd.hpp:
-
-/usr/include/boost/fusion/view/transform_view/detail/equal_to_impl.hpp:
-
-/usr/include/boost/fusion/view/transform_view/detail/distance_impl.hpp:
-
-/usr/include/boost/fusion/view/transform_view/detail/advance_impl.hpp:
-
-/usr/include/boost/fusion/view/transform_view/detail/value_of_impl.hpp:
-
-/usr/include/boost/fusion/view/transform_view/detail/prior_impl.hpp:
-
-/usr/include/boost/fusion/view/transform_view/detail/deref_impl.hpp:
-
-/usr/include/boost/fusion/algorithm/transformation/replace.hpp:
-
-/usr/include/boost/fusion/algorithm/transformation/remove_if.hpp:
-
-/usr/include/boost/fusion/iterator/iterator_adapter.hpp:
-
-/usr/include/boost/fusion/algorithm/transformation/pop_back.hpp:
-
-/usr/include/boost/fusion/algorithm/transformation/join.hpp:
-
-/usr/include/boost/fusion/algorithm/transformation/insert_range.hpp:
+../third-party/pinocchio/pinocchio/algorithm/rnea.hpp:
 
 ../third-party/pinocchio/pinocchio/algorithm/frames.hpp:
 
-/usr/include/boost/fusion/algorithm/transformation/insert.hpp:
+../third-party/pinocchio/pinocchio/algorithm/kinematics.hxx:
 
-/usr/include/boost/fusion/algorithm/transformation/filter_if.hpp:
+../third-party/pinocchio/pinocchio/algorithm/kinematics.hpp:
 
-/usr/include/boost/fusion/view/filter_view/detail/size_impl.hpp:
+/usr/local/include/boost/fusion/sequence/comparison/enable_comparison.hpp:
 
-/usr/include/boost/fusion/view/filter_view/detail/value_of_data_impl.hpp:
+/usr/local/include/boost/mpl/aux_/single_element_iter.hpp:
 
-/usr/include/boost/fusion/view/filter_view/detail/deref_data_impl.hpp:
+/usr/local/include/boost/mpl/single_view.hpp:
 
-/usr/include/boost/fusion/view/filter_view/detail/next_impl.hpp:
+/usr/local/include/boost/fusion/view/flatten_view/flatten_view.hpp:
 
-/usr/include/boost/fusion/view/filter_view/detail/deref_impl.hpp:
+/usr/local/include/boost/fusion/algorithm/transformation/flatten.hpp:
 
-/usr/include/boost/fusion/view/filter_view/filter_view_iterator.hpp:
+/usr/local/include/boost/fusion/algorithm/transformation/detail/preprocessed/zip.hpp:
 
-/usr/include/boost/fusion/view/filter_view/filter_view.hpp:
+/usr/local/include/boost/fusion/support/detail/pp_round.hpp:
 
-/usr/include/boost/fusion/algorithm/transformation/filter.hpp:
+/usr/local/include/boost/mpl/unpack_args.hpp:
 
-/usr/include/boost/fusion/container/vector/vector10.hpp:
+/usr/local/include/boost/mpl/zip_view.hpp:
 
-/usr/include/boost/fusion/algorithm/transformation/clear.hpp:
+/usr/local/include/boost/fusion/view/zip_view/detail/value_of_impl.hpp:
 
-/usr/include/boost/fusion/algorithm/transformation.hpp:
+/usr/local/include/boost/fusion/view/zip_view/detail/advance_impl.hpp:
 
-/usr/include/boost/fusion/algorithm/query/find_fwd.hpp:
+/usr/local/include/boost/fusion/view/zip_view/detail/prior_impl.hpp:
 
-/usr/include/boost/fusion/algorithm/query/find_if_fwd.hpp:
+/usr/local/include/boost/fusion/view/zip_view/detail/next_impl.hpp:
 
-/usr/include/boost/fusion/algorithm/query/find.hpp:
+/usr/local/include/boost/fusion/view/zip_view/zip_view_iterator.hpp:
 
-/usr/include/boost/fusion/algorithm/query/detail/count_if.hpp:
+/usr/local/include/boost/mpl/aux_/transform_iter.hpp:
 
-/usr/include/boost/fusion/algorithm/query/count_if.hpp:
+/usr/local/include/boost/fusion/container/vector/detail/as_vector.hpp:
 
-/usr/include/boost/fusion/algorithm/query/count.hpp:
+/usr/local/include/boost/fusion/view/zip_view/detail/end_impl.hpp:
 
-/usr/include/boost/fusion/algorithm/query/detail/any.hpp:
+/usr/local/include/boost/fusion/view/zip_view/zip_view_iterator_fwd.hpp:
 
-/usr/include/boost/fusion/algorithm/query/all.hpp:
+/usr/local/include/boost/fusion/view/zip_view/detail/begin_impl.hpp:
 
-/usr/include/boost/fusion/algorithm/iteration/detail/preprocessed/reverse_iter_fold.hpp:
+/usr/local/include/boost/fusion/support/unused.hpp:
 
-/usr/include/boost/fusion/algorithm/iteration/reverse_iter_fold_fwd.hpp:
+/usr/local/include/boost/fusion/view/zip_view.hpp:
 
-/usr/include/boost/fusion/algorithm/iteration/detail/preprocessed/reverse_fold.hpp:
+/usr/local/include/boost/fusion/algorithm/transformation/zip.hpp:
 
-/usr/include/boost/fusion/algorithm/iteration/reverse_fold_fwd.hpp:
+/usr/local/include/boost/fusion/view/reverse_view/detail/at_impl.hpp:
 
-/usr/include/boost/fusion/algorithm/iteration/reverse_fold.hpp:
+/usr/local/include/boost/fusion/view/reverse_view/detail/begin_impl.hpp:
 
-/usr/include/boost/fusion/algorithm/iteration/detail/preprocessed/iter_fold.hpp:
+/usr/local/include/boost/fusion/view/reverse_view/detail/key_of_impl.hpp:
 
-/usr/include/boost/fusion/algorithm/iteration/iter_fold_fwd.hpp:
+/usr/local/include/boost/fusion/view/reverse_view/detail/value_of_data_impl.hpp:
 
-/usr/include/boost/fusion/algorithm/iteration/iter_fold.hpp:
+/usr/local/include/boost/fusion/view/reverse_view/detail/distance_impl.hpp:
 
-/usr/include/boost/fusion/algorithm/iteration/fold_fwd.hpp:
+/usr/local/include/boost/fusion/view/reverse_view/detail/advance_impl.hpp:
 
-/usr/include/boost/fusion/algorithm/iteration/accumulate_fwd.hpp:
+/usr/local/include/boost/fusion/view/reverse_view/detail/next_impl.hpp:
 
-/usr/include/boost/fusion/algorithm.hpp:
+/usr/local/include/boost/fusion/view/reverse_view/reverse_view_iterator.hpp:
+
+/usr/local/include/boost/fusion/view/reverse_view/reverse_view.hpp:
+
+/usr/local/include/boost/fusion/algorithm/transformation/reverse.hpp:
+
+/usr/local/include/boost/fusion/algorithm/transformation/replace_if.hpp:
+
+/usr/local/include/boost/fusion/algorithm/transformation/detail/replace.hpp:
+
+/usr/local/include/boost/fusion/mpl/push_front.hpp:
+
+/usr/local/include/boost/fusion/mpl/push_back.hpp:
+
+/usr/local/include/boost/fusion/mpl/pop_front.hpp:
+
+/usr/local/include/boost/fusion/mpl/insert_range.hpp:
+
+/usr/local/include/boost/fusion/mpl/insert.hpp:
+
+/usr/local/include/boost/fusion/sequence/intrinsic/has_key.hpp:
+
+/usr/local/include/boost/fusion/mpl/front.hpp:
+
+/usr/local/include/boost/mpl/aux_/erase_key_impl.hpp:
+
+/usr/local/include/boost/mpl/erase_key_fwd.hpp:
+
+/usr/local/include/boost/fusion/mpl/erase_key.hpp:
+
+/usr/local/include/boost/fusion/sequence/convert.hpp:
+
+/usr/local/include/boost/mpl/aux_/erase_impl.hpp:
+
+/usr/local/include/boost/mpl/erase.hpp:
+
+/usr/local/include/boost/fusion/mpl/erase.hpp:
+
+/usr/local/include/boost/fusion/mpl/empty.hpp:
+
+/usr/local/include/boost/fusion/container/deque/deque_fwd.hpp:
+
+/usr/local/include/boost/fusion/container/set/set_fwd.hpp:
+
+/usr/local/include/boost/fusion/container/map/map_fwd.hpp:
+
+/usr/local/include/boost/fusion/mpl/detail/clear.hpp:
+
+/usr/local/include/boost/fusion/mpl/clear.hpp:
+
+/usr/local/include/boost/mpl/back.hpp:
+
+/usr/local/include/boost/fusion/mpl/at.hpp:
+
+/usr/local/include/boost/fusion/adapted/mpl/detail/empty_impl.hpp:
+
+/usr/local/include/boost/fusion/adapted/mpl/detail/is_view_impl.hpp:
+
+/usr/local/include/boost/mpl/has_key_fwd.hpp:
+
+/usr/local/include/boost/fusion/adapted/mpl/detail/value_at_impl.hpp:
+
+/usr/local/include/boost/fusion/view/reverse_view/detail/end_impl.hpp:
+
+/usr/local/include/boost/fusion/adapted/mpl/detail/is_sequence_impl.hpp:
+
+/usr/local/include/boost/fusion/iterator/mpl.hpp:
+
+/usr/local/include/boost/fusion/mpl.hpp:
+
+/usr/local/include/boost/fusion/view/detail/strictest_traversal.hpp:
+
+/usr/local/include/boost/fusion/view/transform_view/detail/at_impl.hpp:
+
+/usr/local/include/boost/fusion/view/transform_view/detail/begin_impl.hpp:
+
+/usr/local/include/boost/fusion/view/transform_view/detail/equal_to_impl.hpp:
+
+/usr/local/include/boost/fusion/view/transform_view/detail/distance_impl.hpp:
+
+/usr/local/include/boost/mpl/aux_/back_impl.hpp:
+
+/usr/local/include/boost/fusion/view/transform_view/detail/advance_impl.hpp:
+
+/usr/local/include/boost/fusion/view/transform_view/detail/value_of_impl.hpp:
+
+/usr/local/include/boost/fusion/view/transform_view/detail/prior_impl.hpp:
+
+/usr/local/include/boost/fusion/view/transform_view/detail/deref_impl.hpp:
+
+/usr/local/include/boost/fusion/view/transform_view/transform_view_iterator.hpp:
+
+/usr/local/include/boost/fusion/view/transform_view/transform_view.hpp:
+
+/usr/local/include/boost/fusion/algorithm/transformation/replace.hpp:
+
+/usr/local/include/boost/fusion/algorithm/transformation/remove.hpp:
+
+/usr/local/include/boost/fusion/algorithm/transformation/pop_back.hpp:
+
+/usr/local/include/boost/fusion/view/joint_view.hpp:
+
+/usr/local/include/boost/fusion/algorithm/transformation/join.hpp:
+
+/usr/local/include/boost/fusion/algorithm/transformation/filter_if.hpp:
+
+/usr/local/include/boost/fusion/view/filter_view/detail/end_impl.hpp:
+
+/usr/local/include/boost/fusion/view/filter_view/detail/key_of_impl.hpp:
+
+/usr/local/include/boost/fusion/view/filter_view/detail/value_of_data_impl.hpp:
+
+/usr/local/include/boost/fusion/view/filter_view/detail/deref_data_impl.hpp:
+
+/usr/local/include/boost/fusion/view/filter_view/detail/equal_to_impl.hpp:
+
+/usr/local/include/boost/fusion/view/filter_view/detail/value_of_impl.hpp:
+
+/usr/local/include/boost/fusion/view/filter_view/detail/deref_impl.hpp:
+
+/usr/local/include/boost/fusion/view/filter_view/filter_view_iterator.hpp:
+
+/usr/local/include/boost/fusion/algorithm/transformation/filter.hpp:
+
+/usr/local/include/boost/fusion/algorithm/transformation/erase_key.hpp:
+
+/usr/local/include/boost/fusion/algorithm/transformation/erase.hpp:
+
+/usr/local/include/boost/fusion/algorithm/transformation.hpp:
+
+/usr/local/include/boost/fusion/algorithm/query/find_if.hpp:
+
+/usr/local/include/boost/fusion/algorithm/query/find_fwd.hpp:
+
+/usr/local/include/boost/fusion/algorithm/query/detail/segmented_find.hpp:
+
+/usr/local/include/boost/fusion/algorithm/query/find_if_fwd.hpp:
+
+/usr/local/include/boost/fusion/algorithm/query/detail/count.hpp:
+
+/usr/local/include/boost/fusion/algorithm/query/count_if.hpp:
+
+/usr/local/include/boost/fusion/algorithm/query/count.hpp:
+
+/usr/local/include/boost/fusion/algorithm/query.hpp:
+
+/usr/local/include/boost/fusion/algorithm/iteration/detail/preprocessed/reverse_iter_fold.hpp:
+
+/usr/local/include/boost/fusion/algorithm/iteration/reverse_iter_fold_fwd.hpp:
+
+/usr/local/include/boost/fusion/algorithm/iteration/detail/preprocessed/reverse_fold.hpp:
+
+/usr/local/include/boost/fusion/algorithm/iteration/reverse_fold.hpp:
+
+/usr/local/include/boost/fusion/algorithm/iteration/iter_fold_fwd.hpp:
+
+/usr/local/include/boost/fusion/algorithm/iteration/iter_fold.hpp:
+
+/usr/local/include/boost/fusion/algorithm/iteration/for_each_fwd.hpp:
+
+/usr/local/include/boost/fusion/algorithm/iteration/detail/segmented_for_each.hpp:
+
+/usr/local/include/boost/fusion/algorithm/iteration/for_each.hpp:
+
+/usr/local/include/boost/fusion/algorithm/iteration/detail/preprocessed/fold.hpp:
+
+/usr/local/include/boost/fusion/algorithm/iteration/fold.hpp:
+
+/usr/local/include/boost/fusion/algorithm/iteration/accumulate_fwd.hpp:
+
+/usr/local/include/boost/fusion/algorithm/iteration/accumulate.hpp:
+
+/usr/local/include/boost/fusion/algorithm/iteration.hpp:
+
+/usr/local/include/boost/fusion/algorithm.hpp:
 
 ../third-party/pinocchio/pinocchio/algorithm/check.hxx:
 
-/usr/include/boost/fusion/container/generation/make_list.hpp:
+/usr/local/include/boost/fusion/container/list/detail/convert_impl.hpp:
 
-/usr/include/boost/fusion/container/list/detail/convert_impl.hpp:
+/usr/local/include/boost/fusion/container/list/detail/build_cons.hpp:
 
-/usr/include/boost/fusion/container/list/detail/list_to_cons.hpp:
+/usr/local/include/boost/fusion/container/list/convert.hpp:
 
-/usr/include/boost/fusion/container/list.hpp:
+/usr/local/include/boost/fusion/container/list/list.hpp:
 
 ../third-party/pinocchio/pinocchio/algorithm/jacobian.hxx:
 
-/usr/include/boost/mpl/unpack_args.hpp:
+../third-party/pinocchio/pinocchio/multibody/data.hxx:
 
 ../third-party/pinocchio/pinocchio/algorithm/jacobian.hpp:
 
 ../third-party/pinocchio/pinocchio/parsers/urdf/model.hxx:
 
-/usr/include/boost/bind/bind_mf2_cc.hpp:
+/usr/local/include/boost/bind/placeholders.hpp:
 
-/usr/include/boost/bind/bind_mf_cc.hpp:
+/usr/local/include/boost/bind/storage.hpp:
 
-/usr/include/boost/core/is_same.hpp:
+/usr/local/include/boost/core/is_same.hpp:
 
-/usr/include/boost/is_placeholder.hpp:
+/usr/local/include/boost/visit_each.hpp:
 
-/usr/include/boost/bind/mem_fn.hpp:
+/usr/local/include/boost/bind/mem_fn_cc.hpp:
 
-/usr/include/boost/mem_fn.hpp:
+/usr/local/include/boost/bind/mem_fn_template.hpp:
 
-/usr/include/boost/bind/bind.hpp:
+/usr/local/include/boost/bind/bind.hpp:
+
+../third-party/pinocchio/pinocchio/multibody/geometry.hxx:
 
 /usr/include/c++/9/bits/list.tcc:
 
 /usr/include/c++/9/bits/stl_list.h:
 
-/usr/include/boost/foreach_fwd.hpp:
+../third-party/pinocchio/pinocchio/multibody/fcl.hxx:
+
+/usr/local/include/boost/foreach_fwd.hpp:
+
+/usr/local/include/boost/foreach.hpp:
 
 ../third-party/pinocchio/pinocchio/multibody/fcl.hpp:
+
+../third-party/pinocchio/pinocchio/multibody/liegroup/liegroup-algo.hxx:
 
 ../third-party/pinocchio/pinocchio/multibody/liegroup/special-euclidean.hpp:
 
 ../third-party/pinocchio/pinocchio/multibody/liegroup/special-orthogonal.hpp:
 
-/usr/include/boost/integer/static_min_max.hpp:
+/usr/local/include/boost/integer/static_min_max.hpp:
 
 ../third-party/pinocchio/pinocchio/multibody/liegroup/liegroup-base.hxx:
 
@@ -2892,461 +2912,459 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 ../third-party/pinocchio/pinocchio/multibody/liegroup/liegroup.hpp:
 
-../third-party/pinocchio/pinocchio/utils/string-generator.hpp:
+../third-party/pinocchio/pinocchio/multibody/liegroup/liegroup-algo.hpp:
 
-../third-party/pinocchio/pinocchio/multibody/model.hxx:
+/usr/local/include/boost/fusion/view/reverse_view/detail/deref_impl.hpp:
+
+../third-party/pinocchio/pinocchio/utils/string-generator.hpp:
 
 /usr/include/c++/9/bits/stl_multimap.h:
 
-/usr/include/c++/9/bits/stl_map.h:
+/usr/include/c++/9/bits/stl_tree.h:
 
 /usr/include/c++/9/map:
 
-/usr/include/boost/iostreams/detail/adapter/output_iterator_adapter.hpp:
+/usr/local/include/boost/math/special_functions/nonfinite_num_facets.hpp:
 
-/usr/include/boost/iostreams/detail/adapter/mode_adapter.hpp:
+/usr/local/include/boost/iostreams/detail/adapter/output_iterator_adapter.hpp:
 
-/usr/include/boost/mpl/erase_key_fwd.hpp:
+/usr/local/include/boost/iostreams/detail/adapter/mode_adapter.hpp:
 
-/usr/include/boost/type_traits/detail/bool_trait_undef.hpp:
+/usr/local/include/boost/iostreams/pipeline.hpp:
 
-/usr/include/boost/detail/is_incrementable.hpp:
+/usr/local/include/boost/iostreams/detail/adapter/range_adapter.hpp:
 
-/usr/include/boost/iostreams/detail/resolve.hpp:
+/usr/local/include/boost/iostreams/detail/push.hpp:
 
-/usr/include/boost/iostreams/pipeline.hpp:
+/usr/local/include/boost/iostreams/put.hpp:
 
-/usr/include/boost/iostreams/detail/adapter/range_adapter.hpp:
+/usr/local/include/boost/iostreams/get.hpp:
 
-/usr/include/boost/iostreams/detail/push.hpp:
+/usr/local/include/boost/iostreams/checked_operations.hpp:
 
-/usr/include/boost/iostreams/put.hpp:
+/usr/local/include/boost/iostreams/device/null.hpp:
 
-/usr/include/boost/iostreams/get.hpp:
+/usr/local/include/boost/iostreams/concepts.hpp:
 
-/usr/include/boost/iostreams/detail/buffer.hpp:
+/usr/local/include/boost/iostreams/output_sequence.hpp:
 
-/usr/include/boost/iostreams/detail/config/unreachable_return.hpp:
+/usr/local/include/boost/iostreams/input_sequence.hpp:
 
-../third-party/pinocchio/pinocchio/multibody/liegroup/liegroup-algo.hpp:
+/usr/local/include/boost/iostreams/imbue.hpp:
 
-/usr/include/boost/iostreams/detail/call_traits.hpp:
+/usr/local/include/boost/iostreams/operations.hpp:
 
-/usr/include/boost/iostreams/detail/default_arg.hpp:
+/usr/local/include/boost/iostreams/write.hpp:
 
-/usr/include/boost/iostreams/detail/adapter/concept_adapter.hpp:
+/usr/local/include/boost/iostreams/seek.hpp:
 
-/usr/include/boost/iostreams/detail/streambuf/indirect_streambuf.hpp:
+/usr/local/include/boost/iostreams/char_traits.hpp:
 
-/usr/include/boost/iostreams/output_sequence.hpp:
+/usr/local/include/boost/iostreams/read.hpp:
 
-/usr/include/boost/iostreams/optimal_buffer_size.hpp:
+/usr/local/include/boost/iostreams/detail/adapter/non_blocking_adapter.hpp:
 
-/usr/include/boost/iostreams/input_sequence.hpp:
+/usr/local/include/boost/iostreams/detail/streambuf.hpp:
 
-/usr/include/boost/iostreams/operations.hpp:
+/usr/local/include/boost/range/iterator_range_io.hpp:
 
-/usr/include/boost/iostreams/detail/streambuf/linked_streambuf.hpp:
+/usr/local/include/boost/range/iterator_range.hpp:
 
-../third-party/pinocchio/pinocchio/algorithm/kinematics.hpp:
+/usr/local/include/boost/iostreams/detail/wrap_unwrap.hpp:
 
-/usr/include/boost/iostreams/detail/optional.hpp:
+/usr/local/include/boost/iostreams/detail/select_by_size.hpp:
 
-/usr/include/boost/iostreams/write.hpp:
+/usr/local/include/boost/fusion/view/reverse_view/detail/value_at_impl.hpp:
 
-/usr/include/boost/iostreams/detail/config/fpos.hpp:
+/usr/local/include/boost/iostreams/detail/config/enable_warnings.hpp:
 
-/usr/include/boost/iostreams/detail/config/codecvt.hpp:
+/usr/local/include/boost/iostreams/detail/config/disable_warnings.hpp:
 
-/usr/include/boost/iostreams/seek.hpp:
+/usr/local/include/boost/iostreams/detail/is_iterator_range.hpp:
 
-/usr/include/boost/iostreams/read.hpp:
+/usr/local/include/boost/preprocessor/control/expr_if.hpp:
 
-/usr/include/boost/iostreams/detail/adapter/non_blocking_adapter.hpp:
+/usr/local/include/boost/iostreams/detail/bool_trait_def.hpp:
 
-/usr/include/boost/iostreams/operations_fwd.hpp:
+/usr/local/include/boost/iostreams/traits.hpp:
 
-/usr/include/boost/iostreams/detail/streambuf.hpp:
+/usr/local/include/boost/iostreams/detail/dispatch.hpp:
 
-/usr/include/boost/fusion/view/filter_view/detail/end_impl.hpp:
+/usr/local/include/boost/iostreams/detail/functional.hpp:
 
-/usr/include/boost/fusion/container/list/list.hpp:
+/usr/local/include/boost/preprocessor/iteration/local.hpp:
 
-/usr/include/boost/range/iterator_range.hpp:
+/usr/local/include/boost/iostreams/detail/execute.hpp:
 
-/usr/include/boost/iostreams/traits_fwd.hpp:
+/usr/local/include/boost/iostreams/detail/error.hpp:
 
-/usr/include/boost/iostreams/detail/enable_if_stream.hpp:
+/usr/local/include/boost/core/typeinfo.hpp:
 
-/usr/include/boost/iostreams/detail/select_by_size.hpp:
+/usr/local/include/boost/iostreams/detail/streambuf/direct_streambuf.hpp:
 
-/usr/include/boost/iostreams/detail/config/disable_warnings.hpp:
+/usr/local/include/boost/iostreams/stream_buffer.hpp:
 
-/usr/include/boost/preprocessor/control/expr_if.hpp:
+/usr/local/include/boost/iostreams/detail/select.hpp:
 
-/usr/include/boost/iostreams/detail/dispatch.hpp:
+/usr/local/include/boost/iostreams/detail/push_params.hpp:
 
-/usr/include/boost/iostreams/flush.hpp:
+/usr/local/include/boost/iostreams/detail/forward.hpp:
 
-/usr/include/boost/iostreams/close.hpp:
+/usr/local/include/boost/iostreams/detail/config/gcc.hpp:
 
-/usr/include/boost/iostreams/detail/functional.hpp:
+/usr/local/include/boost/iostreams/detail/config/overload_resolution.hpp:
 
-/usr/include/boost/preprocessor/iteration/detail/local.hpp:
+/usr/local/include/boost/iostreams/detail/config/wide_streams.hpp:
 
-/usr/include/boost/iostreams/detail/streambuf/direct_streambuf.hpp:
+/usr/local/include/boost/iostreams/detail/ios.hpp:
 
-/usr/include/boost/iostreams/stream_buffer.hpp:
+/usr/local/include/boost/iostreams/constants.hpp:
 
-/usr/include/boost/fusion/mpl/push_back.hpp:
+/usr/local/include/boost/iostreams/categories.hpp:
 
-/usr/include/boost/iostreams/detail/select.hpp:
+/usr/local/include/boost/iostreams/device/array.hpp:
 
-/usr/include/boost/iostreams/detail/config/limits.hpp:
+/usr/local/include/boost/asio/detail/is_buffer_sequence.hpp:
 
-/usr/include/boost/fusion/view/filter_view/detail/value_of_impl.hpp:
+/usr/local/include/boost/asio/detail/pop_options.hpp:
 
-/usr/include/boost/iostreams/detail/forward.hpp:
+/usr/local/include/boost/asio/detail/push_options.hpp:
 
-/usr/include/boost/iostreams/detail/config/gcc.hpp:
+/usr/local/include/boost/asio/detail/type_traits.hpp:
 
-/usr/include/boost/iostreams/constants.hpp:
+/usr/local/include/boost/asio/detail/throw_exception.hpp:
 
-/usr/include/boost/asio/detail/noncopyable.hpp:
+/usr/local/include/boost/fusion/algorithm/query/detail/count_if.hpp:
 
-/usr/include/boost/asio/detail/limits.hpp:
+/usr/local/include/boost/asio/detail/string_view.hpp:
 
-/usr/include/boost/asio/detail/is_buffer_sequence.hpp:
+/usr/local/include/boost/asio/detail/memory.hpp:
 
-/usr/include/boost/asio/detail/type_traits.hpp:
+/usr/local/include/boost/asio/buffer.hpp:
 
-/usr/include/boost/asio/detail/throw_exception.hpp:
+/usr/local/include/boost/asio/basic_streambuf_fwd.hpp:
 
-/usr/include/boost/asio/detail/memory.hpp:
+/usr/local/include/boost/asio/detail/config.hpp:
 
-/usr/include/boost/asio/buffer.hpp:
+/usr/local/include/boost/asio/streambuf.hpp:
 
-/usr/include/boost/asio/basic_streambuf_fwd.hpp:
+/usr/local/include/boost/archive/basic_binary_oarchive.hpp:
 
-/usr/include/boost/asio/basic_streambuf.hpp:
+/usr/local/include/boost/archive/binary_oarchive_impl.hpp:
 
-/usr/include/boost/iostreams/detail/ios.hpp:
+/usr/local/include/boost/archive/binary_oarchive.hpp:
 
-/usr/include/boost/asio/detail/config.hpp:
+/usr/local/include/boost/archive/basic_binary_iarchive.hpp:
 
-/usr/include/boost/asio/streambuf.hpp:
+/usr/local/include/boost/archive/basic_binary_iprimitive.hpp:
 
-/usr/include/boost/archive/basic_binary_oarchive.hpp:
+/usr/local/include/boost/archive/binary_iarchive_impl.hpp:
 
-/usr/include/boost/archive/binary_oarchive_impl.hpp:
+/usr/local/include/boost/archive/xml_oarchive.hpp:
 
-/usr/include/boost/archive/basic_binary_iarchive.hpp:
+/usr/local/include/boost/archive/xml_iarchive.hpp:
 
-/usr/include/boost/archive/basic_binary_iprimitive.hpp:
+/usr/local/include/boost/archive/detail/interface_iarchive.hpp:
 
-/usr/include/boost/mpl/aux_/pop_back_impl.hpp:
+/usr/local/include/boost/archive/detail/basic_pointer_iserializer.hpp:
 
-/usr/include/boost/archive/basic_xml_oarchive.hpp:
+/usr/local/include/boost/archive/basic_text_iarchive.hpp:
 
-/usr/include/boost/archive/xml_oarchive.hpp:
+/usr/local/include/boost/archive/basic_text_iprimitive.hpp:
 
-/usr/include/boost/archive/xml_iarchive.hpp:
+/usr/local/include/boost/archive/detail/register_archive.hpp:
 
-/usr/include/boost/archive/detail/basic_iserializer.hpp:
+/usr/local/include/boost/archive/basic_xml_iarchive.hpp:
 
-/usr/include/boost/foreach.hpp:
+/usr/local/include/boost/serialization/string.hpp:
 
-/usr/include/boost/archive/basic_text_iprimitive.hpp:
+/usr/local/include/boost/archive/detail/basic_pointer_oserializer.hpp:
 
-/usr/include/boost/archive/text_iarchive.hpp:
+/usr/local/include/boost/mpl/aux_/contains_impl.hpp:
 
-/usr/include/boost/archive/detail/register_archive.hpp:
+/usr/include/math.h:
 
-/usr/include/boost/serialization/string.hpp:
+../third-party/eigen3/Eigen/src/Core/Matrix.h:
 
-/usr/include/boost/archive/detail/check.hpp:
+/usr/local/include/boost/fusion/adapted/mpl/detail/at_impl.hpp:
 
-/usr/include/boost/archive/detail/basic_serializer.hpp:
+/usr/local/include/boost/mpl/sequence_tag.hpp:
 
-../third-party/pinocchio/pinocchio/multibody/joint/joint-base.hpp:
+../third-party/eigen3/Eigen/src/Householder/Householder.h:
 
-/usr/include/boost/mpl/aux_/config/has_xxx.hpp:
+/usr/local/include/boost/mpl/contains.hpp:
 
-/usr/include/boost/iterator/reverse_iterator.hpp:
+/usr/include/c++/9/bits/unique_ptr.h:
 
-/usr/include/boost/predef/os/bsd/bsdi.h:
+/usr/local/include/boost/preprocessor/enum_params.hpp:
 
-/usr/include/boost/preprocessor/repetition/enum.hpp:
+/usr/include/time.h:
 
-/usr/include/boost/iterator/interoperable.hpp:
+/usr/local/include/boost/type_traits/is_unbounded_array.hpp:
 
-/usr/include/boost/preprocessor/repetition/enum_binary_params.hpp:
+/usr/local/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp:
 
-/usr/include/boost/mpl/list/aux_/numbered.hpp:
+/usr/local/include/boost/preprocessor/iteration/detail/iter/forward1.hpp:
 
-/usr/include/boost/config/detail/posix_features.hpp:
+/usr/include/c++/9/bits/random.h:
 
-/usr/include/unistd.h:
+/usr/local/include/boost/mpl/aux_/config/arrays.hpp:
 
-/usr/include/boost/preprocessor/slot/detail/shared.hpp:
+/usr/local/include/boost/fusion/view/filter_view/detail/size_impl.hpp:
 
-/usr/include/boost/preprocessor/array/size.hpp:
+/usr/local/include/boost/archive/detail/basic_oarchive.hpp:
 
-/usr/include/boost/config/helper_macros.hpp:
+/usr/local/include/boost/iostreams/detail/double_object.hpp:
 
-/usr/include/boost/fusion/view/single_view/detail/value_of_impl.hpp:
+/usr/local/include/boost/mpl/aux_/msvc_type.hpp:
 
-/usr/include/boost/mpl/void.hpp:
+../third-party/pinocchio/pinocchio/spatial/se3-tpl.hpp:
 
-/usr/include/boost/mpl/aux_/is_msvc_eti_arg.hpp:
+/usr/local/include/boost/fusion/algorithm/iteration/detail/for_each.hpp:
 
-/usr/include/c++/9/bits/stream_iterator.h:
-
-/usr/include/boost/mpl/has_xxx.hpp:
-
-/usr/include/boost/mpl/aux_/msvc_type.hpp:
-
-../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorDeviceGpu.h:
-
-../third-party/eigen3/Eigen/src/Eigenvalues/RealQZ.h:
-
-/usr/include/boost/mpl/list/list10.hpp:
-
-/usr/include/boost/mpl/list/aux_/begin_end.hpp:
-
-/usr/include/boost/mpl/not.hpp:
-
-/usr/include/boost/mpl/list/aux_/empty.hpp:
-
-/usr/include/boost/mpl/list/aux_/O1_size.hpp:
-
-../third-party/qpOASES/qpOASES/SQProblemSchur.hpp:
-
-/usr/include/boost/fusion/view/filter_view/detail/equal_to_impl.hpp:
-
-../third-party/eigen3/Eigen/src/Core/SelfAdjointView.h:
-
-/usr/include/boost/mpl/clear_fwd.hpp:
-
-/usr/include/c++/9/new:
-
-/usr/include/boost/mpl/list/aux_/tag.hpp:
-
-/usr/include/c++/9/bits/locale_classes.tcc:
-
-/usr/include/boost/mpl/aux_/has_tag.hpp:
-
-/usr/include/boost/mpl/aux_/lambda_support.hpp:
-
-/usr/include/boost/preprocessor/arithmetic/sub.hpp:
-
-../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorConversion.h:
-
-/usr/include/c++/9/fstream:
-
-/usr/include/boost/preprocessor/variadic/elem.hpp:
-
-/usr/include/boost/preprocessor/tuple/detail/is_single_return.hpp:
-
-/usr/include/boost/mpl/aux_/config/nttp.hpp:
-
-/usr/include/c++/9/bits/std_function.h:
-
-/usr/include/boost/preprocessor/list/detail/fold_left.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/include/boost/fusion/sequence/intrinsic/size.hpp:
-
-/usr/include/boost/preprocessor/list/fold_left.hpp:
-
-/usr/include/c++/9/bits/allocated_ptr.h:
-
-/usr/include/boost/preprocessor/control/while.hpp:
-
-/usr/include/boost/preprocessor/arithmetic/add.hpp:
-
-/usr/include/boost/mpl/aux_/template_arity.hpp:
-
-/usr/include/boost/preprocessor/iteration/local.hpp:
-
-/usr/include/boost/preprocessor/empty.hpp:
-
-/usr/include/boost/preprocessor/detail/auto_rec.hpp:
-
-/usr/include/boost/mpl/aux_/has_type.hpp:
-
-/usr/include/boost/fusion/support/detail/enabler.hpp:
-
-/usr/include/boost/preprocessor/repetition/repeat.hpp:
-
-../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorInitializer.h:
-
-/usr/include/boost/range/concepts.hpp:
-
-/usr/include/boost/preprocessor/control/if.hpp:
-
-/usr/include/boost/mpl/int.hpp:
-
-/usr/include/c++/9/clocale:
-
-/usr/include/boost/math/special_functions/fpclassify.hpp:
-
-/usr/include/boost/mpl/next.hpp:
-
-/usr/include/boost/fusion/view/iterator_range/iterator_range.hpp:
+/usr/local/include/boost/mpl/iterator_tags.hpp:
 
 ../third-party/pinocchio/pinocchio/multibody/joint/joint-basic-visitors.hpp:
 
-/usr/include/boost/mpl/long.hpp:
+/usr/local/include/boost/mpl/bitxor.hpp:
 
-/usr/include/boost/preprocessor/stringize.hpp:
+/usr/local/include/boost/mpl/begin_end_fwd.hpp:
 
-/usr/include/boost/archive/basic_xml_iarchive.hpp:
+/usr/local/include/boost/mpl/empty_fwd.hpp:
 
-/usr/include/c++/9/bits/alloc_traits.h:
+../third-party/eigen3/Eigen/Householder:
 
-/usr/include/boost/mpl/aux_/has_key_impl.hpp:
+../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorReverse.h:
 
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+/usr/local/include/boost/mpl/front_fwd.hpp:
 
-/usr/include/boost/fusion/view/transform_view/transform_view.hpp:
+/usr/local/include/boost/preprocessor/slot/slot.hpp:
 
-/usr/include/boost/mpl/aux_/integral_wrapper.hpp:
+/usr/local/include/boost/config/abi_suffix.hpp:
 
-/usr/include/boost/preprocessor/config/config.hpp:
+/usr/include/c++/9/atomic:
 
-/usr/include/boost/fusion/sequence/intrinsic/empty.hpp:
+/usr/include/c++/9/bits/stl_map.h:
 
-/usr/include/boost/fusion/container/deque/deque_fwd.hpp:
+/usr/local/include/boost/mpl/list/aux_/item.hpp:
 
-../third-party/pinocchio/pinocchio/multibody/geometry.hpp:
+/usr/local/include/boost/mpl/void.hpp:
 
-/usr/include/boost/mpl/aux_/na_fwd.hpp:
+/usr/include/c++/9/climits:
 
-../third-party/eigen3/Eigen/src/Core/Solve.h:
+/usr/local/include/boost/mpl/aux_/lambda_support.hpp:
 
-/usr/include/boost/mpl/aux_/erase_key_impl.hpp:
+/usr/local/include/boost/bind/arg.hpp:
 
-/usr/include/boost/mpl/iterator_tags.hpp:
+/usr/local/include/boost/preprocessor/arithmetic/sub.hpp:
 
-/usr/include/boost/fusion/algorithm/query/detail/count.hpp:
+../third-party/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsPacketMath.h:
 
-/usr/include/boost/mpl/inherit.hpp:
+/usr/local/include/boost/preprocessor/variadic/elem.hpp:
 
-/usr/include/boost/fusion/view/zip_view/detail/advance_impl.hpp:
+/usr/local/include/boost/mpl/limits/arity.hpp:
 
-/usr/include/boost/mpl/aux_/adl_barrier.hpp:
+/usr/local/include/boost/range/functions.hpp:
 
-/usr/include/boost/serialization/smart_cast.hpp:
+/usr/include/c++/9/tuple:
 
-/usr/include/boost/mpl/front_fwd.hpp:
+/usr/local/include/boost/type_traits/make_signed.hpp:
 
-/usr/include/boost/mpl/bool.hpp:
+/usr/local/include/boost/preprocessor/variadic/size.hpp:
 
-/usr/include/boost/mpl/aux_/na.hpp:
+/usr/local/include/boost/preprocessor/control/detail/while.hpp:
 
-/usr/include/boost/math/tools/user.hpp:
+/usr/local/include/boost/preprocessor/list/detail/fold_right.hpp:
 
-/usr/include/boost/fusion/view/transform_view/detail/next_impl.hpp:
+/usr/local/include/boost/fusion/algorithm/transformation/clear.hpp:
 
-/usr/include/boost/mpl/max_element.hpp:
+/usr/local/include/boost/type_traits/has_nothrow_destructor.hpp:
 
-/usr/include/c++/9/cfloat:
+/usr/local/include/boost/preprocessor/list/fold_right.hpp:
 
-/usr/include/boost/fusion/algorithm/query/detail/all.hpp:
+/usr/local/include/boost/fusion/mpl/pop_back.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h:
+/usr/local/include/boost/preprocessor/iteration/detail/bounds/lower1.hpp:
 
-/usr/include/boost/fusion/algorithm/query/none.hpp:
+/usr/local/include/boost/preprocessor/list/detail/fold_left.hpp:
 
-/usr/include/boost/type_traits/integral_constant.hpp:
+/usr/local/include/boost/type_traits/make_void.hpp:
 
-../third-party/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsPacketMath.h:
+/usr/local/include/boost/iostreams/close.hpp:
 
-/usr/include/boost/type_traits/is_integral.hpp:
+/usr/local/include/boost/smart_ptr/detail/local_sp_deleter.hpp:
 
-/usr/include/boost/preprocessor/facilities/empty.hpp:
+/usr/local/include/boost/function_types/detail/components_impl/arity20_1.hpp:
 
-/usr/include/boost/detail/workaround.hpp:
+/usr/include/features.h:
 
-/usr/include/c++/9/bits/stl_numeric.h:
+/usr/local/include/boost/preprocessor/control/while.hpp:
 
-../third-party/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsHalf.h:
+/usr/local/include/boost/preprocessor/arithmetic/add.hpp:
 
-/usr/include/boost/mpl/aux_/arithmetic_op.hpp:
+/usr/local/include/boost/preprocessor/identity.hpp:
 
-/usr/include/boost/predef/version_number.h:
+../third-party/pinocchio/pinocchio/spatial/explog-quaternion.hpp:
 
-/usr/include/boost/predef/architecture/x86/32.h:
+/usr/local/include/boost/preprocessor/logical/bitand.hpp:
 
-/usr/include/c++/9/bits/cxxabi_init_exception.h:
+/usr/include/c++/9/stdexcept:
 
-/usr/include/boost/predef/architecture/x86.h:
+/usr/local/include/boost/preprocessor/comparison/not_equal.hpp:
 
-/usr/include/boost/archive/detail/basic_pointer_oserializer.hpp:
+/usr/local/include/boost/type_traits/enable_if.hpp:
 
-/usr/include/boost/fusion/container/list/detail/end_impl.hpp:
+/usr/local/include/boost/fusion/container/vector/detail/next_impl.hpp:
 
-../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorPatch.h:
+/usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h:
 
-/usr/include/boost/config/detail/select_platform_config.hpp:
+/usr/local/include/boost/mpl/deref.hpp:
 
-/usr/include/boost/mpl/next_prior.hpp:
+/usr/local/include/boost/preprocessor/repetition/repeat.hpp:
 
-/usr/include/boost/serialization/split_member.hpp:
+/usr/local/include/boost/mpl/eval_if.hpp:
 
-/usr/include/boost/preprocessor/control/detail/while.hpp:
+../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorContractionBlocking.h:
 
-/usr/include/boost/preprocessor/repetition/enum_params.hpp:
+/usr/local/include/boost/mpl/list/list20.hpp:
+
+/usr/local/include/boost/mpl/list.hpp:
 
 ../third-party/pinocchio/pinocchio/multibody/data.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
-/usr/include/boost/fusion/view/iterator_range/detail/is_segmented_impl.hpp:
+/usr/local/include/boost/mpl/aux_/config/dtp.hpp:
 
-/usr/include/boost/config/stdlib/libstdcpp3.hpp:
+/usr/local/include/boost/mpl/aux_/config/lambda.hpp:
 
-../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorForcedEval.h:
+/usr/local/include/boost/iostreams/detail/optional.hpp:
 
-../third-party/eigen3/Eigen/src/Core/Transpose.h:
+/usr/local/include/boost/fusion/iterator/distance.hpp:
 
-../third-party/qpOASES/qpOASES/SQProblem.hpp:
+/usr/local/include/boost/variant/detail/forced_return.hpp:
 
-/usr/include/boost/smart_ptr/make_shared.hpp:
+../third-party/pinocchio/pinocchio/multibody/joint/joint-translation.hpp:
 
-../third-party/pinocchio/pinocchio/multibody/data.hxx:
+/usr/local/include/boost/preprocessor/tuple/detail/is_single_return.hpp:
 
-/usr/include/boost/math/constants/constants.hpp:
+/usr/local/include/boost/preprocessor/repetition/for.hpp:
 
-../third-party/pinocchio/pinocchio/spatial/se3-tpl.hpp:
+../third-party/eigen3/Eigen/src/Core/NumTraits.h:
+
+/usr/include/c++/9/bits/shared_ptr_atomic.h:
+
+/usr/local/include/boost/mpl/aux_/static_cast.hpp:
+
+/usr/local/include/boost/mpl/long.hpp:
+
+/usr/local/include/boost/type_traits/copy_cv_ref.hpp:
+
+/usr/local/include/boost/preprocessor/cat.hpp:
+
+/usr/local/include/boost/preprocessor/config/config.hpp:
+
+/usr/local/include/boost/preprocessor/inc.hpp:
+
+/usr/local/include/boost/mpl/aux_/config/preprocessor.hpp:
+
+/usr/local/include/boost/mpl/aux_/is_msvc_eti_arg.hpp:
+
+/usr/local/include/boost/mpl/aux_/has_apply.hpp:
+
+/usr/local/include/boost/fusion/algorithm/query/any.hpp:
+
+/usr/local/include/boost/variant/visitor_ptr.hpp:
+
+/usr/include/c++/9/ext/concurrence.h:
+
+/usr/local/include/boost/mpl/aux_/config/msvc.hpp:
+
+/usr/local/include/boost/preprocessor/slot/detail/shared.hpp:
+
+/usr/local/include/boost/mpl/aux_/config/adl.hpp:
+
+/usr/local/include/boost/mpl/aux_/adl_barrier.hpp:
+
+/usr/local/include/boost/mpl/bool_fwd.hpp:
+
+/usr/local/include/boost/preprocessor/repetition/enum_params.hpp:
+
+/usr/local/include/boost/mpl/limits/list.hpp:
+
+/usr/local/include/boost/preprocessor/iteration/iterate.hpp:
+
+/usr/include/c++/9/cfloat:
+
+../third-party/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h:
+
+/usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h:
+
+/usr/local/include/boost/preprocessor/punctuation/comma_if.hpp:
+
+/usr/local/include/boost/type_traits/is_integral.hpp:
+
+/usr/local/include/boost/detail/workaround.hpp:
+
+/usr/local/include/boost/predef/detail/test.h:
+
+/usr/local/include/boost/predef/architecture/x86.h:
+
+/usr/local/include/boost/config/helper_macros.hpp:
+
+../third-party/pinocchio/pinocchio/multibody/constraint.hpp:
+
+/usr/local/include/boost/config/detail/posix_features.hpp:
+
+/usr/local/include/boost/mpl/vector/aux_/empty.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+/usr/local/include/boost/mpl/inserter.hpp:
+
+/usr/include/unistd.h:
+
+/usr/local/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:
+
+/usr/local/include/boost/config/stdlib/libstdcpp3.hpp:
+
+/usr/local/include/boost/fusion/algorithm/query/detail/any.hpp:
+
+/usr/include/c++/9/tr1/poly_laguerre.tcc:
+
+/usr/local/include/boost/config/detail/select_stdlib_config.hpp:
+
+/usr/local/include/boost/config/detail/select_compiler_config.hpp:
+
+/usr/local/include/boost/config/user.hpp:
 
 ../third-party/pinocchio/pinocchio/spatial/se3.hpp:
 
-/usr/include/boost/type.hpp:
+../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorMap.h:
 
-/usr/include/boost/smart_ptr/detail/spinlock.hpp:
+/usr/local/include/boost/type_traits/alignment_of.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorFixedSize.h:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/Tensor.h:
 
-/usr/include/boost/math/tools/convert_from_string.hpp:
-
-/usr/include/boost/fusion/view/single_view/detail/advance_impl.hpp:
-
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorStorage.h:
 
-/usr/include/boost/mpl/reverse_fold.hpp:
+../third-party/eigen3/Eigen/src/Core/Transpose.h:
 
-/usr/include/boost/mpl/list/list0.hpp:
+/usr/local/include/boost/range/detail/sfinae.hpp:
+
+/usr/local/include/boost/mpl/aux_/lambda_arity_param.hpp:
+
+/usr/local/include/boost/mpl/lambda_fwd.hpp:
+
+/usr/local/include/boost/math/special_functions/detail/fp_traits.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorEvalTo.h:
 
-../third-party/pinocchio/pinocchio/spatial/motion-ref.hpp:
+/usr/local/include/boost/predef/os/bsd/bsdi.h:
 
-/usr/include/boost/smart_ptr/detail/sp_counted_impl.hpp:
+../third-party/pinocchio/pinocchio/spatial/motion-ref.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorStriding.h:
 
@@ -3356,159 +3374,109 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 ../third-party/pinocchio/pinocchio/multibody/joint/fwd.hpp:
 
-/usr/include/boost/fusion/algorithm/iteration/detail/segmented_fold.hpp:
-
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorShuffling.h:
+
+/usr/local/include/boost/mpl/aux_/template_arity.hpp:
+
+/usr/local/include/boost/mpl/distance_fwd.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorMorphing.h:
 
-/usr/include/boost/mpl/aux_/msvc_never_true.hpp:
-
-/usr/include/boost/mpl/vector/aux_/item.hpp:
-
-../third-party/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsFunctors.h:
-
-/usr/include/boost/config/no_tr1/utility.hpp:
-
-/usr/include/boost/fusion/container/list/cons_fwd.hpp:
-
-../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorVolumePatch.h:
-
-/usr/include/boost/mpl/push_back_fwd.hpp:
+/usr/local/include/boost/function_types/detail/pp_arity_loop.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorIO.h:
 
-/usr/include/boost/detail/basic_pointerbuf.hpp:
+../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorFFT.h:
 
-/usr/include/boost/mpl/aux_/config/typeof.hpp:
+../third-party/eigen3/Eigen/src/Geometry/Rotation2D.h:
 
-/usr/include/boost/predef/make.h:
+../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorConversion.h:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorContractionGpu.h:
 
-/usr/include/boost/move/detail/meta_utils_core.hpp:
+../third-party/eigen3/Eigen/src/plugins/IndexedViewMethods.h:
 
-../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorContraction.h:
-
-../third-party/pinocchio/pinocchio/core/unary-op.hpp:
+/usr/local/include/boost/mpl/aux_/preprocessor/add.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorContractionMapper.h:
 
-/usr/include/boost/predef/os/windows.h:
-
-/usr/include/boost/config/detail/suffix.hpp:
+/usr/local/include/boost/archive/detail/archive_serializer_map.hpp:
 
 ../third-party/pinocchio/pinocchio/math/tensor.hpp:
 
+/usr/local/include/boost/fusion/algorithm/iteration/detail/preprocessed/iter_fold.hpp:
+
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorExpr.h:
 
-../third-party/pinocchio/pinocchio/math/matrix.hpp:
+/usr/local/include/boost/function_types/detail/pp_cc_loop/preprocessed.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorBlock.h:
 
-../third-party/eigen3/Eigen/LU:
+/usr/local/include/boost/preprocessor/enum.hpp:
 
-/usr/include/boost/mpl/vector/aux_/iterator.hpp:
-
-/usr/include/boost/numeric/conversion/detail/meta.hpp:
+/usr/local/include/boost/type_traits/has_bit_and.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorBase.h:
-
-/usr/include/boost/fusion/algorithm/iteration.hpp:
-
-/usr/include/boost/fusion/view/single_view/detail/begin_impl.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorGlobalFunctions.h:
 
 ../third-party/eigen3/Eigen/SVD:
 
-/usr/include/boost/bind/bind_cc.hpp:
-
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorIntDiv.h:
 
-../third-party/eigen3/Eigen/src/Geometry/Rotation2D.h:
+/usr/local/include/boost/type_traits/has_bit_xor.hpp:
 
-/usr/include/boost/type_index.hpp:
+../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorInitializer.h:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorIndexList.h:
 
-/usr/include/boost/iostreams/detail/bool_trait_def.hpp:
-
 /usr/local/include/eigen3/Eigen/Geometry:
 
-/usr/include/boost/mpl/always.hpp:
+/usr/local/include/boost/move/adl_move_swap.hpp:
 
-/usr/include/boost/mpl/contains_fwd.hpp:
+/usr/local/include/boost/mpl/aux_/config/use_preprocessed.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorDeviceSycl.h:
-
-/usr/include/boost/archive/detail/iserializer.hpp:
 
 ../third-party/pinocchio/pinocchio/multibody/joint/joint-basic-visitors.hxx:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorDeviceThreadPool.h:
 
-/usr/include/boost/iostreams/detail/template_params.hpp:
+/usr/local/include/boost/mpl/push_back_fwd.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorForwardDeclarations.h:
 
-/usr/include/boost/variant/detail/enable_recursive_fwd.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/9/include/mm_malloc.h:
-
-../third-party/eigen3/Eigen/src/plugins/IndexedViewMethods.h:
-
-/usr/include/boost/config/abi_suffix.hpp:
+../third-party/pinocchio/pinocchio/container/aligned-vector.hpp:
 
 /usr/include/c++/9/pstl/glue_memory_defs.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/c++/9/bits/shared_ptr.h:
+
+/usr/local/include/boost/mpl/is_sequence.hpp:
+
 /usr/include/c++/9/thread:
 
-/usr/include/boost/range/begin.hpp:
+/usr/local/include/boost/function_types/detail/pp_retag_default_cc/preprocessed.hpp:
+
+../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorAssign.h:
 
 /usr/include/c++/9/pstl/glue_numeric_defs.h:
 
-/usr/include/boost/preprocessor/punctuation/comma_if.hpp:
+../third-party/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsHalf.h:
 
-../third-party/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h:
-
-/usr/include/boost/preprocessor/repetition/repeat_from_to.hpp:
-
-/usr/include/boost/type_traits/has_bit_and_assign.hpp:
-
-/usr/include/boost/bind/placeholders.hpp:
-
-/usr/include/boost/function_types/detail/components_impl/arity20_1.hpp:
+/usr/local/include/boost/fusion/algorithm/query/detail/find_if.hpp:
 
 /usr/include/c++/9/bits/random.tcc:
-
-/usr/include/boost/math/special_functions/nonfinite_num_facets.hpp:
-
-/usr/include/boost/detail/iterator.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/9/bits/opt_random.h:
-
-/usr/include/boost/preprocessor/variadic/size.hpp:
-
-/usr/include/c++/9/bits/random.h:
-
-/usr/include/boost/mpl/aux_/config/lambda.hpp:
-
-/usr/include/boost/math/policies/policy.hpp:
-
-../third-party/mujoco/mujoco/mujoco.h:
-
-/usr/include/boost/move/detail/to_raw_pointer.hpp:
 
 /usr/include/c++/9/random:
 
 /usr/include/c++/9/bits/parse_numbers.h:
 
-/usr/include/c++/9/chrono:
-
-/usr/include/boost/type_traits/is_scalar.hpp:
-
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/util/MaxSizeVector.h:
+
+/usr/local/include/boost/core/noncopyable.hpp:
 
 ../third-party/eigen3/Eigen/QR:
 
@@ -3516,243 +3484,193 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/util/CXX11Workarounds.h:
 
-/usr/include/boost/mpl/greater_equal.hpp:
+../third-party/eigen3/unsupported/Eigen/CXX11/src/util/EmulateArray.h:
 
-/usr/include/boost/move/core.hpp:
-
-/usr/include/boost/fusion/algorithm/query/detail/find_if.hpp:
+/usr/local/include/boost/fusion/container/list/detail/value_of_impl.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/util/CXX11Meta.h:
 
-/usr/include/boost/archive/detail/common_iarchive.hpp:
+/usr/local/include/boost/preprocessor/logical/compl.hpp:
 
-../third-party/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsPacketMath.h:
+../third-party/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsArrayAPI.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+/usr/local/include/boost/preprocessor/control/expr_iif.hpp:
 
-/usr/include/boost/fusion/view/zip_view/detail/next_impl.hpp:
+/usr/local/include/boost/mpl/aux_/integral_wrapper.hpp:
 
-/usr/include/boost/mpl/iter_fold.hpp:
+/usr/include/c++/9/utility:
 
-/usr/include/boost/fusion/algorithm/iteration/for_each_fwd.hpp:
+../third-party/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsHalf.h:
 
-/usr/include/boost/mpl/integral_c_tag.hpp:
-
-/usr/include/boost/fusion/iterator/mpl.hpp:
-
-/usr/include/boost/mpl/aux_/config/ctps.hpp:
-
-../third-party/pinocchio/pinocchio/algorithm/centroidal.hpp:
-
-../third-party/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsArrayAPI.h:
+/usr/local/include/boost/mpl/times.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/TriangularMatrix.h:
 
-/usr/include/boost/archive/binary_iarchive.hpp:
-
 /usr/include/wctype.h:
 
-/usr/include/boost/preprocessor/arithmetic/inc.hpp:
+../third-party/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsPacketMath.h:
 
-/usr/include/boost/fusion/sequence/intrinsic/value_at.hpp:
-
-/usr/include/boost/config/workaround.hpp:
+/usr/local/include/boost/preprocessor/tuple/elem.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsBFloat16.h:
 
-/usr/include/boost/preprocessor/seq/transform.hpp:
-
-/usr/include/boost/preprocessor/facilities/intercept.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessor/add.hpp:
-
-../third-party/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsImpl.h:
-
-/usr/include/boost/serialization/extended_type_info.hpp:
+/usr/local/include/boost/mpl/negate.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/SpecialFunctions:
 
-../third-party/pinocchio/pinocchio/utils/eigen-fix.hpp:
+/usr/local/include/boost/fusion/algorithm/transformation/detail/replace_if.hpp:
 
-/usr/include/boost/mpl/push_front.hpp:
+/usr/local/include/boost/mpl/aux_/config/has_apply.hpp:
+
+/usr/local/include/boost/fusion/support/as_const.hpp:
 
 ../third-party/pinocchio/pinocchio/container/boost-container-limits.hpp:
 
-/usr/include/boost/type_traits/is_base_and_derived.hpp:
-
-/usr/include/boost/variant/detail/move.hpp:
-
 ../third-party/pinocchio/pinocchio/deprecated-namespaces.hpp:
-
-/usr/include/boost/mpl/aux_/config/preprocessor.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/ArithmeticSequence.h:
 
+/usr/local/include/boost/fusion/container/vector/detail/config.hpp:
+
 ../third-party/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsImpl.h:
-
-../third-party/eigen3/Eigen/src/misc/Image.h:
-
-/usr/include/boost/mpl/integral_c.hpp:
-
-/usr/include/boost/fusion/algorithm/query/any.hpp:
 
 ../third-party/pinocchio/pinocchio/deprecation.hpp:
 
-/usr/include/boost/preprocessor/iteration/detail/iter/forward1.hpp:
-
 /usr/include/limits.h:
-
-/usr/include/boost/preprocessor/repetition/enum_shifted_params.hpp:
 
 ../third-party/pinocchio/pinocchio/spatial/fwd.hpp:
 
 ../third-party/qpOASES/qpOASES/QProblem.ipp:
 
-/usr/include/boost/fusion/view/reverse_view/reverse_view.hpp:
+/usr/local/include/boost/mpl/aux_/O1_size_impl.hpp:
 
-/usr/include/boost/type_traits/common_type.hpp:
+../third-party/qpOASES/qpOASES/MessageHandling.ipp:
 
-/usr/include/c++/9/bits/cpp_type_traits.h:
-
-/usr/include/c++/9/bits/locale_facets.tcc:
-
-/usr/include/boost/variant/detail/initializer.hpp:
-
-/usr/include/boost/mpl/at.hpp:
-
-/usr/include/boost/preprocessor/inc.hpp:
-
-/usr/include/boost/serialization/force_include.hpp:
+/usr/local/include/boost/preprocessor/arithmetic/inc.hpp:
 
 ../third-party/mujoco/mujoco/mjplugin.h:
 
+../third-party/pinocchio/pinocchio/multibody/joint/joint-composite.hpp:
+
 ../third-party/mujoco/mujoco/mjthread.h:
 
-../third-party/mujoco/mujoco/mjmodel.h:
+../third-party/eigen3/Eigen/src/Core/CwiseTernaryOp.h:
 
-../third-party/pinocchio/pinocchio/multibody/liegroup/liegroup-algo.hxx:
+/usr/local/include/boost/smart_ptr/detail/spinlock.hpp:
 
-/usr/include/boost/fusion/container/vector/detail/deref_impl.hpp:
+/usr/local/include/boost/preprocessor/repetition/enum_binary_params.hpp:
 
-../third-party/mujoco/mujoco/mjdata.h:
+../third-party/mujoco/mujoco/mjtnum.h:
+
+/usr/local/include/boost/limits.hpp:
+
+/usr/local/include/boost/io_fwd.hpp:
+
+/usr/local/include/boost/mpl/vector/aux_/at.hpp:
 
 ../third-party/mujoco/mujoco/mjexport.h:
 
 /usr/include/c++/9/bits/allocator.h:
 
-/usr/include/boost/fusion/support/detail/mpl_iterator_category.hpp:
+/usr/local/include/boost/fusion/container/vector/convert.hpp:
 
-../third-party/eigen3/unsupported/Eigen/CXX11/src/util/EmulateArray.h:
+/usr/local/include/boost/mpl/size_fwd.hpp:
 
-/usr/include/boost/fusion/view/single_view/single_view.hpp:
+../third-party/eigen3/Eigen/Jacobi:
 
-../third-party/qpOASES/qpOASES/QProblemB.ipp:
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
-/usr/include/boost/mpl/aux_/static_cast.hpp:
+/usr/local/include/boost/preprocessor/slot/detail/def.hpp:
 
-/usr/include/boost/preprocessor/detail/check.hpp:
+/usr/local/include/boost/type_traits/has_minus_assign.hpp:
 
-../third-party/eigen3/Eigen/src/Core/IndexedView.h:
+/usr/local/include/boost/preprocessor/detail/is_binary.hpp:
+
+/usr/local/include/boost/predef/architecture/x86/64.h:
+
+/usr/local/include/boost/iterator/advance.hpp:
 
 ../third-party/qpOASES/qpOASES/Options.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/ReturnByValue.h:
 
-/usr/include/boost/mpl/aux_/config/arrays.hpp:
+../third-party/qpOASES/qpOASES/SubjectTo.ipp:
 
-/usr/include/boost/type_traits/is_complete.hpp:
+../third-party/qpOASES/qpOASES/Indexlist.ipp:
 
-/usr/include/boost/preprocessor/seq/detail/split.hpp:
+/usr/local/include/boost/mpl/aux_/logical_op.hpp:
 
-../third-party/eigen3/Eigen/src/Core/util/StaticAssert.h:
+/usr/local/include/boost/preprocessor/facilities/overload.hpp:
 
-/usr/include/boost/type_traits/promote.hpp:
+/usr/include/c++/9/bits/range_access.h:
 
-/usr/include/boost/preprocessor/iterate.hpp:
+/usr/local/include/boost/range/has_range_iterator.hpp:
 
-/usr/include/boost/fusion/iterator/value_of.hpp:
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
-/usr/include/c++/9/math.h:
-
-/usr/include/boost/smart_ptr/detail/sp_counted_base_std_atomic.hpp:
+/usr/local/include/boost/checked_delete.hpp:
 
 ../third-party/qpOASES/qpOASES/Types.hpp:
 
-/usr/include/c++/9/bits/stl_construct.h:
+/usr/local/include/boost/function_types/detail/components_impl/arity10_1.hpp:
 
-/usr/include/boost/core/typeinfo.hpp:
+/usr/local/include/boost/mpl/long_fwd.hpp:
 
-/usr/include/boost/fusion/container/list/detail/reverse_cons.hpp:
-
-/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:
-
-/usr/include/boost/mpl/contains.hpp:
-
-/usr/include/c++/9/tr1/beta_function.tcc:
-
-../third-party/qpOASES/qpOASES/Constants.hpp:
-
-/usr/include/boost/mpl/aux_/type_wrapper.hpp:
-
-/usr/include/boost/fusion/adapted/mpl/detail/begin_impl.hpp:
+/usr/local/include/boost/serialization/collections_load_imp.hpp:
 
 ../third-party/qpOASES/qpOASES/Bounds.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/util/ReshapedHelper.h:
 
+/usr/local/include/boost/move/detail/iterator_traits.hpp:
+
 ../third-party/qpOASES/qpOASES/Flipper.hpp:
 
-/usr/include/boost/serialization/config.hpp:
+../third-party/qpOASES/qpOASES/QProblemB.hpp:
 
-/usr/include/boost/mpl/aux_/config/msvc_typename.hpp:
+/usr/local/include/boost/mpl/aux_/msvc_never_true.hpp:
 
-../third-party/eigen3/Eigen/src/Core/Redux.h:
+/usr/local/include/boost/mpl/list/aux_/iterator.hpp:
 
-/usr/local/include/eigen3/Eigen/SVD:
-
-/usr/include/boost/preprocessor/repetition/enum_trailing_params.hpp:
-
-/usr/include/boost/serialization/level_enum.hpp:
-
-/usr/include/c++/9/iostream:
-
-/usr/include/c++/9/bits/algorithmfwd.h:
-
-/usr/include/boost/serialization/array.hpp:
+/usr/local/include/boost/archive/detail/helper_collection.hpp:
 
 ../third-party/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h:
 
-/usr/include/boost/range/reverse_iterator.hpp:
+/usr/local/include/boost/mpl/list/aux_/size.hpp:
 
-/usr/include/boost/mpl/aux_/joint_iter.hpp:
+/usr/local/include/boost/mpl/next_prior.hpp:
 
-/usr/include/boost/mpl/push_front_fwd.hpp:
+/usr/local/include/boost/mpl/size_t_fwd.hpp:
+
+/usr/local/include/boost/type_traits/is_member_function_pointer.hpp:
 
 ../third-party/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h:
 
 ../third-party/pinocchio/pinocchio/eigen-macros.hpp:
 
-/usr/include/boost/type_traits/is_const.hpp:
+/usr/local/include/boost/preprocessor/list/reverse.hpp:
+
+../third-party/pinocchio/pinocchio/utils/eigen-fix.hpp:
+
+/usr/local/include/boost/mpl/or.hpp:
+
+/usr/local/include/boost/serialization/force_include.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorReduction.h:
 
-/usr/include/boost/variant/detail/std_hash.hpp:
-
-/usr/include/boost/mpl/aux_/single_element_iter.hpp:
-
 ../third-party/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h:
 
-/usr/include/boost/fusion/iterator/deref.hpp:
+../third-party/pinocchio/pinocchio/spatial/se3-base.hpp:
 
 ../third-party/pinocchio/pinocchio/spatial/inertia.hpp:
 
 ../third-party/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h:
 
-/usr/include/boost/fusion/algorithm/iteration/reverse_iter_fold.hpp:
-
 ../third-party/qpOASES/qpOASES/MessageHandling.hpp:
 
 ../third-party/eigen3/Eigen/src/Geometry/Umeyama.h:
+
+/usr/local/include/boost/mpl/aux_/na.hpp:
 
 ../third-party/pinocchio/pinocchio/config.hpp:
 
@@ -3760,61 +3678,65 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 ../third-party/eigen3/Eigen/src/Geometry/AlignedBox.h:
 
-../third-party/pinocchio/pinocchio/multibody/joint/joint-translation.hpp:
+../third-party/eigen3/Eigen/src/Geometry/Scaling.h:
 
 ../third-party/eigen3/Eigen/src/Geometry/Transform.h:
 
 ../third-party/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:
 
+/usr/local/include/boost/mpl/insert_range_fwd.hpp:
+
 ../third-party/eigen3/Eigen/src/Geometry/RotationBase.h:
+
+/usr/local/include/boost/predef/os/bsd.h:
 
 ../sim_interface/include/MJ_interface.h:
 
-/usr/include/boost/fusion/support/unused.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/usr/include/boost/mpl/or.hpp:
-
 ../third-party/pinocchio/pinocchio/multibody/joint/joint-revolute.hpp:
+
+../third-party/eigen3/Eigen/src/SVD/JacobiSVD.h:
 
 ../third-party/eigen3/Eigen/src/Core/Inverse.h:
 
-/usr/include/c++/9/stdexcept:
+/usr/local/include/boost/type_traits/is_float.hpp:
+
+/usr/local/include/boost/version.hpp:
 
 ../third-party/qpOASES/qpOASES/ConstraintProduct.hpp:
 
-/usr/include/boost/fusion/view/reverse_view/detail/at_impl.hpp:
-
-/usr/include/boost/mpl/eval_if.hpp:
-
-/usr/include/boost/type_traits/is_constructible.hpp:
-
-/usr/include/boost/fusion/view/detail/strictest_traversal.hpp:
+/usr/local/include/boost/mpl/vector/aux_/item.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
-/usr/include/boost/math/tools/real_cast.hpp:
-
-/usr/include/boost/fusion/support/detail/is_native_fusion_sequence.hpp:
-
-/usr/include/boost/iostreams/detail/is_iterator_range.hpp:
-
-/usr/include/boost/mpl/aux_/template_arity_fwd.hpp:
-
-../third-party/eigen3/Eigen/src/Core/functors/StlFunctors.h:
+/usr/local/include/boost/mpl/list/aux_/front.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h:
 
+/usr/local/include/boost/type_traits/is_copy_constructible.hpp:
+
 ../third-party/eigen3/Eigen/src/Core/arch/SSE/Complex.h:
+
+/usr/local/include/boost/detail/no_exceptions_support.hpp:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
-../third-party/eigen3/Eigen/src/Core/MatrixBase.h:
+/usr/local/include/boost/iostreams/detail/config/limits.hpp:
 
-/usr/include/c++/9/cerrno:
+/usr/include/x86_64-linux-gnu/c++/9/bits/opt_random.h:
+
+/usr/local/include/boost/mpl/aux_/begin_end_impl.hpp:
+
+/usr/local/include/boost/mpl/list/list30.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/local/include/boost/mpl/aux_/config/ctps.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h:
+
+../third-party/pinocchio/pinocchio/core/binary-op.hpp:
+
+/usr/local/include/boost/fusion/algorithm/query/find.hpp:
 
 ../third-party/qpOASES/qpOASES/Utils.ipp:
 
@@ -3822,165 +3744,91 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
-/usr/include/boost/preprocessor/logical/bool.hpp:
-
 ../third-party/eigen3/Eigen/src/Core/Ref.h:
-
-/usr/include/boost/mpl/transform.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
-../third-party/eigen3/Eigen/src/Core/functors/NullaryFunctors.h:
+/usr/local/include/boost/mpl/aux_/sequence_wrapper.hpp:
 
-/usr/include/boost/preprocessor/iteration/detail/bounds/lower1.hpp:
-
-/usr/include/boost/preprocessor/control/iif.hpp:
-
-/usr/include/boost/type_traits/is_signed.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h:
-
-../third-party/pinocchio/pinocchio/core/binary-op.hpp:
+/usr/local/include/boost/fusion/mpl/has_key.hpp:
 
 ../third-party/qpOASES/qpOASES/LapackBlasReplacement.hpp:
-
-/usr/include/boost/detail/indirect_traits.hpp:
 
 /usr/include/linux/version.h:
 
 /usr/local/include/eigen3/Eigen/Eigenvalues:
 
-/usr/include/boost/mpl/distance_fwd.hpp:
+/usr/local/include/boost/mpl/vector/aux_/push_back.hpp:
 
-/usr/include/boost/preprocessor/enum_shifted_params.hpp:
-
-/usr/include/boost/preprocessor/iteration/iterate.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
-/usr/include/boost/fusion/algorithm/iteration/accumulate.hpp:
-
-/usr/include/boost/type_traits/has_pre_decrement.hpp:
-
-/usr/include/boost/fusion/container/generation/make_vector.hpp:
-
-/usr/include/boost/mpl/pop_front_fwd.hpp:
-
-/usr/include/boost/preprocessor/list/reverse.hpp:
-
-/usr/include/boost/mpl/aux_/yes_no.hpp:
-
-../third-party/pinocchio/pinocchio/multibody/liegroup/vector-space.hpp:
-
-/usr/include/c++/9/system_error:
+/usr/include/c++/9/tr1/gamma.tcc:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/include/boost/mpl/aux_/sequence_wrapper.hpp:
+/usr/local/include/boost/type_traits/detail/bool_trait_undef.hpp:
 
-/usr/include/c++/9/bits/range_access.h:
+/usr/local/include/eigen3/Eigen/Cholesky:
 
-/usr/include/boost/core/swap.hpp:
-
-/usr/include/boost/archive/detail/helper_collection.hpp:
-
-/usr/include/boost/variant/detail/over_sequence.hpp:
-
-/usr/include/boost/mpl/aux_/config/overload_resolution.hpp:
-
-../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorMacros.h:
-
-/usr/include/boost/range/difference_type.hpp:
-
-/usr/include/c++/9/bits/unique_ptr.h:
-
-/usr/include/boost/iterator/iterator_categories.hpp:
-
-/usr/include/boost/mpl/aux_/config/gcc.hpp:
+/usr/local/include/boost/asio/detail/array_fwd.hpp:
 
 /usr/include/c++/9/bits/stl_function.h:
 
+../third-party/qpOASES/qpOASES/Utils.hpp:
+
+/usr/local/include/boost/fusion/algorithm/iteration/detail/segmented_fold.hpp:
+
+/usr/local/include/boost/preprocessor/seq/seq.hpp:
+
 /usr/include/c++/9/ext/new_allocator.h:
-
-/usr/include/boost/mpl/limits/list.hpp:
-
-/usr/include/boost/visit_each.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h:
 
-/usr/include/boost/function_types/config/config.hpp:
+/usr/local/include/boost/mpl/aux_/lambda_spec.hpp:
 
-/usr/include/boost/type_traits/has_less_equal.hpp:
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
-/usr/include/boost/fusion/algorithm/transformation/erase.hpp:
+/usr/local/include/boost/type_traits/floating_point_promotion.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:
 
-/usr/include/boost/mpl/aux_/config/dtp.hpp:
-
-/usr/include/boost/mpl/list/aux_/size.hpp:
-
-/usr/include/boost/predef/architecture/x86/64.h:
-
 ../third-party/eigen3/Eigen/src/Geometry/Homogeneous.h:
-
-../third-party/eigen3/Eigen/src/LU/Determinant.h:
-
-/usr/include/boost/preprocessor/list/adt.hpp:
 
 /usr/include/asm-generic/errno-base.h:
 
-/usr/include/c++/9/stdlib.h:
+/usr/local/include/boost/preprocessor/comma_if.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+/usr/local/include/boost/function_types/detail/pp_tags/cc_tag.hpp:
 
-/usr/include/boost/mpl/find_if.hpp:
+/usr/local/include/boost/type_traits/integral_constant.hpp:
 
-/usr/include/time.h:
+/usr/local/include/boost/mpl/push_front_fwd.hpp:
 
 /usr/include/c++/9/bits/uses_allocator.h:
 
 ../third-party/eigen3/Eigen/src/Core/util/Meta.h:
 
-/usr/include/boost/preprocessor/slot/slot.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessor/params.hpp:
-
-/usr/include/boost/range/size_type.hpp:
-
-/usr/include/c++/9/cwctype:
-
 ../third-party/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h:
-
-/usr/include/boost/bind/arg.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorUInt128.h:
 
-/usr/include/boost/fusion/algorithm/iteration/detail/segmented_for_each.hpp:
-
 ../third-party/eigen3/Eigen/src/Core/StableNorm.h:
+
+/usr/local/include/boost/fusion/adapted/mpl.hpp:
 
 /usr/include/ctype.h:
 
 /usr/include/c++/9/bits/stringfwd.h:
 
-/usr/include/boost/fusion/container/list/detail/equal_to_impl.hpp:
-
-/usr/include/boost/config/user.hpp:
-
 ../third-party/qpOASES/qpOASES/Constraints.ipp:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
-/usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h:
+/usr/local/include/boost/preprocessor/control/if.hpp:
+
+/usr/local/include/boost/type_traits/copy_reference.hpp:
 
 /usr/include/locale.h:
 
-/usr/include/boost/type_traits/is_convertible.hpp:
-
-/usr/include/boost/mpl/aux_/nttp_decl.hpp:
-
-/usr/include/c++/9/atomic:
+../my_wbc/src/wbc_priority.cpp:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorConvolution.h:
 
@@ -3988,11 +3836,11 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 /usr/include/stdlib.h:
 
-/usr/include/boost/config.hpp:
-
 /usr/include/c++/9/bits/hash_bytes.h:
 
-/usr/include/boost/mpl/aux_/lambda_spec.hpp:
+/usr/local/include/boost/math/special_functions/detail/round_fwd.hpp:
+
+/usr/local/include/boost/cstdint.hpp:
 
 /usr/include/c++/9/cstddef:
 
@@ -4000,257 +3848,259 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/include/boost/mpl/list/aux_/push_front.hpp:
-
-/usr/include/boost/preprocessor/list/fold_right.hpp:
-
-/usr/include/c++/9/typeinfo:
-
-/usr/include/boost/type_traits/has_not_equal_to.hpp:
-
-/usr/include/boost/fusion/container/vector/detail/at_impl.hpp:
-
-/usr/include/boost/mpl/list/aux_/item.hpp:
+/usr/include/c++/9/cwchar:
 
 /usr/include/c++/9/bits/stl_bvector.h:
 
-/usr/include/c++/9/bits/postypes.h:
+/usr/local/include/boost/mem_fn.hpp:
+
+/usr/include/c++/9/bits/cpp_type_traits.h:
+
+/usr/local/include/boost/fusion/iterator/segmented_iterator.hpp:
+
+/usr/include/c++/9/bits/locale_classes.tcc:
+
+/usr/local/include/boost/preprocessor/dec.hpp:
 
 ../third-party/eigen3/Eigen/src/Geometry/Quaternion.h:
 
 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
 
-/usr/include/boost/fusion/support/segmented_fold_until.hpp:
-
 ../third-party/pinocchio/pinocchio/spatial/log.hxx:
-
-/usr/include/boost/mpl/aux_/nested_type_wknd.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/include/c++/9/bits/memoryfwd.h:
 
+/usr/local/include/boost/iostreams/flush.hpp:
+
+/usr/local/include/boost/preprocessor/repetition/enum_trailing_params.hpp:
+
 /usr/include/wchar.h:
 
-/usr/include/boost/mpl/vector/aux_/front.hpp:
+/usr/local/include/boost/mpl/vector/aux_/iterator.hpp:
 
-/usr/include/boost/fusion/adapted/mpl/detail/value_at_impl.hpp:
+/usr/local/include/boost/integer/common_factor_ct.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h:
 
 /usr/include/c++/9/sstream:
 
-/usr/include/boost/lexical_cast/detail/converter_numeric.hpp:
+/usr/local/include/boost/asio/detail/noncopyable.hpp:
 
-/usr/include/boost/get_pointer.hpp:
+/usr/include/c++/9/bits/postypes.h:
 
-/usr/include/boost/preprocessor/logical/bitand.hpp:
-
-../third-party/eigen3/Eigen/src/Core/MathFunctionsImpl.h:
+/usr/local/include/boost/fusion/container/generation/make_vector.hpp:
 
 ../third-party/pinocchio/pinocchio/math/fwd.hpp:
 
 /usr/include/c++/9/complex:
 
-/usr/include/boost/type_traits/decay.hpp:
+/usr/local/include/boost/mpl/aux_/iter_fold_impl.hpp:
 
-/usr/include/boost/preprocessor/logical/and.hpp:
-
-/usr/include/boost/numeric/conversion/detail/bounds.hpp:
+/usr/local/include/boost/config/detail/suffix.hpp:
 
 /usr/include/c++/9/bits/ios_base.h:
 
-../third-party/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h:
+/usr/local/include/boost/mpl/aux_/template_arity_fwd.hpp:
 
-/usr/include/boost/mpl/lambda_fwd.hpp:
+/usr/include/c++/9/bits/locale_facets.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+/usr/local/include/boost/mpl/pair_view.hpp:
 
-/usr/include/boost/iostreams/detail/config/enable_warnings.hpp:
+/usr/local/include/boost/serialization/throw_exception.hpp:
 
-/usr/include/boost/serialization/static_warning.hpp:
+/usr/include/c++/9/typeinfo:
+
+/usr/local/include/boost/mpl/aux_/config/has_xxx.hpp:
 
 /usr/include/c++/9/bits/basic_string.tcc:
 
-/usr/include/boost/type_traits/has_bit_or.hpp:
-
 /usr/include/c++/9/bits/exception_ptr.h:
-
-/usr/include/boost/preprocessor/debug/error.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorGenerator.h:
 
-/usr/include/boost/mpl/int_fwd.hpp:
-
 ../third-party/eigen3/Eigen/src/Core/util/Constants.h:
-
-/usr/include/boost/function_types/detail/components_impl/arity20_0.hpp:
 
 ../third-party/eigen3/Eigen/src/Geometry/EulerAngles.h:
 
-/usr/include/boost/fusion/algorithm/query/find_if.hpp:
+/usr/local/include/boost/fusion/container/list/cons_iterator.hpp:
+
+/usr/include/c++/9/bits/exception.h:
+
+/usr/local/include/boost/config/no_tr1/cmath.hpp:
+
+/usr/local/include/boost/type_traits/is_base_of.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorLayoutSwap.h:
 
+/usr/local/include/boost/numeric/conversion/detail/bounds.hpp:
+
 ../third-party/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h:
+
+/usr/local/include/boost/fusion/algorithm/iteration/fold_fwd.hpp:
 
 ../third-party/eigen3/Eigen/src/StlSupport/StdVector.h:
 
-/usr/include/boost/preprocessor/logical/compl.hpp:
+/usr/local/include/boost/fusion/view/single_view/detail/end_impl.hpp:
+
+/usr/local/include/boost/function_types/config/config.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorTrace.h:
 
-/usr/include/c++/9/exception:
-
-../third-party/qpOASES/qpOASES/Matrices.hpp:
-
-../third-party/eigen3/Eigen/src/LU/arch/InverseSize4.h:
+/usr/local/include/boost/mpl/placeholders.hpp:
 
 /usr/include/c++/9/debug/assertions.h:
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
-/usr/include/boost/preprocessor/repetition/enum_params_with_a_default.hpp:
-
-/usr/include/boost/fusion/adapted/mpl/detail/end_impl.hpp:
-
 /usr/include/c++/9/cstring:
 
+/usr/local/include/boost/iostreams/operations_fwd.hpp:
+
 /usr/include/c++/9/bits/node_handle.h:
+
+/usr/local/include/boost/preprocessor/tuple/rem.hpp:
+
+/usr/local/include/boost/mpl/aux_/config/gpu.hpp:
+
+/usr/local/include/boost/mpl/aux_/arity.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/DenseBase.h:
 
 /usr/include/errno.h:
 
-/usr/include/boost/fusion/sequence/intrinsic/detail/segmented_size.hpp:
+/usr/local/include/boost/archive/basic_archive.hpp:
 
-/usr/include/boost/mpl/aux_/iter_push_front.hpp:
+/usr/local/include/boost/iostreams/optimal_buffer_size.hpp:
+
+../third-party/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h:
+
+/usr/local/include/boost/mpl/aux_/na_fwd.hpp:
+
+/usr/local/include/boost/preprocessor/repetition/detail/for.hpp:
+
+../third-party/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h:
 
 /usr/include/c++/9/cstdlib:
 
-/usr/include/boost/fusion/iterator/detail/segmented_iterator.hpp:
+/usr/local/include/boost/io/ios_state.hpp:
+
+/usr/local/include/boost/math/constants/calculate_constants.hpp:
+
+/usr/include/c++/9/tr1/bessel_function.tcc:
+
+/usr/local/include/boost/function_types/components.hpp:
+
+/usr/local/include/boost/mpl/empty_base.hpp:
+
+/usr/local/include/boost/mpl/bool.hpp:
 
 /usr/include/c++/9/bits/char_traits.h:
 
+/usr/local/include/boost/predef/os/ios.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/9/include/xmmintrin.h:
-
-../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorDimensions.h:
-
-../third-party/pinocchio/pinocchio/multibody/joint/joint-revolute-unaligned.hpp:
 
 /usr/include/c++/9/list:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorDimensionList.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/9/include/mmintrin.h:
+../third-party/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h:
+
+/usr/local/include/boost/type_traits/has_equal_to.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorInflation.h:
 
-/usr/include/c++/9/climits:
+/usr/local/include/boost/mpl/advance.hpp:
 
-/usr/include/boost/type_traits/has_unary_plus.hpp:
+/usr/local/include/boost/mpl/pair.hpp:
 
-../third-party/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h:
+/usr/lib/gcc/x86_64-linux-gnu/9/include/mm_malloc.h:
 
-/usr/include/boost/archive/detail/basic_oarchive.hpp:
+/usr/local/include/boost/type_traits/detail/is_member_function_pointer_cxx_11.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
-/usr/include/c++/9/string_view:
-
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-../third-party/pinocchio/pinocchio/spatial/motion-base.hpp:
-
-/usr/include/boost/function_types/detail/encoding/def.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/c++/9/iosfwd:
 
-../third-party/pinocchio/pinocchio/multibody/geometry.hxx:
-
-/usr/include/boost/smart_ptr/shared_ptr.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
 /usr/include/c++/9/bits/functional_hash.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/boost/mpl/vector/aux_/at.hpp:
+/usr/local/include/boost/preprocessor/repetition/enum_shifted_params.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/arch/Default/TypeCasting.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
-/usr/include/boost/mpl/vector/aux_/pop_back.hpp:
-
-../third-party/pinocchio/pinocchio/fwd.hpp:
-
 /usr/include/c++/9/bits/invoke.h:
 
-/usr/include/boost/mpl/begin_end.hpp:
+../third-party/pinocchio/pinocchio/utils/helpers.hpp:
 
 ../third-party/eigen3/Eigen/src/Geometry/ParametrizedLine.h:
+
+/usr/local/include/boost/concept/usage.hpp:
+
+/usr/include/c++/9/bits/ostream_insert.h:
+
+/usr/local/include/boost/type_traits/is_nothrow_move_constructible.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/ProductEvaluators.h:
 
 /usr/include/c++/9/bits/stl_relops.h:
 
-../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorArgMax.h:
+/usr/local/include/boost/type_traits/is_default_constructible.hpp:
 
-../third-party/pinocchio/pinocchio/multibody/frame.hpp:
+/usr/local/include/boost/math/policies/policy.hpp:
 
-../third-party/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h:
+/usr/include/c++/9/tr1/modified_bessel_func.tcc:
 
-/usr/include/boost/mpl/aux_/preprocessor/enum.hpp:
+/usr/local/include/boost/preprocessor/repetition/enum_params_with_a_default.hpp:
+
+/usr/include/c++/9/bits/locale_facets.h:
+
+../third-party/eigen3/Eigen/src/Core/util/StaticAssert.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
-/usr/include/boost/preprocessor/comma_if.hpp:
-
-/usr/include/boost/iostreams/device/null.hpp:
+/usr/local/include/boost/fusion/support/detail/is_native_fusion_sequence.hpp:
 
 ../third-party/qpOASES/qpOASES/Bounds.ipp:
 
 ../third-party/eigen3/Eigen/src/Core/util/SymbolicIndex.h:
 
-/usr/include/boost/fusion/view/iterator_range/detail/size_impl.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
-/usr/include/boost/mpl/vector/aux_/vector0.hpp:
+/usr/local/include/boost/fusion/container/list/cons.hpp:
 
-/usr/include/boost/mpl/sequence_tag.hpp:
+/usr/local/include/boost/mpl/min.hpp:
 
-/usr/include/boost/mpl/quote.hpp:
+/usr/local/include/boost/math/constants/constants.hpp:
 
-/usr/include/boost/type_traits/is_floating_point.hpp:
+../third-party/eigen3/Eigen/src/SVD/BDCSVD.h:
 
-/usr/include/boost/fusion/iterator/equal_to.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/boost/mpl/begin_end_fwd.hpp:
-
-/usr/include/boost/config/compiler/gcc.hpp:
-
-/usr/include/boost/iostreams/device/array.hpp:
-
-/usr/include/c++/9/bits/istream.tcc:
+/usr/include/c++/9/bits/streambuf.tcc:
 
 /usr/include/c++/9/cmath:
 
-/usr/include/boost/mpl/vector/vector20.hpp:
+/usr/local/include/boost/serialization/config.hpp:
 
-/usr/include/boost/iterator/distance.hpp:
+/usr/include/c++/9/type_traits:
 
 ../third-party/eigen3/Eigen/src/Core/CoreIterators.h:
+
+/usr/local/include/boost/serialization/nvp.hpp:
+
+/usr/local/include/boost/type_traits/has_left_shift.hpp:
+
+/usr/local/include/boost/archive/detail/abi_suffix.hpp:
+
+/usr/local/include/boost/preprocessor/array/elem.hpp:
+
+/usr/local/include/boost/mpl/limits/vector.hpp:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
@@ -4258,101 +4108,73 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
-/usr/include/boost/fusion/sequence/comparison/equal_to.hpp:
-
-/usr/include/boost/type_traits/aligned_storage.hpp:
-
-/usr/include/boost/mpl/front.hpp:
+/usr/local/include/boost/iostreams/detail/streambuf/linked_streambuf.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-../third-party/pinocchio/pinocchio/spatial/force-ref.hpp:
+/usr/local/include/boost/fusion/sequence/comparison/detail/equal_to.hpp:
 
-/usr/include/boost/function_types/config/cc_names.hpp:
+../third-party/pinocchio/pinocchio/spatial/force-ref.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
-/usr/include/boost/fusion/sequence/intrinsic/front.hpp:
+../third-party/eigen3/Eigen/src/QR/HouseholderQR.h:
+
+/usr/local/include/boost/iterator/interoperable.hpp:
 
 ../third-party/eigen3/Eigen/src/Geometry/OrthoMethods.h:
-
-/usr/include/boost/numeric/conversion/detail/is_subranged.hpp:
-
-/usr/include/boost/fusion/view/joint_view/detail/value_of_impl.hpp:
 
 /usr/include/sched.h:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
-/usr/include/boost/mpl/aux_/advance_forward.hpp:
+/usr/local/include/boost/math/tools/convert_from_string.hpp:
+
+/usr/local/include/boost/fusion/sequence/comparison/equal_to.hpp:
+
+/usr/local/include/boost/iostreams/detail/buffer.hpp:
+
+/usr/include/c++/9/tr1/hypergeometric.tcc:
 
 ../third-party/eigen3/Eigen/src/plugins/BlockMethods.h:
 
-/usr/include/boost/preprocessor/array/elem.hpp:
-
-/usr/include/boost/mpl/same_as.hpp:
-
-/usr/include/boost/smart_ptr/detail/sp_nullptr_t.hpp:
-
-/usr/include/boost/preprocessor/tuple/rem.hpp:
-
-/usr/include/c++/9/bits/codecvt.h:
-
-/usr/include/boost/serialization/collection_size_type.hpp:
-
 ../third-party/eigen3/Eigen/src/Geometry/AngleAxis.h:
 
-../third-party/qpOASES/qpOASES/QProblemB.hpp:
+/usr/local/include/boost/fusion/support/detail/access.hpp:
 
-/usr/include/boost/concept/usage.hpp:
+/usr/local/include/boost/predef/platform/windows_uwp.h:
 
 /usr/include/endian.h:
 
-/usr/include/boost/iterator/iterator_facade.hpp:
-
-/usr/include/boost/fusion/sequence/intrinsic/segments.hpp:
-
-/usr/include/boost/mpl/aux_/config/eti.hpp:
-
-/usr/include/boost/mpl/aux_/na_spec.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+../third-party/eigen3/Eigen/src/SVD/UpperBidiagonalization.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 ../third-party/eigen3/Eigen/src/Core/NestByValue.h:
 
 ../third-party/eigen3/Eigen/src/Core/DiagonalMatrix.h:
 
-/usr/include/boost/current_function.hpp:
+/usr/local/include/boost/preprocessor/enum_shifted_params.hpp:
 
-/usr/include/boost/type_traits/has_trivial_move_assign.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/boost/concept/detail/concept_undef.hpp:
-
-/usr/include/boost/preprocessor/dec.hpp:
+../third-party/eigen3/Eigen/src/Core/Dot.h:
 
 /usr/include/c++/9/cstdio:
 
-/usr/include/boost/mpl/clear.hpp:
+/usr/local/include/boost/fusion/algorithm/transformation/push_front.hpp:
 
-/usr/include/boost/function_types/detail/encoding/aliases_undef.hpp:
+/usr/local/include/boost/mpl/aux_/config/eti.hpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/9/include/float.h:
+/usr/local/include/boost/preprocessor/list/adt.hpp:
 
-/usr/include/boost/core/enable_if.hpp:
+/usr/local/include/boost/assert.hpp:
 
-/usr/include/boost/type_traits/add_pointer.hpp:
+/usr/local/include/boost/preprocessor/seq/subseq.hpp:
 
-../third-party/eigen3/Eigen/src/Core/VectorBlock.h:
-
-/usr/include/boost/variant/detail/hash_variant.hpp:
-
-/usr/include/c++/9/streambuf:
-
-../third-party/pinocchio/pinocchio/deprecated.hpp:
+/usr/local/include/boost/type_traits/has_divides.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h:
 
@@ -4360,59 +4182,71 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 ../third-party/eigen3/Eigen/src/Core/Reverse.h:
 
-/usr/include/boost/variant/detail/cast_storage.hpp:
-
-/usr/include/boost/iostreams/categories.hpp:
-
-/usr/include/boost/serialization/assume_abstract.hpp:
-
 /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h:
 
-/usr/include/boost/mpl/aux_/config/static_constant.hpp:
+/usr/local/include/boost/type_traits/has_modulus.hpp:
 
-/usr/include/boost/fusion/algorithm/transformation/reverse.hpp:
+/usr/local/include/boost/serialization/void_cast.hpp:
 
-/usr/include/boost/fusion/algorithm/transformation/remove.hpp:
-
-/usr/include/boost/preprocessor/seq/seq.hpp:
+/usr/local/include/boost/type_traits/intrinsics.hpp:
 
 /usr/include/c++/9/bits/basic_ios.tcc:
 
-/usr/include/boost/type_traits/is_pointer.hpp:
+/usr/local/include/boost/mpl/aux_/has_type.hpp:
+
+/usr/local/include/boost/preprocessor/arithmetic/dec.hpp:
+
+/usr/local/include/boost/bind/bind_mf_cc.hpp:
+
+/usr/local/include/boost/type_traits/has_dereference.hpp:
 
 /usr/include/c++/9/bits/ptr_traits.h:
+
+../third-party/eigen3/Eigen/src/Core/Block.h:
+
+../third-party/pinocchio/pinocchio/multibody/geometry.hpp:
+
+/usr/local/include/boost/mpl/aux_/reverse_fold_impl_body.hpp:
+
+/usr/local/include/boost/integer.hpp:
 
 ../third-party/pinocchio/pinocchio/multibody/liegroup/liegroup-base.hpp:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
-/usr/include/boost/mpl/empty_fwd.hpp:
-
 /usr/lib/gcc/x86_64-linux-gnu/9/include/emmintrin.h:
+
+/usr/local/include/boost/mpl/sizeof.hpp:
 
 /usr/include/asm-generic/errno.h:
 
-/usr/include/boost/mpl/logical.hpp:
-
-/usr/include/boost/fusion/container/vector/detail/config.hpp:
-
 /usr/include/c++/9/tr1/poly_hermite.tcc:
 
-/usr/include/boost/asio/detail/pop_options.hpp:
+/usr/local/include/boost/mpl/aux_/yes_no.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
-/usr/include/c++/9/bits/concept_check.h:
+/usr/local/include/boost/preprocessor/detail/check.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/arch/Default/Settings.h:
 
 ../third-party/eigen3/Eigen/src/QR/ColPivHouseholderQR.h:
 
-/usr/include/boost/numeric/conversion/converter_policies.hpp:
+../third-party/pinocchio/pinocchio/multibody/joint/joints.hpp:
+
+../third-party/eigen3/Eigen/LU:
+
+/usr/local/include/boost/mpl/protect.hpp:
+
+../third-party/eigen3/Eigen/src/Core/util/Macros.h:
+
+/usr/local/include/boost/fusion/container/list/detail/list_to_cons.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/util/IntegralConstant.h:
 
 ../third-party/eigen3/Eigen/src/Core/CwiseUnaryView.h:
+
+/usr/local/include/boost/fusion/iterator/detail/advance.hpp:
+
+/usr/local/include/boost/mpl/aux_/preprocessor/params.hpp:
 
 /usr/include/c++/9/tr1/legendre_function.tcc:
 
@@ -4420,29 +4254,15 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 /usr/include/string.h:
 
+/usr/local/include/boost/iostreams/detail/streambuf/indirect_streambuf.hpp:
+
 ../third-party/eigen3/Eigen/src/Core/Assign.h:
-
-../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorReverse.h:
-
-/usr/include/features.h:
 
 /usr/include/c++/9/ctime:
 
-/usr/include/boost/preprocessor/slot/detail/def.hpp:
-
-../third-party/pinocchio/pinocchio/multibody/joint/joint-spherical-ZYX.hpp:
+/usr/include/c++/9/bits/cxxabi_init_exception.h:
 
 ../third-party/qpOASES/qpOASES/extras/OQPinterface.hpp:
-
-/usr/include/c++/9/bits/functexcept.h:
-
-/usr/include/boost/range/mutable_iterator.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
-/usr/include/boost/mpl/bool_fwd.hpp:
-
-../third-party/pinocchio/pinocchio/multibody/joint/joint-free-flyer.hpp:
 
 /usr/include/c++/9/memory:
 
@@ -4450,17 +4270,27 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 ../third-party/qpOASES/qpOASES/SparseSolver.hpp:
 
+/usr/local/include/boost/bind/bind_mf2_cc.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/usr/local/include/boost/mpl/pop_back.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/local/include/boost/preprocessor/punctuation/comma.hpp:
+
+/usr/local/include/boost/serialization/level.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorEvaluator.h:
 
+/usr/include/stdc-predef.h:
+
+/usr/local/include/boost/mpl/begin_end.hpp:
+
 ../third-party/qpOASES/qpOASES.hpp:
-
-/usr/include/boost/iostreams/detail/iostream.hpp:
-
-/usr/include/boost/type_traits/has_negate.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
@@ -4468,31 +4298,21 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
-/usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h:
+/usr/local/include/boost/asio/detail/limits.hpp:
 
-../third-party/pinocchio/pinocchio/multibody/joint/joint-composite.hpp:
+/usr/local/include/boost/mpl/max_element.hpp:
 
-/usr/include/boost/mpl/aux_/config/use_preprocessed.hpp:
+/usr/local/include/boost/fusion/iterator/detail/segmented_iterator.hpp:
 
 ../third-party/pinocchio/pinocchio/parsers/urdf.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
-/usr/include/boost/type_traits/has_logical_or.hpp:
-
 /usr/include/c++/9/bits/stl_iterator_base_funcs.h:
 
-/usr/include/boost/archive/detail/interface_iarchive.hpp:
-
-/usr/include/c++/9/tuple:
-
-/usr/include/boost/type_traits/has_plus.hpp:
+/usr/local/include/boost/fusion/view/reverse_view/detail/deref_data_impl.hpp:
 
 /usr/include/c++/9/bits/exception_defines.h:
-
-/usr/include/boost/type_traits/has_trivial_copy.hpp:
-
-/usr/include/c++/9/tr1/poly_laguerre.tcc:
 
 /usr/include/c++/9/ios:
 
@@ -4500,93 +4320,139 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 /usr/include/c++/9/algorithm:
 
-../third-party/pinocchio/pinocchio/utils/helpers.hpp:
-
-/usr/include/boost/variant/visitor_ptr.hpp:
-
 /usr/include/c++/9/bits/cxxabi_forced.h:
-
-../third-party/eigen3/Eigen/src/Householder/HouseholderSequence.h:
-
-/usr/include/boost/fusion/algorithm/transformation/erase_key.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorScan.h:
 
+/usr/local/include/boost/type_traits/function_traits.hpp:
+
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorRef.h:
 
-/usr/include/boost/fusion/view/iterator_range/detail/end_impl.hpp:
+/usr/local/include/boost/fusion/view/reverse_view/detail/value_of_impl.hpp:
 
-/usr/include/c++/9/bits/stl_iterator.h:
+/usr/include/c++/9/bits/alloc_traits.h:
 
-/usr/include/linux/errno.h:
+/usr/local/include/boost/fusion/container/vector/detail/value_at_impl.hpp:
 
-/usr/include/boost/mpl/aux_/contains_impl.hpp:
+/usr/local/include/boost/mpl/transform_view.hpp:
 
 ../my_wbc/src/priority_tasks.cpp:
 
-/usr/include/boost/type_traits/extent.hpp:
+/usr/include/c++/9/clocale:
 
-/usr/include/boost/move/algorithm.hpp:
-
-/usr/include/c++/9/bits/refwrap.h:
+/usr/local/include/boost/mpl/pop_front_fwd.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/MathFunctions.h:
 
-../third-party/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:
+/usr/local/include/boost/mpl/tag.hpp:
 
-/usr/include/boost/range/detail/extract_optional_type.hpp:
+../third-party/eigen3/Eigen/src/LU/FullPivLU.h:
 
-/usr/include/boost/iostreams/concepts.hpp:
+/usr/local/include/boost/mpl/list/aux_/tag.hpp:
+
+../third-party/eigen3/Eigen/src/Core/MatrixBase.h:
+
+/usr/local/include/boost/fusion/view/single_view/detail/value_of_impl.hpp:
+
+/usr/local/include/boost/fusion/view/zip_view/detail/size_impl.hpp:
 
 /usr/include/stdio.h:
 
-/usr/include/boost/range/iterator_range_io.hpp:
+/usr/local/include/boost/numeric/conversion/sign_mixture_enum.hpp:
 
 ../third-party/pinocchio/pinocchio/multibody/model.hpp:
 
 ../third-party/eigen3/Eigen/src/QR/FullPivHouseholderQR.h:
 
+/usr/local/include/boost/preprocessor/facilities/intercept.hpp:
+
+/usr/local/include/boost/numeric/conversion/detail/conversion_traits.hpp:
+
 ../third-party/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h:
+
+/usr/local/include/boost/mpl/erase_fwd.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
-../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorContractionBlocking.h:
+/usr/include/c++/9/bits/string_view.tcc:
+
+/usr/local/include/boost/math/tools/promotion.hpp:
+
+/usr/local/include/boost/preprocessor/logical/bool.hpp:
+
+/usr/local/include/boost/mpl/aux_/front_impl.hpp:
+
+../third-party/eigen3/Eigen/src/Core/ArrayBase.h:
+
+/usr/local/include/boost/preprocessor/stringize.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
+
+../third-party/eigen3/Eigen/src/Jacobi/Jacobi.h:
+
+/usr/local/include/boost/fusion/view/zip_view/detail/deref_impl.hpp:
+
+/usr/local/include/boost/fusion/iterator/iterator_adapter.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
+/usr/local/include/boost/utility/identity_type.hpp:
+
+/usr/local/include/boost/mpl/list/aux_/clear.hpp:
+
+/usr/local/include/boost/mpl/logical.hpp:
+
+../third-party/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsImpl.h:
+
+/usr/local/include/boost/mpl/insert.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
+/usr/local/include/boost/mpl/list/aux_/begin_end.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h:
+
+/usr/local/include/boost/serialization/detail/stack_constructor.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
-/usr/include/boost/mpl/min.hpp:
-
-/usr/include/boost/mpl/void_fwd.hpp:
-
 /usr/include/c++/9/ext/numeric_traits.h:
 
-/usr/include/boost/fusion/iterator/segmented_iterator.hpp:
+/usr/local/include/boost/type_traits/add_lvalue_reference.hpp:
+
+/usr/local/include/boost/mpl/sequence_tag_fwd.hpp:
+
+../third-party/eigen3/Eigen/src/Core/CwiseUnaryOp.h:
+
+/usr/include/c++/9/bits/shared_ptr_base.h:
+
+../third-party/eigen3/Eigen/src/Core/functors/UnaryFunctors.h:
+
+/usr/local/include/boost/fusion/container/vector/detail/value_of_impl.hpp:
+
+/usr/local/include/boost/preprocessor/iterate.hpp:
+
+/usr/local/include/boost/config/workaround.hpp:
 
 /usr/include/c++/9/ext/alloc_traits.h:
 
-/usr/include/boost/mpl/end.hpp:
+/usr/include/c++/9/cwctype:
 
-/usr/include/boost/serialization/detail/is_default_constructible.hpp:
+/usr/local/include/boost/variant/detail/visitation_impl.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
-/usr/include/boost/bind/mem_fn_template.hpp:
-
-/usr/include/boost/mpl/aux_/config/intel.hpp:
-
-/usr/include/boost/mpl/list/aux_/pop_front.hpp:
+/usr/local/include/boost/fusion/functional/invocation/limits.hpp:
 
 /usr/include/c++/9/functional:
 
-../third-party/pinocchio/pinocchio/algorithm/rnea.hpp:
-
-/usr/include/boost/mpl/vector/aux_/O1_size.hpp:
-
 /usr/include/c++/9/bits/std_abs.h:
+
+/usr/local/include/boost/fusion/support/is_iterator.hpp:
+
+/usr/local/include/boost/fusion/iterator/detail/segmented_next_impl.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
@@ -4596,101 +4462,115 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
-/usr/include/boost/mpl/multiplies.hpp:
+/usr/include/c++/9/tr1/beta_function.tcc:
 
-/usr/include/boost/iostreams/detail/char_traits.hpp:
+/usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h:
+
+/usr/include/c++/9/initializer_list:
 
 ../third-party/eigen3/Eigen/src/Core/DiagonalProduct.h:
 
 ../third-party/pinocchio/pinocchio/math/quaternion.hpp:
 
-/usr/include/boost/smart_ptr/bad_weak_ptr.hpp:
-
-/usr/include/boost/type_traits/function_traits.hpp:
+/usr/include/pthread.h:
 
 ../third-party/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsBFloat16.h:
 
-/usr/include/boost/archive/basic_archive.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
-../third-party/pinocchio/pinocchio/multibody/visitor.hpp:
+/usr/local/include/boost/integer_fwd.hpp:
 
-/usr/include/boost/fusion/support/tag_of_fwd.hpp:
+/usr/local/include/boost/mpl/find.hpp:
+
+/usr/local/include/boost/call_traits.hpp:
+
+/usr/local/include/boost/numeric/conversion/bounds.hpp:
+
+/usr/include/c++/9/bits/hashtable_policy.h:
+
+/usr/local/include/boost/fusion/support/is_sequence.hpp:
+
+../third-party/pinocchio/pinocchio/multibody/visitor.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 ../third-party/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
 
-/usr/include/boost/fusion/view/joint_view.hpp:
-
-/usr/include/boost/preprocessor/seq/detail/is_empty.hpp:
-
-/usr/include/boost/archive/binary_oarchive.hpp:
-
-/usr/include/boost/limits.hpp:
-
-/usr/include/boost/mpl/pop_back.hpp:
+/usr/local/include/boost/fusion/view/iterator_range/detail/at_impl.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorReductionGpu.h:
 
 ../my_lib/include/base_struct.h:
 
+/usr/local/include/boost/type_traits/promote.hpp:
+
 ../third-party/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h:
+
+/usr/local/include/boost/mpl/has_key.hpp:
+
+/usr/local/include/boost/serialization/detail/is_default_constructible.hpp:
 
 /usr/include/c++/9/bits/specfun.h:
 
-/usr/include/boost/serialization/detail/stack_constructor.hpp:
-
-/usr/include/boost/mpl/list/aux_/push_back.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h:
-
-/usr/include/boost/fusion/view/reverse_view/detail/value_of_data_impl.hpp:
-
-/usr/include/boost/mpl/aux_/pop_front_impl.hpp:
-
-../third-party/eigen3/Eigen/Core:
-
-../third-party/pinocchio/pinocchio/multibody/fcl.hxx:
-
-/usr/include/boost/mpl/aux_/config/workaround.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+/usr/local/include/boost/aligned_storage.hpp:
 
 /usr/include/c++/9/bits/stl_raw_storage_iter.h:
 
-/usr/include/boost/numeric/conversion/detail/udt_builtin_mixture.hpp:
-
 ../third-party/eigen3/Eigen/src/Core/CoreEvaluators.h:
 
-/usr/include/x86_64-linux-gnu/bits/errno.h:
+/usr/local/include/boost/mpl/aux_/config/ttp.hpp:
 
-../third-party/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h:
+../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorChipping.h:
+
+../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorMeta.h:
+
+/usr/local/include/boost/mpl/list/list10.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h:
 
+../third-party/qpOASES/qpOASES/SQProblemSchur.hpp:
+
+/usr/local/include/boost/preprocessor/facilities/empty.hpp:
+
+../third-party/eigen3/Eigen/src/Core/SelfAdjointView.h:
+
 /usr/include/c++/9/bits/nested_exception.h:
+
+/usr/local/include/boost/preprocessor/control/iif.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/local/include/boost/variant/variant_fwd.hpp:
 
 /usr/include/c++/9/bits/move.h:
 
-/usr/include/c++/9/bits/shared_ptr_base.h:
+/usr/local/include/boost/fusion/view/iterator_range/detail/is_segmented_impl.hpp:
 
-../third-party/eigen3/Eigen/src/Core/functors/UnaryFunctors.h:
+/usr/include/c++/9/bits/basic_string.h:
 
-/usr/include/boost/mpl/back_inserter.hpp:
+../third-party/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h:
 
-/usr/include/boost/fusion/algorithm/iteration/for_each.hpp:
+/usr/local/include/boost/move/detail/pointer_element.hpp:
 
 /usr/include/c++/9/backward/binders.h:
 
-/usr/include/boost/type_traits/alignment_of.hpp:
+/usr/local/include/boost/preprocessor/repetition/enum.hpp:
 
-/usr/include/boost/math/special_functions/sign.hpp:
+../third-party/qpOASES/qpOASES/extras/SolutionAnalysis.ipp:
 
-/usr/include/boost/function_types/detail/pp_loop.hpp:
+/usr/local/include/boost/fusion/algorithm/transformation/remove_if.hpp:
+
+/usr/local/include/boost/mpl/at.hpp:
+
+/usr/local/include/boost/concept/detail/has_constraints.hpp:
+
+/usr/local/include/boost/numeric/conversion/detail/meta.hpp:
+
+/usr/local/include/boost/predef/os/windows.h:
 
 /usr/include/c++/9/bits/predefined_ops.h:
+
+/usr/local/include/boost/iostreams/detail/char_traits.hpp:
 
 /usr/include/c++/9/bits/localefwd.h:
 
@@ -4698,319 +4578,371 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 ../third-party/eigen3/Eigen/src/Core/Diagonal.h:
 
+/usr/local/include/boost/fusion/view/single_view/detail/at_impl.hpp:
+
+/usr/local/include/boost/preprocessor/empty.hpp:
+
 ../third-party/pinocchio/pinocchio/multibody/liegroup/cartesian-product.hpp:
+
+/usr/local/include/boost/preprocessor/repetition/repeat_from_to.hpp:
 
 ../third-party/eigen3/Eigen/Geometry:
 
 /usr/include/c++/9/bits/stl_iterator_base_types.h:
 
-/usr/include/boost/preprocessor/seq/size.hpp:
-
 ../third-party/eigen3/Eigen/src/Core/MapBase.h:
 
-/usr/include/boost/iterator/detail/facade_iterator_category.hpp:
+/usr/local/include/boost/fusion/view/transform_view/detail/value_at_impl.hpp:
 
-/usr/include/boost/fusion/view/joint_view/joint_view.hpp:
+/usr/local/include/boost/iostreams/traits_fwd.hpp:
+
+/usr/local/include/boost/mpl/aux_/config/static_constant.hpp:
+
+/usr/local/include/boost/mpl/less.hpp:
 
 /usr/include/c++/9/debug/debug.h:
+
+/usr/local/include/boost/preprocessor/seq/for_each_i.hpp:
+
+/usr/include/c++/9/limits:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorRandom.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h:
 
+/usr/local/include/boost/mpl/aux_/numeric_op.hpp:
+
+/usr/local/include/boost/iostreams/detail/config/unreachable_return.hpp:
+
+/usr/local/include/boost/fusion/view/iterator_range/iterator_range.hpp:
+
+/usr/local/include/boost/type_traits/same_traits.hpp:
+
 ../third-party/eigen3/Eigen/src/Core/Map.h:
+
+/usr/local/include/boost/mpl/aux_/arity_spec.hpp:
+
+/usr/local/include/boost/mpl/clear_fwd.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
-/usr/include/boost/move/move.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h:
+/usr/local/include/boost/mpl/numeric_cast.hpp:
 
 /usr/include/c++/9/tr1/special_function_util.h:
 
-/usr/include/boost/type_traits/add_cv.hpp:
-
 /usr/include/c++/9/ext/type_traits.h:
-
-/usr/include/boost/fusion/view/joint_view/detail/begin_impl.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-../third-party/eigen3/Eigen/src/Jacobi/Jacobi.h:
 
 ../third-party/eigen3/Eigen/src/Core/Product.h:
 
 ../third-party/eigen3/Eigen/src/Core/CommaInitializer.h:
 
-/usr/include/boost/mpl/vector/vector0.hpp:
+/usr/local/include/boost/type_traits/has_right_shift_assign.hpp:
 
-/usr/include/boost/iostreams/detail/execute.hpp:
+../third-party/pinocchio/pinocchio/multibody/joint/joint-generic.hpp:
 
-../third-party/pinocchio/pinocchio/spatial/motion.hpp:
+/usr/local/include/boost/mpl/O1_size_fwd.hpp:
+
+/usr/local/include/boost/fusion/sequence/intrinsic_fwd.hpp:
 
 /usr/include/c++/9/tr1/ell_integral.tcc:
 
 /usr/include/c++/9/backward/auto_ptr.h:
 
+/usr/local/include/boost/config/platform/linux.hpp:
+
+/usr/local/include/boost/mpl/apply_wrap.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
 ../third-party/pinocchio/pinocchio/spatial/act-on-set.hpp:
 
+/usr/local/include/boost/fusion/support/segmented_fold_until.hpp:
+
+/usr/local/include/boost/fusion/sequence/intrinsic/value_at.hpp:
+
 ../third-party/mujoco/mujoco/mjvisualize.h:
 
-/usr/include/boost/mpl/apply_wrap.hpp:
+/usr/local/include/boost/fusion/functional/invocation/invoke.hpp:
 
 /usr/include/c++/9/bits/streambuf_iterator.h:
 
-/usr/include/boost/variant/variant_fwd.hpp:
-
-/usr/include/boost/mpl/list.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/local/include/boost/mpl/lambda.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorConcatenation.h:
 
-../third-party/qpOASES/qpOASES/SQProblemSchur.ipp:
+/usr/local/include/boost/type_traits/is_enum.hpp:
+
+/usr/local/include/boost/iostreams/stream.hpp:
+
+/usr/local/include/boost/fusion/view/joint_view/detail/value_of_data_impl.hpp:
+
+/usr/include/c++/9/bits/istream.tcc:
 
 /usr/include/c++/9/bits/basic_ios.h:
 
-/usr/include/boost/fusion/algorithm/transformation/pop_front.hpp:
-
-/usr/include/c++/9/ratio:
-
-../third-party/eigen3/Eigen/src/Core/Replicate.h:
-
-../third-party/pinocchio/pinocchio/container/aligned-vector.hpp:
-
-/usr/include/boost/smart_ptr/allocate_shared_array.hpp:
-
 /usr/include/c++/9/bits/sstream.tcc:
 
-/usr/include/boost/fusion/view/single_view/detail/at_impl.hpp:
+/usr/local/include/boost/smart_ptr/scoped_ptr.hpp:
 
-/usr/include/boost/mpl/lambda.hpp:
+../third-party/mujoco/mujoco/mjmodel.h:
+
+/usr/local/include/boost/ref.hpp:
 
 ../third-party/eigen3/Eigen/src/LU/InverseImpl.h:
 
-/usr/include/boost/fusion/view/zip_view/zip_view.hpp:
-
 ../third-party/mujoco/mujoco/mjrender.h:
-
-/usr/include/boost/type_traits/remove_cv.hpp:
 
 /usr/include/c++/9/bits/stl_vector.h:
 
-/usr/include/boost/detail/call_traits.hpp:
+/usr/local/include/boost/mpl/list/aux_/pop_front.hpp:
 
-/usr/include/boost/fusion/view/transform_view/transform_view_iterator.hpp:
+/usr/local/include/boost/type_traits/has_modulus_assign.hpp:
 
-/usr/include/boost/fusion/iterator/mpl/fusion_iterator.hpp:
+/usr/local/include/boost/fusion/iterator/detail/distance.hpp:
+
+/usr/include/c++/9/bits/std_function.h:
+
+/usr/local/include/boost/mpl/aux_/arg_typedef.hpp:
+
+/usr/local/include/boost/fusion/view/flatten_view.hpp:
+
+/usr/include/c++/9/bits/allocated_ptr.h:
 
 /usr/include/c++/9/unordered_map:
 
+../third-party/qpOASES/qpOASES/QProblemB.ipp:
+
+/usr/local/include/boost/variant/variant.hpp:
+
+../third-party/eigen3/Eigen/src/Core/util/Memory.h:
+
+/usr/local/include/boost/mpl/integral_c_tag.hpp:
+
+/usr/local/include/boost/mpl/joint_view.hpp:
+
+/usr/local/include/boost/type_traits/has_plus_assign.hpp:
+
+/usr/local/include/boost/detail/call_traits.hpp:
+
+/usr/include/c++/9/ext/aligned_buffer.h:
+
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
-/usr/include/boost/type_traits/remove_cv_ref.hpp:
+../third-party/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h:
 
-/usr/include/boost/utility/detail/result_of_iterate.hpp:
+/usr/include/c++/9/optional:
 
-/usr/include/boost/preprocessor/facilities/expand.hpp:
+/usr/local/include/boost/type_traits/remove_cv_ref.hpp:
 
-/usr/include/boost/preprocessor/arithmetic/dec.hpp:
+/usr/local/include/eigen3/Eigen/LU:
 
-../third-party/qpOASES/qpOASES/Indexlist.ipp:
+../third-party/eigen3/Eigen/src/LU/Determinant.h:
 
-/usr/include/boost/preprocessor/seq/cat.hpp:
+/usr/local/include/boost/smart_ptr/detail/sp_has_sync.hpp:
 
-/usr/include/boost/mpl/equal.hpp:
+/usr/include/c++/9/bits/stl_tempbuf.h:
 
-/usr/include/boost/type_traits/is_arithmetic.hpp:
+../third-party/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:
+
+/usr/local/include/boost/type_traits/is_list_constructible.hpp:
+
+/usr/local/include/boost/serialization/split_free.hpp:
+
+/usr/local/include/boost/mpl/aux_/preprocessor/enum.hpp:
+
+/usr/include/c++/9/bits/unordered_map.h:
 
 /usr/include/c++/9/vector:
 
-/usr/include/boost/mpl/aux_/lambda_arity_param.hpp:
-
-/usr/include/boost/type_traits/is_reference.hpp:
+/usr/local/include/boost/mpl/aux_/at_impl.hpp:
 
 /usr/include/strings.h:
 
-/usr/include/boost/type_traits/is_union.hpp:
+/usr/local/include/boost/preprocessor/comparison/greater.hpp:
+
+/usr/local/include/eigen3/Eigen/Core:
 
 /usr/include/c++/9/cstdarg:
+
+/usr/local/include/boost/mpl/vector/aux_/pop_back.hpp:
+
+/usr/include/c++/9/bits/algorithmfwd.h:
+
+/usr/local/include/boost/type_traits/has_post_decrement.hpp:
+
+/usr/include/c++/9/bits/vector.tcc:
 
 /usr/include/c++/9/bits/stl_algo.h:
 
 ../third-party/eigen3/Eigen/src/Core/PartialReduxEvaluator.h:
 
-../third-party/pinocchio/pinocchio/deprecated-macros.hpp:
+/usr/local/include/boost/type_traits/remove_reference.hpp:
 
-/usr/include/boost/serialization/item_version_type.hpp:
+/usr/local/include/boost/type_traits/remove_pointer.hpp:
 
-/usr/include/boost/fusion/support/category_of.hpp:
+/usr/include/c++/9/bits/stl_heap.h:
+
+/usr/local/include/boost/core/first_scalar.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/limits.h:
 
+/usr/local/include/boost/math/special_functions/sign.hpp:
+
+/usr/local/include/boost/type_traits/is_member_pointer.hpp:
+
 /usr/lib/gcc/x86_64-linux-gnu/9/include/syslimits.h:
 
-/usr/include/boost/iostreams/detail/config/overload_resolution.hpp:
-
-/usr/include/boost/math/tools/config.hpp:
-
-/usr/include/boost/throw_exception.hpp:
-
 ../third-party/eigen3/Eigen/src/Core/ArrayWrapper.h:
+
+/usr/local/include/boost/mpl/advance_fwd.hpp:
+
+/usr/local/include/boost/range/detail/misc_concept.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorBroadcasting.h:
 
 ../third-party/eigen3/Eigen/src/Core/DenseCoeffsBase.h:
 
-/usr/include/boost/lexical_cast/bad_lexical_cast.hpp:
-
-/usr/include/boost/mpl/sequence_tag_fwd.hpp:
-
-/usr/include/boost/fusion/view/filter_view/detail/key_of_impl.hpp:
+/usr/local/include/boost/fusion/view/zip_view/detail/value_at_impl.hpp:
 
 ../third-party/qpOASES/qpOASES/Constraints.hpp:
 
 ../my_lib/include/Utils.h:
 
-/usr/include/boost/serialization/collection_traits.hpp:
+../my_wbc/include/priority_tasks.h:
+
+/usr/local/include/boost/iterator/iterator_adaptor.hpp:
 
 /usr/include/c++/9/bits/locale_classes.h:
 
-/usr/include/boost/iterator/iterator_concepts.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
-/usr/include/boost/fusion/algorithm/transformation/detail/replace_if.hpp:
+../third-party/eigen3/Eigen/src/Core/Transpositions.h:
+
+/usr/local/include/boost/type_traits/add_volatile.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsFunctors.h:
 
-/usr/include/boost/mpl/pop_back_fwd.hpp:
+/usr/local/include/boost/mpl/greater.hpp:
 
-/usr/include/boost/type_traits/is_virtual_base_of.hpp:
+/usr/local/include/boost/move/traits.hpp:
 
-/usr/include/boost/function_types/detail/pp_retag_default_cc/preprocessed.hpp:
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+
+/usr/local/include/boost/type_traits/is_reference.hpp:
+
+/usr/include/stdint.h:
+
+/usr/include/x86_64-linux-gnu/c++/9/bits/ctype_inline.h:
+
+../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorCostModel.h:
+
+/usr/local/include/boost/range/range_fwd.hpp:
+
+/usr/local/include/boost/type_traits/is_noncopyable.hpp:
 
 /usr/include/c++/9/bits/enable_special_members.h:
 
 /usr/include/c++/9/pstl/glue_algorithm_defs.h:
 
-/usr/include/boost/core/noinit_adaptor.hpp:
-
 ../third-party/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h:
-
-/usr/include/boost/move/traits.hpp:
-
-/usr/include/c++/9/bits/stl_tempbuf.h:
-
-/usr/include/boost/type_traits/detail/has_postfix_operator.hpp:
-
-/usr/include/c++/9/pstl/execution_defs.h:
 
 ../third-party/pinocchio/pinocchio/multibody/visitor/fusion.hpp:
 
-/usr/include/boost/fusion/view/zip_view/detail/prior_impl.hpp:
+../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorDeviceGpu.h:
+
+/usr/local/include/boost/archive/detail/basic_serializer.hpp:
+
+../third-party/eigen3/Eigen/src/Eigenvalues/RealQZ.h:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorFunctors.h:
 
-/usr/include/boost/fusion/iterator/deref_data.hpp:
+/usr/local/include/boost/mpl/list/aux_/push_front.hpp:
 
-../third-party/pinocchio/pinocchio/warning.hpp:
+/usr/local/include/boost/type_traits/has_greater_equal.hpp:
 
-../third-party/pinocchio/pinocchio/macros.hpp:
+/usr/local/include/boost/type_traits/has_multiplies_assign.hpp:
 
-/usr/include/boost/preprocessor/punctuation/comma.hpp:
+/usr/local/include/boost/type_traits/remove_all_extents.hpp:
 
-/usr/include/c++/9/bits/shared_ptr_atomic.h:
+/usr/local/include/boost/config.hpp:
 
-../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorChipping.h:
+/usr/local/include/boost/fusion/view/transform_view/detail/next_impl.hpp:
 
-../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorMeta.h:
-
-/usr/include/boost/mpl/pair.hpp:
-
-../third-party/eigen3/Eigen/src/Core/Matrix.h:
-
-/usr/include/boost/fusion/view/joint_view/joint_view_iterator.hpp:
-
-/usr/include/boost/mpl/aux_/arity.hpp:
-
-/usr/include/boost/type_traits/has_greater.hpp:
-
-../third-party/eigen3/Eigen/src/Core/GenericPacketMath.h:
-
-/usr/include/boost/mpl/aux_/config/ttp.hpp:
+/usr/local/include/boost/move/algorithm.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/arch/Default/Half.h:
 
 ../third-party/eigen3/Eigen/src/Core/StlIterators.h:
 
-/usr/include/x86_64-linux-gnu/bits/time.h:
+/usr/local/include/boost/mpl/aux_/find_if_pred.hpp:
 
-/usr/include/boost/swap.hpp:
+/usr/local/include/boost/mpl/aux_/config/integral.hpp:
 
-/usr/include/boost/fusion/view/joint_view/detail/key_of_impl.hpp:
+../third-party/pinocchio/pinocchio/algorithm/centroidal.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
+../third-party/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsArrayAPI.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h:
+/usr/local/include/boost/utility/declval.hpp:
 
-../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorDeviceDefault.h:
+/usr/local/include/boost/preprocessor/array/size.hpp:
 
-/usr/local/include/eigen3/Eigen/QR:
+/usr/local/include/boost/config/no_tr1/complex.hpp:
 
-/usr/include/boost/fusion/iterator/value_of_data.hpp:
+/usr/local/include/boost/preprocessor/array/data.hpp:
+
+/usr/local/include/boost/numeric/conversion/detail/int_float_mixture.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/util/MKL_support.h:
 
+/usr/local/include/boost/fusion/view/iterator_range/detail/begin_impl.hpp:
+
+/usr/local/include/boost/move/detail/to_raw_pointer.hpp:
+
 ../third-party/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:
 
-/usr/include/boost/mpl/aux_/config/msvc.hpp:
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
-/usr/include/boost/config/detail/select_compiler_config.hpp:
+/usr/local/include/boost/type_traits/is_pod.hpp:
+
+/usr/local/include/boost/type_traits/conversion_traits.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h:
 
 /usr/include/c++/9/string:
 
-/usr/include/boost/archive/detail/basic_iarchive.hpp:
-
-/usr/include/boost/mpl/apply_fwd.hpp:
-
-/usr/include/boost/type_traits/is_member_pointer.hpp:
-
-/usr/include/boost/container/container_fwd.hpp:
-
-/usr/include/boost/predef/os/bsd/dragonfly.h:
-
-/usr/include/boost/preprocessor/list/detail/fold_right.hpp:
+../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorPatch.h:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorContractionThreadPool.h:
 
 /usr/include/c++/9/cassert:
 
+/usr/local/include/boost/fusion/algorithm/transformation/insert.hpp:
+
 ../third-party/eigen3/Eigen/src/Core/functors/TernaryFunctors.h:
+
+../third-party/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsFunctors.h:
+
+/usr/local/include/boost/type_traits/is_lvalue_reference.hpp:
 
 /usr/include/c++/9/numeric:
 
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+../third-party/eigen3/Eigen/src/Core/functors/StlFunctors.h:
 
-/usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_long_long.hpp:
-
-/usr/include/boost/bind/storage.hpp:
-
-/usr/include/boost/mpl/aux_/common_name_wknd.hpp:
-
-../third-party/eigen3/Eigen/src/Core/arch/Default/BFloat16.h:
+/usr/local/include/boost/config/compiler/gcc.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/GlobalFunctions.h:
 
-/usr/include/boost/fusion/mpl/push_front.hpp:
+/usr/local/include/boost/fusion/iterator/prior.hpp:
 
-/usr/include/boost/call_traits.hpp:
+/usr/local/include/boost/mpl/list/aux_/push_back.hpp:
+
+/usr/local/include/boost/fusion/container/vector/vector_fwd.hpp:
 
 /usr/include/c++/9/bits/ostream.tcc:
 
@@ -5018,23 +4950,33 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 ../third-party/eigen3/Eigen/src/Core/Array.h:
 
+/usr/local/include/boost/predef/platform/windows_store.h:
+
+/usr/local/include/boost/fusion/adapted/mpl/detail/has_key_impl.hpp:
+
 ../third-party/eigen3/Eigen/src/Core/IO.h:
+
+/usr/local/include/boost/range/algorithm/equal.hpp:
+
+/usr/local/include/boost/preprocessor/debug/error.hpp:
 
 ../third-party/pinocchio/pinocchio/utils/cast.hpp:
 
+/usr/local/include/boost/fusion/adapted/mpl/detail/category_of_impl.hpp:
+
+/usr/local/include/boost/range/end.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
-/usr/include/boost/range/detail/sfinae.hpp:
+../third-party/eigen3/Eigen/src/Core/Reshaped.h:
 
 ../third-party/qpOASES/qpOASES/QProblem.hpp:
 
-/usr/include/boost/mpl/bind.hpp:
-
-/usr/include/boost/numeric/conversion/detail/int_float_mixture.hpp:
+/usr/local/include/boost/mpl/minus.hpp:
 
 ../third-party/pinocchio/pinocchio/serialization/archive.hpp:
 
-/usr/include/boost/fusion/container/vector/detail/equal_to_impl.hpp:
+/usr/local/include/boost/mpl/print.hpp:
 
 ../third-party/qpOASES/qpOASES/Indexlist.hpp:
 
@@ -5042,35 +4984,19 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
-/usr/include/boost/fusion/view/filter_view/detail/begin_impl.hpp:
-
-../third-party/eigen3/Eigen/src/Core/util/ConfigureVectorization.h:
-
-/usr/include/boost/fusion/view/single_view/detail/deref_impl.hpp:
-
 ../third-party/eigen3/Eigen/src/plugins/ReshapedMethods.h:
 
 ../third-party/pinocchio/pinocchio/spatial/symmetric3.hpp:
 
-/usr/include/c++/9/ext/aligned_buffer.h:
-
-/usr/include/boost/fusion/algorithm/transformation/push_front.hpp:
-
-/usr/include/boost/mpl/remove.hpp:
-
-/usr/include/boost/function_types/is_callable_builtin.hpp:
-
-/usr/include/boost/preprocessor/cat.hpp:
+/usr/local/include/boost/mpl/has_xxx.hpp:
 
 ../third-party/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h:
 
-/usr/include/c++/9/istream:
-
-/usr/include/boost/function_types/config/compiler.hpp:
-
 ../third-party/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h:
 
-../third-party/eigen3/Eigen/src/Core/ArrayBase.h:
+/usr/local/include/boost/mpl/vector/vector10.hpp:
+
+/usr/include/c++/9/new:
 
 ../third-party/eigen3/Eigen/src/Core/util/BlasUtil.h:
 
@@ -5082,209 +5008,221 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 ../third-party/eigen3/Eigen/src/Core/NoAlias.h:
 
-/usr/include/boost/smart_ptr/detail/yield_k.hpp:
+/usr/local/include/boost/mpl/size.hpp:
+
+/usr/local/include/boost/mpl/aux_/config/gcc.hpp:
+
+/usr/local/include/boost/type_traits/has_logical_not.hpp:
+
+/usr/local/include/boost/function_types/property_tags.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/util/XprHelper.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/boost/mpl/vector/aux_/pop_front.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/PlainObjectBase.h:
 
 /usr/include/linux/limits.h:
 
-../third-party/eigen3/Eigen/src/Core/SolveTriangular.h:
+/usr/local/include/boost/predef/detail/_cassert.h:
 
 ../third-party/eigen3/Eigen/src/Core/CwiseBinaryOp.h:
-
-/usr/include/boost/fusion/container/set/set_fwd.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 ../third-party/eigen3/Eigen/src/Core/Stride.h:
 
-/usr/include/boost/preprocessor/facilities/overload.hpp:
-
-/usr/include/boost/type_traits/is_unbounded_array.hpp:
+../third-party/pinocchio/pinocchio/math/taylor-expansion.hpp:
 
 /usr/include/c++/9/tr1/exp_integral.tcc:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorCustomOp.h:
 
-/usr/include/boost/core/checked_delete.hpp:
-
-/usr/include/boost/lexical_cast/detail/lcast_char_constants.hpp:
+/usr/local/include/boost/math/special_functions/fpclassify.hpp:
 
 ../third-party/eigen3/Eigen/src/Cholesky/LDLT.h:
 
-/usr/include/boost/mpl/bind_fwd.hpp:
-
-/usr/include/boost/type_traits/has_post_decrement.hpp:
+/usr/local/include/boost/type_traits/declval.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
-/usr/include/boost/mpl/list/list20.hpp:
+/usr/local/include/boost/mpl/vector/vector20.hpp:
 
 /usr/include/c++/9/bits/atomic_lockfree_defines.h:
 
-/usr/include/boost/type_traits/has_nothrow_constructor.hpp:
-
 ../third-party/pinocchio/pinocchio/multibody/joint/joint-mimic.hpp:
 
-/usr/include/boost/bind/mem_fn_cc.hpp:
+/usr/local/include/eigen3/Eigen/SVD:
 
-/usr/include/pthread.h:
+../third-party/eigen3/Eigen/src/Core/Redux.h:
 
-/usr/include/boost/functional/hash_fwd.hpp:
+/usr/include/c++/9/bits/uniform_int_dist.h:
+
+../third-party/eigen3/Eigen/src/Core/Visitor.h:
+
+/usr/local/include/boost/preprocessor/seq/size.hpp:
+
+/usr/local/include/boost/smart_ptr/shared_ptr.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/Fuzzy.h:
 
+/usr/local/include/boost/type_traits/is_object.hpp:
+
 ../third-party/eigen3/Eigen/src/Core/Swap.h:
 
-/usr/include/boost/mpl/push_back.hpp:
+/usr/local/include/boost/archive/archive_exception.hpp:
 
-/usr/include/boost/mpl/aux_/comparison_op.hpp:
+/usr/local/include/boost/numeric/conversion/detail/udt_builtin_mixture.hpp:
+
+../third-party/eigen3/Eigen/src/Core/PermutationMatrix.h:
 
 ../third-party/pinocchio/pinocchio/multibody/visitor/joint-unary-visitor.hpp:
 
 ../third-party/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
 
-/usr/include/boost/fusion/view/flatten_view/flatten_view_iterator.hpp:
-
-/usr/include/boost/type_traits/has_left_shift_assign.hpp:
-
-/usr/include/boost/asio/detail/string_view.hpp:
+/usr/local/include/boost/fusion/algorithm/query/none.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/GeneralProduct.h:
 
-/usr/include/boost/mpl/apply.hpp:
-
 /usr/include/c++/9/bits/locale_facets_nonio.tcc:
 
-/usr/include/boost/iostreams/traits.hpp:
+/usr/local/include/boost/is_placeholder.hpp:
+
+/usr/local/include/boost/mpl/bitand.hpp:
+
+../third-party/eigen3/Eigen/src/Core/Solve.h:
+
+../third-party/eigen3/Eigen/src/misc/Image.h:
+
+/usr/local/include/boost/preprocessor/detail/auto_rec.hpp:
+
+/usr/local/include/boost/core/use_default.hpp:
+
+/usr/local/include/boost/function_types/detail/retag_default_cc.hpp:
+
+/usr/local/include/boost/serialization/smart_cast.hpp:
+
+/usr/local/include/boost/range/const_iterator.hpp:
 
 /usr/include/c++/9/cstdint:
 
 ../my_wbc/include/wbc_priority.h:
 
+/usr/include/c++/9/fstream:
+
+/usr/local/include/boost/mpl/aux_/config/msvc_typename.hpp:
+
+/usr/local/include/boost/fusion/view/joint_view/joint_view_iterator.hpp:
+
+/usr/local/include/boost/fusion/sequence/intrinsic/detail/segmented_begin_impl.hpp:
+
 ../third-party/eigen3/Eigen/src/Core/Select.h:
+
+/usr/local/include/boost/fusion/iterator/deref_data.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
+/usr/local/include/boost/type_traits/is_copy_assignable.hpp:
+
 ../third-party/eigen3/Eigen/src/Core/BandMatrix.h:
 
-/usr/include/c++/9/bits/streambuf.tcc:
+/usr/local/include/boost/fusion/algorithm/transformation/transform.hpp:
 
-/usr/include/boost/config/no_tr1/memory.hpp:
+/usr/local/include/boost/mpl/aux_/config/intel.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/SolverBase.h:
 
-/usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h:
-
-/usr/include/boost/type_traits/is_polymorphic.hpp:
-
-/usr/include/boost/serialization/array_wrapper.hpp:
+/usr/local/include/boost/archive/detail/basic_iserializer.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h:
 
+/usr/local/include/boost/lexical_cast/bad_lexical_cast.hpp:
+
+/usr/local/include/boost/mpl/aux_/nttp_decl.hpp:
+
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorImagePatch.h:
 
-/usr/include/boost/mpl/aux_/erase_impl.hpp:
-
-../third-party/eigen3/Eigen/Eigenvalues:
+/usr/local/include/boost/type_traits/detail/config.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/products/Parallelizer.h:
 
-/usr/include/boost/preprocessor/tuple/elem.hpp:
+/usr/local/include/boost/fusion/iterator/iterator_facade.hpp:
+
+../third-party/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h:
 
 ../third-party/eigen3/Eigen/src/Core/DenseStorage.h:
 
-/usr/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp:
+/usr/local/include/boost/fusion/include/equal_to.hpp:
+
+/usr/local/include/boost/fusion/container/generation/make_list.hpp:
+
+../third-party/eigen3/Eigen/src/Core/SolveTriangular.h:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
-/usr/include/boost/fusion/container/vector/detail/as_vector.hpp:
-
 ../third-party/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h:
+
+/usr/local/include/boost/predef/os/bsd/free.h:
+
+../third-party/eigen3/Eigen/src/Core/functors/NullaryFunctors.h:
+
+/usr/local/include/boost/type_traits/has_bit_or.hpp:
 
 /usr/include/alloca.h:
 
 /usr/include/c++/9/ext/atomicity.h:
 
+/usr/local/include/boost/preprocessor/facilities/identity.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 ../third-party/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h:
+
+../third-party/eigen3/Eigen/src/Core/products/SelfadjointProduct.h:
 
 /usr/local/include/eigen3/Eigen/Dense:
 
 ../third-party/eigen3/Eigen/src/misc/Kernel.h:
 
-/usr/include/boost/mpl/O1_size_fwd.hpp:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/boost/mpl/aux_/preprocessor/sub.hpp:
-
-/usr/include/boost/config/platform/linux.hpp:
-
-/usr/include/boost/mpl/prior.hpp:
-
-/usr/include/boost/type_traits/has_right_shift.hpp:
-
-/usr/include/boost/mpl/insert.hpp:
-
 ../third-party/pinocchio/pinocchio/parsers/urdf/geometry.hxx:
 
 ../third-party/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h:
 
-/usr/include/boost/type_traits/has_nothrow_destructor.hpp:
+/usr/local/include/boost/config/detail/select_platform_config.hpp:
 
 /usr/include/c++/9/cctype:
 
 ../third-party/eigen3/Eigen/src/Core/products/TriangularSolverVector.h:
 
-/usr/include/boost/fusion/container/list/convert.hpp:
+/usr/local/include/boost/type_traits/is_member_object_pointer.hpp:
 
 ../third-party/eigen3/Eigen/Dense:
 
-/usr/include/boost/preprocessor/array/data.hpp:
+/usr/include/c++/9/ostream:
 
-/usr/include/boost/mpl/aux_/config/bind.hpp:
-
-/usr/include/boost/type_traits/has_bit_and.hpp:
-
-/usr/include/boost/fusion/support/is_sequence.hpp:
-
-../third-party/eigen3/Eigen/src/LU/FullPivLU.h:
-
-/usr/include/boost/fusion/functional/invocation/limits.hpp:
+/usr/local/include/boost/mpl/aux_/has_begin.hpp:
 
 /usr/include/c++/9/array:
 
-/usr/include/boost/config/no_tr1/cmath.hpp:
-
 ../third-party/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h:
 
-/usr/local/include/eigen3/Eigen/Core:
+/usr/local/include/boost/fusion/container/vector.hpp:
 
-/usr/include/boost/move/detail/config_end.hpp:
+/usr/local/include/boost/serialization/strong_typedef.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/BooleanRedux.h:
+
+/usr/local/include/boost/fusion/mpl/size.hpp:
 
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorExecutor.h:
 
 ../third-party/eigen3/Eigen/src/Core/AssignEvaluator.h:
 
-../third-party/mujoco/mujoco/mjtnum.h:
+/usr/local/include/boost/archive/text_iarchive.hpp:
 
-/usr/include/boost/type_traits/is_copy_assignable.hpp:
+/usr/local/include/boost/fusion/container/vector/detail/end_impl.hpp:
 
-/usr/include/boost/type_traits/has_trivial_destructor.hpp:
+../third-party/eigen3/Eigen/src/Core/VectorwiseOp.h:
 
-/usr/include/boost/variant/get.hpp:
-
-../third-party/eigen3/Eigen/src/Householder/BlockHouseholder.h:
+/usr/local/include/boost/mpl/quote.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/Random.h:
 
@@ -5292,699 +5230,723 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 /usr/include/c++/9/bits/erase_if.h:
 
-../third-party/pinocchio/pinocchio/algorithm/center-of-mass.hxx:
-
-/usr/include/boost/preprocessor/logical/not.hpp:
+/usr/local/include/boost/mpl/aux_/config/overload_resolution.hpp:
 
 ../third-party/eigen3/Eigen/src/LU/PartialPivLU.h:
 
-/usr/include/boost/variant/variant.hpp:
-
 ../third-party/eigen3/Eigen/Cholesky:
 
-/usr/include/boost/mpl/transform_view.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
-../third-party/eigen3/Eigen/Jacobi:
-
-/usr/include/boost/mpl/list/list30.hpp:
+/usr/local/include/boost/fusion/algorithm/transformation/pop_front.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
 ../third-party/eigen3/Eigen/src/Cholesky/LLT.h:
 
+/usr/local/include/boost/smart_ptr/detail/spinlock_pool.hpp:
+
+/usr/local/include/boost/mpl/aux_/has_tag.hpp:
+
+/usr/local/include/boost/math/policies/error_handling.hpp:
+
 ../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorTraits.h:
 
-../third-party/eigen3/Eigen/Householder:
+/usr/local/include/boost/iostreams/detail/enable_if_stream.hpp:
 
-../third-party/eigen3/Eigen/src/Householder/Householder.h:
+/usr/local/include/boost/type_traits/has_nothrow_assign.hpp:
 
-/usr/include/boost/function_types/detail/components_impl/arity10_1.hpp:
+/usr/local/include/boost/fusion/iterator/mpl/convert_iterator.hpp:
 
-/usr/include/boost/mpl/if.hpp:
+/usr/local/include/boost/mpl/if.hpp:
 
-/usr/include/boost/mpl/aux_/value_wknd.hpp:
+/usr/local/include/boost/variant/detail/hash_variant.hpp:
 
-../third-party/pinocchio/pinocchio/spatial/force-tpl.hpp:
+/usr/local/include/boost/mpl/aux_/traits_lambda_spec.hpp:
 
-/usr/include/boost/mpl/aux_/traits_lambda_spec.hpp:
+/usr/local/include/boost/mpl/find_if.hpp:
 
-/usr/include/boost/math/special_functions/math_fwd.hpp:
+/usr/local/include/boost/mpl/aux_/iter_apply.hpp:
 
-../third-party/eigen3/Eigen/src/Core/products/SelfadjointProduct.h:
+/usr/local/include/boost/mpl/O1_size.hpp:
 
-/usr/include/boost/mpl/find.hpp:
-
-/usr/include/boost/preprocessor/enum_params.hpp:
-
-../third-party/eigen3/Eigen/src/Core/CwiseTernaryOp.h:
-
-/usr/include/boost/mpl/aux_/find_if_pred.hpp:
-
-/usr/include/boost/mpl/aux_/iter_apply.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessor/default_params.hpp:
-
-../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorAssign.h:
-
-/usr/include/boost/mpl/aux_/has_apply.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessor/partial_spec_params.hpp:
-
-/usr/include/boost/mpl/aux_/config/has_apply.hpp:
-
-/usr/include/boost/mpl/aux_/config/bcc.hpp:
-
-/usr/include/boost/mpl/arg.hpp:
-
-/usr/include/c++/9/ext/concurrence.h:
-
-/usr/include/boost/mpl/arg_fwd.hpp:
-
-/usr/include/boost/iostreams/detail/is_dereferenceable.hpp:
-
-/usr/include/boost/mpl/aux_/na_assert.hpp:
-
-/usr/include/boost/mpl/assert.hpp:
-
-/usr/include/boost/type_traits/floating_point_promotion.hpp:
-
-/usr/include/boost/mpl/aux_/config/gpu.hpp:
-
-/usr/include/boost/mpl/aux_/config/pp_counter.hpp:
-
-/usr/include/boost/mpl/aux_/arity_spec.hpp:
-
-../my_wbc/include/priority_tasks.h:
-
-/usr/include/boost/mpl/aux_/arg_typedef.hpp:
-
-/usr/include/boost/mpl/aux_/config/dmc_ambiguous_ctps.hpp:
-
-/usr/include/boost/asio/detail/push_options.hpp:
-
-/usr/include/boost/mpl/aux_/config/adl.hpp:
-
-/usr/include/boost/mpl/protect.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessor/ext_params.hpp:
-
-/usr/include/boost/preprocessor/enum.hpp:
-
-/usr/include/boost/mpl/distance.hpp:
-
-/usr/include/boost/range/const_iterator.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessor/repeat.hpp:
-
-../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorMap.h:
-
-/usr/include/boost/fusion/support/detail/access.hpp:
-
-/usr/include/boost/fusion/view/joint_view/detail/end_impl.hpp:
-
-/usr/include/boost/preprocessor/iteration/detail/iter/forward2.hpp:
-
-/usr/include/boost/preprocessor/iteration/detail/bounds/lower2.hpp:
-
-/usr/include/boost/mpl/placeholders.hpp:
-
-/usr/include/boost/preprocessor/iteration/detail/bounds/upper2.hpp:
-
-/usr/include/boost/variant/recursive_wrapper_fwd.hpp:
-
-/usr/include/boost/mpl/aux_/full_lambda.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessor/range.hpp:
-
-/usr/include/boost/preprocessor/seq/subseq.hpp:
-
-/usr/include/boost/archive/detail/auto_link_archive.hpp:
-
-/usr/include/boost/preprocessor/facilities/identity.hpp:
-
-/usr/include/c++/9/bits/string_view.tcc:
-
-/usr/include/boost/preprocessor/seq/first_n.hpp:
-
-../third-party/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsHalf.h:
-
-/usr/include/c++/9/utility:
-
-/usr/include/boost/preprocessor/seq/rest_n.hpp:
-
-/usr/include/boost/predef/platform/windows_runtime.h:
-
-/usr/include/c++/9/bits/locale_conv.h:
-
-/usr/include/boost/predef/other/endian.h:
-
-/usr/include/boost/preprocessor/comparison/not_equal.hpp:
-
-/usr/include/boost/preprocessor/seq/fold_left.hpp:
-
-../third-party/eigen3/Eigen/src/Core/VectorwiseOp.h:
-
-/usr/include/boost/fusion/view/joint_view/detail/deref_impl.hpp:
-
-/usr/include/boost/preprocessor/seq/elem.hpp:
-
-/usr/include/boost/type_traits/declval.hpp:
-
-../third-party/eigen3/Eigen/src/Core/NumTraits.h:
-
-/usr/include/boost/mpl/iter_fold_if.hpp:
-
-/usr/include/boost/mpl/minus.hpp:
-
-/usr/include/boost/fusion/view/iterator_range.hpp:
-
-/usr/include/boost/archive/basic_binary_oprimitive.hpp:
-
-/usr/include/c++/9/type_traits:
-
-/usr/include/boost/mpl/aux_/logical_op.hpp:
-
-/usr/include/boost/mpl/and.hpp:
-
-/usr/include/boost/serialization/tracking.hpp:
-
-/usr/include/boost/mpl/aux_/iter_fold_if_impl.hpp:
-
-/usr/include/boost/mpl/limits/unrolling.hpp:
-
-/usr/include/boost/mpl/numeric_cast.hpp:
-
-/usr/include/boost/mpl/aux_/config/forwarding.hpp:
-
-../third-party/eigen3/Eigen/src/SVD/UpperBidiagonalization.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/usr/include/boost/iterator/advance.hpp:
-
-/usr/include/boost/type_traits/is_same.hpp:
-
-/usr/include/boost/variant/detail/apply_visitor_delayed.hpp:
-
-/usr/include/boost/mpl/remove_if.hpp:
-
-/usr/include/boost/fusion/sequence/intrinsic/has_key.hpp:
+/usr/local/include/boost/mpl/apply_fwd.hpp:
 
 ../third-party/eigen3/Eigen/src/Eigenvalues/RealSchur.h:
 
-/usr/include/boost/mpl/fold.hpp:
+/usr/local/include/boost/fusion/sequence/intrinsic/size.hpp:
 
-/usr/include/boost/fusion/mpl/detail/clear.hpp:
+/usr/local/include/boost/mpl/aux_/preprocessor/default_params.hpp:
 
-/usr/include/boost/mpl/O1_size.hpp:
+../third-party/pinocchio/pinocchio/math/matrix.hpp:
 
-../third-party/eigen3/Eigen/src/Core/Block.h:
+/usr/local/include/boost/mpl/aux_/config/bcc.hpp:
 
-/usr/include/boost/mpl/aux_/has_size.hpp:
+../third-party/eigen3/Eigen/src/Core/VectorBlock.h:
 
-/usr/include/boost/variant/detail/has_result_type.hpp:
+/usr/local/include/boost/mpl/arg.hpp:
 
-/usr/include/boost/mpl/aux_/fold_impl.hpp:
+../third-party/pinocchio/pinocchio/deprecated.hpp:
 
-/usr/include/boost/iostreams/detail/config/wide_streams.hpp:
+/usr/local/include/boost/range/begin.hpp:
 
-/usr/include/boost/mpl/aux_/reverse_fold_impl.hpp:
+/usr/local/include/boost/mpl/arg_fwd.hpp:
 
-/usr/include/boost/mpl/deref.hpp:
+/usr/local/include/boost/mpl/aux_/config/pp_counter.hpp:
 
-/usr/include/boost/lexical_cast.hpp:
+../third-party/pinocchio/pinocchio/spatial/motion-zero.hpp:
 
-/usr/include/boost/mpl/aux_/reverse_fold_impl_body.hpp:
+/usr/local/include/boost/mpl/bind_fwd.hpp:
 
-/usr/include/boost/mpl/aux_/inserter_algorithm.hpp:
+/usr/local/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp:
 
-/usr/include/boost/mpl/inserter.hpp:
+/usr/local/include/boost/fusion/view/iterator_range/detail/value_at_impl.hpp:
 
-/usr/include/boost/move/adl_move_swap.hpp:
+/usr/local/include/boost/mpl/aux_/config/bind.hpp:
 
-/usr/include/boost/mpl/front_inserter.hpp:
+/usr/local/include/boost/variant/detail/over_sequence.hpp:
 
-/usr/include/boost/numeric/conversion/converter.hpp:
+/usr/local/include/boost/mpl/aux_/config/dmc_ambiguous_ctps.hpp:
 
-/usr/include/boost/mpl/long_fwd.hpp:
+/usr/local/include/boost/mpl/iterator_category.hpp:
 
-/usr/include/boost/mpl/aux_/clear_impl.hpp:
+/usr/local/include/boost/type_traits/is_array.hpp:
 
-/usr/include/boost/type_traits/conditional.hpp:
+/usr/local/include/boost/mpl/aux_/preprocessor/partial_spec_params.hpp:
 
-/usr/include/boost/fusion/view/single_view/detail/next_impl.hpp:
+/usr/local/include/boost/blank.hpp:
 
-../third-party/pinocchio/pinocchio/multibody/joint/joint-model-base.hpp:
+/usr/local/include/boost/mpl/aux_/preprocessor/sub.hpp:
 
-/usr/include/boost/mpl/vector/vector10.hpp:
+/usr/local/include/boost/fusion/algorithm/query/detail/segmented_find_if.hpp:
 
-/usr/include/boost/mpl/at_fwd.hpp:
+/usr/local/include/boost/mpl/aux_/preprocessor/ext_params.hpp:
 
-/usr/include/boost/preprocessor/tuple/eat.hpp:
+/usr/local/include/boost/mpl/aux_/preprocessor/repeat.hpp:
 
-/usr/include/boost/mpl/vector/aux_/tag.hpp:
+/usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h:
 
-/usr/include/boost/mpl/vector/aux_/push_front.hpp:
+/usr/local/include/boost/preprocessor/iteration/detail/iter/forward2.hpp:
 
-/usr/include/boost/mpl/vector/aux_/push_back.hpp:
+/usr/local/include/boost/preprocessor/iteration/detail/bounds/upper2.hpp:
 
-/usr/include/boost/mpl/vector/aux_/back.hpp:
+/usr/local/include/boost/fusion/algorithm/iteration/reverse_iter_fold.hpp:
 
-/usr/include/boost/fusion/algorithm/query/detail/segmented_find_if.hpp:
+/usr/local/include/boost/preprocessor/logical/and.hpp:
 
-/usr/include/boost/iterator/detail/config_def.hpp:
+/usr/local/include/boost/type_traits/has_bit_and_assign.hpp:
 
-/usr/include/boost/move/detail/meta_utils.hpp:
+/usr/local/include/boost/mpl/aux_/full_lambda.hpp:
 
-/usr/include/boost/type_traits/is_empty.hpp:
+/usr/local/include/boost/type_traits/is_base_and_derived.hpp:
 
-/usr/include/boost/fusion/container/list/nil.hpp:
+/usr/local/include/boost/fusion/view/iterator_range/detail/segments_impl.hpp:
 
-../third-party/eigen3/Eigen/src/Core/Dot.h:
+/usr/local/include/boost/mpl/aux_/preprocessor/range.hpp:
 
-/usr/include/boost/mpl/plus.hpp:
+/usr/local/include/boost/preprocessor/seq/detail/split.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h:
+../third-party/pinocchio/pinocchio/fwd.hpp:
 
-/usr/include/boost/mpl/aux_/largest_int.hpp:
+/usr/local/include/boost/function_types/detail/encoding/aliases_def.hpp:
 
-/usr/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp:
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
-/usr/include/boost/preprocessor/control/expr_iif.hpp:
+/usr/include/c++/9/bits/functexcept.h:
 
-/usr/include/c++/9/bits/uniform_int_dist.h:
+/usr/local/include/boost/preprocessor/seq/rest_n.hpp:
 
-../third-party/eigen3/Eigen/src/Core/Visitor.h:
+/usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h:
 
-/usr/include/boost/mpl/tag.hpp:
+/usr/local/include/boost/mpl/back_fwd.hpp:
 
-/usr/include/boost/mpl/aux_/numeric_cast_utils.hpp:
+/usr/local/include/boost/type_traits/add_cv.hpp:
 
-/usr/include/boost/preprocessor/iteration/detail/iter/reverse1.hpp:
+/usr/local/include/boost/fusion/container/vector/detail/convert_impl.hpp:
 
-/usr/include/boost/type_traits/has_bit_xor.hpp:
+/usr/local/include/boost/iostreams/detail/resolve.hpp:
 
-/usr/include/boost/mpl/advance_fwd.hpp:
+/usr/local/include/boost/preprocessor/seq/fold_left.hpp:
 
-/usr/include/boost/mpl/vector/aux_/size.hpp:
+/usr/local/include/boost/mpl/aux_/na_assert.hpp:
 
-/usr/include/boost/mpl/vector/aux_/empty.hpp:
+/usr/local/include/eigen3/Eigen/QR:
 
-/usr/include/boost/mpl/aux_/at_impl.hpp:
+/usr/local/include/boost/preprocessor/seq/elem.hpp:
 
-/usr/include/c++/9/optional:
+/usr/local/include/boost/mpl/iter_fold_if.hpp:
 
-/usr/include/boost/mpl/advance.hpp:
+/usr/local/include/boost/mpl/and.hpp:
 
-../third-party/pinocchio/pinocchio/multibody/fwd.hpp:
+/usr/local/include/boost/mpl/always.hpp:
 
-/usr/include/boost/mpl/negate.hpp:
+/usr/local/include/boost/mpl/aux_/msvc_eti_base.hpp:
 
-/usr/include/boost/mpl/size.hpp:
+/usr/include/c++/9/chrono:
 
-../third-party/pinocchio/pinocchio/spatial/log.hpp:
+/usr/local/include/boost/mpl/identity.hpp:
 
-/usr/include/boost/mpl/aux_/size_impl.hpp:
+../third-party/pinocchio/pinocchio/spatial/act-on-set.hxx:
 
-/usr/include/boost/mpl/aux_/iter_fold_impl.hpp:
+/usr/local/include/boost/mpl/limits/unrolling.hpp:
 
-/usr/include/boost/mpl/iterator_range.hpp:
+/usr/local/include/boost/mpl/insert_range.hpp:
 
-../third-party/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h:
+/usr/local/include/boost/mpl/aux_/config/forwarding.hpp:
 
-/usr/include/boost/concept/detail/general.hpp:
+/usr/local/include/boost/iterator/detail/facade_iterator_category.hpp:
 
-/usr/include/c++/9/pstl/pstl_config.h:
+/usr/local/include/boost/mpl/aux_/has_key_impl.hpp:
 
-/usr/include/boost/mpl/equal_to.hpp:
+/usr/local/include/boost/move/detail/std_ns_end.hpp:
 
-/usr/include/c++/9/initializer_list:
+/usr/local/include/boost/fusion/view/zip_view/detail/distance_impl.hpp:
 
-/usr/include/boost/variant/bad_visit.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
-/usr/include/boost/mpl/begin.hpp:
+/usr/local/include/boost/type_traits/is_same.hpp:
 
-/usr/include/boost/mpl/not_equal_to.hpp:
+/usr/local/include/boost/detail/select_type.hpp:
 
-/usr/include/boost/serialization/throw_exception.hpp:
+/usr/local/include/boost/predef/platform/windows_runtime.h:
 
-/usr/include/boost/fusion/view/reverse_view/detail/next_impl.hpp:
+/usr/local/include/boost/mpl/same_as.hpp:
 
-/usr/include/boost/mpl/greater.hpp:
+/usr/local/include/boost/mpl/aux_/advance_forward.hpp:
 
-/usr/include/boost/mpl/less_equal.hpp:
+/usr/local/include/boost/mpl/fold.hpp:
 
-/usr/include/boost/static_assert.hpp:
+/usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h:
 
-/usr/include/boost/assert.hpp:
+/usr/local/include/boost/smart_ptr/detail/spinlock_std_atomic.hpp:
 
-/usr/include/boost/preprocessor/control/deduce_d.hpp:
+/usr/local/include/boost/blank_fwd.hpp:
 
-/usr/include/boost/math/tools/precision.hpp:
+/usr/local/include/boost/mpl/aux_/has_size.hpp:
 
-/usr/include/boost/type_traits/add_rvalue_reference.hpp:
+/usr/local/include/boost/type_traits.hpp:
 
-/usr/include/boost/type_traits/is_void.hpp:
+/usr/include/c++/9/streambuf:
 
-/usr/include/boost/type_traits/is_lvalue_reference.hpp:
+/usr/local/include/boost/mpl/aux_/fold_impl.hpp:
 
-/usr/include/boost/type_traits/is_rvalue_reference.hpp:
+/usr/local/include/boost/mpl/aux_/fold_impl_body.hpp:
 
-/usr/include/boost/type_traits/make_signed.hpp:
+/usr/local/include/boost/mpl/bind.hpp:
 
-/usr/include/boost/iostreams/stream.hpp:
+/usr/include/c++/9/bits/refwrap.h:
 
-/usr/include/boost/type_traits/remove_reference.hpp:
+/usr/local/include/boost/mpl/aux_/reverse_fold_impl.hpp:
 
-/usr/include/c++/9/bits/hashtable.h:
-
-/usr/include/boost/mpl/print.hpp:
-
-/usr/include/boost/type_traits/is_function.hpp:
-
-/usr/include/boost/type_traits/detail/config.hpp:
-
-/usr/include/boost/move/detail/config_begin.hpp:
-
-/usr/include/boost/version.hpp:
-
-/usr/include/boost/move/detail/type_traits.hpp:
-
-/usr/include/c++/9/bits/hashtable_policy.h:
-
-/usr/include/boost/type_traits/detail/is_function_cxx_11.hpp:
-
-/usr/include/boost/type_traits/detail/yes_no_type.hpp:
-
-/usr/include/boost/variant/detail/visitation_impl.hpp:
-
-/usr/include/boost/type_traits/is_default_constructible.hpp:
-
-/usr/include/boost/range/iterator_range_core.hpp:
-
-/usr/include/boost/type_traits/is_destructible.hpp:
-
-/usr/include/boost/iterator/iterator_traits.hpp:
-
-/usr/include/boost/range/detail/has_member_size.hpp:
-
-/usr/include/c++/9/iterator:
-
-/usr/include/boost/type_traits/is_array.hpp:
-
-/usr/include/boost/fusion/algorithm/iteration/detail/preprocessed/fold.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/usr/include/boost/type_traits/is_abstract.hpp:
-
-/usr/include/boost/fusion/view/joint_view/detail/next_impl.hpp:
-
-/usr/include/boost/type_traits/add_lvalue_reference.hpp:
-
-/usr/include/boost/iostreams/checked_operations.hpp:
-
-../third-party/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h:
-
-/usr/include/boost/type_traits/is_class.hpp:
-
-/usr/include/c++/9/ostream:
-
-/usr/include/boost/type_traits/is_volatile.hpp:
-
-/usr/include/boost/mpl/vector/aux_/numbered.hpp:
-
-/usr/include/c++/9/cxxabi.h:
-
-/usr/include/boost/type_traits/is_member_function_pointer.hpp:
-
-/usr/include/boost/asio/detail/array_fwd.hpp:
-
-/usr/include/boost/type_traits/detail/is_member_function_pointer_cxx_11.hpp:
-
-/usr/include/boost/concept_check.hpp:
-
-/usr/include/boost/type_traits/add_reference.hpp:
-
-/usr/include/boost/mpl/vector/aux_/clear.hpp:
-
-/usr/include/boost/type_traits/remove_pointer.hpp:
-
-/usr/include/boost/iterator/detail/enable_if.hpp:
-
-/usr/include/boost/type_traits/has_minus.hpp:
-
-/usr/include/boost/type_traits/add_const.hpp:
-
-/usr/include/boost/type_traits/remove_const.hpp:
-
-/usr/include/boost/function_types/is_function.hpp:
-
-/usr/include/boost/serialization/singleton.hpp:
-
-/usr/include/boost/type_traits/is_pod.hpp:
-
-/usr/include/boost/type_traits/is_enum.hpp:
-
-/usr/include/boost/predef/platform/windows_phone.h:
-
-/usr/include/boost/iostreams/char_traits.hpp:
-
-/usr/include/boost/range/functions.hpp:
-
-../my_wbc/src/wbc_priority.cpp:
-
-/usr/include/boost/core/noncopyable.hpp:
-
-/usr/include/boost/config/detail/select_stdlib_config.hpp:
-
-/usr/include/boost/archive/codecvt_null.hpp:
-
-/usr/include/boost/range/config.hpp:
-
-/usr/include/boost/smart_ptr/detail/sp_typeinfo_.hpp:
-
-/usr/include/boost/range/range_fwd.hpp:
-
-/usr/include/boost/range/detail/msvc_has_iterator_workaround.hpp:
-
-/usr/include/boost/range/end.hpp:
-
-/usr/include/boost/fusion/container/list/detail/build_cons.hpp:
-
-/usr/include/boost/smart_ptr/detail/sp_forward.hpp:
-
-/usr/include/boost/range/detail/implementation_help.hpp:
-
-/usr/include/boost/range/detail/common.hpp:
-
-/usr/include/boost/mpl/bitxor.hpp:
-
-/usr/include/boost/range/size.hpp:
-
-/usr/include/boost/range/has_range_iterator.hpp:
-
-/usr/include/boost/lexical_cast/detail/inf_nan.hpp:
+/usr/local/include/boost/fusion/view/iterator_range.hpp:
 
 /usr/include/c++/9/bits/stl_uninitialized.h:
 
-/usr/include/boost/utility/enable_if.hpp:
+/usr/local/include/boost/mpl/aux_/inserter_algorithm.hpp:
 
-/usr/include/boost/ref.hpp:
+/usr/local/include/boost/fusion/view/single_view/detail/value_at_impl.hpp:
 
-/usr/include/boost/concept/detail/has_constraints.hpp:
+/usr/local/include/boost/mpl/push_back.hpp:
 
-/usr/include/boost/fusion/container/vector/vector.hpp:
+/usr/local/include/boost/mpl/aux_/push_back_impl.hpp:
 
-/usr/include/boost/type_traits/conversion_traits.hpp:
+/usr/local/include/boost/archive/binary_iarchive.hpp:
 
-/usr/include/boost/concept/detail/concept_def.hpp:
+/usr/local/include/boost/mpl/push_front.hpp:
 
-/usr/include/boost/preprocessor/seq/for_each_i.hpp:
+/usr/local/include/boost/mpl/aux_/push_front_impl.hpp:
 
-/usr/include/boost/fusion/mpl/erase.hpp:
+/usr/local/include/boost/mpl/clear.hpp:
 
-/usr/include/boost/preprocessor/repetition/for.hpp:
+/usr/local/include/boost/mpl/aux_/clear_impl.hpp:
 
-/usr/include/boost/preprocessor/seq/enum.hpp:
+/usr/local/include/boost/variant/detail/substitute.hpp:
 
-/usr/include/boost/mpl/aux_/fold_impl_body.hpp:
+/usr/local/include/boost/mpl/vector.hpp:
 
-/usr/include/boost/function_types/detail/encoding/undef.hpp:
+/usr/include/c++/9/iostream:
 
-/usr/include/boost/range/detail/misc_concept.hpp:
+/usr/local/include/boost/mpl/vector/vector0.hpp:
 
-/usr/include/boost/core/demangle.hpp:
+/usr/local/include/boost/preprocessor/comparison/less.hpp:
 
-/usr/include/c++/9/bits/locale_facets.h:
+/usr/local/include/boost/mpl/at_fwd.hpp:
 
-/usr/include/boost/fusion/support/config.hpp:
+/usr/local/include/boost/mpl/not.hpp:
 
-/usr/include/boost/type_traits/make_unsigned.hpp:
+/usr/local/include/boost/serialization/split_member.hpp:
 
-/usr/include/boost/type_traits/is_unsigned.hpp:
+/usr/local/include/boost/fusion/container/vector/vector_iterator.hpp:
 
-/usr/include/boost/type_traits/has_modulus.hpp:
+/usr/local/include/boost/predef/version_number.h:
 
-/usr/include/boost/fusion/view/single_view/detail/equal_to_impl.hpp:
+/usr/local/include/boost/mpl/vector/aux_/tag.hpp:
 
-/usr/include/boost/type_traits/add_volatile.hpp:
+/usr/local/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_common.hpp:
 
-../third-party/qpOASES/qpOASES/extras/SolutionAnalysis.ipp:
+/usr/local/include/boost/bind/bind_cc.hpp:
 
-/usr/include/boost/utility/base_from_member.hpp:
+/usr/local/include/boost/type_traits/has_less_equal.hpp:
 
-/usr/include/boost/utility/binary.hpp:
+/usr/local/include/boost/mpl/aux_/config/typeof.hpp:
 
-/usr/include/boost/preprocessor/arithmetic/mod.hpp:
+/usr/local/include/boost/mpl/vector/aux_/front.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+/usr/local/include/boost/mpl/vector/aux_/back.hpp:
 
-/usr/include/boost/preprocessor/arithmetic/detail/div_base.hpp:
+/usr/local/include/boost/type_traits/type_identity.hpp:
 
-/usr/include/boost/fusion/functional/invocation/invoke.hpp:
+/usr/include/c++/9/pstl/execution_defs.h:
 
-/usr/include/boost/smart_ptr/make_shared_object.hpp:
+/usr/local/include/boost/mpl/vector/aux_/clear.hpp:
 
-/usr/include/boost/utility/identity_type.hpp:
+/usr/local/include/boost/mpl/vector/aux_/vector0.hpp:
 
-../third-party/pinocchio/pinocchio/spatial/force-base.hpp:
+../third-party/pinocchio/pinocchio/spatial/motion-base.hpp:
 
-/usr/include/boost/function_types/detail/components_impl/arity10_0.hpp:
+/usr/local/include/boost/type_traits/decay.hpp:
 
-/usr/include/boost/range/rbegin.hpp:
+/usr/local/include/boost/type_traits/has_virtual_destructor.hpp:
 
-/usr/include/boost/preprocessor/comparison/greater.hpp:
+/usr/local/include/boost/mpl/plus.hpp:
 
-/usr/include/c++/9/bits/vector.tcc:
+/usr/local/include/boost/mpl/contains_fwd.hpp:
 
-/usr/include/boost/iterator/iterator_adaptor.hpp:
+/usr/local/include/boost/mpl/integral_c_fwd.hpp:
 
-/usr/include/boost/type_traits/intrinsics.hpp:
+/usr/local/include/boost/mpl/next.hpp:
 
-/usr/include/boost/range/rend.hpp:
+/usr/local/include/boost/static_assert.hpp:
 
-/usr/include/boost/mpl/min_max.hpp:
+/usr/local/include/boost/variant/detail/config.hpp:
 
-/usr/include/boost/range/algorithm/equal.hpp:
+../third-party/pinocchio/pinocchio/multibody/model.hxx:
 
-/usr/include/boost/range/detail/safe_bool.hpp:
+/usr/local/include/boost/serialization/version.hpp:
 
-/usr/include/boost/next_prior.hpp:
+/usr/local/include/boost/mpl/aux_/largest_int.hpp:
 
-/usr/include/boost/type_traits/make_void.hpp:
+/usr/local/include/boost/mpl/list/aux_/O1_size.hpp:
 
-/usr/include/boost/fusion/algorithm/transformation/flatten.hpp:
+/usr/local/include/boost/mpl/aux_/numeric_cast_utils.hpp:
 
-/usr/include/boost/function_types/parameter_types.hpp:
+/usr/local/include/boost/preprocessor/iteration/detail/iter/reverse1.hpp:
 
-/usr/include/boost/type_traits/has_plus_assign.hpp:
+/usr/local/include/boost/mpl/vector/aux_/O1_size.hpp:
 
-/usr/include/boost/lexical_cast/try_lexical_convert.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
-/usr/include/boost/detail/templated_streams.hpp:
+/usr/local/include/boost/mpl/vector/aux_/size.hpp:
 
-/usr/include/boost/iostreams/detail/push_params.hpp:
+/usr/local/include/boost/serialization/factory.hpp:
 
-/usr/include/boost/mpl/aux_/begin_end_impl.hpp:
+/usr/include/c++/9/bits/stl_numeric.h:
 
-../third-party/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h:
+/usr/local/include/boost/mpl/aux_/comparison_op.hpp:
 
-/usr/include/boost/type_traits/type_identity.hpp:
+/usr/local/include/boost/serialization/collections_save_imp.hpp:
 
-/usr/include/boost/mpl/iterator_category.hpp:
+/usr/local/include/boost/fusion/view/iterator_range/detail/segmented_iterator_range.hpp:
 
-/usr/include/boost/mpl/integral_c_fwd.hpp:
+/usr/include/c++/9/stdlib.h:
 
-/usr/include/boost/lexical_cast/detail/is_character.hpp:
+/usr/local/include/boost/mpl/aux_/advance_backward.hpp:
 
-/usr/include/boost/type_traits/is_base_of.hpp:
+/usr/local/include/boost/mpl/aux_/size_impl.hpp:
 
-/usr/include/c++/9/tr1/gamma.tcc:
+/usr/local/include/boost/mpl/distance.hpp:
 
-/usr/include/boost/preprocessor/identity.hpp:
+/usr/local/include/boost/mpl/iter_fold.hpp:
 
-/usr/include/boost/type_traits/is_float.hpp:
+/usr/local/include/boost/mpl/iterator_range.hpp:
 
-/usr/include/boost/archive/detail/decl.hpp:
+/usr/include/c++/9/cxxabi.h:
 
-/usr/include/boost/numeric/conversion/cast.hpp:
+/usr/local/include/boost/serialization/vector.hpp:
 
-/usr/include/boost/numeric/conversion/conversion_traits.hpp:
+/usr/local/include/boost/mpl/equal_to.hpp:
 
-/usr/include/boost/range/empty.hpp:
+../third-party/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h:
 
-/usr/include/boost/numeric/conversion/detail/numeric_cast_traits.hpp:
+/usr/local/include/boost/type_traits/has_trivial_move_assign.hpp:
 
-/usr/include/boost/numeric/conversion/detail/conversion_traits.hpp:
+/usr/local/include/boost/mpl/comparison.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+/usr/local/include/boost/mpl/not_equal_to.hpp:
 
-/usr/include/boost/numeric/conversion/int_float_mixture_enum.hpp:
+/usr/local/include/boost/preprocessor/facilities/expand.hpp:
 
-../third-party/eigen3/Eigen/src/QR/HouseholderQR.h:
+/usr/local/include/boost/mpl/greater_equal.hpp:
 
-/usr/include/boost/numeric/conversion/detail/sign_mixture.hpp:
+/usr/local/include/boost/math/tools/precision.hpp:
 
-/usr/include/boost/serialization/split_free.hpp:
+/usr/local/include/boost/type_traits/is_constructible.hpp:
 
-/usr/include/boost/numeric/conversion/sign_mixture_enum.hpp:
+/usr/local/include/boost/fusion/sequence/intrinsic/detail/segmented_size.hpp:
 
-/usr/include/boost/mpl/times.hpp:
+/usr/local/include/boost/mpl/front_inserter.hpp:
 
-/usr/include/boost/numeric/conversion/detail/converter.hpp:
+/usr/local/include/boost/type_traits/is_destructible.hpp:
 
-/usr/include/boost/fusion/view/single_view/detail/end_impl.hpp:
+/usr/local/include/boost/type_traits/is_complete.hpp:
 
-/usr/include/boost/numeric/conversion/bounds.hpp:
+/usr/local/include/boost/preprocessor/punctuation/paren.hpp:
 
-../third-party/pinocchio/pinocchio/multibody/joint/joint-prismatic.hpp:
+/usr/local/include/boost/function_types/is_function.hpp:
 
-/usr/include/boost/numeric/conversion/numeric_cast_traits.hpp:
+/usr/local/include/boost/iostreams/detail/iostream.hpp:
 
-/usr/include/boost/fusion/mpl/empty.hpp:
+/usr/local/include/boost/type_traits/is_void.hpp:
 
-/usr/include/boost/type_index/stl_type_index.hpp:
+/usr/local/include/boost/type_traits/is_rvalue_reference.hpp:
 
-/usr/include/boost/lexical_cast/detail/converter_lexical.hpp:
+/usr/local/include/boost/type_traits/is_function.hpp:
 
-../third-party/pinocchio/pinocchio/multibody/joint/joints.hpp:
+../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorForcedEval.h:
 
-/usr/include/boost/type_traits/is_object.hpp:
+/usr/local/include/boost/type_traits/has_pre_increment.hpp:
 
-/usr/include/boost/type_traits/has_left_shift.hpp:
+/usr/local/include/boost/type_traits/detail/is_function_cxx_11.hpp:
 
-/usr/include/boost/core/alloc_construct.hpp:
+/usr/local/include/boost/mpl/erase_key.hpp:
 
-../third-party/pinocchio/pinocchio/math/comparison-operators.hpp:
+/usr/local/include/boost/type_traits/detail/yes_no_type.hpp:
 
-/usr/include/boost/detail/lcast_precision.hpp:
+/usr/local/include/boost/type_traits/conditional.hpp:
 
-../third-party/eigen3/Eigen/src/Core/Transpositions.h:
+/usr/include/x86_64-linux-gnu/bits/endian.h:
 
-/usr/include/boost/integer_traits.hpp:
+/usr/local/include/boost/lexical_cast.hpp:
 
-/usr/include/boost/type_traits/detail/has_prefix_operator.hpp:
+/usr/local/include/boost/archive/detail/iserializer.hpp:
 
-/usr/include/boost/lexical_cast/detail/widest_char.hpp:
+/usr/include/c++/9/bits/stl_iterator.h:
 
-/usr/include/boost/array.hpp:
+/usr/include/linux/errno.h:
 
-/usr/include/c++/9/limits:
+/usr/local/include/boost/smart_ptr/detail/sp_noexcept.hpp:
 
-/usr/include/boost/container/detail/std_fwd.hpp:
+/usr/local/include/boost/range/iterator_range_core.hpp:
 
-/usr/include/boost/move/detail/std_ns_begin.hpp:
+/usr/local/include/boost/mpl/aux_/nested_type_wknd.hpp:
 
-/usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:
+/usr/local/include/boost/iterator/iterator_traits.hpp:
 
-/usr/include/boost/move/detail/std_ns_end.hpp:
+/usr/include/c++/9/bits/stream_iterator.h:
 
-../third-party/pinocchio/pinocchio/math/taylor-expansion.hpp:
+/usr/local/include/boost/iterator/iterator_facade.hpp:
 
-/usr/include/boost/fusion/iterator/detail/segmented_equal_to.hpp:
+/usr/local/include/boost/mpl/aux_/na_spec.hpp:
+
+../third-party/eigen3/Eigen/src/Core/MathFunctionsImpl.h:
+
+/usr/local/include/boost/type_traits/is_convertible.hpp:
+
+/usr/local/include/boost/type_traits/is_arithmetic.hpp:
+
+/usr/local/include/boost/type_traits/is_floating_point.hpp:
+
+/usr/local/include/boost/fusion/view/iterator_range/detail/end_impl.hpp:
+
+/usr/local/include/boost/type_traits/is_abstract.hpp:
+
+/usr/local/include/boost/type_traits/add_reference.hpp:
+
+/usr/local/include/boost/iterator/detail/config_def.hpp:
+
+/usr/local/include/boost/iterator/detail/config_undef.hpp:
+
+/usr/local/include/boost/fusion/view/joint_view/detail/key_of_impl.hpp:
+
+/usr/local/include/boost/iterator/iterator_categories.hpp:
+
+/usr/local/include/boost/type_traits/is_const.hpp:
+
+/usr/local/include/boost/detail/indirect_traits.hpp:
+
+/usr/local/include/boost/type_traits/is_pointer.hpp:
+
+/usr/local/include/boost/type_traits/is_class.hpp:
+
+/usr/local/include/boost/type_traits/is_volatile.hpp:
+
+/usr/local/include/boost/preprocessor/list/fold_left.hpp:
+
+/usr/local/include/boost/iterator/iterator_concepts.hpp:
+
+/usr/local/include/boost/mpl/vector/aux_/numbered.hpp:
+
+/usr/local/include/boost/type_traits/remove_cv.hpp:
+
+/usr/local/include/boost/iterator/detail/enable_if.hpp:
+
+/usr/local/include/boost/fusion/container/list/detail/next_impl.hpp:
+
+/usr/local/include/boost/core/addressof.hpp:
+
+/usr/local/include/boost/type_traits/add_pointer.hpp:
+
+/usr/local/include/boost/type_traits/is_union.hpp:
+
+/usr/local/include/boost/type_traits/is_scalar.hpp:
+
+/usr/local/include/boost/range/config.hpp:
+
+/usr/local/include/boost/range/iterator.hpp:
+
+../third-party/eigen3/Eigen/src/Core/IndexedView.h:
+
+/usr/local/include/boost/smart_ptr/detail/local_counted_base.hpp:
+
+/usr/local/include/boost/range/mutable_iterator.hpp:
+
+/usr/local/include/boost/range/detail/msvc_has_iterator_workaround.hpp:
+
+/usr/local/include/boost/range/detail/common.hpp:
+
+/usr/local/include/boost/range/size.hpp:
+
+/usr/local/include/boost/range/difference_type.hpp:
+
+../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorContraction.h:
+
+/usr/local/include/boost/utility/enable_if.hpp:
+
+/usr/local/include/boost/range/concepts.hpp:
+
+/usr/local/include/boost/preprocessor/enum_params_with_a_default.hpp:
+
+/usr/local/include/boost/concept_check.hpp:
+
+/usr/local/include/boost/serialization/tracking_enum.hpp:
+
+/usr/local/include/boost/fusion/support/category_of.hpp:
+
+/usr/local/include/boost/concept/assert.hpp:
+
+../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorMacros.h:
+
+/usr/local/include/boost/fusion/iterator/deref.hpp:
+
+/usr/local/include/boost/concept/detail/general.hpp:
+
+/usr/local/include/boost/fusion/view/filter_view/detail/begin_impl.hpp:
+
+/usr/local/include/boost/serialization/traits.hpp:
+
+/usr/local/include/boost/concept/detail/backward_compatibility.hpp:
+
+/usr/local/include/boost/concept/detail/concept_def.hpp:
+
+/usr/local/include/boost/preprocessor/seq/enum.hpp:
+
+/usr/local/include/boost/concept/detail/concept_undef.hpp:
+
+/usr/local/include/boost/predef/make.h:
+
+/usr/local/include/boost/type_traits/is_polymorphic.hpp:
+
+/usr/local/include/boost/range/value_type.hpp:
+
+/usr/local/include/boost/type_traits/make_unsigned.hpp:
+
+/usr/local/include/boost/type_traits/is_signed.hpp:
+
+/usr/local/include/boost/type_traits/is_unsigned.hpp:
+
+../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorDimensions.h:
+
+../third-party/pinocchio/pinocchio/multibody/joint/joint-revolute-unaligned.hpp:
+
+/usr/local/include/boost/range/detail/has_member_size.hpp:
+
+/usr/local/include/boost/variant/detail/variant_io.hpp:
+
+/usr/local/include/boost/utility.hpp:
+
+../third-party/mujoco/mujoco/mjui.h:
+
+/usr/local/include/boost/type_traits/detail/has_postfix_operator.hpp:
+
+/usr/local/include/boost/utility/base_from_member.hpp:
+
+/usr/local/include/boost/utility/binary.hpp:
+
+/usr/local/include/boost/preprocessor/control/deduce_d.hpp:
+
+/usr/local/include/boost/preprocessor/seq/cat.hpp:
+
+/usr/local/include/boost/preprocessor/seq/transform.hpp:
+
+/usr/local/include/boost/serialization/array_wrapper.hpp:
+
+/usr/local/include/boost/preprocessor/arithmetic/detail/div_base.hpp:
+
+/usr/local/include/boost/preprocessor/comparison/less_equal.hpp:
+
+/usr/local/include/boost/preprocessor/logical/not.hpp:
+
+/usr/local/include/boost/core/checked_delete.hpp:
+
+/usr/local/include/boost/iostreams/detail/is_dereferenceable.hpp:
+
+/usr/local/include/boost/archive/basic_streambuf_locale_saver.hpp:
+
+/usr/local/include/boost/range/distance.hpp:
+
+/usr/local/include/boost/iterator/distance.hpp:
+
+/usr/local/include/boost/range/empty.hpp:
+
+/usr/local/include/boost/range/rbegin.hpp:
+
+/usr/local/include/boost/numeric/conversion/udt_builtin_mixture_enum.hpp:
+
+/usr/local/include/boost/archive/detail/check.hpp:
+
+/usr/local/include/boost/range/reverse_iterator.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/local/include/boost/iterator/reverse_iterator.hpp:
+
+/usr/local/include/boost/core/demangle.hpp:
+
+/usr/local/include/boost/range/rend.hpp:
+
+/usr/local/include/boost/next_prior.hpp:
+
+/usr/local/include/boost/type_traits/has_plus.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/local/include/boost/type_traits/detail/has_binary_operator.hpp:
+
+/usr/include/c++/9/bits/stl_construct.h:
+
+/usr/local/include/boost/variant/apply_visitor.hpp:
+
+/usr/local/include/boost/mpl/vector/aux_/begin_end.hpp:
+
+/usr/local/include/boost/mpl/vector/aux_/push_front.hpp:
+
+/usr/local/include/boost/type_traits/has_minus.hpp:
+
+/usr/local/include/boost/core/no_exceptions_support.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/9/include/mmintrin.h:
+
+/usr/local/include/boost/archive/detail/oserializer.hpp:
+
+/usr/local/include/boost/throw_exception.hpp:
+
+/usr/local/include/boost/fusion/support/detail/index_sequence.hpp:
+
+/usr/local/include/boost/exception/exception.hpp:
+
+/usr/local/include/boost/current_function.hpp:
+
+/usr/local/include/boost/mpl/int.hpp:
+
+/usr/local/include/boost/lexical_cast/try_lexical_convert.hpp:
+
+/usr/local/include/boost/lexical_cast/detail/is_character.hpp:
+
+/usr/local/include/boost/mpl/assert.hpp:
+
+/usr/local/include/boost/type_traits/has_logical_and.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h:
+
+../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorDeviceDefault.h:
+
+/usr/local/include/boost/lexical_cast/detail/converter_numeric.hpp:
+
+/usr/local/include/boost/type.hpp:
+
+/usr/local/include/boost/type_traits/has_complement.hpp:
+
+/usr/local/include/boost/numeric/conversion/converter.hpp:
+
+/usr/local/include/boost/numeric/conversion/conversion_traits.hpp:
+
+/usr/local/include/boost/mpl/pop_front.hpp:
+
+/usr/local/include/boost/archive/detail/basic_oserializer.hpp:
+
+/usr/local/include/boost/numeric/conversion/detail/sign_mixture.hpp:
+
+/usr/local/include/boost/numeric/conversion/detail/is_subranged.hpp:
+
+/usr/include/c++/9/string_view:
+
+/usr/local/include/boost/mpl/multiplies.hpp:
+
+/usr/local/include/boost/mpl/list/aux_/numbered.hpp:
+
+/usr/local/include/boost/fusion/container/list/nil.hpp:
+
+../third-party/qpOASES/qpOASES/SQProblemSchur.ipp:
+
+/usr/local/include/boost/numeric/conversion/detail/converter.hpp:
+
+/usr/local/include/boost/archive/detail/basic_iarchive.hpp:
+
+/usr/local/include/boost/detail/is_incrementable.hpp:
+
+/usr/local/include/boost/iostreams/detail/config/fpos.hpp:
+
+/usr/local/include/boost/numeric/conversion/numeric_cast_traits.hpp:
+
+/usr/local/include/boost/mpl/back_inserter.hpp:
+
+/usr/local/include/boost/numeric/conversion/detail/numeric_cast_traits.hpp:
+
+/usr/local/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_long_long.hpp:
+
+/usr/local/include/boost/lexical_cast/detail/converter_lexical.hpp:
+
+/usr/local/include/boost/mpl/prior.hpp:
+
+/usr/local/include/boost/type_traits/has_right_shift.hpp:
+
+/usr/local/include/boost/integer_traits.hpp:
+
+/usr/local/include/boost/fusion/view/iterator_range/detail/size_impl.hpp:
+
+/usr/local/include/boost/lexical_cast/detail/widest_char.hpp:
+
+/usr/local/include/boost/preprocessor/repeat.hpp:
+
+/usr/local/include/boost/array.hpp:
+
+/usr/local/include/boost/fusion/container/vector/detail/begin_impl.hpp:
+
+/usr/local/include/boost/fusion/view/joint_view/joint_view_fwd.hpp:
+
+/usr/local/include/boost/fusion/view/transform_view/detail/end_impl.hpp:
+
+/usr/local/include/boost/swap.hpp:
+
+../third-party/pinocchio/pinocchio/spatial/motion.hpp:
+
+/usr/local/include/boost/variant/detail/move.hpp:
+
+/usr/local/include/boost/core/swap.hpp:
+
+/usr/local/include/boost/detail/iterator.hpp:
+
+/usr/local/include/boost/container/container_fwd.hpp:
+
+/usr/local/include/boost/type_traits/detail/has_prefix_operator.hpp:
+
+/usr/local/include/boost/asio/basic_streambuf.hpp:
+
+/usr/local/include/boost/container/detail/std_fwd.hpp:
+
+/usr/local/include/boost/move/detail/std_ns_begin.hpp:
+
+/usr/local/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:
 
 /usr/include/c++/9/locale:
 
@@ -5996,279 +5958,219 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 /usr/include/libintl.h:
 
-/usr/include/boost/lexical_cast/detail/lcast_unsigned_converters.hpp:
+/usr/local/include/boost/iostreams/positioning.hpp:
 
-../third-party/pinocchio/pinocchio/algorithm/crba.hxx:
+/usr/include/c++/9/bits/codecvt.h:
 
-../third-party/pinocchio/pinocchio/serialization/fwd.hpp:
+/usr/include/c++/9/bits/locale_conv.h:
 
-/usr/include/boost/concept/detail/backward_compatibility.hpp:
+/usr/local/include/boost/fusion/view/transform_view/transform_view_fwd.hpp:
 
-/usr/include/boost/noncopyable.hpp:
+/usr/local/include/boost/preprocessor/arithmetic/mod.hpp:
 
-/usr/include/boost/math/special_functions/detail/round_fwd.hpp:
+/usr/local/include/boost/lexical_cast/detail/lcast_char_constants.hpp:
 
-/usr/include/boost/math/tools/promotion.hpp:
+/usr/local/include/boost/lexical_cast/detail/inf_nan.hpp:
 
-/usr/include/boost/fusion/container/vector/detail/next_impl.hpp:
+/usr/local/include/boost/math/special_functions/math_fwd.hpp:
 
-/usr/include/boost/preprocessor/comparison/less_equal.hpp:
+/usr/local/include/boost/variant/get.hpp:
 
-/usr/include/boost/config/no_tr1/complex.hpp:
+/usr/local/include/boost/predef/other/endian.h:
 
-/usr/local/include/eigen3/Eigen/LU:
+/usr/local/include/boost/predef/os/bsd/open.h:
 
-/usr/include/boost/predef/library/c/gnu.h:
+../third-party/pinocchio/pinocchio/algorithm/joint-configuration.hxx:
 
-../third-party/qpOASES/qpOASES/Utils.hpp:
+/usr/local/include/boost/range/detail/implementation_help.hpp:
 
-/usr/include/boost/fusion/view/joint_view/detail/value_of_data_impl.hpp:
+/usr/local/include/boost/predef/os/android.h:
 
-/usr/include/boost/predef/library/c/_prefix.h:
+/usr/local/include/boost/variant/detail/apply_visitor_delayed.hpp:
 
-../third-party/eigen3/Eigen/src/Core/PermutationMatrix.h:
+/usr/local/include/boost/serialization/level_enum.hpp:
 
-/usr/include/boost/predef/detail/_cassert.h:
+/usr/local/include/boost/predef/library/c/gnu.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+/usr/local/include/boost/predef/library/c/_prefix.h:
 
-/usr/include/boost/type_traits/has_unary_minus.hpp:
+/usr/include/c++/9/exception:
 
-/usr/include/boost/mpl/list/aux_/iterator.hpp:
+../third-party/qpOASES/qpOASES/Matrices.hpp:
 
-/usr/include/boost/predef/os/macos.h:
+../third-party/eigen3/Eigen/src/LU/arch/InverseSize4.h:
 
-/usr/include/boost/predef/os/ios.h:
+/usr/local/include/boost/predef/os/macos.h:
 
-/usr/include/boost/predef/os/bsd/free.h:
+/usr/local/include/boost/predef/os/bsd/dragonfly.h:
 
-/usr/include/boost/predef/os/bsd/open.h:
+/usr/local/include/boost/predef/os/bsd/net.h:
 
-/usr/include/boost/predef/os/bsd/net.h:
+/usr/local/include/boost/math/tools/real_cast.hpp:
 
-/usr/include/boost/predef/os/android.h:
+/usr/local/include/boost/fusion/iterator/value_of.hpp:
 
-../third-party/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h:
+/usr/local/include/boost/preprocessor/iteration/detail/bounds/lower2.hpp:
 
-/usr/include/boost/integer.hpp:
+/usr/local/include/boost/detail/basic_pointerbuf.hpp:
 
-/usr/include/boost/type_traits/has_dereference.hpp:
+/usr/local/include/boost/fusion/sequence/intrinsic/at.hpp:
 
-/usr/include/boost/integer_fwd.hpp:
-
-/usr/include/boost/utility/declval.hpp:
-
-../third-party/eigen3/Eigen/src/Geometry/Scaling.h:
-
-/usr/include/boost/type_traits/detail/mp_defer.hpp:
-
-/usr/include/boost/math/constants/calculate_constants.hpp:
-
-/usr/include/boost/mpl/insert_fwd.hpp:
-
-/usr/include/boost/fusion/view/iterator_range/detail/at_impl.hpp:
-
-/usr/include/boost/math/policies/error_handling.hpp:
-
-/usr/include/boost/mpl/erase.hpp:
+/usr/local/include/boost/math/special_functions/trunc.hpp:
 
 ../third-party/eigen3/Eigen/src/Core/ConditionEstimator.h:
-
-/usr/include/boost/mpl/less.hpp:
 
 /usr/include/c++/9/iomanip:
 
 /usr/include/c++/9/bits/quoted_string.h:
 
-/usr/include/boost/serialization/version.hpp:
+/usr/local/include/boost/mpl/aux_/config/nttp.hpp:
 
-/usr/include/boost/fusion/algorithm/iteration/fold.hpp:
+../third-party/pinocchio/pinocchio/math/comparison-operators.hpp:
 
-/usr/include/boost/type_traits/type_with_alignment.hpp:
+/usr/local/include/boost/iostreams/detail/default_arg.hpp:
 
-/usr/include/boost/type_traits/remove_bounds.hpp:
+/usr/local/include/boost/type_traits/aligned_storage.hpp:
 
-/usr/include/boost/type_traits/remove_extent.hpp:
+/usr/local/include/boost/mpl/aux_/common_name_wknd.hpp:
 
-/usr/include/boost/mpl/aux_/push_back_impl.hpp:
+/usr/local/include/boost/type_traits/type_with_alignment.hpp:
 
-/usr/include/boost/type_traits/copy_cv.hpp:
+/usr/local/include/boost/type_traits/common_type.hpp:
 
-/usr/include/boost/iostreams/detail/wrap_unwrap.hpp:
+/usr/local/include/boost/type_traits/remove_bounds.hpp:
 
-/usr/include/boost/predef/platform/windows_uwp.h:
+/usr/local/include/boost/type_traits/detail/mp_defer.hpp:
 
-/usr/include/boost/preprocessor/detail/is_binary.hpp:
+/usr/local/include/boost/type_traits/copy_cv.hpp:
 
-/usr/include/boost/type_traits/copy_cv_ref.hpp:
+/usr/local/include/boost/type_traits/extent.hpp:
 
-/usr/include/boost/type_traits/copy_reference.hpp:
+/usr/local/include/boost/type_traits/has_bit_or_assign.hpp:
+
+/usr/local/include/boost/type_traits/has_bit_xor_assign.hpp:
+
+/usr/local/include/boost/bind/mem_fn.hpp:
 
 ../third-party/pinocchio/pinocchio/multibody/joint/joint-collection.hpp:
 
-/usr/include/stdint.h:
+/usr/local/include/boost/type_traits/has_divides_assign.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/9/bits/ctype_inline.h:
+../third-party/pinocchio/pinocchio/spatial/force-tpl.hpp:
 
-../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorCostModel.h:
+/usr/local/include/boost/fusion/container/list/detail/value_at_impl.hpp:
 
-/usr/include/boost/type_traits/enable_if.hpp:
+/usr/local/include/boost/type_traits/has_left_shift_assign.hpp:
 
-/usr/include/boost/type_traits/has_bit_or_assign.hpp:
+/usr/local/include/boost/type_traits/has_less.hpp:
 
-../third-party/eigen3/Eigen/src/Core/Reshaped.h:
+/usr/local/include/boost/type_traits/has_logical_or.hpp:
 
-/usr/include/boost/integer/common_factor_ct.hpp:
+/usr/local/include/boost/type_traits/has_multiplies.hpp:
 
-/usr/include/boost/type_traits/has_bit_xor_assign.hpp:
+/usr/local/include/boost/type_traits/has_negate.hpp:
 
-/usr/include/boost/type_traits/has_complement.hpp:
+/usr/local/include/boost/type_traits/has_new_operator.hpp:
 
-/usr/include/boost/operators.hpp:
+/usr/local/include/boost/type_traits/has_not_equal_to.hpp:
 
-/usr/include/boost/archive/basic_streambuf_locale_saver.hpp:
+/usr/local/include/boost/type_traits/is_assignable.hpp:
 
-/usr/include/boost/type_traits/has_divides.hpp:
+/usr/local/include/boost/fusion/view/joint_view/detail/value_of_impl.hpp:
 
-/usr/include/boost/type_traits/has_divides_assign.hpp:
+/usr/local/include/boost/type_traits/has_nothrow_constructor.hpp:
 
-/usr/include/boost/mpl/aux_/advance_backward.hpp:
+../third-party/eigen3/Eigen/Eigenvalues:
 
-/usr/include/boost/type_traits/has_equal_to.hpp:
+/usr/local/include/boost/type_traits/has_nothrow_copy.hpp:
 
-/usr/include/boost/fusion/view/transform_view/detail/begin_impl.hpp:
+/usr/local/include/boost/fusion/mpl/begin.hpp:
 
-/usr/include/c++/9/bits/exception.h:
+/usr/local/include/boost/type_traits/has_trivial_destructor.hpp:
 
-/usr/include/boost/type_traits/has_greater_equal.hpp:
+/usr/local/include/boost/mpl/reverse_fold.hpp:
 
-/usr/include/boost/type_traits/has_logical_and.hpp:
+/usr/local/include/boost/lexical_cast/detail/lcast_unsigned_converters.hpp:
 
-/usr/include/boost/type_traits/has_logical_not.hpp:
+/usr/local/include/boost/type_traits/has_post_increment.hpp:
 
-../third-party/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h:
+../third-party/pinocchio/pinocchio/algorithm/joint-configuration.hpp:
 
-/usr/include/boost/type_traits/has_modulus_assign.hpp:
+/usr/local/include/boost/fusion/view/zip_view/detail/at_impl.hpp:
 
-/usr/include/boost/mpl/aux_/msvc_eti_base.hpp:
+/usr/local/include/boost/type_traits/has_pre_decrement.hpp:
 
-/usr/include/boost/type_traits/has_multiplies.hpp:
+/usr/local/include/boost/type_traits/has_trivial_assign.hpp:
 
-/usr/include/boost/type_traits/has_multiplies_assign.hpp:
+/usr/local/include/boost/type_traits/has_trivial_constructor.hpp:
 
-/usr/include/boost/type_traits/has_new_operator.hpp:
+/usr/local/include/boost/fusion/view/zip_view/zip_view.hpp:
 
-/usr/include/boost/smart_ptr/detail/local_counted_base.hpp:
+/usr/local/include/boost/mpl/list/aux_/empty.hpp:
 
-/usr/include/boost/type_traits/is_fundamental.hpp:
+/usr/local/include/boost/type_traits/has_trivial_copy.hpp:
 
-/usr/include/boost/preprocessor/repeat.hpp:
+/usr/local/include/boost/archive/text_oarchive.hpp:
 
-/usr/include/boost/type_traits/has_nothrow_assign.hpp:
+/usr/local/include/boost/type_traits/has_trivial_move_constructor.hpp:
 
-/usr/include/boost/type_traits/is_assignable.hpp:
+/usr/local/include/boost/type_traits/has_unary_minus.hpp:
 
-/usr/include/boost/archive/detail/abi_prefix.hpp:
+/usr/local/include/boost/math/tools/user.hpp:
 
-/usr/include/boost/type_traits/has_nothrow_copy.hpp:
+/usr/local/include/boost/type_traits/has_unary_plus.hpp:
 
-/usr/include/boost/fusion/sequence/intrinsic/detail/segmented_end.hpp:
+/usr/local/include/boost/move/utility_core.hpp:
 
-/usr/include/boost/type_traits/is_copy_constructible.hpp:
+/usr/local/include/boost/type_traits/is_complex.hpp:
 
-/usr/include/c++/9/bits/stl_heap.h:
+/usr/local/include/boost/type_traits/is_compound.hpp:
 
-/usr/include/boost/type_traits/has_post_increment.hpp:
+/usr/local/include/boost/type_traits/is_fundamental.hpp:
 
-/usr/include/c++/9/bits/unordered_map.h:
+/usr/local/include/boost/type_traits/is_empty.hpp:
 
-/usr/include/boost/type_traits/has_pre_increment.hpp:
+/usr/include/c++/9/pstl/pstl_config.h:
 
-/usr/include/boost/type_traits/has_right_shift_assign.hpp:
+/usr/local/include/boost/function_types/detail/class_transform.hpp:
 
-/usr/include/boost/core/no_exceptions_support.hpp:
+/usr/local/include/boost/type_traits/remove_const.hpp:
 
-/usr/include/boost/type_traits/has_trivial_assign.hpp:
+/usr/local/include/boost/type_traits/is_final.hpp:
 
-/usr/include/boost/type_traits/has_trivial_constructor.hpp:
+/usr/local/include/boost/type_traits/is_nothrow_move_assignable.hpp:
 
-/usr/include/boost/type_traits/has_trivial_move_constructor.hpp:
+/usr/local/include/boost/fusion/algorithm/transformation/insert_range.hpp:
 
-/usr/include/boost/core/addressof.hpp:
+../third-party/mujoco/mujoco/mujoco.h:
 
-/usr/include/boost/type_traits/has_virtual_destructor.hpp:
+/usr/local/include/boost/smart_ptr/detail/sp_counted_impl.hpp:
 
-/usr/include/boost/type_traits/is_complex.hpp:
+/usr/local/include/boost/type_traits/is_nothrow_swappable.hpp:
 
-/usr/include/boost/type_traits/is_compound.hpp:
+../third-party/eigen3/Eigen/src/Core/GenericPacketMath.h:
 
-../third-party/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsArrayAPI.h:
+/usr/local/include/boost/type_traits/is_stateless.hpp:
 
-/usr/include/boost/type_traits/is_noncopyable.hpp:
+/usr/local/include/boost/type_traits/is_virtual_base_of.hpp:
 
-/usr/include/boost/mpl/vector.hpp:
+/usr/local/include/boost/type_traits/rank.hpp:
 
-/usr/include/boost/type_traits/is_final.hpp:
+../third-party/eigen3/Eigen/src/Householder/HouseholderSequence.h:
 
-/usr/include/boost/fusion/adapted/mpl/detail/is_view_impl.hpp:
+/usr/local/include/boost/type_traits/remove_volatile.hpp:
 
-/usr/include/c++/9/tr1/bessel_function.tcc:
+/usr/include/x86_64-linux-gnu/bits/time64.h:
 
-/usr/include/boost/type_traits/is_list_constructible.hpp:
+/usr/local/include/boost/type_traits/integral_promotion.hpp:
 
-/usr/include/boost/type_traits/is_member_object_pointer.hpp:
+/usr/local/include/boost/archive/detail/decl.hpp:
 
-/usr/include/boost/fusion/container/vector/vector_fwd.hpp:
-
-/usr/include/boost/type_traits/is_nothrow_move_assignable.hpp:
-
-../third-party/eigen3/Eigen/src/SVD/BDCSVD.h:
-
-/usr/include/boost/mpl/aux_/has_begin.hpp:
-
-/usr/include/boost/preprocessor/enum_params_with_a_default.hpp:
-
-/usr/include/boost/mpl/limits/vector.hpp:
-
-/usr/include/boost/detail/reference_content.hpp:
-
-/usr/include/boost/function_types/is_member_pointer.hpp:
-
-/usr/include/c++/9/cwchar:
-
-/usr/include/boost/type_traits.hpp:
-
-/usr/include/boost/mpl/empty_base.hpp:
-
-/usr/include/boost/archive/basic_text_iarchive.hpp:
-
-/usr/include/boost/numeric/conversion/udt_builtin_mixture_enum.hpp:
-
-/usr/include/boost/type_traits/is_nothrow_move_constructible.hpp:
-
-/usr/include/boost/type_traits/is_nothrow_swappable.hpp:
-
-/usr/include/boost/variant/detail/enable_recursive.hpp:
-
-/usr/include/boost/type_traits/is_stateless.hpp:
-
-/usr/include/boost/type_traits/rank.hpp:
-
-/usr/include/boost/type_traits/remove_all_extents.hpp:
-
-/usr/include/c++/9/bits/basic_string.h:
-
-/usr/include/boost/type_traits/remove_volatile.hpp:
-
-/usr/include/boost/type_traits/integral_promotion.hpp:
-
-/usr/include/boost/fusion/view/joint_view/detail/deref_data_impl.hpp:
+/usr/local/include/boost/variant/recursive_wrapper_fwd.hpp:
 
 ../third-party/pinocchio/pinocchio/math/sincos.hpp:
 
-/usr/include/boost/fusion/view/flatten_view.hpp:
-
-/usr/include/boost/predef/detail/test.h:
+/usr/local/include/boost/archive/detail/common_oarchive.hpp:
 
 /usr/include/c++/9/ext/string_conversions.h:
 
@@ -6276,519 +6178,627 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 ../third-party/pinocchio/pinocchio/math/rotation.hpp:
 
+/usr/local/include/boost/archive/basic_xml_oarchive.hpp:
+
 ../third-party/pinocchio/pinocchio/spatial/cartesian-axis.hpp:
 
 /usr/include/c++/9/tr1/riemann_zeta.tcc:
 
 ../third-party/pinocchio/pinocchio/spatial/force.hpp:
 
-/usr/include/boost/iostreams/detail/double_object.hpp:
+../third-party/eigen3/Eigen/Core:
+
+/usr/local/include/boost/variant/recursive_variant.hpp:
+
+/usr/local/include/boost/move/core.hpp:
+
+/usr/local/include/boost/function_types/detail/pp_variate_loop/preprocessed.hpp:
 
 ../third-party/pinocchio/pinocchio/spatial/motion-dense.hpp:
-
-/usr/include/boost/concept/assert.hpp:
-
-/usr/include/boost/exception/exception.hpp:
-
-/usr/include/boost/fusion/container/list/cons.hpp:
 
 /usr/include/c++/9/bits/stl_algobase.h:
 
 ../third-party/pinocchio/pinocchio/spatial/skew.hpp:
 
+/usr/local/include/boost/fusion/view/single_view/detail/prior_impl.hpp:
+
 ../third-party/pinocchio/pinocchio/spatial/motion-tpl.hpp:
 
-/usr/include/boost/fusion/container/list/detail/deref_impl.hpp:
-
-../third-party/pinocchio/pinocchio/spatial/motion-zero.hpp:
+../third-party/pinocchio/pinocchio/spatial/force-base.hpp:
 
 ../third-party/pinocchio/pinocchio/spatial/force-dense.hpp:
 
-/usr/local/include/eigen3/Eigen/Cholesky:
+../third-party/pinocchio/pinocchio/multibody/fwd.hpp:
 
-/usr/include/boost/preprocessor/comparison/less.hpp:
+/usr/local/include/boost/variant/static_visitor.hpp:
 
-../third-party/pinocchio/pinocchio/spatial/explog.hpp:
+../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorArgMax.h:
 
-../third-party/pinocchio/pinocchio/spatial/explog-quaternion.hpp:
+../third-party/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h:
+
+../third-party/pinocchio/pinocchio/multibody/frame.hpp:
+
+../third-party/pinocchio/pinocchio/multibody/joint/joint-free-flyer.hpp:
+
+../third-party/pinocchio/pinocchio/spatial/log.hpp:
+
+/usr/local/include/boost/mpl/aux_/iter_fold_if_impl.hpp:
+
+/usr/local/include/boost/fusion/view/single_view/detail/advance_impl.hpp:
+
+/usr/local/include/boost/detail/reference_content.hpp:
+
+../third-party/pinocchio/pinocchio/multibody/joint/joint-base.hpp:
+
+/usr/local/include/boost/function_types/detail/encoding/aliases_undef.hpp:
+
+../third-party/pinocchio/pinocchio/multibody/joint/joint-model-base.hpp:
 
 ../third-party/pinocchio/pinocchio/multibody/joint/joint-common-operations.hpp:
 
-/usr/include/boost/fusion/view/single_view/detail/distance_impl.hpp:
+/usr/local/include/boost/mpl/inherit.hpp:
+
+/usr/local/include/boost/noncopyable.hpp:
 
 ../third-party/pinocchio/pinocchio/math/matrix-block.hpp:
 
-/usr/include/boost/iostreams/detail/error.hpp:
-
-/usr/include/boost/variant/apply_visitor.hpp:
-
-../third-party/pinocchio/pinocchio/multibody/joint/joint-data-base.hpp:
-
-../third-party/eigen3/Eigen/src/Eigenvalues/EigenSolver.h:
-
-/usr/include/boost/fusion/container/list/detail/begin_impl.hpp:
-
-/usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_common.hpp:
-
-../third-party/pinocchio/pinocchio/multibody/constraint.hpp:
-
 ../third-party/pinocchio/pinocchio/multibody/constraint-base.hpp:
-
-../third-party/pinocchio/pinocchio/spatial/act-on-set.hxx:
 
 ../third-party/pinocchio/pinocchio/multibody/constraint-generic.hpp:
 
 ../third-party/pinocchio/pinocchio/multibody/joint/joint-planar.hpp:
 
-../third-party/eigen3/Eigen/src/Geometry/Translation.h:
+../third-party/pinocchio/pinocchio/multibody/joint/joint-prismatic.hpp:
 
-/usr/include/boost/smart_ptr/detail/sp_counted_base.hpp:
+../third-party/eigen3/Eigen/src/Geometry/Translation.h:
 
 ../third-party/pinocchio/pinocchio/utils/axis-label.hpp:
 
 ../third-party/pinocchio/pinocchio/multibody/joint/joint-prismatic-unaligned.hpp:
 
-/usr/include/boost/fusion/sequence/intrinsic/at.hpp:
+/usr/local/include/boost/fusion/view/flatten_view/flatten_view_iterator.hpp:
+
+/usr/local/include/boost/mpl/void_fwd.hpp:
+
+/usr/local/include/boost/mpl/begin.hpp:
 
 ../third-party/pinocchio/pinocchio/multibody/joint/joint-revolute-unbounded.hpp:
 
-/usr/include/boost/fusion/container/vector/detail/end_impl.hpp:
+/usr/include/c++/9/istream:
+
+/usr/local/include/boost/type_index/type_index_facade.hpp:
 
 ../third-party/pinocchio/pinocchio/multibody/joint/joint-revolute-unbounded-unaligned.hpp:
 
-/usr/include/boost/archive/binary_iarchive_impl.hpp:
+../third-party/pinocchio/pinocchio/multibody/joint/joint-spherical-ZYX.hpp:
 
 ../third-party/pinocchio/pinocchio/multibody/joint/joint-spherical.hpp:
 
-/usr/include/boost/variant.hpp:
+/usr/lib/gcc/x86_64-linux-gnu/9/include/float.h:
 
-/usr/include/boost/type_index/type_index_facade.hpp:
+/usr/local/include/boost/variant.hpp:
 
-/usr/include/boost/mpl/limits/arity.hpp:
+/usr/local/include/boost/type_index.hpp:
 
-/usr/include/boost/container_hash/hash_fwd.hpp:
+/usr/local/include/boost/type_index/stl_type_index.hpp:
+
+/usr/local/include/boost/container_hash/hash_fwd.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/cxxabi_tweaks.h:
 
-/usr/include/boost/fusion/view/joint_view/joint_view_fwd.hpp:
+/usr/local/include/boost/variant/detail/substitute_fwd.hpp:
 
-/usr/include/boost/variant/detail/config.hpp:
+/usr/local/include/boost/variant/detail/backup_holder.hpp:
 
-/usr/include/boost/fusion/sequence/convert.hpp:
+/usr/local/include/boost/variant/detail/enable_recursive_fwd.hpp:
 
-/usr/include/boost/serialization/collections_save_imp.hpp:
+/usr/local/include/boost/archive/basic_text_oarchive.hpp:
 
-/usr/include/boost/variant/detail/substitute_fwd.hpp:
+/usr/local/include/boost/mpl/integral_c.hpp:
 
-/usr/include/boost/mpl/aux_/push_front_impl.hpp:
+/usr/local/include/boost/variant/detail/initializer.hpp:
 
-/usr/include/boost/variant/detail/backup_holder.hpp:
+/usr/local/include/boost/move/move.hpp:
 
-/usr/include/boost/variant/detail/forced_return.hpp:
+/usr/local/include/boost/move/detail/config_begin.hpp:
 
-/usr/include/boost/move/utility.hpp:
+/usr/local/include/boost/move/utility.hpp:
 
-/usr/include/boost/move/detail/workaround.hpp:
+/usr/local/include/boost/preprocessor/seq/detail/is_empty.hpp:
 
-/usr/include/boost/move/utility_core.hpp:
+/usr/local/include/boost/move/detail/workaround.hpp:
 
-/usr/include/boost/move/iterator.hpp:
+/usr/local/include/boost/move/detail/config_end.hpp:
 
-/usr/include/boost/move/detail/iterator_traits.hpp:
+/usr/local/include/boost/smart_ptr/detail/sp_nullptr_t.hpp:
 
-/usr/include/boost/preprocessor/repetition/detail/for.hpp:
+/usr/local/include/boost/move/detail/meta_utils.hpp:
 
-/usr/include/boost/variant/recursive_wrapper.hpp:
+/usr/local/include/boost/move/detail/meta_utils_core.hpp:
 
-/usr/include/boost/move/algo/move.hpp:
+/usr/local/include/boost/fusion/algorithm/iteration/reverse_fold_fwd.hpp:
 
-/usr/include/c++/9/bits/shared_ptr.h:
+/usr/local/include/boost/move/detail/type_traits.hpp:
 
-/usr/include/boost/move/detail/iterator_to_raw_pointer.hpp:
+../third-party/pinocchio/pinocchio/algorithm/aba.hpp:
 
-/usr/include/boost/move/detail/pointer_element.hpp:
+/usr/local/include/boost/move/iterator.hpp:
 
-/usr/include/boost/variant/detail/make_variant_list.hpp:
+/usr/local/include/boost/move/algo/move.hpp:
 
-/usr/include/boost/variant/static_visitor.hpp:
+/usr/local/include/boost/numeric/conversion/cast.hpp:
 
-/usr/include/boost/variant/detail/apply_visitor_unary.hpp:
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/usr/include/boost/variant/detail/apply_visitor_binary.hpp:
+/usr/include/c++/9/bits/concept_check.h:
 
-/usr/include/boost/detail/no_exceptions_support.hpp:
+/usr/local/include/boost/move/detail/iterator_to_raw_pointer.hpp:
 
-/usr/include/boost/utility.hpp:
+/usr/local/include/boost/fusion/view/zip_view/detail/equal_to_impl.hpp:
 
-/usr/include/boost/aligned_storage.hpp:
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
 
-/usr/include/boost/blank.hpp:
+/usr/local/include/boost/variant/detail/make_variant_list.hpp:
 
-/usr/include/boost/mpl/aux_/empty_impl.hpp:
+/usr/include/x86_64-linux-gnu/bits/errno.h:
 
-/usr/include/boost/mpl/aux_/front_impl.hpp:
+../third-party/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h:
 
-/usr/include/boost/mpl/insert_range.hpp:
+/usr/local/include/boost/variant/detail/cast_storage.hpp:
 
-/usr/include/boost/mpl/insert_range_fwd.hpp:
+/usr/local/include/boost/variant/detail/apply_visitor_unary.hpp:
 
-/usr/include/boost/mpl/aux_/insert_range_impl.hpp:
+/usr/local/include/boost/variant/detail/has_result_type.hpp:
 
-/usr/include/boost/mpl/joint_view.hpp:
+/usr/local/include/boost/archive/detail/abi_prefix.hpp:
 
-/usr/include/boost/type_traits/same_traits.hpp:
+/usr/local/include/boost/serialization/static_warning.hpp:
 
-/usr/include/boost/archive/detail/basic_pointer_iserializer.hpp:
+/usr/local/include/boost/smart_ptr/detail/sp_forward.hpp:
 
-/usr/include/boost/mpl/pair_view.hpp:
+/usr/local/include/boost/functional/hash_fwd.hpp:
 
-/usr/include/boost/mpl/is_sequence.hpp:
+/usr/local/include/boost/variant/detail/std_hash.hpp:
 
-/usr/include/boost/mpl/back_fwd.hpp:
+/usr/local/include/boost/detail/templated_streams.hpp:
 
-/usr/include/boost/mpl/size_t.hpp:
+/usr/local/include/boost/mpl/empty.hpp:
 
-/usr/include/boost/mpl/size_t_fwd.hpp:
+/usr/local/include/boost/mpl/aux_/empty_impl.hpp:
 
-/usr/include/boost/mpl/aux_/numeric_op.hpp:
+/usr/local/include/boost/math/tools/config.hpp:
 
-/usr/include/boost/mpl/sizeof.hpp:
+/usr/local/include/boost/mpl/aux_/insert_range_impl.hpp:
 
-/usr/include/boost/variant/detail/variant_io.hpp:
+../third-party/qpOASES/qpOASES/SQProblem.hpp:
 
-/usr/include/boost/variant/recursive_variant.hpp:
+/usr/local/include/boost/mpl/aux_/pop_front_impl.hpp:
 
-/usr/include/boost/variant/detail/substitute.hpp:
+/usr/local/include/boost/mpl/insert_fwd.hpp:
 
-/usr/include/c++/9/bits/stl_tree.h:
+/usr/local/include/boost/mpl/aux_/insert_impl.hpp:
 
-/usr/include/boost/checked_delete.hpp:
+/usr/local/include/boost/variant/detail/apply_visitor_binary.hpp:
 
-/usr/include/boost/fusion/support/sequence_base.hpp:
+/usr/local/include/boost/mpl/aux_/joint_iter.hpp:
 
-/usr/include/boost/utility/addressof.hpp:
+/usr/local/include/boost/mpl/aux_/iter_push_front.hpp:
 
-/usr/include/boost/variant/detail/element_index.hpp:
+/usr/local/include/boost/mpl/size_t.hpp:
+
+/usr/local/include/boost/mpl/transform.hpp:
+
+/usr/local/include/boost/mpl/aux_/type_wrapper.hpp:
+
+/usr/local/include/boost/mpl/equal.hpp:
+
+/usr/local/include/boost/mpl/min_max.hpp:
+
+../third-party/pinocchio/pinocchio/algorithm/frames.hxx:
+
+/usr/local/include/boost/variant/detail/enable_recursive.hpp:
+
+/usr/local/include/boost/variant/recursive_wrapper.hpp:
+
+/usr/include/c++/9/ratio:
+
+../third-party/eigen3/Eigen/src/Core/Replicate.h:
+
+/usr/local/include/boost/fusion/adapted/mpl/detail/end_impl.hpp:
+
+/usr/local/include/boost/utility/addressof.hpp:
+
+/usr/local/include/boost/variant/detail/element_index.hpp:
+
+../third-party/pinocchio/pinocchio/multibody/joint/joint-data-base.hpp:
+
+/usr/local/include/boost/variant/bad_visit.hpp:
 
 ../third-party/eigen3/Eigen/StdVector:
 
-/usr/include/boost/serialization/nvp.hpp:
+/usr/local/include/boost/serialization/tracking.hpp:
 
-/usr/include/boost/fusion/adapted/mpl/detail/has_key_impl.hpp:
+/usr/local/include/boost/fusion/view/filter_view/detail/next_impl.hpp:
 
-/usr/include/boost/serialization/level.hpp:
+/usr/local/include/boost/serialization/type_info_implementation.hpp:
 
-/usr/include/boost/serialization/tracking_enum.hpp:
+/usr/local/include/boost/serialization/access.hpp:
 
-/usr/include/boost/serialization/type_info_implementation.hpp:
+/usr/local/include/boost/serialization/base_object.hpp:
 
-/usr/include/boost/serialization/access.hpp:
+/usr/local/include/boost/serialization/void_cast_fwd.hpp:
 
-/usr/include/boost/serialization/base_object.hpp:
+/usr/local/include/boost/serialization/wrapper.hpp:
 
-/usr/include/boost/serialization/void_cast_fwd.hpp:
+/usr/local/include/boost/mpl/int_fwd.hpp:
 
-/usr/include/boost/serialization/wrapper.hpp:
+/usr/local/include/boost/fusion/iterator/detail/adapt_deref_traits.hpp:
+
+/usr/local/include/boost/type_traits/add_const.hpp:
+
+/usr/local/include/boost/numeric/conversion/int_float_mixture_enum.hpp:
 
 ../third-party/pinocchio/pinocchio/serialization/eigen.hpp:
 
-/usr/include/boost/serialization/serialization.hpp:
+/usr/local/include/boost/preprocessor/tuple/eat.hpp:
 
-/usr/include/boost/serialization/extended_type_info_typeid.hpp:
+/usr/local/include/boost/mpl/vector/aux_/pop_front.hpp:
 
-/usr/include/boost/serialization/strong_typedef.hpp:
+/usr/local/include/boost/mpl/end.hpp:
 
-/usr/include/boost/iostreams/positioning.hpp:
+../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorVolumePatch.h:
 
-/usr/include/boost/scoped_ptr.hpp:
+/usr/local/include/boost/serialization/serialization.hpp:
 
-/usr/include/boost/smart_ptr/scoped_ptr.hpp:
+/usr/local/include/boost/mpl/less_equal.hpp:
 
-/usr/include/boost/smart_ptr/detail/sp_noexcept.hpp:
+/usr/local/include/boost/operators.hpp:
 
-/usr/include/boost/fusion/view/transform_view/detail/at_impl.hpp:
+/usr/local/include/boost/fusion/support/detail/is_mpl_sequence.hpp:
 
-/usr/include/boost/range/value_type.hpp:
+../third-party/qpOASES/qpOASES/Constants.hpp:
 
-/usr/include/boost/smart_ptr/detail/operator_bool.hpp:
+/usr/local/include/boost/numeric/conversion/converter_policies.hpp:
 
-/usr/include/boost/type_traits/has_less.hpp:
+/usr/local/include/boost/scoped_ptr.hpp:
 
-/usr/include/boost/config/abi_prefix.hpp:
+/usr/local/include/boost/fusion/view/joint_view/detail/deref_data_impl.hpp:
 
-/usr/include/boost/archive/detail/abi_suffix.hpp:
+/usr/local/include/boost/smart_ptr/detail/operator_bool.hpp:
 
-/usr/include/boost/serialization/is_bitwise_serializable.hpp:
+/usr/local/include/boost/archive/detail/auto_link_archive.hpp:
 
-/usr/include/boost/function_types/detail/pp_tags/cc_tag.hpp:
+/usr/local/include/boost/fusion/container/list.hpp:
 
-/usr/include/boost/smart_ptr/detail/shared_count.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
-../third-party/mujoco/mujoco/mjui.h:
+/usr/local/include/boost/fusion/container/list/detail/at_impl.hpp:
 
-/usr/include/boost/smart_ptr/detail/sp_has_sync.hpp:
+/usr/local/include/boost/config/abi_prefix.hpp:
 
-/usr/include/boost/range/distance.hpp:
+/usr/local/include/boost/serialization/is_bitwise_serializable.hpp:
 
-/usr/include/boost/smart_ptr/detail/sp_convertible.hpp:
+/usr/include/c++/9/iterator:
 
-/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:
+/usr/local/include/boost/config/no_tr1/memory.hpp:
 
-/usr/include/boost/predef/platform/windows_store.h:
+/usr/local/include/boost/smart_ptr/detail/shared_count.hpp:
 
-/usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp:
+/usr/local/include/boost/smart_ptr/bad_weak_ptr.hpp:
 
-/usr/include/boost/smart_ptr/make_shared_array.hpp:
+../third-party/mujoco/mujoco/mjdata.h:
 
-/usr/include/boost/mpl/aux_/insert_impl.hpp:
+/usr/local/include/boost/range/detail/safe_bool.hpp:
 
-/usr/include/boost/core/use_default.hpp:
+/usr/local/include/boost/smart_ptr/detail/sp_counted_base.hpp:
 
-/usr/include/boost/core/default_allocator.hpp:
+/usr/local/include/boost/smart_ptr/detail/sp_counted_base_std_atomic.hpp:
 
-/usr/include/boost/mpl/vector/aux_/begin_end.hpp:
+/usr/include/c++/9/cerrno:
 
-/usr/include/boost/core/first_scalar.hpp:
+/usr/local/include/boost/smart_ptr/detail/sp_typeinfo_.hpp:
 
-../third-party/eigen3/Eigen/src/Core/util/Macros.h:
+/usr/local/include/boost/smart_ptr/detail/sp_convertible.hpp:
 
-/usr/include/boost/type_traits/is_bounded_array.hpp:
+../third-party/pinocchio/pinocchio/core/unary-op.hpp:
 
-/usr/include/math.h:
+/usr/local/include/boost/smart_ptr/detail/yield_k.hpp:
 
-/usr/include/boost/serialization/collections_load_imp.hpp:
+/usr/local/include/boost/predef/platform/windows_phone.h:
 
-/usr/include/boost/serialization/array_optimization.hpp:
+/usr/include/c++/9/bits/hashtable.h:
 
-/usr/include/boost/mpl/list/aux_/front.hpp:
+/usr/local/include/boost/smart_ptr/make_shared.hpp:
+
+/usr/local/include/boost/fusion/view/filter_view/filter_view.hpp:
+
+/usr/local/include/boost/smart_ptr/make_shared_object.hpp:
+
+/usr/local/include/boost/smart_ptr/make_shared_array.hpp:
+
+../third-party/pinocchio/pinocchio/deprecated-macros.hpp:
+
+/usr/local/include/boost/smart_ptr/allocate_shared_array.hpp:
+
+/usr/local/include/boost/function_types/detail/encoding/undef.hpp:
+
+../third-party/eigen3/Eigen/src/Eigenvalues/EigenSolver.h:
+
+/usr/local/include/boost/core/alloc_construct.hpp:
+
+/usr/include/c++/9/math.h:
+
+/usr/local/include/boost/core/noinit_adaptor.hpp:
+
+/usr/local/include/boost/type_traits/is_bounded_array.hpp:
+
+/usr/local/include/boost/serialization/collection_size_type.hpp:
+
+/usr/local/include/boost/iostreams/detail/call_traits.hpp:
+
+../third-party/eigen3/Eigen/src/Core/util/ConfigureVectorization.h:
+
+/usr/local/include/boost/serialization/array_optimization.hpp:
+
+/usr/local/include/boost/serialization/collection_traits.hpp:
+
+/usr/local/include/boost/mpl/aux_/arithmetic_op.hpp:
+
+/usr/local/include/boost/serialization/array.hpp:
+
+/usr/local/include/boost/iostreams/detail/adapter/concept_adapter.hpp:
 
 ../third-party/mujoco/mujoco/mjmacro.h:
 
 ../third-party/pinocchio/pinocchio/multibody/joint/joint-composite.hxx:
 
-../third-party/eigen3/Eigen/src/SVD/JacobiSVD.h:
+/usr/local/include/boost/fusion/mpl/back.hpp:
 
-/usr/include/boost/fusion/include/invoke.hpp:
+/usr/local/include/boost/function_types/detail/components_as_mpl_sequence.hpp:
 
-../third-party/qpOASES/qpOASES/MessageHandling.ipp:
+/usr/local/include/boost/fusion/include/invoke.hpp:
 
-/usr/include/boost/preprocessor/repetition/enum_shifted.hpp:
+/usr/local/include/boost/fusion/support/config.hpp:
 
-/usr/include/c++/9/bits/ostream_insert.h:
+/usr/local/include/boost/preprocessor/repetition/enum_shifted.hpp:
 
-/usr/include/boost/mpl/vector/vector30.hpp:
+/usr/local/include/boost/fusion/view/joint_view/detail/next_impl.hpp:
 
-/usr/include/boost/function_types/detail/class_transform.hpp:
+/usr/local/include/boost/mpl/remove.hpp:
 
-/usr/include/boost/smart_ptr/detail/spinlock_std_atomic.hpp:
+/usr/local/include/boost/function_types/config/compiler.hpp:
 
-/usr/include/boost/function_types/property_tags.hpp:
+/usr/local/include/boost/function_types/config/cc_names.hpp:
 
-/usr/include/boost/iostreams/imbue.hpp:
+/usr/local/include/boost/archive/basic_binary_oprimitive.hpp:
 
-/usr/include/boost/function_types/detail/pp_tags/preprocessed.hpp:
+/usr/local/include/boost/mpl/vector/vector30.hpp:
 
-/usr/include/boost/fusion/algorithm/iteration/detail/for_each.hpp:
+/usr/local/include/boost/fusion/view/single_view/detail/equal_to_impl.hpp:
 
-/usr/include/boost/preprocessor/punctuation/paren.hpp:
+/usr/local/include/boost/function_types/detail/pp_tags/preprocessed.hpp:
 
-/usr/include/boost/function_types/detail/encoding/aliases_def.hpp:
+/usr/local/include/boost/function_types/detail/pp_loop.hpp:
 
-/usr/include/boost/function_types/detail/pp_cc_loop/preprocessed.hpp:
+/usr/local/include/boost/function_types/detail/encoding/def.hpp:
 
-/usr/include/boost/fusion/algorithm/query/detail/segmented_find.hpp:
+/usr/local/include/boost/mpl/remove_if.hpp:
 
-/usr/include/boost/function_types/detail/pp_variate_loop/preprocessed.hpp:
+/usr/local/include/boost/function_types/detail/components_impl/arity20_0.hpp:
 
-../third-party/eigen3/Eigen/src/Core/util/Memory.h:
+/usr/local/include/boost/fusion/functional/invocation/detail/that_ptr.hpp:
 
-/usr/include/boost/function_types/detail/pp_arity_loop.hpp:
+/usr/local/include/boost/function_types/detail/components_impl/arity10_0.hpp:
 
-/usr/include/boost/serialization/traits.hpp:
+/usr/local/include/boost/type_traits/has_greater.hpp:
 
-/usr/include/boost/function_types/detail/components_as_mpl_sequence.hpp:
+/usr/local/include/boost/function_types/is_callable_builtin.hpp:
 
-/usr/include/boost/function_types/detail/retag_default_cc.hpp:
+/usr/local/include/boost/function_types/is_member_pointer.hpp:
 
-/usr/include/boost/fusion/sequence/intrinsic_fwd.hpp:
+/usr/local/include/boost/function_types/is_member_function_pointer.hpp:
 
-/usr/include/boost/fusion/container/vector/detail/advance_impl.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
-/usr/include/boost/mpl/bitand.hpp:
+/usr/local/include/boost/function_types/result_type.hpp:
 
-/usr/include/boost/function_types/is_member_function_pointer.hpp:
+/usr/local/include/boost/preprocessor/seq/first_n.hpp:
 
-/usr/include/boost/mpl/aux_/O1_size_impl.hpp:
+/usr/local/include/boost/fusion/view/single_view/detail/deref_impl.hpp:
 
-/usr/include/boost/function_types/result_type.hpp:
+/usr/local/include/boost/utility/result_of.hpp:
 
-/usr/include/boost/mpl/pop_front.hpp:
+/usr/local/include/boost/utility/detail/result_of_iterate.hpp:
 
-/usr/include/boost/utility/result_of.hpp:
+/usr/local/include/boost/predef/architecture/x86/32.h:
 
-/usr/include/boost/fusion/support/tag_of.hpp:
+/usr/local/include/boost/fusion/support/tag_of.hpp:
 
-/usr/include/boost/serialization/vector.hpp:
+/usr/include/x86_64-linux-gnu/bits/time.h:
 
-/usr/include/boost/fusion/support/detail/is_mpl_sequence.hpp:
+/usr/local/include/boost/fusion/support/tag_of_fwd.hpp:
 
-/usr/include/boost/fusion/support/is_segmented.hpp:
+/usr/local/include/boost/fusion/support/sequence_base.hpp:
 
-/usr/include/boost/archive/detail/common_oarchive.hpp:
+/usr/local/include/boost/config/no_tr1/utility.hpp:
 
-/usr/include/boost/mpl/size_fwd.hpp:
+/usr/local/include/boost/fusion/support/is_segmented.hpp:
 
-/usr/include/boost/fusion/sequence/intrinsic/detail/segmented_end_impl.hpp:
+/usr/local/include/boost/fusion/sequence/intrinsic/begin.hpp:
 
-/usr/include/boost/fusion/mpl/begin.hpp:
+/usr/local/include/boost/core/ref.hpp:
 
-/usr/include/boost/cstdint.hpp:
+/usr/local/include/boost/serialization/extended_type_info.hpp:
 
-/usr/include/boost/archive/detail/basic_oserializer.hpp:
+/usr/local/include/boost/range/size_type.hpp:
 
-/usr/include/boost/fusion/sequence/intrinsic/begin.hpp:
+/usr/local/include/boost/fusion/sequence/intrinsic/detail/segmented_begin.hpp:
 
-/usr/include/boost/fusion/sequence/intrinsic/detail/segmented_begin.hpp:
+/usr/local/include/boost/fusion/container/list/cons_fwd.hpp:
 
-../third-party/pinocchio/pinocchio/spatial/se3-base.hpp:
+/usr/local/include/boost/fusion/sequence/intrinsic/detail/segmented_end_impl.hpp:
 
-/usr/include/boost/fusion/sequence/intrinsic/detail/segmented_begin_impl.hpp:
+/usr/local/include/boost/core/enable_if.hpp:
 
-/usr/include/boost/fusion/support/detail/segmented_fold_until_impl.hpp:
+/usr/local/include/boost/fusion/support/detail/segmented_fold_until_impl.hpp:
 
-/usr/include/boost/fusion/support/is_iterator.hpp:
+/usr/local/include/boost/fusion/support/void.hpp:
 
-/usr/include/boost/fusion/support/iterator_base.hpp:
+/usr/local/include/boost/fusion/iterator/equal_to.hpp:
 
-/usr/include/boost/fusion/iterator/next.hpp:
+/usr/local/include/boost/mpl/aux_/value_wknd.hpp:
 
-../third-party/eigen3/Eigen/src/Core/CwiseUnaryOp.h:
+/usr/local/include/boost/serialization/item_version_type.hpp:
 
-/usr/include/boost/fusion/iterator/iterator_facade.hpp:
+/usr/local/include/boost/fusion/support/iterator_base.hpp:
 
-/usr/include/boost/fusion/iterator/detail/advance.hpp:
+/usr/local/include/boost/fusion/iterator/next.hpp:
 
-/usr/include/boost/fusion/iterator/prior.hpp:
+/usr/local/include/boost/fusion/sequence/intrinsic/segments.hpp:
 
-/usr/include/boost/fusion/view/reverse_view/detail/end_impl.hpp:
+/usr/local/include/boost/fusion/iterator/key_of.hpp:
 
-/usr/include/boost/mpl/has_key_fwd.hpp:
+/usr/local/include/boost/fusion/iterator/value_of_data.hpp:
 
-/usr/include/boost/fusion/iterator/detail/distance.hpp:
+/usr/local/include/boost/fusion/iterator/detail/segmented_equal_to.hpp:
 
-/usr/include/boost/fusion/iterator/key_of.hpp:
+/usr/local/include/boost/mpl/aux_/config/workaround.hpp:
 
-/usr/include/boost/fusion/iterator/detail/segmented_next_impl.hpp:
+/usr/local/include/boost/fusion/support/detail/enabler.hpp:
 
-/usr/include/boost/fusion/sequence/intrinsic/end.hpp:
+/usr/local/include/boost/iostreams/detail/template_params.hpp:
 
-/usr/include/boost/fusion/container/list/cons_iterator.hpp:
+/usr/local/include/boost/get_pointer.hpp:
 
-/usr/include/boost/archive/detail/archive_serializer_map.hpp:
+../third-party/qpOASES/qpOASES/SQProblem.ipp:
 
-/usr/include/boost/fusion/container/list/detail/next_impl.hpp:
+/usr/local/include/boost/fusion/sequence/intrinsic/end.hpp:
 
-/usr/include/boost/fusion/container/list/detail/value_of_impl.hpp:
+/usr/local/include/boost/mpl/aux_/pop_back_impl.hpp:
 
-/usr/include/boost/fusion/container/list/list_fwd.hpp:
+/usr/local/include/boost/core/default_allocator.hpp:
 
-/usr/include/boost/fusion/container/list/detail/at_impl.hpp:
+/usr/local/include/boost/fusion/sequence/intrinsic/detail/segmented_end.hpp:
 
-/usr/include/boost/fusion/container/list/detail/value_at_impl.hpp:
+/usr/local/include/boost/iostreams/detail/config/codecvt.hpp:
 
-/usr/include/boost/fusion/container/list/detail/empty_impl.hpp:
+/usr/local/include/boost/fusion/container/list/detail/equal_to_impl.hpp:
 
-/usr/include/boost/math/special_functions/trunc.hpp:
+/usr/local/include/boost/fusion/support/is_view.hpp:
 
-/usr/include/boost/fusion/iterator/distance.hpp:
+/usr/local/include/boost/function_types/parameter_types.hpp:
 
-/usr/include/c++/9/tr1/hypergeometric.tcc:
+/usr/local/include/boost/type_traits/add_rvalue_reference.hpp:
 
-/usr/include/boost/mpl/identity.hpp:
+/usr/local/include/boost/fusion/container/list/detail/deref_impl.hpp:
 
-/usr/include/boost/fusion/iterator/mpl/convert_iterator.hpp:
+/usr/local/include/boost/fusion/container/list/list_fwd.hpp:
 
-/usr/include/boost/iterator/detail/config_undef.hpp:
+../third-party/pinocchio/pinocchio/spatial/explog.hpp:
 
-/usr/include/boost/fusion/view/iterator_range/detail/begin_impl.hpp:
+/usr/local/include/boost/fusion/container/list/detail/begin_impl.hpp:
 
-/usr/include/c++/9/tr1/modified_bessel_func.tcc:
+../third-party/eigen3/Eigen/src/Core/arch/Default/BFloat16.h:
 
-/usr/include/boost/fusion/iterator/advance.hpp:
+/usr/local/include/boost/range/detail/extract_optional_type.hpp:
 
-/usr/include/boost/range/iterator.hpp:
+/usr/local/include/boost/fusion/container/list/detail/end_impl.hpp:
 
-/usr/include/boost/fusion/view/iterator_range/detail/value_at_impl.hpp:
+/usr/local/include/boost/fusion/container/list/detail/empty_impl.hpp:
 
-/usr/include/boost/fusion/algorithm/query.hpp:
+/usr/local/include/boost/fusion/iterator/advance.hpp:
 
-/usr/include/boost/fusion/view/iterator_range/detail/segments_impl.hpp:
+../third-party/pinocchio/pinocchio/algorithm/crba.hxx:
 
-../third-party/pinocchio/pinocchio/multibody/joint/joint-generic.hpp:
+../third-party/pinocchio/pinocchio/serialization/fwd.hpp:
 
-/usr/include/boost/fusion/iterator/detail/segment_sequence.hpp:
+/usr/local/include/boost/fusion/algorithm/transformation/push_back.hpp:
 
-/usr/include/boost/fusion/view/iterator_range/detail/segmented_iterator_range.hpp:
+/usr/local/include/boost/fusion/support/detail/as_fusion_element.hpp:
 
-/usr/include/boost/function_types/components.hpp:
+/usr/local/include/boost/fusion/view/joint_view/joint_view.hpp:
 
-/usr/include/boost/fusion/algorithm/transformation/push_back.hpp:
+/usr/local/include/boost/fusion/adapted/mpl/mpl_iterator.hpp:
 
-/usr/include/boost/fusion/support/detail/as_fusion_element.hpp:
+/usr/local/include/boost/fusion/support/detail/mpl_iterator_category.hpp:
 
-../third-party/qpOASES/qpOASES/SubjectTo.ipp:
+/usr/local/include/boost/fusion/iterator/detail/adapt_value_traits.hpp:
 
-/usr/include/boost/core/ref.hpp:
+/usr/local/include/boost/fusion/view/joint_view/detail/begin_impl.hpp:
 
-/usr/include/boost/fusion/support/is_view.hpp:
+/usr/local/include/boost/fusion/view/joint_view/detail/end_impl.hpp:
 
-/usr/include/boost/fusion/support/as_const.hpp:
+/usr/local/include/boost/fusion/view/single_view/single_view.hpp:
 
-/usr/include/boost/fusion/adapted/mpl/mpl_iterator.hpp:
+/usr/local/include/boost/fusion/view/single_view/detail/next_impl.hpp:
 
-/usr/include/boost/fusion/view/single_view/detail/value_at_impl.hpp:
+/usr/local/include/boost/archive/detail/common_iarchive.hpp:
 
-/usr/include/boost/fusion/iterator/detail/adapt_deref_traits.hpp:
+/usr/local/include/boost/mpl/apply.hpp:
 
-/usr/include/boost/fusion/iterator/detail/adapt_value_traits.hpp:
+/usr/local/include/boost/type_traits/remove_extent.hpp:
 
-/usr/include/boost/type_traits/has_minus_assign.hpp:
+/usr/local/include/boost/fusion/view/single_view/detail/distance_impl.hpp:
 
-/usr/include/boost/fusion/support/void.hpp:
+../third-party/pinocchio/pinocchio/multibody/liegroup/vector-space.hpp:
 
-/usr/include/boost/fusion/view/single_view/single_view_iterator.hpp:
+/usr/include/c++/9/system_error:
 
-/usr/include/boost/fusion/view/single_view/detail/prior_impl.hpp:
+/usr/local/include/boost/fusion/view/single_view/detail/begin_impl.hpp:
 
-/usr/include/boost/mpl/aux_/config/integral.hpp:
+/usr/local/include/boost/fusion/view/reverse_view/detail/prior_impl.hpp:
 
-/usr/include/boost/fusion/view/single_view/detail/size_impl.hpp:
+/usr/local/include/boost/fusion/view/single_view/detail/size_impl.hpp:
 
-/usr/include/boost/fusion/mpl/end.hpp:
+/usr/local/include/boost/fusion/container/list/detail/reverse_cons.hpp:
 
-/usr/include/boost/fusion/functional/invocation/detail/that_ptr.hpp:
+/usr/local/include/boost/fusion/iterator/detail/segment_sequence.hpp:
 
-/usr/include/boost/fusion/support/detail/and.hpp:
+../third-party/eigen3/Eigen/src/Householder/BlockHouseholder.h:
 
-/usr/include/boost/fusion/support/detail/index_sequence.hpp:
+/usr/local/include/boost/fusion/sequence/intrinsic/empty.hpp:
 
-../third-party/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorFFT.h:
+/usr/local/include/boost/fusion/adapted/mpl/detail/begin_impl.hpp:
 
-/usr/include/boost/mpl/empty.hpp:
+/usr/local/include/boost/fusion/iterator/mpl/fusion_iterator.hpp:
 
-/usr/include/boost/fusion/container/vector/detail/begin_impl.hpp:
+/usr/local/include/boost/fusion/mpl/end.hpp:
 
-/usr/include/boost/math/special_functions/detail/fp_traits.hpp:
+/usr/local/include/boost/fusion/sequence/intrinsic/front.hpp:
 
-/usr/include/boost/fusion/container/vector/vector_iterator.hpp:
+/usr/local/include/boost/mpl/list/list0.hpp:
 
-/usr/include/boost/fusion/container/vector/detail/value_of_impl.hpp:
+/usr/local/include/boost/fusion/view/single_view/single_view_iterator.hpp:
 
-/usr/include/boost/fusion/container/vector/detail/prior_impl.hpp:
+/usr/local/include/boost/fusion/container/vector/vector.hpp:
 
-/usr/include/boost/fusion/container/vector/detail/distance_impl.hpp:
+/usr/local/include/boost/fusion/support/detail/and.hpp:
+
+/usr/local/include/boost/fusion/view/joint_view/detail/deref_impl.hpp:
+
+/usr/local/include/boost/fusion/container/vector/detail/at_impl.hpp:
+
+/usr/local/include/boost/fusion/container/vector/detail/deref_impl.hpp:
+
+/usr/local/include/boost/fusion/container/vector/detail/prior_impl.hpp:
+
+/usr/local/include/boost/fusion/container/vector/detail/equal_to_impl.hpp:
+
+/usr/local/include/boost/fusion/container/vector/detail/distance_impl.hpp:
+
+/usr/local/include/boost/fusion/adapted/mpl/detail/size_impl.hpp:
+
+/usr/local/include/boost/mpl/front.hpp:
+
+/usr/local/include/boost/fusion/container/vector/detail/advance_impl.hpp:
 
 ../third-party/pinocchio/pinocchio/multibody/visitor/joint-binary-visitor.hpp:
+
+/usr/local/include/boost/fusion/algorithm/query/all.hpp:
+
+/usr/local/include/boost/detail/lcast_precision.hpp:
+
+/usr/local/include/boost/mpl/pop_back_fwd.hpp:
 
 ../third-party/pinocchio/pinocchio/serialization/serializable.hpp:
 
@@ -6796,42 +6806,32 @@ my_wbc/CMakeFiles/my_wbc.dir/src/wbc_priority.cpp.o: ../my_wbc/src/wbc_priority.
 
 ../third-party/qpOASES/qpOASES/SubjectTo.hpp:
 
-/usr/include/boost/type_traits/detail/has_binary_operator.hpp:
-
 /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h:
 
-/usr/include/boost/detail/select_type.hpp:
+/usr/local/include/boost/fusion/container/vector/vector10.hpp:
 
 /usr/include/c++/9/bits/fstream.tcc:
 
-/usr/include/boost/blank_fwd.hpp:
+/usr/local/include/boost/fusion/algorithm/transformation/detail/preprocessed/zip10.hpp:
 
-/usr/include/boost/archive/text_oarchive.hpp:
+/usr/local/include/boost/fusion/algorithm/query/detail/all.hpp:
 
-/usr/include/boost/mpl/comparison.hpp:
+/usr/local/include/boost/archive/basic_text_oprimitive.hpp:
 
-/usr/include/boost/archive/basic_text_oprimitive.hpp:
+../third-party/pinocchio/pinocchio/warning.hpp:
 
-/usr/include/boost/mpl/list/aux_/clear.hpp:
+../third-party/pinocchio/pinocchio/macros.hpp:
 
-/usr/include/boost/io/ios_state.hpp:
+/usr/local/include/boost/archive/codecvt_null.hpp:
 
-../third-party/qpOASES/qpOASES/SQProblem.ipp:
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
-/usr/include/boost/io_fwd.hpp:
+/usr/local/include/boost/archive/detail/interface_oarchive.hpp:
 
-/usr/include/boost/archive/archive_exception.hpp:
+/usr/local/include/boost/serialization/extended_type_info_typeid.hpp:
 
-/usr/include/boost/archive/basic_text_oarchive.hpp:
+/usr/local/include/boost/serialization/singleton.hpp:
 
-/usr/include/boost/archive/detail/interface_oarchive.hpp:
+/usr/local/include/boost/preprocessor/iteration/detail/local.hpp:
 
-/usr/include/boost/archive/detail/oserializer.hpp:
-
-/usr/include/boost/predef/os/bsd.h:
-
-/usr/include/boost/serialization/factory.hpp:
-
-/usr/include/boost/fusion/container/vector/detail/value_at_impl.hpp:
-
-/usr/include/boost/serialization/void_cast.hpp:
+/usr/local/include/boost/serialization/assume_abstract.hpp:

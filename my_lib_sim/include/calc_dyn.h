@@ -69,6 +69,8 @@ public:
     Eigen::VectorXd dyn_Non;
     Eigen::Vector3d CoM_pos;
     Eigen::Matrix3d inertia;
+    //逆解结果
+    Eigen::VectorXd qIk_static;
 
     struct IkRes
     {
@@ -94,6 +96,7 @@ public:
     void workspaceConstraint(Eigen::VectorXd &qFT, Eigen::VectorXd &tauJointFT);
     void send_data(void);
     void update_data_to_MJ_interface(data_bus &robotState);
+                        
 private:
     //用于存储运动学计算过程中的中间结果和最终结果
     pinocchio::Data data_biped, data_biped_fixed;

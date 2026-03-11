@@ -131,6 +131,7 @@ bool HardwareDog::main_update(double dt,const UIctr &uiController,double t) {
     double filter = 0.1;
     ctrl_states.root_lin_vel_d[0] = ctrl_states.root_lin_vel_d[0] * (1 - filter) + joy_cmd_velx * 0.1;
     ctrl_states.root_lin_vel_d[1] = ctrl_states.root_lin_vel_d[1] * (1 - filter) + joy_cmd_vely * 0.1;
+    ctrl_states.root_lin_vel_d[2] = 0;
     // root_lin_vel_d_world is in world frame    
     ctrl_states.root_lin_vel_d_world = ctrl_states.root_rot_mat * ctrl_states.root_lin_vel_d;
     
@@ -311,19 +312,33 @@ void HardwareDog::write_data(data_bus &robotState)
     robotState.Fr_ff.block<3, 1>(6, 0) = ctrl_states.foot_forces_grf_world.block<3, 1>(0, 2);
     robotState.Fr_ff.block<3, 1>(9, 0) = ctrl_states.foot_forces_grf_world.block<3, 1>(0, 3);
 
-    robotState.des_ddq = Eigen::VectorXd::Zero(18);
+    robotState.des_q = Eigen::VectorXd::Zero(18);
     robotState.des_dq = Eigen::VectorXd::Zero(18);
+    robotState.des_ddq = Eigen::VectorXd::Zero(18);
     robotState.des_delta_q = Eigen::VectorXd::Zero(18);
 
-    robotState.base_rpy_des = ctrl_states.root_euler_d;
     robotState.base_pos_des = ctrl_states.root_pos_d;
+    robotState.base_rpy_des = ctrl_states.root_euler_d;
 
-    // //mpc算出来的xy方向的加速度速度
-    // robotState.des_ddq.block<2, 1>(0, 0) << 0, 0;
-    // //mpc算出来的xy方向的位置
-    // robotState.des_dq.block<3, 1>(0, 0) << ctrl_states.root_lin_vel_d_world[0], ctrl_states.root_lin_vel_d_world[1], 0;
-    // //
-    // robotState.des_delta_q.block<2, 1>(0, 0) = robotState.des_dq.block<2, 1>(0, 0) * 0.002;
+    robotState.des_q.block<3, 1>(0, 0) = robotState.base_pos_des;
+    robotState.des_q.block<3, 1>(3, 0) = robotState.base_rpy_des;
+    // robotState.des_q.block<12, 1>(6, 0) = ;
+    //期望的baselink世界坐标系的xyz线速度,角速度
+    robotState.des_dq.block<3, 1>(0, 0) << ctrl_states.root_lin_vel_d_world[0], ctrl_states.root_lin_vel_d_world[1], 0;
+    robotState.des_dq.block<2, 1>(3, 0) << 0, 0;
+    robotState.des_dq(5) = ctrl_states.root_ang_vel_d[2];
+    //mpc算出来的xy方向的加速度速度
+    robotState.des_ddq.block<3, 1>(0, 0) << 0, 0, 0;
+    //期望的baselink世界坐标系的xyz线速度,角速度
+    robotState.des_delta_q.block<2, 1>(0, 0) = robotState.des_dq.block<2, 1>(0, 0) * 0.002;
+    robotState.des_delta_q(5) = robotState.des_dq(5) * 0.002;
+
+    for (int i = 0; i < 4; i++)
+    {  
+        robotState.fe_pos_target_body[i] = ctrl_states.root_rot_mat.transpose() * 
+        (ctrl_states.foot_pos_target_world.block<3, 1>(0, i) - ctrl_states.root_pos);
+    }
+
 
 }
  

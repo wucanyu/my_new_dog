@@ -71,6 +71,7 @@ int main(int argc, char **argv) {
             // // ------------- WBC ------------
             // // WBC Calculation
             WBC_solv.dataBusRead(mj_interface.Robotstate);
+            WBC_solv.computeInK_Quadruped_3DOF(mj_interface.Robotstate.fe_pos_body);
             WBC_solv.computeDdq(kinDynSolver);
             WBC_solv.computeTau();
             WBC_solv.dataBusWrite(mj_interface.Robotstate);

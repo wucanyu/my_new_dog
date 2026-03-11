@@ -26,6 +26,7 @@ public:
     Eigen::Vector3d fe_vel_world_des[4];
     Eigen::Vector3d fe_acc_world_des[4];
 
+    Eigen::Vector3d fe_pos_target_body[4];
 
     Eigen::Quaterniond quaternion;
     Eigen::Vector3d imu_euler;

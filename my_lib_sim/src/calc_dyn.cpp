@@ -312,92 +312,130 @@ void Pin_KinDyn::computeDyn()
 
 }
 
-// // Inverse kinematics for leg posture. Note: the Rdes and Pdes are both w.r.t the baselink coordinate in body frame!
-// // 逆运动学
-// Pin_KinDyn::IkRes
-// Pin_KinDyn::computeInK_Leg(const Eigen::Matrix3d &Rdes_L, const Eigen::Vector3d &Pdes_L, const Eigen::Matrix3d &Rdes_R,
-//                            const Eigen::Vector3d &Pdes_R)
+// // 核心IK求解函数（修复版）
+// Pin_KinDyn::IkRes Pin_KinDyn::computeInK_Quadruped_3DOF(Eigen::Vector3d fe_pos_target_body[4])
 // {
-//     const pinocchio::SE3 oMdesL(Rdes_L, Pdes_L);
-//     const pinocchio::SE3 oMdesR(Rdes_R, Pdes_R);
-//     // arm-l: 0-6, arm-r: 7-13, head: 14,15 waist: 16-18, leg-l: 19-24, leg-r: 25-30
-//     Eigen::VectorXd qIk = Eigen::VectorXd::Zero(model_biped_fixed.nv); // initial guess
-//     qIk[22] = -0.1;
-//     qIk[28] = -0.1;
-//     const double eps = 1e-4;
-//     const int IT_MAX = 100;
-//     const double DT = 7e-1;
-//     const double damp = 5e-3;
-//     Eigen::MatrixXd JL(6, model_biped_fixed.nv);
-//     Eigen::MatrixXd JR(6, model_biped_fixed.nv);
-//     Eigen::MatrixXd JCompact(12, model_biped_fixed.nv);
-//     JL.setZero();
-//     JR.setZero();
-//     JCompact.setZero();
+//     // 定义四足关节名（务必与URDF中的关节名完全一致）9 17 25 33
+//     const std::string frame_names[4] = {"leg1_joint4", "leg2_joint4", "leg3_joint4", "leg4_joint4"};
+//     pinocchio::FrameIndex J_IDs[4];
+//     const pinocchio::FrameIndex J_ID_RF = 9;
+//     const pinocchio::FrameIndex J_ID_LF = 17;
+//     const pinocchio::FrameIndex J_ID_RH = 25;
+//     const pinocchio::FrameIndex J_ID_LH = 33;
+
+//     // -------------------------- 2. 初始化配置 --------------------------
+//     Eigen::VectorXd qIk = Eigen::VectorXd::Zero(model_biped_fixed.nv); 
+//     // 初始化四足12个关节（3DOF/腿 × 4腿）
+//     qIk[0] = 0.0;     // 左前髋关节
+//     qIk[1] = -0.5;    // 左前大腿（接近自然下垂角度）
+//     qIk[2] = 0.5;     // 左前小腿
+//     qIk[3] = 0.0;     // 右前髋关节
+//     qIk[4] = -0.5;    // 右前大腿
+//     qIk[5] = 0.5;     // 右前小腿
+//     qIk[6] = 0.0;     // 左后髋关节
+//     qIk[7] = -0.5;    // 左后大腿
+//     qIk[8] = 0.5;     // 左后小腿
+//     qIk[9] = 0.0;     // 右后髋关节
+//     qIk[10] = -0.5;   // 右后大腿
+//     qIk[11] = 0.5;    // 右后小腿
+
+//     // IK求解参数（适配3DOF腿）
+//     const double eps    = 1e-4;    // 位置误差收敛阈值（单位：m）
+//     const int IT_MAX    = 200;     // 最大迭代次数
+//     const double DT     = 0.1;     // 步长（3DOF腿可适当增大）
+//     const double damp   = 1e-2;    // 阻尼项（避免雅克比奇异）
+//     // -------------------------- 3. 变量初始化（完整初始化，避免未定义行为） --------------------------
+//     Eigen::MatrixXd J_RF(3, model_biped_fixed.nv);
+//     Eigen::MatrixXd J_LF(3, model_biped_fixed.nv); 
+//     Eigen::MatrixXd J_RH(3, model_biped_fixed.nv);
+//     Eigen::MatrixXd J_LH(3, model_biped_fixed.nv);
+//     Eigen::MatrixXd J_total(12, model_biped_fixed.nv); // 总雅克比（12行）
+//     J_LF.setZero(); J_RF.setZero(); J_LH.setZero(); J_RH.setZero(); J_total.setZero();
+
+//     Eigen::Vector3d err_LF = Eigen::Vector3d::Zero();
+//     Eigen::Vector3d err_RF = Eigen::Vector3d::Zero();
+//     Eigen::Vector3d err_LH = Eigen::Vector3d::Zero();
+//     Eigen::Vector3d err_RH = Eigen::Vector3d::Zero();
+//     Eigen::VectorXd err_total = Eigen::VectorXd::Zero(12); // 显式初始化12维0
+//     Eigen::VectorXd v = Eigen::VectorXd::Zero(model_biped_fixed.nv);
+
 //     bool success = false;
-//     Eigen::Matrix<double, 6, 1> errL, errR;
-//     Eigen::Matrix<double, 12, 1> errCompact;
-//     Eigen::VectorXd v(model_biped_fixed.nv);
-//     pinocchio::JointIndex J_Idx_l, J_Idx_r;
-//     J_Idx_l = l_ankle_joint_fixed;
-//     J_Idx_r = r_ankle_joint_fixed;
-//     int itr_count{0};
+//     int itr_count = 0;
+
+//     // 加权矩阵：仅让3个腿部电机参与求解，屏蔽其他关节
+//     Eigen::MatrixXd W = Eigen::MatrixXd::Identity(model_biped_fixed.nv, model_biped_fixed.nv);
+//     // -------------------------- 4. 迭代求解核心 --------------------------
 //     for (itr_count = 0;; itr_count++)
 //     {
+//         // 1. 正向运动学：计算当前关节配置下的足端位置
 //         pinocchio::forwardKinematics(model_biped_fixed, data_biped_fixed, qIk);
-//         const pinocchio::SE3 iMdL = data_biped_fixed.oMi[J_Idx_l].actInv(oMdesL);
-//         const pinocchio::SE3 iMdR = data_biped_fixed.oMi[J_Idx_r].actInv(oMdesR);
-//         errL = pinocchio::log6(iMdL).toVector(); // in joint frame
-//         errR = pinocchio::log6(iMdR).toVector(); // in joint frame
-//         errCompact.block<6, 1>(0, 0) = errL;
-//         errCompact.block<6, 1>(6, 0) = errR;
-//         if (errCompact.norm() < eps)
-//         {
+//         pinocchio::updateFramePlacements(model_biped_fixed, data_biped_fixed);
+
+//         // 2. 计算每条腿的位置误差（直接位置差，无需姿态误差）
+//         const Eigen::Vector3d pos_RF = data_biped_fixed.oMf[J_ID_RF].translation();
+//         const Eigen::Vector3d pos_LF = data_biped_fixed.oMf[J_ID_LF].translation();
+//         const Eigen::Vector3d pos_RH = data_biped_fixed.oMf[J_ID_RH].translation();
+//         const Eigen::Vector3d pos_LH = data_biped_fixed.oMf[J_ID_LH].translation();
+
+//         // 修正：目标位置索引与腿的对应关系（原代码索引错位）
+//         err_RF = fe_pos_target_body[0] - pos_RF;  // RF=右前 → 索引0
+//         err_LF = fe_pos_target_body[1] - pos_LF;  // LF=左前 → 索引1
+//         err_RH = fe_pos_target_body[2] - pos_RH;  // RH=右后 → 索引2
+//         err_LH = fe_pos_target_body[3] - pos_LH;  // LH=左后 → 索引3
+
+//         // 拼接12维总误差（按RF/LF/RH/LH顺序）
+//         err_total << err_RF, err_LF, err_RH, err_LH;
+
+//         // 3. 收敛判断：总位置误差小于阈值则退出
+//         if (err_total.norm() < eps) {
 //             success = true;
 //             break;
 //         }
-//         if (itr_count >= IT_MAX)
-//         {
+//         if (itr_count >= IT_MAX) {
 //             success = false;
 //             break;
 //         }
-//         pinocchio::computeJointJacobian(model_biped_fixed, data_biped_fixed, qIk, J_Idx_l, JL); // JL in joint frame
-//         pinocchio::computeJointJacobian(model_biped_fixed, data_biped_fixed, qIk, J_Idx_r, JR); // JR in joint frame
-//         Eigen::MatrixXd W;
-//         W = Eigen::MatrixXd::Identity(model_biped_fixed.nv, model_biped_fixed.nv); // weighted matrix
-//         // arm-l: 0-6, arm-r: 7-13, head: 14,15 waist: 16-18, leg-l: 19-24, leg-r: 25-30
-//         //        W(16,16)=0.001;  // use a smaller value to make the solver try not to use waist joint
-//         //        W(17,17)=0.001;
-//         //        W(18,18)=0.001;
-//         JL.block(0, 16, 6, 3).setZero();
-//         JR.block(0, 16, 6, 3).setZero();
-//         pinocchio::Data::Matrix6 JlogL;
-//         pinocchio::Data::Matrix6 JlogR;
-//         pinocchio::Jlog6(iMdL.inverse(), JlogL);
-//         pinocchio::Jlog6(iMdR.inverse(), JlogR);
-//         JL = -JlogL * JL;
-//         JR = -JlogR * JR;
-//         JCompact.block(0, 0, 6, model_biped_fixed.nv) = JL;
-//         JCompact.block(6, 0, 6, model_biped_fixed.nv) = JR;
-//         // pinocchio::Data::Matrix6 JJt;
-//         Eigen::Matrix<double, 12, 12> JJt;
-//         JJt.noalias() = JCompact * W * JCompact.transpose();
-//         JJt.diagonal().array() += damp;
-//         v.noalias() = -W * JCompact.transpose() * JJt.ldlt().solve(errCompact);
+
+//         // 4. 计算每条腿的位置雅克比（仅前3行，丢弃姿态部分）
+//         pinocchio::computeFrameJacobian(model_biped_fixed, data_biped_fixed, qIk, J_ID_LF, data_biped_fixed.J);
+//         J_LF = data_biped_fixed.J.topRows<3>(); // 仅保留位置雅克比
+//         pinocchio::computeFrameJacobian(model_biped_fixed, data_biped_fixed, qIk, J_ID_RF, data_biped_fixed.J);
+//         J_RF = data_biped_fixed.J.topRows<3>();
+//         pinocchio::computeFrameJacobian(model_biped_fixed, data_biped_fixed, qIk, J_ID_LH, data_biped_fixed.J);
+//         J_LH = data_biped_fixed.J.topRows<3>();
+//         pinocchio::computeFrameJacobian(model_biped_fixed, data_biped_fixed, qIk, J_ID_RH, data_biped_fixed.J);
+//         J_RH = data_biped_fixed.J.topRows<3>();
+
+//         // 5. 拼接12维总雅克比（与误差顺序一致）
+//         J_total.block(0,  0, 3, model_biped_fixed.nv) = J_RF;
+//         J_total.block(3,  0, 3, model_biped_fixed.nv) = J_LF;
+//         J_total.block(6,  0, 3, model_biped_fixed.nv) = J_RH;
+//         J_total.block(9,  0, 3, model_biped_fixed.nv) = J_LH;
+
+//         // 6. 阻尼最小二乘求解关节增量（数值稳定性优化）
+//         Eigen::MatrixXd JJt = J_total * W * J_total.transpose();
+//         JJt.diagonal().array() += damp; // 添加阻尼避免奇异
+//         v = -W * J_total.transpose() * JJt.ldlt().solve(err_total);
+
+//         // 7. 更新关节配置 + 限制关节限位（关键：3DOF腿必须限幅）
 //         qIk = pinocchio::integrate(model_biped_fixed, qIk, v * DT);
+//         for (int i = 0; i < model_biped_fixed.nv; ++i) {
+//             qIk(i) = std::max(model_biped_fixed.lowerPositionLimit[i],
+//                               std::min(model_biped_fixed.upperPositionLimit[i], qIk(i)));
+//         }
 //     }
+
+//     // -------------------------- 5. 结果封装 --------------------------
 //     IkRes res;
-//     res.err = errCompact;
-//     res.itr = itr_count;
-//     if (success)
-//     {
-//         res.status = 0;
-//     }
-//     else
-//     {
-//         res.status = -1;
-//     }
-//     res.jointPosRes = qIk;
+//     res.err = err_total;       // 12维位置误差
+//     res.itr = itr_count;       // 迭代次数
+//     res.status = success ? 0 : -1; // 0成功/-1失败
+//     res.jointPosRes = qIk;     // 求解后的关节配置
+//     qIk_static = qIk;
+//     std::cout << "qIk求解结果：" << std::endl;
+//     std::cout << qIk.transpose() << std::endl;
+//     std::cout << "q" << std::endl;
+//     std::cout << q.transpose() << std::endl;
 //     return res;
 // }
 

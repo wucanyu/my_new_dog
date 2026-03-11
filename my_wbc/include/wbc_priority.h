@@ -55,6 +55,7 @@ class WBC_priority
         void dataBusWrite(data_bus &robotState);
         void setQini(const Eigen::VectorXd &qIniDes, const Eigen::VectorXd &qIniCur);
         void copy_Eigen_to_real_t(qpOASES::real_t* target, const Eigen::MatrixXd &source, int nRows, int nCols);
+        void computeInK_Quadruped_3DOF(Eigen::Vector3d fe_pos_target_body[4]);
     private:
         double timeStep{0.002};
 
@@ -82,6 +83,8 @@ class WBC_priority
         Eigen::VectorXd swing_fe_acc_des_W;
 
         Eigen::VectorXd des_delta_q, des_q, des_dq, des_ddq;
+
+        Eigen::VectorXd qIK;
 
         //初始化关节位置,期望位置
         Eigen::VectorXd qIniDes, qIniCur;
