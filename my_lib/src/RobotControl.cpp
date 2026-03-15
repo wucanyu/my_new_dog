@@ -75,7 +75,7 @@ void RobotControl::cout_data(CtrlStates &state) {
     std::cout << "state.contacts :" << std::endl;
     std::cout << state.contacts[0] << state.contacts[1] << state.contacts[2] << state.contacts[3] <<  std::endl;
    
-    std::cout << "taget pos:" << std::endl;
+    std::cout << "taget pos world" << std::endl;
     std::cout << state.root_pos_d.transpose() << std::endl;
     
     // 打印卡尔曼估计出的质心位置
@@ -93,14 +93,6 @@ void RobotControl::cout_data(CtrlStates &state) {
     std::cout << "Root Euler angles:" << std::endl;
     std::cout << state.root_euler_360.transpose() << std::endl;
 
-    // 打印 IMU 角速度
-    std::cout << "IMU angular velocity:" << std::endl;
-    std::cout << state.imu_ang_vel.transpose() << std::endl;
-
-    // 打印 IMU 加速度
-    std::cout << "IMU acceleration:" << std::endl;
-    std::cout << state.imu_acc.transpose() << std::endl;
-
     /***************************************************************/
     // 打印足端的力
     std::cout << "Foot stance force in world system:" << std::endl;
@@ -112,22 +104,6 @@ void RobotControl::cout_data(CtrlStates &state) {
 
     std::cout << "Foot positions in body coordinate system:" << std::endl;
     std::cout << state.foot_pos_rel << std::endl;
-
-    // 打印足端在机器人坐标系下的位置
-    std::cout << "Foot positions in world coordinate system:" << std::endl;
-    std::cout << state.foot_pos_world << std::endl;
-
-    // 打印摆动相目标位置，在机器人坐标系下的位置
-    std::cout << "Foot positions target in world coordinate system:" << std::endl;
-    std::cout << state.foot_pos_target_world << std::endl;
-
-    // 打印足端在机器人坐标系下的位置
-    std::cout << "Foot positions start in world system:" << std::endl;
-    std::cout << state.foot_pos_start_world << std::endl;
-
-    // 打印摆动相目标位置，在机器人坐标系下的位置
-    std::cout << "Foot positions end in world coordinate system:" << std::endl;
-    std::cout << state.foot_pos_end_world << std::endl;
     
     // 打印足端的力
     std::cout << "Foot torgue in body system:" << std::endl;

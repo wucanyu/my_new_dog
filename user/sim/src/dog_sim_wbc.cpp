@@ -26,7 +26,7 @@ int main(int argc, char **argv) {
     Pin_KinDyn kinDynSolver("./../model/new_dog/meshes/new_dog.urdf"); // kinematics and dynamics solver
     WBC_priority WBC_solv(kinDynSolver.model_nv, 18, 22, 0.4, mj_model->opt.timestep); // WBC solver
     uiController.iniGLFW();
-    uiController.enableTracking(); // enable viewpoint tracking of the body 1 of the robot
+    uiController.enableTracking(); 
     uiController.createWindow("Demo", false); 
     mju_copy(mj_data->qpos, mj_model->key_qpos, mj_model->nq*1); // set ini pos in Mujoco
     // create controller
@@ -48,7 +48,6 @@ int main(int argc, char **argv) {
             mj_interface.updateSensorValues();
             mj_interface.update_data_to_phnocchio();
             // update kinematics and dynamics info
-            // get t and dt
             kinDynSolver.data_Read(mj_interface.Robotstate);
             kinDynSolver.computeJ_dJ();
             kinDynSolver.computeDyn();
@@ -88,35 +87,21 @@ int main(int argc, char **argv) {
             else if(simTime <= startwalkingTime)
             {            
                 std::vector<double> set_tor = { 
-                                dog_sim->ctrl_states.joint_torques_out(0,0),
-                                dog_sim->ctrl_states.joint_torques_out(1,0),
-                                dog_sim->ctrl_states.joint_torques_out(2,0),
-                                dog_sim->ctrl_states.joint_torques_out(3,0),
-                                dog_sim->ctrl_states.joint_torques_out(4,0),
-                                dog_sim->ctrl_states.joint_torques_out(5,0),
-                                dog_sim->ctrl_states.joint_torques_out(6,0),
-                                dog_sim->ctrl_states.joint_torques_out(7,0),
-                                dog_sim->ctrl_states.joint_torques_out(8,0),
-                                dog_sim->ctrl_states.joint_torques_out(9,0),
-                                dog_sim->ctrl_states.joint_torques_out(10,0),
-                                dog_sim->ctrl_states.joint_torques_out(11,0)};
+                                WBC_solv.tauJointRes(0),
+                                WBC_solv.tauJointRes(1),
+                                WBC_solv.tauJointRes(2),
 
-                // std::vector<double> set_tor = { 
-                //                 WBC_solv.tauJointRes(0),
-                //                 WBC_solv.tauJointRes(1),
-                //                 WBC_solv.tauJointRes(2),
+                                WBC_solv.tauJointRes(3),
+                                WBC_solv.tauJointRes(4),
+                                WBC_solv.tauJointRes(5),
 
-                //                 WBC_solv.tauJointRes(3),
-                //                 WBC_solv.tauJointRes(4),
-                //                 WBC_solv.tauJointRes(5),
+                                WBC_solv.tauJointRes(6),
+                                WBC_solv.tauJointRes(7),
+                                WBC_solv.tauJointRes(8),
 
-                //                 WBC_solv.tauJointRes(6),
-                //                 WBC_solv.tauJointRes(7),
-                //                 WBC_solv.tauJointRes(8),
-
-                //                 WBC_solv.tauJointRes(9),
-                //                 WBC_solv.tauJointRes(10),
-                //                 WBC_solv.tauJointRes(11)};
+                                WBC_solv.tauJointRes(9),
+                                WBC_solv.tauJointRes(10),
+                                WBC_solv.tauJointRes(11)};
 
                 mj_interface.setMotorsTorque(set_tor);       
             }

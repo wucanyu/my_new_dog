@@ -100,7 +100,6 @@ private:
 
 bool HardwareDog::update_foot_forces_grf(double dt) {
     ctrl_states.foot_forces_grf = _root_control.compute_grf(ctrl_states, dt);
-    
     ctrl_states.joint_torques.block<3, 1>(0, 0) = -ctrl_states.J3_FR_body.transpose()  * ctrl_states.foot_forces_grf.block<3, 1>(0, 0);
     ctrl_states.joint_torques.block<3, 1>(3, 0) = -ctrl_states.J3_FL_body.transpose()  * ctrl_states.foot_forces_grf.block<3, 1>(0, 1);
     ctrl_states.joint_torques.block<3, 1>(6, 0) = -ctrl_states.J3_BR_body.transpose()  * ctrl_states.foot_forces_grf.block<3, 1>(0, 2);
@@ -132,7 +131,7 @@ bool HardwareDog::main_update(double dt,const UIctr &uiController,double t) {
     ctrl_states.root_lin_vel_d[0] = ctrl_states.root_lin_vel_d[0] * (1 - filter) + joy_cmd_velx * 0.1;
     ctrl_states.root_lin_vel_d[1] = ctrl_states.root_lin_vel_d[1] * (1 - filter) + joy_cmd_vely * 0.1;
     ctrl_states.root_lin_vel_d[2] = 0;
-    // root_lin_vel_d_world is in world frame    
+
     ctrl_states.root_lin_vel_d_world = ctrl_states.root_rot_mat * ctrl_states.root_lin_vel_d;
     
     ctrl_states.root_ang_vel_d[0] = 0;
@@ -182,9 +181,8 @@ bool HardwareDog::main_update(double dt,const UIctr &uiController,double t) {
 
     // in walking mode, do position locking if no root_lin_vel_d, otherwise do not lock position
     if (ctrl_states.movement_mode == 1) {
-        // has nonzero velocity, keep refreshing position target, but just xy
-        // ctrl_states.root_pos_d(0) += dt * ctrl_states.root_lin_vel_d_world(0);
-        // ctrl_states.root_pos_d(1) += dt * ctrl_states.root_lin_vel_d_world(1);
+        ctrl_states.root_pos_d(0) += dt * ctrl_states.root_lin_vel_d_world(0);
+        ctrl_states.root_pos_d(1) += dt * ctrl_states.root_lin_vel_d_world(1);
     }
     else if (ctrl_states.movement_mode == 0) {
         ctrl_states.root_pos_d(0) = -0.02;

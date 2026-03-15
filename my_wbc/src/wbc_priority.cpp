@@ -85,9 +85,7 @@ void WBC_priority::dataBusRead(const data_bus &robotState)
         fe_pos_world[i] = robotState.fe_pos_world[i];
     }
 
-
     //期望的广义(带虚拟浮动基六自由度的关节)坐标(关节坐标)的加速度
-    //前两个代表body在世界坐标系的x y 方向的线加速度，第6个是body的Z轴在世界下的角加速度，剩下的是实体关节加速度
     des_ddq = robotState.des_ddq;
     des_dq = robotState.des_dq;
     des_q = robotState.des_q;
@@ -180,48 +178,48 @@ void WBC_priority::dataBusRead(const data_bus &robotState)
         dJc     = Eigen::MatrixXd::Zero(6, model_nv);
         Jsw     = Eigen::MatrixXd::Zero(6, model_nv);
         dJsw    = Eigen::MatrixXd::Zero(6, model_nv);
-        if(!contacts[0])//摆动相
-        {
-            Jsw.block(0, 0, 3, model_nv) = robotState.J_FR;
-            dJsw.block(0, 0, 3, model_nv) = robotState.dJ_FR;     
-        }
-        else
+        if(contacts[0])//摆动相
         {
             Jc.block(0, 0, 3, model_nv) = robotState.J_FR;
-            dJc.block(0, 0, 3, model_nv) = robotState.dJ_FR;                 
-        }
-
-        if(!contacts[1])//摆动相
-        {
-            Jsw.block(0, 0, 3, model_nv) = robotState.J_FL;
-            dJsw.block(0, 0, 3, model_nv) = robotState.dJ_FL;                
+            dJc.block(0, 0, 3, model_nv) = robotState.dJ_FR;      
         }
         else
+        {
+            Jsw.block(0, 0, 3, model_nv) = robotState.J_FR;
+            dJsw.block(0, 0, 3, model_nv) = robotState.dJ_FR;               
+        }
+
+        if(contacts[1])//摆动相
         {
             Jc.block(0, 0, 3, model_nv) = robotState.J_FL;
-            dJc.block(0, 0, 3, model_nv) = robotState.dJ_FL;  
-        }
-
-        if(!contacts[2])//摆动相
-        {
-            Jsw.block(3, 0, 3, model_nv) = robotState.J_BR;
-            dJsw.block(3, 0, 3, model_nv) = robotState.dJ_BR;     
+            dJc.block(0, 0, 3, model_nv) = robotState.dJ_FL;             
         }
         else
+        {
+            Jsw.block(0, 0, 3, model_nv) = robotState.J_FL;
+            dJsw.block(0, 0, 3, model_nv) = robotState.dJ_FL;     
+        }
+
+        if(contacts[2])//摆动相
         {
             Jc.block(3, 0, 3, model_nv) = robotState.J_BR;
-            dJc.block(3, 0, 3, model_nv) = robotState.dJ_BR;          
+            dJc.block(3, 0, 3, model_nv) = robotState.dJ_BR;  
+        }
+        else
+        { 
+            Jsw.block(3, 0, 3, model_nv) = robotState.J_BR;
+            dJsw.block(3, 0, 3, model_nv) = robotState.dJ_BR;          
         }  
 
-        if(!contacts[3])//摆动相
+        if(contacts[3])//摆动相
         {
-            Jsw.block(3, 0, 3, model_nv) = robotState.J_BL;
-            dJsw.block(3, 0, 3, model_nv) = robotState.dJ_BL;   
+            Jc.block(3, 0, 3, model_nv) = robotState.J_BL;
+            dJc.block(3, 0, 3, model_nv) = robotState.dJ_BL;   
         }
         else
         {
-            Jc.block(3, 0, 3, model_nv) = robotState.J_BL;
-            dJc.block(3, 0, 3, model_nv) = robotState.dJ_BL;      
+            Jsw.block(3, 0, 3, model_nv) = robotState.J_BL;
+            dJsw.block(3, 0, 3, model_nv) = robotState.dJ_BL;  
         }
     }
     else//站立状态
@@ -271,10 +269,6 @@ void WBC_priority::computeInK_Quadruped_3DOF(Eigen::Vector3d fe_pos_target_body[
         omega(1) = atan2(a1 * m1 + a2 * m2 , a2 * m1 - a1 * m2);
         qIK.block<3,1>(i*3,0) << omega;
     }
-    std::cout << "qIK" << std::endl;
-    std::cout << qIK.transpose() << std::endl;
-    std::cout << "q" << std::endl;
-    std::cout << q.block<12,1>(7,0).transpose() << std::endl;
 }
 
 
@@ -293,7 +287,7 @@ void WBC_priority::computeDdq(Pin_KinDyn &pinKinDynIn)
         kinwbc_tasks_walk.taskLib[id].kp = Eigen::MatrixXd::Identity(6, 6) * 0;
         kinwbc_tasks_walk.taskLib[id].kd = Eigen::MatrixXd::Identity(6, 6) * 0;
         kinwbc_tasks_walk.taskLib[id].J = Jc;
-        kinwbc_tasks_walk.taskLib[id].dJ =  Eigen::MatrixXd::Zero(6,model_nv);
+        kinwbc_tasks_walk.taskLib[id].dJ = dJc;
         kinwbc_tasks_walk.taskLib[id].W.diagonal() = Eigen::VectorXd::Ones(model_nv);
 
     /***************身体姿态任务**********/    
@@ -310,12 +304,12 @@ void WBC_priority::computeDdq(Pin_KinDyn &pinKinDynIn)
         //期望速度为零
         kinwbc_tasks_walk.taskLib[id].dxDes = Eigen::VectorXd::Zero(3);
         //KP权重为100
-        kinwbc_tasks_walk.taskLib[id].kp = Eigen::MatrixXd::Identity(3, 3) * 150;
+        kinwbc_tasks_walk.taskLib[id].kp = Eigen::MatrixXd::Identity(3, 3) * 500;
         //KP权重为10     
         kinwbc_tasks_walk.taskLib[id].kd = Eigen::MatrixXd::Identity(3, 3) * 10;
 
         kinwbc_tasks_walk.taskLib[id].J = Eigen::MatrixXd::Zero(3, model_nv);
-        kinwbc_tasks_walk.taskLib[id].J.block<3, 3>(0, 0) = base_rot.transpose();
+        kinwbc_tasks_walk.taskLib[id].J.block<3, 3>(0, 3) = base_rot.transpose();
         kinwbc_tasks_walk.taskLib[id].dJ = Eigen::MatrixXd::Zero(3, model_nv);
         //该任务对所有关节的权重为一
         kinwbc_tasks_walk.taskLib[id].W.diagonal() = Eigen::VectorXd::Ones(model_nv);
@@ -323,16 +317,15 @@ void WBC_priority::computeDdq(Pin_KinDyn &pinKinDynIn)
     /**************身体位置任务***********/
         id = kinwbc_tasks_walk.getId("BodyPosTask");
         kinwbc_tasks_walk.taskLib[id].errX = Eigen::VectorXd::Zero(3);
-        kinwbc_tasks_walk.taskLib[id].errX = base_pos_des - q.block(0, 0, 3, 1);
+        kinwbc_tasks_walk.taskLib[id].errX = base_pos_des - q.block<3, 1>(0, 0);
         kinwbc_tasks_walk.taskLib[id].derrX = Eigen::VectorXd::Zero(3);
         kinwbc_tasks_walk.taskLib[id].ddxDes = Eigen::VectorXd::Zero(3);
         kinwbc_tasks_walk.taskLib[id].dxDes = Eigen::VectorXd::Zero(3);
-        kinwbc_tasks_walk.taskLib[id].kp = Eigen::MatrixXd::Identity(3, 3) * 100; 
-        kinwbc_tasks_walk.taskLib[id].kd = Eigen::MatrixXd::Identity(3, 3) * 10;
-
+        kinwbc_tasks_walk.taskLib[id].kp = Eigen::MatrixXd::Identity(3, 3) * 200; 
+        kinwbc_tasks_walk.taskLib[id].kd = Eigen::MatrixXd::Identity(3, 3) * 5;
         kinwbc_tasks_walk.taskLib[id].J = Eigen::MatrixXd::Zero(3, model_nv);
-        kinwbc_tasks_walk.taskLib[id].J.block<3, 3>(0, 3) = base_rot.transpose();
-        kinwbc_tasks_walk.taskLib[id].dJ = Eigen::MatrixXd::Zero(3, model_nv);
+        kinwbc_tasks_walk.taskLib[id].J.block<3, 3>(0, 0) = base_rot.transpose();
+        kinwbc_tasks_walk.taskLib[id].dJ = Eigen::MatrixXd::Zero(3, model_nv);//由于dj和dq的乘积为零，直接定义dj为零，不需要多加计算 3*18 * 18*1
         kinwbc_tasks_walk.taskLib[id].W.diagonal() = Eigen::VectorXd::Ones(model_nv);
 
     /***************摆动腿任务****************/
@@ -343,8 +336,8 @@ void WBC_priority::computeDdq(Pin_KinDyn &pinKinDynIn)
         kinwbc_tasks_walk.taskLib[id].derrX = swing_fe_vel_des_W - swing_fe_vel_cur_W;
         kinwbc_tasks_walk.taskLib[id].ddxDes = Eigen::VectorXd::Zero(6);;
         kinwbc_tasks_walk.taskLib[id].dxDes = Eigen::VectorXd::Zero(6);;
-        kinwbc_tasks_walk.taskLib[id].kp = Eigen::MatrixXd::Identity(6, 6) * 350;
-        kinwbc_tasks_walk.taskLib[id].kd = Eigen::MatrixXd::Identity(6, 6) * 10;
+        kinwbc_tasks_walk.taskLib[id].kp = Eigen::MatrixXd::Identity(6, 6) * 100;
+        kinwbc_tasks_walk.taskLib[id].kd = Eigen::MatrixXd::Identity(6, 6) * 5;
         kinwbc_tasks_walk.taskLib[id].J = Jsw;
         kinwbc_tasks_walk.taskLib[id].dJ = dJsw;
         kinwbc_tasks_walk.taskLib[id].W.diagonal() = Eigen::VectorXd::Ones(model_nv);
@@ -361,7 +354,7 @@ void WBC_priority::computeDdq(Pin_KinDyn &pinKinDynIn)
         kinwbc_tasks_stand.taskLib[id].kp = Eigen::MatrixXd::Identity(12, 12) * 0;
         kinwbc_tasks_stand.taskLib[id].kd = Eigen::MatrixXd::Identity(12, 12) * 0;
         kinwbc_tasks_stand.taskLib[id].J = Jfe;
-        kinwbc_tasks_stand.taskLib[id].dJ = Eigen::MatrixXd::Zero(12,model_nv);
+        kinwbc_tasks_stand.taskLib[id].dJ = dJfe;
         kinwbc_tasks_stand.taskLib[id].W.diagonal() = Eigen::VectorXd::Ones(model_nv);
 
     /***************身体朝向任务**********/    
@@ -378,13 +371,13 @@ void WBC_priority::computeDdq(Pin_KinDyn &pinKinDynIn)
         //期望速度为零
         kinwbc_tasks_stand.taskLib[id].dxDes = Eigen::VectorXd::Zero(3);
         //KP权重为100
-        kinwbc_tasks_stand.taskLib[id].kp = Eigen::MatrixXd::Identity(3, 3) * 100;
+        kinwbc_tasks_stand.taskLib[id].kp = Eigen::MatrixXd::Identity(3, 3) * 500;
         //KD权重为10     
         kinwbc_tasks_stand.taskLib[id].kd = Eigen::MatrixXd::Identity(3, 3) * 10;
 
         kinwbc_tasks_stand.taskLib[id].J = Eigen::MatrixXd::Zero(3, model_nv);
-        kinwbc_tasks_stand.taskLib[id].J.block<3, 3>(0, 0) = base_rot.transpose();
-        kinwbc_tasks_stand.taskLib[id].dJ = Eigen::MatrixXd::Zero(3, model_nv);//由于dj和dq的乘积为零，直接定义dj为零，不需要多加计算
+        kinwbc_tasks_stand.taskLib[id].J.block<3, 3>(0, 3) = base_rot.transpose();
+        kinwbc_tasks_stand.taskLib[id].dJ = Eigen::MatrixXd::Zero(3, model_nv);//由于dj和dq的乘积为零，直接定义dj为零，不需要多加计算 3*18 * 18*1
         kinwbc_tasks_stand.taskLib[id].W.diagonal() = Eigen::VectorXd::Ones(model_nv);
 
     /**************身体位置任务***********/
@@ -394,11 +387,11 @@ void WBC_priority::computeDdq(Pin_KinDyn &pinKinDynIn)
         kinwbc_tasks_stand.taskLib[id].derrX = Eigen::VectorXd::Zero(3);
         kinwbc_tasks_stand.taskLib[id].ddxDes = Eigen::VectorXd::Zero(3);
         kinwbc_tasks_stand.taskLib[id].dxDes = Eigen::VectorXd::Zero(3);
-        kinwbc_tasks_stand.taskLib[id].kp = Eigen::MatrixXd::Identity(3, 3) * 100; 
+        kinwbc_tasks_stand.taskLib[id].kp = Eigen::MatrixXd::Identity(3, 3) * 220; 
         kinwbc_tasks_stand.taskLib[id].kd = Eigen::MatrixXd::Identity(3, 3) * 10;
         kinwbc_tasks_stand.taskLib[id].J = Eigen::MatrixXd::Zero(3, model_nv);
-        kinwbc_tasks_stand.taskLib[id].J.block<3, 3>(0, 3) = base_rot.transpose();
-        kinwbc_tasks_stand.taskLib[id].dJ = Eigen::MatrixXd::Zero(3, model_nv);//由于dj和dq的乘积为零，直接定义dj为零，不需要多加计算
+        kinwbc_tasks_stand.taskLib[id].J.block<3, 3>(0, 0) = base_rot.transpose();
+        kinwbc_tasks_stand.taskLib[id].dJ = Eigen::MatrixXd::Zero(3, model_nv);//由于dj和dq的乘积为零，直接定义dj为零，不需要多加计算 3*18 * 18*1
         kinwbc_tasks_stand.taskLib[id].W.diagonal() = Eigen::VectorXd::Ones(model_nv);
 
     }
@@ -565,7 +558,7 @@ void WBC_priority::computeTau()
     }
 
     //最大迭代次数
-    nWSR = 100;
+    nWSR = 500;
     //算法允许的最大cpu运行时间
     cpu_time = timeStep;
     qpOASES::returnValue res;
@@ -613,10 +606,12 @@ void WBC_priority::computeTau()
     tauRes = dyn_M * eigen_ddq_Opt + dyn_Non - Jfe.transpose() * eigen_fr_Opt;//18
 
     tauJointRes = tauRes.block(6, 0, model_nv - 6, 1);
-
-    std::cout << "dyn_Non:" << std::endl;
-    std::cout << dyn_Non.transpose() << std::endl;
-    std::cout << "delta_q_final_kin位置:" << std::endl;
+    // std::cout << "des_ddq:" << std::endl;
+    // std::cout << des_ddq.transpose() << std::endl;
+    // std::cout << "des_dq:" << std::endl;
+    // std::cout << des_dq.transpose() << std::endl;
+    // std::cout << "dyn_Non:" << std::endl;
+    std::cout << "delta_q_final_kin" << std::endl;
     std::cout << delta_q_final_kin.transpose() << std::endl;
     std::cout << "dq_final_kin速度:" << std::endl;
     std::cout << dq_final_kin.transpose() << std::endl;
